@@ -1,0 +1,157 @@
+{
+  "n_pairs": 65,
+  "n_within_bound": 44,
+  "n_exceeding": 21,
+  "logistic_fit": true,
+  "coef": -0.12810453115545237,
+  "intercept": 0.8144552809540299,
+  "direction": "negative",
+  "threshold_auroc_p50": 6.357739836428613,
+  "threshold_auroc_p80": 17.179327087215622,
+  "scorer_analysis": {
+    "transformer_seq_only_synthetic": {
+      "scorer": "transformer_seq_only",
+      "domain": "synthetic",
+      "auroc_mean": 0.6789190186138014,
+      "auroc_std": 0.005009386982683069,
+      "ratio_mean": 1.152542372881356,
+      "ratio_std": 0.09171551195726002,
+      "within_bound_pct": 20.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.6742526207831187
+    },
+    "lstm_next_token_synthetic": {
+      "scorer": "lstm_next_token",
+      "domain": "synthetic",
+      "auroc_mean": 0.7278582778450364,
+      "auroc_std": 0.0025141060012872237,
+      "ratio_mean": 1.103813559322034,
+      "ratio_std": 0.0767990210186096,
+      "within_bound_pct": 40.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.672874146284667
+    },
+    "trace_length_synthetic": {
+      "scorer": "trace_length",
+      "domain": "synthetic",
+      "auroc_mean": 0.3678046496670702,
+      "auroc_std": 0.0,
+      "ratio_mean": 0.8792372881355932,
+      "ratio_std": 0.0,
+      "within_bound_pct": 100.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.6829447336481659
+    },
+    "low_diversity_synthetic": {
+      "scorer": "low_diversity",
+      "domain": "synthetic",
+      "auroc_mean": 0.3113531893159806,
+      "auroc_std": 0.0,
+      "ratio_mean": 0.9322033898305084,
+      "ratio_std": 0.0,
+      "within_bound_pct": 100.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.6845085441401796
+    },
+    "repeat_rate_synthetic": {
+      "scorer": "repeat_rate",
+      "domain": "synthetic",
+      "auroc_mean": 0.4994703389830509,
+      "auroc_std": 5.551115123125783e-17,
+      "ratio_mean": 1.1334745762711864,
+      "ratio_std": 0.0,
+      "within_bound_pct": 0.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.6792812901568048
+    },
+    "lstm_swe_agent": {
+      "scorer": "lstm",
+      "domain": "swe_agent",
+      "auroc_mean": 0.5921970897447478,
+      "auroc_std": 0.00422859690075668,
+      "ratio_mean": 1.0743550834597877,
+      "ratio_std": 0.09899548667860544,
+      "within_bound_pct": 40.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.6766879216166415
+    },
+    "trace_length_swe_agent": {
+      "scorer": "trace_length",
+      "domain": "swe_agent",
+      "auroc_mean": 0.6776973332722057,
+      "auroc_std": 0.007533184363243491,
+      "ratio_mean": 0.8801213960546272,
+      "ratio_std": 0.09973703626801192,
+      "within_bound_pct": 100.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.6742869936363327
+    },
+    "low_diversity_swe_agent": {
+      "scorer": "low_diversity",
+      "domain": "swe_agent",
+      "auroc_mean": 0.7090317139476096,
+      "auroc_std": 0.006066379808868796,
+      "ratio_mean": 1.0561456752655534,
+      "ratio_std": 0.1731756311707091,
+      "within_bound_pct": 60.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.6734047899947282
+    },
+    "repeat_rate_swe_agent": {
+      "scorer": "repeat_rate",
+      "domain": "swe_agent",
+      "auroc_mean": 0.6761171510056345,
+      "auroc_std": 0.006505363890271599,
+      "ratio_mean": 0.9347496206373282,
+      "ratio_std": 0.13490810786581392,
+      "within_bound_pct": 100.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.674331450235328
+    },
+    "lstm_atbench": {
+      "scorer": "lstm",
+      "domain": "atbench",
+      "auroc_mean": 0.41254901960784307,
+      "auroc_std": 0.015498880663034885,
+      "ratio_mean": 0.7058823529411766,
+      "ratio_std": 0.29346332445285783,
+      "within_bound_pct": 80.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.6817022866146186
+    },
+    "trace_length_atbench": {
+      "scorer": "trace_length",
+      "domain": "atbench",
+      "auroc_mean": 0.924235294117647,
+      "auroc_std": 0.021555289993885278,
+      "ratio_mean": 0.23529411764705888,
+      "ratio_std": 0.3137254901960783,
+      "within_bound_pct": 100.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.6673128798349043
+    },
+    "low_diversity_atbench": {
+      "scorer": "low_diversity",
+      "domain": "atbench",
+      "auroc_mean": 0.4972941176470589,
+      "auroc_std": 0.019243037756928403,
+      "ratio_mean": 1.0196078431372548,
+      "ratio_std": 0.6371794827165459,
+      "within_bound_pct": 40.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.6793420224661573
+    },
+    "repeat_rate_atbench": {
+      "scorer": "repeat_rate",
+      "domain": "atbench",
+      "auroc_mean": 0.5097647058823529,
+      "auroc_std": 0.011030278833020463,
+      "ratio_mean": 0.392156862745098,
+      "ratio_std": 0.35075576117643736,
+      "within_bound_pct": 100.0,
+      "n_seeds": 5,
+      "predicted_p_within": 0.6789939206307802
+    }
+  },
+  "reformulation": "For scorers with AUROC <= 17.18, empirical coverage exceeds 1-alpha in >=80% of seeds. Above this threshold, finite-sample exceedances of 10-15% above alpha are typical due to concentrated NCS distributions."
+}

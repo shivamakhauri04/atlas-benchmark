@@ -1,0 +1,189 @@
+{
+  "config": {
+    "seen_patterns": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "unseen_patterns": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "n_train": 6000,
+    "n_test_per_pattern": 200,
+    "encoder_epochs": 30,
+    "use_args": true,
+    "consequence_aware": true,
+    "outcome_weight": 0.5,
+    "d_model": 128,
+    "seed": 42
+  },
+  "per_pattern": [
+    {
+      "pattern_index": 0,
+      "pattern_name": "A01",
+      "type": "seen",
+      "auroc": 0.9189299155731869,
+      "n_anomalous": 113,
+      "n_normal": 87,
+      "mean_anom_score": 5.862231731414795,
+      "mean_normal_score": 4.424351692199707
+    },
+    {
+      "pattern_index": 1,
+      "pattern_name": "A02",
+      "type": "seen",
+      "auroc": 0.9344640706543557,
+      "n_anomalous": 94,
+      "n_normal": 106,
+      "mean_anom_score": 5.925939083099365,
+      "mean_normal_score": 4.398404598236084
+    },
+    {
+      "pattern_index": 2,
+      "pattern_name": "A03",
+      "type": "seen",
+      "auroc": 0.9300523349436394,
+      "n_anomalous": 92,
+      "n_normal": 108,
+      "mean_anom_score": 6.02553129196167,
+      "mean_normal_score": 4.35391902923584
+    },
+    {
+      "pattern_index": 3,
+      "pattern_name": "A04",
+      "type": "seen",
+      "auroc": 0.9397577996715929,
+      "n_anomalous": 116,
+      "n_normal": 84,
+      "mean_anom_score": 6.073570728302002,
+      "mean_normal_score": 4.3501505851745605
+    },
+    {
+      "pattern_index": 4,
+      "pattern_name": "A05",
+      "type": "seen",
+      "auroc": 0.9182,
+      "n_anomalous": 100,
+      "n_normal": 100,
+      "mean_anom_score": 6.061057090759277,
+      "mean_normal_score": 4.339731693267822
+    },
+    {
+      "pattern_index": 5,
+      "pattern_name": "A06",
+      "type": "seen",
+      "auroc": 0.9440000000000001,
+      "n_anomalous": 100,
+      "n_normal": 100,
+      "mean_anom_score": 6.11939811706543,
+      "mean_normal_score": 4.4429931640625
+    },
+    {
+      "pattern_index": 6,
+      "pattern_name": "A07",
+      "type": "seen",
+      "auroc": 0.9209683873549419,
+      "n_anomalous": 102,
+      "n_normal": 98,
+      "mean_anom_score": 5.831718921661377,
+      "mean_normal_score": 4.360934257507324
+    },
+    {
+      "pattern_index": 7,
+      "pattern_name": "A08",
+      "type": "seen",
+      "auroc": 0.9625062656641605,
+      "n_anomalous": 95,
+      "n_normal": 105,
+      "mean_anom_score": 6.402947902679443,
+      "mean_normal_score": 4.556849479675293
+    },
+    {
+      "pattern_index": 8,
+      "pattern_name": "A09",
+      "type": "seen",
+      "auroc": 0.932792467948718,
+      "n_anomalous": 104,
+      "n_normal": 96,
+      "mean_anom_score": 6.018892765045166,
+      "mean_normal_score": 4.538680553436279
+    },
+    {
+      "pattern_index": 9,
+      "pattern_name": "A10",
+      "type": "seen",
+      "auroc": 0.9346934693469346,
+      "n_anomalous": 99,
+      "n_normal": 101,
+      "mean_anom_score": 6.001348972320557,
+      "mean_normal_score": 4.4507365226745605
+    },
+    {
+      "pattern_index": 10,
+      "pattern_name": "A11",
+      "type": "unseen",
+      "auroc": 0.9312683469986841,
+      "n_anomalous": 89,
+      "n_normal": 111,
+      "mean_anom_score": 5.924673557281494,
+      "mean_normal_score": 4.237496852874756
+    },
+    {
+      "pattern_index": 11,
+      "pattern_name": "A12",
+      "type": "unseen",
+      "auroc": 0.9258997882851093,
+      "n_anomalous": 109,
+      "n_normal": 91,
+      "mean_anom_score": 6.081294536590576,
+      "mean_normal_score": 4.479147911071777
+    },
+    {
+      "pattern_index": 12,
+      "pattern_name": "A13",
+      "type": "unseen",
+      "auroc": 0.9554,
+      "n_anomalous": 100,
+      "n_normal": 100,
+      "mean_anom_score": 6.118353843688965,
+      "mean_normal_score": 4.309823513031006
+    },
+    {
+      "pattern_index": 13,
+      "pattern_name": "A14",
+      "type": "unseen",
+      "auroc": 0.9410871545703007,
+      "n_anomalous": 89,
+      "n_normal": 111,
+      "mean_anom_score": 5.97892427444458,
+      "mean_normal_score": 4.396629810333252
+    },
+    {
+      "pattern_index": 14,
+      "pattern_name": "A15",
+      "type": "unseen",
+      "auroc": 0.9818981898189819,
+      "n_anomalous": 99,
+      "n_normal": 101,
+      "mean_anom_score": 6.517992973327637,
+      "mean_normal_score": 4.35708475112915
+    }
+  ],
+  "summary": {
+    "seen_auroc_mean": 0.9336364711157529,
+    "seen_auroc_std": 0.01268363801832362,
+    "unseen_auroc_mean": 0.9471106959346152,
+    "unseen_auroc_std": 0.020080079513460743
+  }
+}

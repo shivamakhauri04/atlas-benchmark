@@ -1,0 +1,551 @@
+{
+  "experiment": "v31_prototype_scorer",
+  "model": "all-MiniLM-L6-v2",
+  "n_domains": 8,
+  "domains": [
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic",
+    "toolbench",
+    "trail"
+  ],
+  "cross_domain_results": {
+    "agentharm->atbench": {
+      "source": "agentharm",
+      "target": "atbench",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.06746987951807228,
+      "mahal_auroc": 0.10318072289156625
+    },
+    "agentharm->injecagent": {
+      "source": "agentharm",
+      "target": "injecagent",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.3706886929344793,
+      "mahal_auroc": 0.003850876213863155
+    },
+    "agentharm->rjudge": {
+      "source": "agentharm",
+      "target": "rjudge",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.24828183740601503,
+      "mahal_auroc": 0.122312617481203
+    },
+    "agentharm->swe_agent": {
+      "source": "agentharm",
+      "target": "swe_agent",
+      "source_group": "safety",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.6128321727480541,
+      "mahal_auroc": 0.5753367507430796
+    },
+    "agentharm->synthetic": {
+      "source": "agentharm",
+      "target": "synthetic",
+      "source_group": "safety",
+      "target_group": "injected",
+      "within_group": false,
+      "proto_auroc": 0.48678942253593166,
+      "mahal_auroc": 0.4153403917958161
+    },
+    "agentharm->toolbench": {
+      "source": "agentharm",
+      "target": "toolbench",
+      "source_group": "safety",
+      "target_group": "api_misuse",
+      "within_group": false,
+      "proto_auroc": 0.21955454852633413,
+      "mahal_auroc": 0.02802862675851645
+    },
+    "agentharm->trail": {
+      "source": "agentharm",
+      "target": "trail",
+      "source_group": "safety",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.5727272727272728,
+      "mahal_auroc": 0.6902097902097901
+    },
+    "atbench->agentharm": {
+      "source": "atbench",
+      "target": "agentharm",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.4083483987603306,
+      "mahal_auroc": 0.4028925619834711
+    },
+    "atbench->injecagent": {
+      "source": "atbench",
+      "target": "injecagent",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.3502064962607434,
+      "mahal_auroc": 0.0022882018082375265
+    },
+    "atbench->rjudge": {
+      "source": "atbench",
+      "target": "rjudge",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.148922109962406,
+      "mahal_auroc": 0.09583529135338345
+    },
+    "atbench->swe_agent": {
+      "source": "atbench",
+      "target": "swe_agent",
+      "source_group": "safety",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.5945363101645251,
+      "mahal_auroc": 0.5746193972097848
+    },
+    "atbench->synthetic": {
+      "source": "atbench",
+      "target": "synthetic",
+      "source_group": "safety",
+      "target_group": "injected",
+      "within_group": false,
+      "proto_auroc": 0.45329446064139944,
+      "mahal_auroc": 0.407389903329753
+    },
+    "atbench->toolbench": {
+      "source": "atbench",
+      "target": "toolbench",
+      "source_group": "safety",
+      "target_group": "api_misuse",
+      "within_group": false,
+      "proto_auroc": 0.36421500770259274,
+      "mahal_auroc": 0.040355954249505874
+    },
+    "atbench->trail": {
+      "source": "atbench",
+      "target": "trail",
+      "source_group": "safety",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.4482517482517482,
+      "mahal_auroc": 0.5377622377622377
+    },
+    "injecagent->agentharm": {
+      "source": "injecagent",
+      "target": "agentharm",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.48857179752066116,
+      "mahal_auroc": 0.49496384297520657
+    },
+    "injecagent->atbench": {
+      "source": "injecagent",
+      "target": "atbench",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.3580562248995984,
+      "mahal_auroc": 0.32017670682730925
+    },
+    "injecagent->rjudge": {
+      "source": "injecagent",
+      "target": "rjudge",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.250983905075188,
+      "mahal_auroc": 0.2807066494360902
+    },
+    "injecagent->swe_agent": {
+      "source": "injecagent",
+      "target": "swe_agent",
+      "source_group": "safety",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.5806292477408819,
+      "mahal_auroc": 0.5583072291531682
+    },
+    "injecagent->synthetic": {
+      "source": "injecagent",
+      "target": "synthetic",
+      "source_group": "safety",
+      "target_group": "injected",
+      "within_group": false,
+      "proto_auroc": 0.47003426934683645,
+      "mahal_auroc": 0.42924658585238606
+    },
+    "injecagent->toolbench": {
+      "source": "injecagent",
+      "target": "toolbench",
+      "source_group": "safety",
+      "target_group": "api_misuse",
+      "within_group": false,
+      "proto_auroc": 0.366439494680851,
+      "mahal_auroc": 0.05455760958028136
+    },
+    "injecagent->trail": {
+      "source": "injecagent",
+      "target": "trail",
+      "source_group": "safety",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.44125874125874126,
+      "mahal_auroc": 0.5447552447552447
+    },
+    "rjudge->agentharm": {
+      "source": "rjudge",
+      "target": "agentharm",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.47824121900826444,
+      "mahal_auroc": 0.49744963842975204
+    },
+    "rjudge->atbench": {
+      "source": "rjudge",
+      "target": "atbench",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.20979919678714862,
+      "mahal_auroc": 0.2958072289156627
+    },
+    "rjudge->injecagent": {
+      "source": "rjudge",
+      "target": "injecagent",
+      "source_group": "safety",
+      "target_group": "safety",
+      "within_group": true,
+      "proto_auroc": 0.3279941957807791,
+      "mahal_auroc": 0.026063176693827437
+    },
+    "rjudge->swe_agent": {
+      "source": "rjudge",
+      "target": "swe_agent",
+      "source_group": "safety",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.6373392308571618,
+      "mahal_auroc": 0.5789445951639015
+    },
+    "rjudge->synthetic": {
+      "source": "rjudge",
+      "target": "synthetic",
+      "source_group": "safety",
+      "target_group": "injected",
+      "within_group": false,
+      "proto_auroc": 0.46162446933660684,
+      "mahal_auroc": 0.40740422484783384
+    },
+    "rjudge->toolbench": {
+      "source": "rjudge",
+      "target": "toolbench",
+      "source_group": "safety",
+      "target_group": "api_misuse",
+      "within_group": false,
+      "proto_auroc": 0.3875403296128357,
+      "mahal_auroc": 0.02782561620741774
+    },
+    "rjudge->trail": {
+      "source": "rjudge",
+      "target": "trail",
+      "source_group": "safety",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.4664335664335665,
+      "mahal_auroc": 0.6076923076923078
+    },
+    "swe_agent->agentharm": {
+      "source": "swe_agent",
+      "target": "agentharm",
+      "source_group": "failure",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.4135459710743802,
+      "mahal_auroc": 0.4261040805785124
+    },
+    "swe_agent->atbench": {
+      "source": "swe_agent",
+      "target": "atbench",
+      "source_group": "failure",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.5037911646586345,
+      "mahal_auroc": 0.41037751004016065
+    },
+    "swe_agent->injecagent": {
+      "source": "swe_agent",
+      "target": "injecagent",
+      "source_group": "failure",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.12082821743498158,
+      "mahal_auroc": 0.0018417234066302043
+    },
+    "swe_agent->rjudge": {
+      "source": "swe_agent",
+      "target": "rjudge",
+      "source_group": "failure",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.13620476973684212,
+      "mahal_auroc": 0.10914003759398495
+    },
+    "swe_agent->synthetic": {
+      "source": "swe_agent",
+      "target": "synthetic",
+      "source_group": "failure",
+      "target_group": "injected",
+      "within_group": false,
+      "proto_auroc": 0.47589381617308574,
+      "mahal_auroc": 0.43487698838934064
+    },
+    "swe_agent->toolbench": {
+      "source": "swe_agent",
+      "target": "toolbench",
+      "source_group": "failure",
+      "target_group": "api_misuse",
+      "within_group": false,
+      "proto_auroc": 0.23498357749098944,
+      "mahal_auroc": 0.03347130784211138
+    },
+    "swe_agent->trail": {
+      "source": "swe_agent",
+      "target": "trail",
+      "source_group": "failure",
+      "target_group": "failure",
+      "within_group": true,
+      "proto_auroc": 0.4818181818181818,
+      "mahal_auroc": 0.5755244755244755
+    },
+    "synthetic->agentharm": {
+      "source": "synthetic",
+      "target": "agentharm",
+      "source_group": "injected",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.44960614669421484,
+      "mahal_auroc": 0.4688791322314049
+    },
+    "synthetic->atbench": {
+      "source": "synthetic",
+      "target": "atbench",
+      "source_group": "injected",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.19465060240963858,
+      "mahal_auroc": 0.22917269076305222
+    },
+    "synthetic->injecagent": {
+      "source": "synthetic",
+      "target": "injecagent",
+      "source_group": "injected",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.41768054470364996,
+      "mahal_auroc": 0.0008371470030137291
+    },
+    "synthetic->rjudge": {
+      "source": "synthetic",
+      "target": "rjudge",
+      "source_group": "injected",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.10577713815789472,
+      "mahal_auroc": 0.09959468984962405
+    },
+    "synthetic->swe_agent": {
+      "source": "synthetic",
+      "target": "swe_agent",
+      "source_group": "injected",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.627203419690995,
+      "mahal_auroc": 0.5843633047259786
+    },
+    "synthetic->toolbench": {
+      "source": "synthetic",
+      "target": "toolbench",
+      "source_group": "injected",
+      "target_group": "api_misuse",
+      "within_group": false,
+      "proto_auroc": 0.007657630653412387,
+      "mahal_auroc": 0.0024020644401813685
+    },
+    "synthetic->trail": {
+      "source": "synthetic",
+      "target": "trail",
+      "source_group": "injected",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.44405594405594406,
+      "mahal_auroc": 0.583916083916084
+    },
+    "toolbench->agentharm": {
+      "source": "toolbench",
+      "target": "agentharm",
+      "source_group": "api_misuse",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.4477660123966942,
+      "mahal_auroc": 0.4806301652892562
+    },
+    "toolbench->atbench": {
+      "source": "toolbench",
+      "target": "atbench",
+      "source_group": "api_misuse",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.18526907630522088,
+      "mahal_auroc": 0.2073253012048193
+    },
+    "toolbench->injecagent": {
+      "source": "toolbench",
+      "target": "injecagent",
+      "source_group": "api_misuse",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.40601629646165865,
+      "mahal_auroc": 0.003739256613461324
+    },
+    "toolbench->rjudge": {
+      "source": "toolbench",
+      "target": "rjudge",
+      "source_group": "api_misuse",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.32565789473684204,
+      "mahal_auroc": 0.1173784069548872
+    },
+    "toolbench->swe_agent": {
+      "source": "toolbench",
+      "target": "swe_agent",
+      "source_group": "api_misuse",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.5543419477747783,
+      "mahal_auroc": 0.5593084989656274
+    },
+    "toolbench->synthetic": {
+      "source": "toolbench",
+      "target": "synthetic",
+      "source_group": "api_misuse",
+      "target_group": "injected",
+      "within_group": false,
+      "proto_auroc": 0.4965597667638484,
+      "mahal_auroc": 0.4318776533169658
+    },
+    "toolbench->trail": {
+      "source": "toolbench",
+      "target": "trail",
+      "source_group": "api_misuse",
+      "target_group": "failure",
+      "within_group": false,
+      "proto_auroc": 0.4538461538461538,
+      "mahal_auroc": 0.5559440559440559
+    },
+    "trail->agentharm": {
+      "source": "trail",
+      "target": "agentharm",
+      "source_group": "failure",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.4634232954545454,
+      "mahal_auroc": 0.4634232954545454
+    },
+    "trail->atbench": {
+      "source": "trail",
+      "target": "atbench",
+      "source_group": "failure",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.2864578313253012,
+      "mahal_auroc": 0.2864578313253012
+    },
+    "trail->injecagent": {
+      "source": "trail",
+      "target": "injecagent",
+      "source_group": "failure",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.30087063288313426,
+      "mahal_auroc": 0.30087063288313426
+    },
+    "trail->rjudge": {
+      "source": "trail",
+      "target": "rjudge",
+      "source_group": "failure",
+      "target_group": "safety",
+      "within_group": false,
+      "proto_auroc": 0.1095218515037594,
+      "mahal_auroc": 0.1095218515037594
+    },
+    "trail->swe_agent": {
+      "source": "trail",
+      "target": "swe_agent",
+      "source_group": "failure",
+      "target_group": "failure",
+      "within_group": true,
+      "proto_auroc": 0.7185830519586627,
+      "mahal_auroc": 0.7185830519586627
+    },
+    "trail->synthetic": {
+      "source": "trail",
+      "target": "synthetic",
+      "source_group": "failure",
+      "target_group": "injected",
+      "within_group": false,
+      "proto_auroc": 0.46656130121221423,
+      "mahal_auroc": 0.46656130121221423
+    },
+    "trail->toolbench": {
+      "source": "trail",
+      "target": "toolbench",
+      "source_group": "failure",
+      "target_group": "api_misuse",
+      "within_group": false,
+      "proto_auroc": 0.28486649444831996,
+      "mahal_auroc": 0.28486649444831996
+    }
+  },
+  "aggregate": {
+    "within_proto_mean": 0.3505689419778951,
+    "within_proto_std": 0.15886141827566927,
+    "between_proto_mean": 0.3922985188241065,
+    "between_proto_std": 0.15517747855654263,
+    "within_mah_mean": 0.2814025030351936,
+    "between_mah_mean": 0.33644423740970125,
+    "n_anti_proto": 47,
+    "n_anti_mah": 42,
+    "total_pairs": 56
+  },
+  "polarity_reversal": {
+    "within_rate": 0.0,
+    "between_rate": 0.3333333333333333,
+    "within_rev": 0,
+    "within_total": 7,
+    "between_rev": 7,
+    "between_total": 21
+  },
+  "domain_d_proto": {
+    "agentharm": 0.30974086781704063,
+    "atbench": 1.4533719082439944,
+    "injecagent": 0.7484649242338492,
+    "rjudge": 0.6288343219261309,
+    "swe_agent": 0.6112643559341661,
+    "synthetic": -0.2680045015046026,
+    "toolbench": 0.40638374627075297,
+    "trail": 0.29205211864073155
+  },
+  "elapsed_s": 393.99307322502136
+}

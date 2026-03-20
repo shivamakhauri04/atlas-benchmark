@@ -1,0 +1,1903 @@
+{
+  "experiment": "v31_finetuned_embedding_polarity",
+  "model": "all-MiniLM-L6-v2",
+  "embedding_dim": 384,
+  "ft_epochs": 3,
+  "source_domains": [
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic",
+    "toolbench",
+    "trail"
+  ],
+  "loaded_domains": [
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic",
+    "toolbench",
+    "trail"
+  ],
+  "frozen_results": {
+    "label": "frozen",
+    "n_within": 7,
+    "n_between": 21,
+    "within_cos_mean": 0.03825538875669033,
+    "between_cos_mean": 0.045954366773747826,
+    "within_neg_rate": 0.5714285714285714,
+    "between_neg_rate": 0.42857142857142855,
+    "mannwhitney_p": 0.4793419141245228
+  },
+  "frozen_pair_results": {
+    "agentharm-atbench": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": -0.002688026237158494,
+      "reversal_rate": 0.49295774647887325
+    },
+    "agentharm-injecagent": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": 0.07124448094856631,
+      "reversal_rate": 0.5
+    },
+    "agentharm-rjudge": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": -0.012431085353672659,
+      "reversal_rate": 0.5488372093023256
+    },
+    "agentharm-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.03487921069746705,
+      "reversal_rate": 0.5093167701863354
+    },
+    "agentharm-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.2576486154790061,
+      "reversal_rate": 0.3275862068965517
+    },
+    "agentharm-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.1320560955013368,
+      "reversal_rate": 0.46153846153846156
+    },
+    "agentharm-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.0742789605977531,
+      "reversal_rate": 0.41714285714285715
+    },
+    "atbench-injecagent": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": -0.017429763748790437,
+      "reversal_rate": 0.49280575539568344
+    },
+    "atbench-rjudge": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": -0.06504821426740984,
+      "reversal_rate": 0.539568345323741
+    },
+    "atbench-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.01739398604822858,
+      "reversal_rate": 0.4883720930232558
+    },
+    "atbench-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.02808749917474479,
+      "reversal_rate": 0.4931506849315068
+    },
+    "atbench-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": -0.006474385041661197,
+      "reversal_rate": 0.4962962962962963
+    },
+    "atbench-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.07018251493058258,
+      "reversal_rate": 0.5041666666666667
+    },
+    "injecagent-rjudge": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": 0.1758377712696022,
+      "reversal_rate": 0.4172661870503597
+    },
+    "injecagent-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.09736330423914484,
+      "reversal_rate": 0.569377990430622
+    },
+    "injecagent-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.10966271012891411,
+      "reversal_rate": 0.4405594405594406
+    },
+    "injecagent-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.0457080715960333,
+      "reversal_rate": 0.4696969696969697
+    },
+    "injecagent-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.06187417176601277,
+      "reversal_rate": 0.5617021276595745
+    },
+    "rjudge-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.06579110841229734,
+      "reversal_rate": 0.5238095238095238
+    },
+    "rjudge-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.0734731472770591,
+      "reversal_rate": 0.47651006711409394
+    },
+    "rjudge-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.22118939444893154,
+      "reversal_rate": 0.38257575757575757
+    },
+    "rjudge-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.10669858079423944,
+      "reversal_rate": 0.49166666666666664
+    },
+    "swe_agent-synthetic": {
+      "group_a": "failure",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.041760803111710224,
+      "reversal_rate": 0.46956521739130436
+    },
+    "swe_agent-toolbench": {
+      "group_a": "failure",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": -0.1220450063439278,
+      "reversal_rate": 0.5594059405940595
+    },
+    "swe_agent-trail": {
+      "group_a": "failure",
+      "group_b": "failure",
+      "is_within_group": true,
+      "cosine": 0.11830255868569522,
+      "reversal_rate": 0.4175824175824176
+    },
+    "synthetic-toolbench": {
+      "group_a": "injected",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.3836739215010736,
+      "reversal_rate": 0.2391304347826087
+    },
+    "synthetic-trail": {
+      "group_a": "injected",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.010726155730158707,
+      "reversal_rate": 0.496
+    },
+    "toolbench-trail": {
+      "group_a": "api_misuse",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.057254226249074114,
+      "reversal_rate": 0.5350877192982456
+    }
+  },
+  "per_source_results": {
+    "agentharm": {
+      "label": "ft_agentharm",
+      "n_within": 7,
+      "n_between": 21,
+      "within_cos_mean": -0.036269431982243264,
+      "between_cos_mean": 0.050905130379030564,
+      "within_neg_rate": 0.42857142857142855,
+      "between_neg_rate": 0.47619047619047616,
+      "mannwhitney_p": 0.7825343738387216
+    },
+    "atbench": {
+      "label": "ft_atbench",
+      "n_within": 7,
+      "n_between": 21,
+      "within_cos_mean": -0.04425183129413481,
+      "between_cos_mean": 0.020592490828956554,
+      "within_neg_rate": 0.5714285714285714,
+      "between_neg_rate": 0.38095238095238093,
+      "mannwhitney_p": 0.8122166480862133
+    },
+    "injecagent": {
+      "label": "ft_injecagent",
+      "n_within": 7,
+      "n_between": 21,
+      "within_cos_mean": 0.1564906514398032,
+      "between_cos_mean": 0.0606835998980998,
+      "within_neg_rate": 0.2857142857142857,
+      "between_neg_rate": 0.2857142857142857,
+      "mannwhitney_p": 0.09463278267626095
+    },
+    "rjudge": {
+      "label": "ft_rjudge",
+      "n_within": 7,
+      "n_between": 21,
+      "within_cos_mean": -0.010807511902838404,
+      "between_cos_mean": 0.05912738218580651,
+      "within_neg_rate": 0.5714285714285714,
+      "between_neg_rate": 0.38095238095238093,
+      "mannwhitney_p": 0.8752550589507111
+    },
+    "swe_agent": {
+      "label": "ft_swe_agent",
+      "n_within": 7,
+      "n_between": 21,
+      "within_cos_mean": 0.037617983062484685,
+      "between_cos_mean": 0.04569065896603518,
+      "within_neg_rate": 0.2857142857142857,
+      "between_neg_rate": 0.3333333333333333,
+      "mannwhitney_p": 0.5
+    },
+    "synthetic": {
+      "label": "ft_synthetic",
+      "n_within": 7,
+      "n_between": 21,
+      "within_cos_mean": 0.025709355201775735,
+      "between_cos_mean": 0.040709229236597276,
+      "within_neg_rate": 0.42857142857142855,
+      "between_neg_rate": 0.47619047619047616,
+      "mannwhitney_p": 0.5
+    },
+    "toolbench": {
+      "label": "ft_toolbench",
+      "n_within": 7,
+      "n_between": 21,
+      "within_cos_mean": -0.006921772713561052,
+      "between_cos_mean": 0.06406734169411027,
+      "within_neg_rate": 0.42857142857142855,
+      "between_neg_rate": 0.5238095238095238,
+      "mannwhitney_p": 0.7161075639336508
+    },
+    "trail": {
+      "label": "ft_trail",
+      "n_within": 7,
+      "n_between": 21,
+      "within_cos_mean": 0.03517070164489846,
+      "between_cos_mean": 0.04528032183575333,
+      "within_neg_rate": 0.5714285714285714,
+      "between_neg_rate": 0.3333333333333333,
+      "mannwhitney_p": 0.5821087125434952
+    }
+  },
+  "per_source_pair_results": {
+    "agentharm": {
+      "agentharm-atbench": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.2085927854074684,
+        "reversal_rate": 0.5913621262458472
+      },
+      "agentharm-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.10650454629926122,
+        "reversal_rate": 0.4405594405594406
+      },
+      "agentharm-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.1675920412746285,
+        "reversal_rate": 0.6200716845878136
+      },
+      "agentharm-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.027938076625848865,
+        "reversal_rate": 0.5509259259259259
+      },
+      "agentharm-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.4493825402526739,
+        "reversal_rate": 0.20348837209302326
+      },
+      "agentharm-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.3017736309084371,
+        "reversal_rate": 0.39338235294117646
+      },
+      "agentharm-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.06897661518593837,
+        "reversal_rate": 0.4533898305084746
+      },
+      "atbench-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.17501813374331918,
+        "reversal_rate": 0.5577557755775577
+      },
+      "atbench-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.0477407000216971,
+        "reversal_rate": 0.4689655172413793
+      },
+      "atbench-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.02474720689599407,
+        "reversal_rate": 0.5176991150442478
+      },
+      "atbench-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": -0.0686199616496827,
+        "reversal_rate": 0.547486033519553
+      },
+      "atbench-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.16945363705017968,
+        "reversal_rate": 0.5482758620689655
+      },
+      "atbench-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.05130518541449067,
+        "reversal_rate": 0.4897959183673469
+      },
+      "injecagent-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.0343532941963405,
+        "reversal_rate": 0.4763636363636364
+      },
+      "injecagent-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.0834919099286861,
+        "reversal_rate": 0.5668202764976958
+      },
+      "injecagent-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.09969839198075713,
+        "reversal_rate": 0.43859649122807015
+      },
+      "injecagent-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.06061298965669842,
+        "reversal_rate": 0.47101449275362317
+      },
+      "injecagent-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.04014851610729666,
+        "reversal_rate": 0.519650655021834
+      },
+      "rjudge-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.03464909967470137,
+        "reversal_rate": 0.5
+      },
+      "rjudge-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": -0.048510876826540705,
+        "reversal_rate": 0.5235294117647059
+      },
+      "rjudge-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.11889541142432793,
+        "reversal_rate": 0.4641509433962264
+      },
+      "rjudge-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.15063987084052852,
+        "reversal_rate": 0.43171806167400884
+      },
+      "swe_agent-synthetic": {
+        "group_a": "failure",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.02655437576112569,
+        "reversal_rate": 0.5
+      },
+      "swe_agent-toolbench": {
+        "group_a": "failure",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.11342785751276913,
+        "reversal_rate": 0.5603864734299517
+      },
+      "swe_agent-trail": {
+        "group_a": "failure",
+        "group_b": "failure",
+        "is_within_group": true,
+        "cosine": 0.1087183960324144,
+        "reversal_rate": 0.4393063583815029
+      },
+      "synthetic-toolbench": {
+        "group_a": "injected",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.4311860898466812,
+        "reversal_rate": 0.2289156626506024
+      },
+      "synthetic-trail": {
+        "group_a": "injected",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.0379488008934951,
+        "reversal_rate": 0.5289855072463768
+      },
+      "toolbench-trail": {
+        "group_a": "api_misuse",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.012034536890170503,
+        "reversal_rate": 0.4931506849315068
+      }
+    },
+    "atbench": {
+      "agentharm-atbench": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.03195548431554068,
+        "reversal_rate": 0.5315315315315315
+      },
+      "agentharm-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.13735757447399613,
+        "reversal_rate": 0.3952380952380952
+      },
+      "agentharm-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.012730811976313048,
+        "reversal_rate": 0.5309278350515464
+      },
+      "agentharm-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.008422324418863262,
+        "reversal_rate": 0.46
+      },
+      "agentharm-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.1830169732879249,
+        "reversal_rate": 0.3465346534653465
+      },
+      "agentharm-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.15361571572691662,
+        "reversal_rate": 0.4236453201970443
+      },
+      "agentharm-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.009144011869037424,
+        "reversal_rate": 0.45962732919254656
+      },
+      "atbench-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.3658845857218872,
+        "reversal_rate": 0.6566265060240963
+      },
+      "atbench-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.1635466457209732,
+        "reversal_rate": 0.5652173913043478
+      },
+      "atbench-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.2533028665252632,
+        "reversal_rate": 0.38235294117647056
+      },
+      "atbench-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.3276869310407952,
+        "reversal_rate": 0.32571428571428573
+      },
+      "atbench-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.5954186911093166,
+        "reversal_rate": 0.7078313253012049
+      },
+      "atbench-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.1901372315368788,
+        "reversal_rate": 0.5836575875486382
+      },
+      "injecagent-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.07439891417341331,
+        "reversal_rate": 0.46688741721854304
+      },
+      "injecagent-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.17821571438965753,
+        "reversal_rate": 0.6063348416289592
+      },
+      "injecagent-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": -0.06387002719642029,
+        "reversal_rate": 0.5276073619631901
+      },
+      "injecagent-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.1891655761251441,
+        "reversal_rate": 0.42765273311897106
+      },
+      "injecagent-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.014295546126192934,
+        "reversal_rate": 0.5083333333333333
+      },
+      "rjudge-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.09639254369486251,
+        "reversal_rate": 0.5209302325581395
+      },
+      "rjudge-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.001470103454134985,
+        "reversal_rate": 0.4968152866242038
+      },
+      "rjudge-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.2824608418322521,
+        "reversal_rate": 0.3754152823920266
+      },
+      "rjudge-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.14834271661626605,
+        "reversal_rate": 0.44871794871794873
+      },
+      "swe_agent-synthetic": {
+        "group_a": "failure",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.16563350234296964,
+        "reversal_rate": 0.41935483870967744
+      },
+      "swe_agent-toolbench": {
+        "group_a": "failure",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.21578228975575478,
+        "reversal_rate": 0.5605381165919282
+      },
+      "swe_agent-trail": {
+        "group_a": "failure",
+        "group_b": "failure",
+        "is_within_group": true,
+        "cosine": 0.05259822002836102,
+        "reversal_rate": 0.41818181818181815
+      },
+      "synthetic-toolbench": {
+        "group_a": "injected",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.016707012188635448,
+        "reversal_rate": 0.5209580838323353
+      },
+      "synthetic-trail": {
+        "group_a": "injected",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.06548255917560142,
+        "reversal_rate": 0.5669291338582677
+      },
+      "toolbench-trail": {
+        "group_a": "api_misuse",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.11789126708945442,
+        "reversal_rate": 0.4326530612244898
+      }
+    },
+    "injecagent": {
+      "agentharm-atbench": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.0923823636988103,
+        "reversal_rate": 0.5700934579439252
+      },
+      "agentharm-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.11826488519617738,
+        "reversal_rate": 0.4391304347826087
+      },
+      "agentharm-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.07934193853827351,
+        "reversal_rate": 0.5576036866359447
+      },
+      "agentharm-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.031221979743665664,
+        "reversal_rate": 0.49390243902439024
+      },
+      "agentharm-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.10848257504737634,
+        "reversal_rate": 0.47191011235955055
+      },
+      "agentharm-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.09725812650897245,
+        "reversal_rate": 0.4174757281553398
+      },
+      "agentharm-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.07271827545039958,
+        "reversal_rate": 0.483695652173913
+      },
+      "atbench-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.29426394749780294,
+        "reversal_rate": 0.3760932944606414
+      },
+      "atbench-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.2391139757598176,
+        "reversal_rate": 0.40683229813664595
+      },
+      "atbench-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.05961198186656468,
+        "reversal_rate": 0.47435897435897434
+      },
+      "atbench-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": -0.009396664405279474,
+        "reversal_rate": 0.5294117647058824
+      },
+      "atbench-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.20402384063462575,
+        "reversal_rate": 0.5863192182410424
+      },
+      "atbench-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.08864145006556798,
+        "reversal_rate": 0.397887323943662
+      },
+      "injecagent-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.38140734755831174,
+        "reversal_rate": 0.3742857142857143
+      },
+      "injecagent-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.07847284838551376,
+        "reversal_rate": 0.4573643410852713
+      },
+      "injecagent-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": -0.03533319022668113,
+        "reversal_rate": 0.5466666666666666
+      },
+      "injecagent-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.026604186827556903,
+        "reversal_rate": 0.5059523809523809
+      },
+      "injecagent-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.40287472180516387,
+        "reversal_rate": 0.33986928104575165
+      },
+      "rjudge-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.024050226027827838,
+        "reversal_rate": 0.5142857142857142
+      },
+      "rjudge-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.06051588965360669,
+        "reversal_rate": 0.4142857142857143
+      },
+      "rjudge-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.06563133188596931,
+        "reversal_rate": 0.4384858044164038
+      },
+      "rjudge-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.2942624499085868,
+        "reversal_rate": 0.3531468531468531
+      },
+      "swe_agent-synthetic": {
+        "group_a": "failure",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.07014740922982723,
+        "reversal_rate": 0.49523809523809526
+      },
+      "swe_agent-toolbench": {
+        "group_a": "failure",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.1718619822812695,
+        "reversal_rate": 0.5805084745762712
+      },
+      "swe_agent-trail": {
+        "group_a": "failure",
+        "group_b": "failure",
+        "is_within_group": true,
+        "cosine": 0.2341087063035964,
+        "reversal_rate": 0.3456221198156682
+      },
+      "synthetic-toolbench": {
+        "group_a": "injected",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.34052020921909115,
+        "reversal_rate": 0.2846153846153846
+      },
+      "synthetic-trail": {
+        "group_a": "injected",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.0505642363311059,
+        "reversal_rate": 0.488
+      },
+      "toolbench-trail": {
+        "group_a": "api_misuse",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.12339824889373067,
+        "reversal_rate": 0.5483870967741935
+      }
+    },
+    "rjudge": {
+      "agentharm-atbench": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.1414306377622166,
+        "reversal_rate": 0.5925925925925926
+      },
+      "agentharm-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.011590054947649303,
+        "reversal_rate": 0.4881516587677725
+      },
+      "agentharm-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.315062050346135,
+        "reversal_rate": 0.6885964912280702
+      },
+      "agentharm-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.03571839290489155,
+        "reversal_rate": 0.4513888888888889
+      },
+      "agentharm-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.10587688527393992,
+        "reversal_rate": 0.38461538461538464
+      },
+      "agentharm-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.07254486641337585,
+        "reversal_rate": 0.4666666666666667
+      },
+      "agentharm-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.10119631496141765,
+        "reversal_rate": 0.5968586387434555
+      },
+      "atbench-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.26549490169075984,
+        "reversal_rate": 0.620253164556962
+      },
+      "atbench-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.5109870528810778,
+        "reversal_rate": 0.257396449704142
+      },
+      "atbench-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.005152244622880928,
+        "reversal_rate": 0.484304932735426
+      },
+      "atbench-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.18707733185763661,
+        "reversal_rate": 0.3525641025641026
+      },
+      "atbench-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.008714582578037856,
+        "reversal_rate": 0.5087108013937283
+      },
+      "atbench-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.2289021183702394,
+        "reversal_rate": 0.3436426116838488
+      },
+      "injecagent-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.08596923490945874,
+        "reversal_rate": 0.5266272189349113
+      },
+      "injecagent-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.02407715870953975,
+        "reversal_rate": 0.5111111111111111
+      },
+      "injecagent-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": -0.030890684601706846,
+        "reversal_rate": 0.554140127388535
+      },
+      "injecagent-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.01622551002780129,
+        "reversal_rate": 0.47017543859649125
+      },
+      "injecagent-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.14571904708501407,
+        "reversal_rate": 0.5929824561403508
+      },
+      "rjudge-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.04458801529021432,
+        "reversal_rate": 0.5020576131687243
+      },
+      "rjudge-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.1828550266439898,
+        "reversal_rate": 0.3508771929824561
+      },
+      "rjudge-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.12729898406202136,
+        "reversal_rate": 0.4527687296416938
+      },
+      "rjudge-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.3144967133886879,
+        "reversal_rate": 0.34201954397394135
+      },
+      "swe_agent-synthetic": {
+        "group_a": "failure",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.09161545810349225,
+        "reversal_rate": 0.4144144144144144
+      },
+      "swe_agent-toolbench": {
+        "group_a": "failure",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.09818643062284158,
+        "reversal_rate": 0.5666666666666667
+      },
+      "swe_agent-trail": {
+        "group_a": "failure",
+        "group_b": "failure",
+        "is_within_group": true,
+        "cosine": 0.20972713355997427,
+        "reversal_rate": 0.38235294117647056
+      },
+      "synthetic-toolbench": {
+        "group_a": "injected",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.3098545299466503,
+        "reversal_rate": 0.3263888888888889
+      },
+      "synthetic-trail": {
+        "group_a": "injected",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.09708313683276712,
+        "reversal_rate": 0.3722627737226277
+      },
+      "toolbench-trail": {
+        "group_a": "api_misuse",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.07965393869766549,
+        "reversal_rate": 0.5265151515151515
+      }
+    },
+    "swe_agent": {
+      "agentharm-atbench": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.002496503793680703,
+        "reversal_rate": 0.5113122171945701
+      },
+      "agentharm-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.07541102425882319,
+        "reversal_rate": 0.46153846153846156
+      },
+      "agentharm-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.01949788228360315,
+        "reversal_rate": 0.5585585585585585
+      },
+      "agentharm-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.04722573525683684,
+        "reversal_rate": 0.5838509316770186
+      },
+      "agentharm-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.24205017251336555,
+        "reversal_rate": 0.3238095238095238
+      },
+      "agentharm-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.12266109352942285,
+        "reversal_rate": 0.45145631067961167
+      },
+      "agentharm-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.07557271862657325,
+        "reversal_rate": 0.4519774011299435
+      },
+      "atbench-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.01849736336541498,
+        "reversal_rate": 0.4882154882154882
+      },
+      "atbench-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.050596754493002154,
+        "reversal_rate": 0.5310344827586206
+      },
+      "atbench-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.08111261205982276,
+        "reversal_rate": 0.46153846153846156
+      },
+      "atbench-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.031964961169306895,
+        "reversal_rate": 0.5037593984962406
+      },
+      "atbench-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.0495280393014334,
+        "reversal_rate": 0.5035971223021583
+      },
+      "atbench-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.051641086202776486,
+        "reversal_rate": 0.5082644628099173
+      },
+      "injecagent-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.14717325740799564,
+        "reversal_rate": 0.4186851211072664
+      },
+      "injecagent-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.17706588932190714,
+        "reversal_rate": 0.5945945945945946
+      },
+      "injecagent-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.0795234012586716,
+        "reversal_rate": 0.4772727272727273
+      },
+      "injecagent-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.026798185910808053,
+        "reversal_rate": 0.48161764705882354
+      },
+      "injecagent-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.05920559120839465,
+        "reversal_rate": 0.5541666666666667
+      },
+      "rjudge-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.010132632381406057,
+        "reversal_rate": 0.4748858447488584
+      },
+      "rjudge-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.08989647844473682,
+        "reversal_rate": 0.45588235294117646
+      },
+      "rjudge-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.20092457001395506,
+        "reversal_rate": 0.40148698884758366
+      },
+      "rjudge-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.10872395329278198,
+        "reversal_rate": 0.48717948717948717
+      },
+      "swe_agent-synthetic": {
+        "group_a": "failure",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.0684875492631419,
+        "reversal_rate": 0.4536082474226804
+      },
+      "swe_agent-toolbench": {
+        "group_a": "failure",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.08643864361698365,
+        "reversal_rate": 0.5763546798029556
+      },
+      "swe_agent-trail": {
+        "group_a": "failure",
+        "group_b": "failure",
+        "is_within_group": true,
+        "cosine": 0.08984236938808356,
+        "reversal_rate": 0.4508670520231214
+      },
+      "synthetic-toolbench": {
+        "group_a": "injected",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.348130070666102,
+        "reversal_rate": 0.24812030075187969
+      },
+      "synthetic-trail": {
+        "group_a": "injected",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.0022323457218703427,
+        "reversal_rate": 0.49056603773584906
+      },
+      "toolbench-trail": {
+        "group_a": "api_misuse",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.05760192165689432,
+        "reversal_rate": 0.5441860465116279
+      }
+    },
+    "synthetic": {
+      "agentharm-atbench": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.027006724660945416,
+        "reversal_rate": 0.536697247706422
+      },
+      "agentharm-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.039783268561265045,
+        "reversal_rate": 0.5116279069767442
+      },
+      "agentharm-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.023450090541817795,
+        "reversal_rate": 0.5363636363636364
+      },
+      "agentharm-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.005947936380338865,
+        "reversal_rate": 0.5238095238095238
+      },
+      "agentharm-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.23860079230810566,
+        "reversal_rate": 0.3277310924369748
+      },
+      "agentharm-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.14356092779009108,
+        "reversal_rate": 0.4416243654822335
+      },
+      "agentharm-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.08185502517145703,
+        "reversal_rate": 0.41935483870967744
+      },
+      "atbench-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.0009860561627882073,
+        "reversal_rate": 0.5170068027210885
+      },
+      "atbench-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.05371051870573368,
+        "reversal_rate": 0.5559322033898305
+      },
+      "atbench-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.002345228497329849,
+        "reversal_rate": 0.4978165938864629
+      },
+      "atbench-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": -0.011919269589860866,
+        "reversal_rate": 0.525974025974026
+      },
+      "atbench-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.029405631451514723,
+        "reversal_rate": 0.4927536231884058
+      },
+      "atbench-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.034420903524380035,
+        "reversal_rate": 0.5
+      },
+      "injecagent-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.13648339900511283,
+        "reversal_rate": 0.43
+      },
+      "injecagent-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.0995964315810267,
+        "reversal_rate": 0.6008771929824561
+      },
+      "injecagent-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.0069612590825295535,
+        "reversal_rate": 0.5225806451612903
+      },
+      "injecagent-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.010767066056449275,
+        "reversal_rate": 0.4714285714285714
+      },
+      "injecagent-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.021860451411100653,
+        "reversal_rate": 0.5041322314049587
+      },
+      "rjudge-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.03754690402455595,
+        "reversal_rate": 0.49344978165938863
+      },
+      "rjudge-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.06076878700438868,
+        "reversal_rate": 0.4605263157894737
+      },
+      "rjudge-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.25436843441689827,
+        "reversal_rate": 0.40860215053763443
+      },
+      "rjudge-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.0890136422597595,
+        "reversal_rate": 0.4817813765182186
+      },
+      "swe_agent-synthetic": {
+        "group_a": "failure",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.05096361580621667,
+        "reversal_rate": 0.4409448818897638
+      },
+      "swe_agent-toolbench": {
+        "group_a": "failure",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.14855666512003693,
+        "reversal_rate": 0.5688073394495413
+      },
+      "swe_agent-trail": {
+        "group_a": "failure",
+        "group_b": "failure",
+        "is_within_group": true,
+        "cosine": 0.10688009659176097,
+        "reversal_rate": 0.4021164021164021
+      },
+      "synthetic-toolbench": {
+        "group_a": "injected",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.4080033596902908,
+        "reversal_rate": 0.2222222222222222
+      },
+      "synthetic-trail": {
+        "group_a": "injected",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.027109504228653665,
+        "reversal_rate": 0.4961832061068702
+      },
+      "toolbench-trail": {
+        "group_a": "api_misuse",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.07595062680350514,
+        "reversal_rate": 0.5353982300884956
+      }
+    },
+    "toolbench": {
+      "agentharm-atbench": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.1692605604684977,
+        "reversal_rate": 0.5739130434782609
+      },
+      "agentharm-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.168349436514828,
+        "reversal_rate": 0.4581497797356828
+      },
+      "agentharm-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.16390643868294083,
+        "reversal_rate": 0.4279475982532751
+      },
+      "agentharm-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.030285368353484214,
+        "reversal_rate": 0.4934210526315789
+      },
+      "agentharm-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.17715908784677323,
+        "reversal_rate": 0.32456140350877194
+      },
+      "agentharm-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.19356304855949663,
+        "reversal_rate": 0.3865546218487395
+      },
+      "agentharm-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.15997362117116148,
+        "reversal_rate": 0.6510416666666666
+      },
+      "atbench-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.2718481426708199,
+        "reversal_rate": 0.5718562874251497
+      },
+      "atbench-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.11777385064895164,
+        "reversal_rate": 0.5885885885885885
+      },
+      "atbench-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.13061761395914473,
+        "reversal_rate": 0.4267241379310345
+      },
+      "atbench-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.06623726015335055,
+        "reversal_rate": 0.5094339622641509
+      },
+      "atbench-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.2799289775121439,
+        "reversal_rate": 0.632183908045977
+      },
+      "atbench-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.15410413925238323,
+        "reversal_rate": 0.41785714285714287
+      },
+      "injecagent-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.04156146412979726,
+        "reversal_rate": 0.5250737463126843
+      },
+      "injecagent-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.09335079120578564,
+        "reversal_rate": 0.5256410256410257
+      },
+      "injecagent-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": -0.042379095194763725,
+        "reversal_rate": 0.5476190476190477
+      },
+      "injecagent-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.17378946145332844,
+        "reversal_rate": 0.4519774011299435
+      },
+      "injecagent-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.05444868151103322,
+        "reversal_rate": 0.5070921985815603
+      },
+      "rjudge-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.103067598636192,
+        "reversal_rate": 0.5646551724137931
+      },
+      "rjudge-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.4713120593902849,
+        "reversal_rate": 0.18292682926829268
+      },
+      "rjudge-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.7392670541345193,
+        "reversal_rate": 0.2
+      },
+      "rjudge-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.09637787258357179,
+        "reversal_rate": 0.5653710247349824
+      },
+      "swe_agent-synthetic": {
+        "group_a": "failure",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.03750928288881727,
+        "reversal_rate": 0.5263157894736842
+      },
+      "swe_agent-toolbench": {
+        "group_a": "failure",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.1673312504127281,
+        "reversal_rate": 0.5679012345679012
+      },
+      "swe_agent-trail": {
+        "group_a": "failure",
+        "group_b": "failure",
+        "is_within_group": true,
+        "cosine": 0.13661280546577576,
+        "reversal_rate": 0.37373737373737376
+      },
+      "synthetic-toolbench": {
+        "group_a": "injected",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.5454115254962947,
+        "reversal_rate": 0.1511627906976744
+      },
+      "synthetic-trail": {
+        "group_a": "injected",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.08443535965562197,
+        "reversal_rate": 0.5851851851851851
+      },
+      "toolbench-trail": {
+        "group_a": "api_misuse",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.23197774132159166,
+        "reversal_rate": 0.6394557823129252
+      }
+    },
+    "trail": {
+      "agentharm-atbench": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.014452088270386245,
+        "reversal_rate": 0.5095238095238095
+      },
+      "agentharm-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.07123931615721593,
+        "reversal_rate": 0.46788990825688076
+      },
+      "agentharm-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.016876729917398917,
+        "reversal_rate": 0.5373831775700935
+      },
+      "agentharm-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.041158379106982855,
+        "reversal_rate": 0.5157232704402516
+      },
+      "agentharm-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.23390467677854404,
+        "reversal_rate": 0.3220338983050847
+      },
+      "agentharm-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.11639200480489253,
+        "reversal_rate": 0.46733668341708545
+      },
+      "agentharm-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.060832090192979325,
+        "reversal_rate": 0.4378698224852071
+      },
+      "atbench-injecagent": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.02404912060955785,
+        "reversal_rate": 0.5017921146953405
+      },
+      "atbench-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": -0.06820907102220465,
+        "reversal_rate": 0.5384615384615384
+      },
+      "atbench-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.031124662256867986,
+        "reversal_rate": 0.46859903381642515
+      },
+      "atbench-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.0380544580043248,
+        "reversal_rate": 0.5142857142857142
+      },
+      "atbench-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.00405925840961037,
+        "reversal_rate": 0.4942528735632184
+      },
+      "atbench-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.079810623123646,
+        "reversal_rate": 0.5265486725663717
+      },
+      "injecagent-rjudge": {
+        "group_a": "safety",
+        "group_b": "safety",
+        "is_within_group": true,
+        "cosine": 0.2010756996777385,
+        "reversal_rate": 0.4043321299638989
+      },
+      "injecagent-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.10826377500535182,
+        "reversal_rate": 0.5853658536585366
+      },
+      "injecagent-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.07652514803042093,
+        "reversal_rate": 0.4642857142857143
+      },
+      "injecagent-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.03917661915569802,
+        "reversal_rate": 0.46946564885496184
+      },
+      "injecagent-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.007651661883592062,
+        "reversal_rate": 0.5353982300884956
+      },
+      "rjudge-swe_agent": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.05995287713460864,
+        "reversal_rate": 0.5221674876847291
+      },
+      "rjudge-synthetic": {
+        "group_a": "safety",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.08096420936289933,
+        "reversal_rate": 0.4452054794520548
+      },
+      "rjudge-toolbench": {
+        "group_a": "safety",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.2123456654211246,
+        "reversal_rate": 0.359375
+      },
+      "rjudge-trail": {
+        "group_a": "safety",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.09535832611968197,
+        "reversal_rate": 0.4692982456140351
+      },
+      "swe_agent-synthetic": {
+        "group_a": "failure",
+        "group_b": "injected",
+        "is_within_group": false,
+        "cosine": 0.05682619709454685,
+        "reversal_rate": 0.45614035087719296
+      },
+      "swe_agent-toolbench": {
+        "group_a": "failure",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": -0.12864871869027852,
+        "reversal_rate": 0.5707070707070707
+      },
+      "swe_agent-trail": {
+        "group_a": "failure",
+        "group_b": "failure",
+        "is_within_group": true,
+        "cosine": 0.09746690549888246,
+        "reversal_rate": 0.42045454545454547
+      },
+      "synthetic-toolbench": {
+        "group_a": "injected",
+        "group_b": "api_misuse",
+        "is_within_group": false,
+        "cosine": 0.3705217585373787,
+        "reversal_rate": 0.24812030075187969
+      },
+      "synthetic-trail": {
+        "group_a": "injected",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": 0.003210675873438968,
+        "reversal_rate": 0.4956521739130435
+      },
+      "toolbench-trail": {
+        "group_a": "api_misuse",
+        "group_b": "failure",
+        "is_within_group": false,
+        "cosine": -0.0429229565471285,
+        "reversal_rate": 0.5096153846153846
+      }
+    }
+  },
+  "elapsed_seconds": 3449.4355030059814
+}

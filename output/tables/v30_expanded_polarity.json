@@ -1,0 +1,3945 @@
+{
+  "experiment": "v30_expanded_polarity",
+  "n_domains": 12,
+  "domains": [
+    "agentdojo",
+    "agentharm",
+    "apibank",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "stabletoolbench",
+    "swe_agent",
+    "synthetic",
+    "toolace",
+    "toolbench",
+    "trail"
+  ],
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "polarity_table": {
+    "synthetic": {
+      "d_mean": {
+        "trace_length": -0.25906705159315596,
+        "low_diversity": -0.4402874512179951,
+        "repeat_rate": -0.16436278457077208,
+        "mean_arg_length": 0.2301350273761454,
+        "arg_diversity": 0.4156290733460377,
+        "arg_empty_rate": -0.10356281105446215
+      },
+      "d_std": {
+        "trace_length": 0.05550870051635547,
+        "low_diversity": 0.07501208846084922,
+        "repeat_rate": 0.04210683567600279,
+        "mean_arg_length": 0.035277439581279726,
+        "arg_diversity": 0.03038192916655012,
+        "arg_empty_rate": 0.046048252245896336
+      }
+    },
+    "swe_agent": {
+      "d_mean": {
+        "trace_length": 0.5328147203841803,
+        "low_diversity": 0.6935402986546889,
+        "repeat_rate": 0.5901855402981075,
+        "mean_arg_length": 0.2302955758574298,
+        "arg_diversity": -0.5190915893957434,
+        "arg_empty_rate": 0.08038974228434582
+      },
+      "d_std": {
+        "trace_length": 0.01777477326069249,
+        "low_diversity": 0.022639535144191942,
+        "repeat_rate": 0.0340681454659926,
+        "mean_arg_length": 0.018189112785250972,
+        "arg_diversity": 0.008606119121657834,
+        "arg_empty_rate": 0.02228057701587233
+      }
+    },
+    "atbench": {
+      "d_mean": {
+        "trace_length": 2.234766878523887,
+        "low_diversity": -0.023626612474796176,
+        "repeat_rate": -0.018683205578735224,
+        "mean_arg_length": 0.3785496088150568,
+        "arg_diversity": 0.21385261030433445,
+        "arg_empty_rate": -0.48560206358158947
+      },
+      "d_std": {
+        "trace_length": 0.013235814714660274,
+        "low_diversity": 0.10099707949802529,
+        "repeat_rate": 0.006801556228912276,
+        "mean_arg_length": 0.018552144970568243,
+        "arg_diversity": 0.09309887804264323,
+        "arg_empty_rate": 0.08087153287107898
+      }
+    },
+    "agentharm": {
+      "d_mean": {
+        "trace_length": 0.07628156925881097,
+        "low_diversity": 0.0,
+        "repeat_rate": 0.0,
+        "mean_arg_length": 0.05904648986002201,
+        "arg_diversity": -0.08479632657857468,
+        "arg_empty_rate": 0.0
+      },
+      "d_std": {
+        "trace_length": 0.040974825476737996,
+        "low_diversity": 0.0,
+        "repeat_rate": 0.0,
+        "mean_arg_length": 0.14966730553210966,
+        "arg_diversity": 0.06337030787677789,
+        "arg_empty_rate": 0.0
+      }
+    },
+    "rjudge": {
+      "d_mean": {
+        "trace_length": 0.5583633786601271,
+        "low_diversity": 0.18877957072255291,
+        "repeat_rate": 0.19320481727736993,
+        "mean_arg_length": -0.49459681810596967,
+        "arg_diversity": -0.0241090750233881,
+        "arg_empty_rate": 0.352526499629602
+      },
+      "d_std": {
+        "trace_length": 0.04080242092250385,
+        "low_diversity": 0.04188715235491105,
+        "repeat_rate": 0.023924882882034645,
+        "mean_arg_length": 0.04072500050660069,
+        "arg_diversity": 0.09543091959461193,
+        "arg_empty_rate": 0.0661087805836128
+      }
+    },
+    "injecagent": {
+      "d_mean": {
+        "trace_length": 1.040567644001134,
+        "low_diversity": 0.022937244647691573,
+        "repeat_rate": 0.02293724464769158,
+        "mean_arg_length": -0.4600594024190445,
+        "arg_diversity": -1.0405676440011342,
+        "arg_empty_rate": 1.0405676440011342
+      },
+      "d_std": {
+        "trace_length": 0.012812820175853083,
+        "low_diversity": 0.01646605594482473,
+        "repeat_rate": 0.016466055944824733,
+        "mean_arg_length": 0.10608830714265766,
+        "arg_diversity": 0.01281282017585294,
+        "arg_empty_rate": 0.01281282017585363
+      }
+    },
+    "toolbench": {
+      "d_mean": {
+        "trace_length": 1.6564852141099589,
+        "low_diversity": -0.3279373798284049,
+        "repeat_rate": -0.3949970457964887,
+        "mean_arg_length": 0.05716905175543197,
+        "arg_diversity": 0.5875443495435698,
+        "arg_empty_rate": -0.5576196689063107
+      },
+      "d_std": {
+        "trace_length": 0.012815470993225874,
+        "low_diversity": 0.027551421304854943,
+        "repeat_rate": 0.011078827418080915,
+        "mean_arg_length": 0.022478376473004158,
+        "arg_diversity": 0.023772104772120516,
+        "arg_empty_rate": 0.009416695817892605
+      }
+    },
+    "trail": {
+      "d_mean": {
+        "trace_length": -0.3494277003903043,
+        "low_diversity": 0.49686501349940987,
+        "repeat_rate": 1.84241561367999,
+        "mean_arg_length": 1.8583409741887582,
+        "arg_diversity": -1.329680872342383,
+        "arg_empty_rate": -0.19897916733867638
+      },
+      "d_std": {
+        "trace_length": 0.11764818221151081,
+        "low_diversity": 0.19051216558585438,
+        "repeat_rate": 0.10082660436475352,
+        "mean_arg_length": 0.1714216779505178,
+        "arg_diversity": 0.11640308390938313,
+        "arg_empty_rate": 0.17664256658977545
+      }
+    },
+    "agentdojo": {
+      "d_mean": {
+        "trace_length": -0.0015811422597669736,
+        "low_diversity": -0.13592322368247525,
+        "repeat_rate": 0.030228636559875705,
+        "mean_arg_length": 0.0679034031755923,
+        "arg_diversity": -0.612902523861299,
+        "arg_empty_rate": -0.43288087896065025
+      },
+      "d_std": {
+        "trace_length": 0.0027310838592738995,
+        "low_diversity": 0.027840094202432674,
+        "repeat_rate": 0.025533867858608318,
+        "mean_arg_length": 0.00885916156126734,
+        "arg_diversity": 0.02331386045706988,
+        "arg_empty_rate": 0.016387967712437352
+      }
+    },
+    "toolace": {
+      "d_mean": {
+        "trace_length": -0.0016712154223673115,
+        "low_diversity": -0.4294994267697278,
+        "repeat_rate": -0.5209906359110696,
+        "mean_arg_length": -0.009425475481135029,
+        "arg_diversity": -0.8282473376647649,
+        "arg_empty_rate": 0.44497005166748765
+      },
+      "d_std": {
+        "trace_length": 0.04521829123289391,
+        "low_diversity": 0.007160122875962497,
+        "repeat_rate": 0.024472740773301836,
+        "mean_arg_length": 0.015113107069959776,
+        "arg_diversity": 0.062400989321929404,
+        "arg_empty_rate": 0.0734547319853721
+      }
+    },
+    "apibank": {
+      "d_mean": {
+        "trace_length": 0.0649016818504994,
+        "low_diversity": -0.40284279616807533,
+        "repeat_rate": -0.09921867045478239,
+        "mean_arg_length": -0.33275166340226153,
+        "arg_diversity": -1.0735848075369827,
+        "arg_empty_rate": 0.48156093039651154
+      },
+      "d_std": {
+        "trace_length": 0.014307246271304731,
+        "low_diversity": 0.05932901097866169,
+        "repeat_rate": 0.022318484033650027,
+        "mean_arg_length": 0.08422013640691489,
+        "arg_diversity": 0.061907727448519585,
+        "arg_empty_rate": 0.04600433924547863
+      }
+    },
+    "stabletoolbench": {
+      "d_mean": {
+        "trace_length": 1.5301365000153553,
+        "low_diversity": 1.8229664055965233,
+        "repeat_rate": 1.1265335746349725,
+        "mean_arg_length": -1.6897417117005444,
+        "arg_diversity": -1.0879613255483822,
+        "arg_empty_rate": 0.3264525278489532
+      },
+      "d_std": {
+        "trace_length": 0.06950367766081969,
+        "low_diversity": 0.0761374326117198,
+        "repeat_rate": 0.07857775467741238,
+        "mean_arg_length": 0.04153776811607963,
+        "arg_diversity": 0.08482721583242164,
+        "arg_empty_rate": 0.04532978875281671
+      }
+    }
+  },
+  "reversal_matrix": {
+    "agentdojo": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "stabletoolbench": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "toolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "trail": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      }
+    },
+    "agentharm": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "stabletoolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "trail": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      }
+    },
+    "apibank": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "stabletoolbench": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "trail": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      }
+    },
+    "atbench": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "stabletoolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "toolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "trail": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      }
+    },
+    "injecagent": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "stabletoolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "trail": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      }
+    },
+    "rjudge": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "stabletoolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolbench": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "trail": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      }
+    },
+    "stabletoolbench": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "stabletoolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolbench": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "trail": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      }
+    },
+    "swe_agent": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "stabletoolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolbench": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "trail": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      }
+    },
+    "synthetic": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "atbench": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "injecagent": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "rjudge": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "stabletoolbench": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": true,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "swe_agent": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "toolbench": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "trail": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      }
+    },
+    "toolace": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "stabletoolbench": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "trail": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      }
+    },
+    "toolbench": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": true
+      },
+      "stabletoolbench": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": true
+      },
+      "toolbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "trail": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      }
+    },
+    "trail": {
+      "agentdojo": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "apibank": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "atbench": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "injecagent": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "rjudge": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "stabletoolbench": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": true,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "swe_agent": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "synthetic": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "toolace": {
+        "trace_length": false,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      },
+      "toolbench": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true,
+        "mean_arg_length": false,
+        "arg_diversity": true,
+        "arg_empty_rate": false
+      },
+      "trail": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false,
+        "mean_arg_length": false,
+        "arg_diversity": false,
+        "arg_empty_rate": false
+      }
+    }
+  },
+  "semantic_group_analysis_5": {
+    "within_group_pairs": 9,
+    "within_group_reversals": 11,
+    "within_group_rate": 0.2037037037037037,
+    "between_group_pairs": 57,
+    "between_group_reversals": 90,
+    "between_group_rate": 0.2631578947368421
+  },
+  "semantic_group_analysis_4": {
+    "within_group_pairs": 15,
+    "within_group_reversals": 17,
+    "within_group_rate": 0.18888888888888888,
+    "between_group_pairs": 51,
+    "between_group_reversals": 84,
+    "between_group_rate": 0.27450980392156865
+  },
+  "wilcoxon_tests": {
+    "agentdojo->agentharm": {
+      "trace_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.00013769841293572718
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "mean_arg_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0030908917489393273
+      },
+      "arg_diversity": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.051257705043140867
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      }
+    },
+    "agentdojo->apibank": {
+      "trace_length": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.00013462772235082256
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.05374253125938879
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0035397979528032975
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.022512249191784222
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.6586325775204086
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.20909048306328692
+      }
+    },
+    "agentdojo->atbench": {
+      "trace_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.003529658245688127
+      },
+      "low_diversity": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0015467297387530196
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0004099913500793413
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.025869162684532866
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.1330592980571324
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.21001616731177972
+      }
+    },
+    "agentdojo->injecagent": {
+      "trace_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.001652965568713114
+      },
+      "low_diversity": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.002755459440601616
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0010061046161656503
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.03032294598358827
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.6377534879582426
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.45055934794467656
+      }
+    },
+    "agentdojo->rjudge": {
+      "trace_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0008686320140295699
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.026400689826584917
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0055715004541125
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0333008880725527
+      },
+      "arg_diversity": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.01381421476704484
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.15231820705383295
+      }
+    },
+    "agentdojo->stabletoolbench": {
+      "trace_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0022566086047953147
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.24677224046376003
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.035591120800411456
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.11503515110553338
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.6658195801904573
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.14062770922069456
+      }
+    },
+    "agentdojo->swe_agent": {
+      "trace_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0008754822878065788
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.09401453130686949
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.01774169198387427
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.015740911848610286
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.31817276722423476
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.03444511289770238
+      }
+    },
+    "agentdojo->synthetic": {
+      "trace_length": {
+        "p_value": 0.75,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.00041927730363661
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.05878339632984462
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.004178377673490218
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.015367035017754915
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.2544901937987533
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.045258692450146486
+      }
+    },
+    "agentdojo->toolace": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 8.328860223594195e-05
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.058328938121808144
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.016180797971459052
+      },
+      "mean_arg_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0005381376462535455
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.5064556117134981
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.1919670896289741
+      }
+    },
+    "agentdojo->toolbench": {
+      "trace_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.00264227180787097
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.044187175831812996
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.012144561118765685
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.004049553208675667
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.36056276971421175
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.24144776559191294
+      }
+    },
+    "agentdojo->trail": {
+      "trace_length": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0005207225893850289
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.06317805790930552
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.05824514923579621
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.12603325443973282
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.8154265730326377
+      },
+      "arg_empty_rate": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.08404024282114579
+      }
+    },
+    "agentharm->apibank": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.004691842285006432
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "mean_arg_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.02965009812629904
+      },
+      "arg_diversity": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.09329875594770375
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->atbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.17099572513250602
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "mean_arg_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.02042363320817235
+      },
+      "arg_diversity": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.017591323191239273
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->injecagent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.07888752935511129
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "mean_arg_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.03536469469225976
+      },
+      "arg_diversity": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.08754335255160707
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->rjudge": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.04092149893371853
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "mean_arg_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.029814906731929786
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.008081940693228542
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->stabletoolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.11489996301858056
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "mean_arg_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.09897440950153429
+      },
+      "arg_diversity": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0894948211190812
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->swe_agent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.04124712585412159
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "mean_arg_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.010882766833396784
+      },
+      "arg_diversity": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.044465477321178136
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->synthetic": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.022027386676203544
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "mean_arg_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.014516333134754726
+      },
+      "arg_diversity": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.037149219282559376
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->toolace": {
+      "trace_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0010745130649923544
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "mean_arg_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0006906370428081456
+      },
+      "arg_diversity": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.07380896319128223
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->toolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.1260228409012161
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "mean_arg_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.002724994552493251
+      },
+      "arg_diversity": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0484715504442487
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->trail": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.021841368622232706
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      },
+      "mean_arg_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.09312958933940979
+      },
+      "arg_diversity": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.11850846199432542
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0
+      }
+    },
+    "apibank->atbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.14491571050379629
+      },
+      "low_diversity": {
+        "p_value": 0.75,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.015507721169404446
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0017472012184200222
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.1257860535469786
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.23397153389659361
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.23540336446492635
+      }
+    },
+    "apibank->injecagent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0676701233543503
+      },
+      "low_diversity": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.009240793105832387
+      },
+      "repeat_rate": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.002612871902741847
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.15209086398057303
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.1164094511198908
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.5016396163623439
+      }
+    },
+    "apibank->rjudge": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.03650977393909655
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0765949416720876
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.018794818720740316
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.16277387119651754
+      },
+      "arg_diversity": {
+        "p_value": 0.75,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.029561163596859452
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.16749472077017144
+      }
+    },
+    "apibank->stabletoolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0989034869627314
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.7325553548201981
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.11340470567090004
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.564018876788336
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.1627822540117023
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.15602071329613762
+      }
+    },
+    "apibank->swe_agent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.03461540470257748
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.27874826760404453
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.05871470573509311
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.07535224502540037
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.5577892287228171
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.038015944506656955
+      }
+    },
+    "apibank->synthetic": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.016400759966763743
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.17572821581685116
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.015854621088114678
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.07521212512841004
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.4475070678720237
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.049928653831502634
+      }
+    },
+    "apibank->toolace": {
+      "trace_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0007355569803529314
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.17341089047094507
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.051925160550152866
+      },
+      "mean_arg_length": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0024230047476780318
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.8898629852220218
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.21429517820254318
+      }
+    },
+    "apibank->toolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.10768686587117277
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.13372773859189113
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.03930635388576168
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.019862883904706266
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.6305514067024324
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.26889484246784534
+      }
+    },
+    "apibank->trail": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.02350275129484795
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.20076508012939442
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.1848222654657529
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.6042550237727123
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.4344497968056151
+      },
+      "arg_empty_rate": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.08783348905311467
+      }
+    },
+    "atbench->injecagent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 2.32525764227375
+      },
+      "low_diversity": {
+        "p_value": 0.5,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0004985950767226998
+      },
+      "repeat_rate": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0003882498772368968
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.17223677523096304
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.22200268393168412
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.5060676237909835
+      }
+    },
+    "atbench->rjudge": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.24728664979549
+      },
+      "low_diversity": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.005500573979202619
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0036072204454075316
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.1866359932919617
+      },
+      "arg_diversity": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.00484621064477216
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.16628472154003635
+      }
+    },
+    "atbench->stabletoolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 3.419111093477065
+      },
+      "low_diversity": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.03979593186595637
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.02083799755917932
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.6402696921327445
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.22628841354222473
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.16039249287457566
+      }
+    },
+    "atbench->swe_agent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.190871204714364
+      },
+      "low_diversity": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.015244040888939278
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.011154439476185635
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.08739473966852886
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.11140259848174412
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.03972570494897287
+      }
+    },
+    "atbench->synthetic": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.5796786057906121
+      },
+      "low_diversity": {
+        "p_value": 0.75,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.007425879310265889
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0033464899064124163
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.08657410300695338
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0890299382820629
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.04695086064464397
+      }
+    },
+    "atbench->toolace": {
+      "trace_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0032426916272050486
+      },
+      "low_diversity": {
+        "p_value": 0.75,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.010819180457416476
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.009576672331509791
+      },
+      "mean_arg_length": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0033550899997164103
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.17417221994241186
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.22148496845213997
+      }
+    },
+    "atbench->toolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 3.7017198482784237
+      },
+      "low_diversity": {
+        "p_value": 0.75,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.010515471301173654
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.007307665423238778
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.02199171254136444
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.12680808283999684
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.2714186798753931
+      }
+    },
+    "atbench->trail": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.7793649159679873
+      },
+      "low_diversity": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.012257268686433558
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.03377499409790794
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.7031584731289938
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.29032578211935756
+      },
+      "arg_empty_rate": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.08835954986790817
+      }
+    },
+    "injecagent->rjudge": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.5815061011782888
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.0036573550775958405
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.004066203707905335
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.23144858422668116
+      },
+      "arg_diversity": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.02400882362519641
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.366026040651292
+      }
+    },
+    "injecagent->stabletoolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.5924900688924988
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.042961681443056586
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.027132681029583577
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.7733468335931838
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.1330597357998868
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.3395777614114826
+      }
+    },
+    "injecagent->swe_agent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.5543009194485645
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.016235607477722538
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.013862330204189961
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.1050735491383098
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.540039824299502
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.08355383908826962
+      }
+    },
+    "injecagent->synthetic": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.2688942602762106
+      },
+      "low_diversity": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.011247063838232449
+      },
+      "repeat_rate": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.003705320260826931
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.1093703485973485
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.43213226910034086
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.1075489652712454
+      }
+    },
+    "injecagent->toolace": {
+      "trace_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.002250130305831287
+      },
+      "low_diversity": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.009804963608750434
+      },
+      "repeat_rate": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.011962679099186727
+      },
+      "mean_arg_length": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.005755926986736235
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.861407932409394
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.46339186603054133
+      }
+    },
+    "injecagent->toolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.7238289550041632
+      },
+      "low_diversity": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0074628995980727
+      },
+      "repeat_rate": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.00907384638056361
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.02405945491918533
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.6115421713867623
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.5803600967175243
+      }
+    },
+    "injecagent->trail": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.36503388763596006
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.01452929567438386
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.04333564984033156
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.8607457443795398
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.3821435113416942
+      },
+      "arg_empty_rate": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.20483996922458814
+      }
+    },
+    "rjudge->stabletoolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.8561299750291878
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.3410078894989934
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.2159331951299652
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.8340499354191433
+      },
+      "arg_diversity": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.021682294187006096
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.11471243996085383
+      }
+    },
+    "rjudge->swe_agent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.29691406958125954
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.13001343211289706
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.11334024707508811
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.11388201125480234
+      },
+      "arg_diversity": {
+        "p_value": 0.75,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.013215740617879897
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.028366352913725617
+      }
+    },
+    "rjudge->synthetic": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.14239333406689555
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0800130557972026
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.03146790922582068
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.11525655122631402
+      },
+      "arg_diversity": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.012908918725402995
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.03847484298945265
+      }
+    },
+    "rjudge->toolace": {
+      "trace_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0021652599145905054
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.08125704145296016
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.10085972169772149
+      },
+      "mean_arg_length": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.005276773131912066
+      },
+      "arg_diversity": {
+        "p_value": 0.75,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.025200264336801365
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.15361291389387213
+      }
+    },
+    "rjudge->toolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.9252657761437028
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0623068570395095
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.07639567965585733
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.027364262974043648
+      },
+      "arg_diversity": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.012192995046452534
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.19596203585289776
+      }
+    },
+    "rjudge->trail": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.1999059561584291
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.08611865195966663
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.355200839147409
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.9239734149426236
+      },
+      "arg_diversity": {
+        "p_value": 0.75,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.04110933669442896
+      },
+      "arg_empty_rate": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.08013942423821006
+      }
+    },
+    "stabletoolbench->swe_agent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.8140926395525598
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.2660184403000976
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.6663395188446831
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.3891834291453269
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.5640868024110951
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.02724320697697069
+      }
+    },
+    "stabletoolbench->synthetic": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.3942158421398883
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.8083367372825391
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.18473861996079663
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.38740507935156154
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.4505614274700171
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.03206023845163539
+      }
+    },
+    "stabletoolbench->toolace": {
+      "trace_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.002022344239244448
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.7825644773930903
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.5870393936560334
+      },
+      "mean_arg_length": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.015300371811699428
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.9005799726031595
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.14799185642014442
+      }
+    },
+    "stabletoolbench->toolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 2.534487706059093
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.5967323600990845
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.44507255193765666
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0975326149136835
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.6393857702558576
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.18201722917796723
+      }
+    },
+    "stabletoolbench->trail": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.5395528217141169
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.9187213460194649
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 2.0808803691131277
+      },
+      "mean_arg_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -3.135323833373235
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.437386364747464
+      },
+      "arg_empty_rate": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.06821951326217006
+      }
+    },
+    "swe_agent->synthetic": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.1387991442426917
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.3070432868340058
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.09809089091433403
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.05293169260628836
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.21598366758337204
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.007554324670173962
+      }
+    },
+    "swe_agent->toolace": {
+      "trace_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0008014184977426335
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.29774788537440156
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.30681711151939256
+      },
+      "mean_arg_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0021739674793704498
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.4302052341772158
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.03696664202734336
+      }
+    },
+    "swe_agent->toolbench": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.8825768504298309
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.22707157770804345
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.2328312538619192
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.013216031503132455
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.30489024274258536
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.04478788255164603
+      }
+    },
+    "swe_agent->trail": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.18451442904510915
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.3482732311315859
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.086524653953023
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.4301494563688519
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.6912254796951721
+      },
+      "arg_empty_rate": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.018092724610862213
+      }
+    },
+    "synthetic->toolace": {
+      "trace_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.001359692467844507
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.18872403533446916
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.08460299596513676
+      },
+      "mean_arg_length": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.0026986202741010636
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.34582470495942813
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.04270154136878893
+      }
+    },
+    "synthetic->toolbench": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.4286379311696289
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.14338082577039038
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.06445639793874525
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.012363750278249507
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.24360591270682255
+      },
+      "arg_empty_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.05752819943611687
+      }
+    },
+    "synthetic->trail": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.08399877765216551
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.2317489626836979
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.29934817081641624
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.43152135584203405
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.555702536746147
+      },
+      "arg_empty_rate": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.021890956455145615
+      }
+    },
+    "toolace->toolbench": {
+      "trace_length": {
+        "p_value": 0.625,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.003347805445378859
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.14103875085126408
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.20606062967969782
+      },
+      "mean_arg_length": {
+        "p_value": 0.375,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.00020223227208086378
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.48514890976126895
+      },
+      "arg_empty_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.24849417818696592
+      }
+    },
+    "toolace->trail": {
+      "trace_length": {
+        "p_value": 0.75,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.004249577417244595
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.21293155237047087
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.9618098000689029
+      },
+      "mean_arg_length": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.019388355623265793
+      },
+      "arg_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 1.1044942184913247
+      },
+      "arg_empty_rate": {
+        "p_value": 0.25,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.08609175732196238
+      }
+    },
+    "toolbench->trail": {
+      "trace_length": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.5798491813090282
+      },
+      "low_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.1625336351779498
+      },
+      "repeat_rate": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.7286515306230482
+      },
+      "mean_arg_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.10383902108437397
+      },
+      "arg_diversity": {
+        "p_value": 0.125,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": -0.7800789859379625
+      },
+      "arg_empty_rate": {
+        "p_value": 0.875,
+        "significant": "False",
+        "n_pairs": 3,
+        "mean_product": 0.10940678755512141
+      }
+    }
+  }
+}

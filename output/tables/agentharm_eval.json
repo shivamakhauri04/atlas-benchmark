@@ -1,0 +1,168 @@
+{
+  "dataset": "agentharm",
+  "description": "Real benign/harmful labels from AgentHarm benchmark",
+  "n_traces": 352,
+  "n_benign": 176,
+  "n_harmful": 176,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "per_seed": [
+    {
+      "seed": 42,
+      "n_cal": 70,
+      "n_test": 71,
+      "n_cal_anomalous": 41,
+      "n_test_anomalous": 33,
+      "tool_only": {
+        "auroc": 0.5,
+        "f1": 0.0,
+        "coverage": 0.9736842105263158,
+        "recall": 0.0,
+        "tau": 2.2214859758104595,
+        "scorer": "Tool-Only Encoder",
+        "seed": 42
+      },
+      "consequence_aware": {
+        "auroc": 0.5095693779904307,
+        "f1": 0.1111111111111111,
+        "coverage": 0.9736842105263158,
+        "recall": 0.06060606060606061,
+        "tau": 3.565110445022583,
+        "scorer": "Consequence-Aware Encoder",
+        "seed": 42
+      }
+    },
+    {
+      "seed": 123,
+      "n_cal": 70,
+      "n_test": 71,
+      "n_cal_anomalous": 41,
+      "n_test_anomalous": 33,
+      "tool_only": {
+        "auroc": 0.46929824561403505,
+        "f1": 0.1111111111111111,
+        "coverage": 0.9736842105263158,
+        "recall": 0.06060606060606061,
+        "tau": 2.8266289234161377,
+        "scorer": "Tool-Only Encoder",
+        "seed": 123
+      },
+      "consequence_aware": {
+        "auroc": 0.5179425837320575,
+        "f1": 0.10810810810810811,
+        "coverage": 0.9473684210526315,
+        "recall": 0.06060606060606061,
+        "tau": 3.3144943714141846,
+        "scorer": "Consequence-Aware Encoder",
+        "seed": 123
+      }
+    },
+    {
+      "seed": 456,
+      "n_cal": 70,
+      "n_test": 71,
+      "n_cal_anomalous": 41,
+      "n_test_anomalous": 33,
+      "tool_only": {
+        "auroc": 0.5007974481658692,
+        "f1": 0.0,
+        "coverage": 0.9736842105263158,
+        "recall": 0.0,
+        "tau": 2.1975771631513323,
+        "scorer": "Tool-Only Encoder",
+        "seed": 456
+      },
+      "consequence_aware": {
+        "auroc": 0.5151515151515151,
+        "f1": 0.1111111111111111,
+        "coverage": 0.9736842105263158,
+        "recall": 0.06060606060606061,
+        "tau": 3.0875542163848877,
+        "scorer": "Consequence-Aware Encoder",
+        "seed": 456
+      }
+    },
+    {
+      "seed": 789,
+      "n_cal": 70,
+      "n_test": 71,
+      "n_cal_anomalous": 41,
+      "n_test_anomalous": 33,
+      "tool_only": {
+        "auroc": 0.4529505582137161,
+        "f1": 0.0,
+        "coverage": 0.9736842105263158,
+        "recall": 0.0,
+        "tau": 2.792180551801409,
+        "scorer": "Tool-Only Encoder",
+        "seed": 789
+      },
+      "consequence_aware": {
+        "auroc": 0.4872408293460925,
+        "f1": 0.0,
+        "coverage": 0.9736842105263158,
+        "recall": 0.0,
+        "tau": 2.917519167491365,
+        "scorer": "Consequence-Aware Encoder",
+        "seed": 789
+      }
+    },
+    {
+      "seed": 1024,
+      "n_cal": 70,
+      "n_test": 71,
+      "n_cal_anomalous": 41,
+      "n_test_anomalous": 33,
+      "tool_only": {
+        "auroc": 0.5279106858054227,
+        "f1": 0.0,
+        "coverage": 0.9736842105263158,
+        "recall": 0.0,
+        "tau": 2.218239947727748,
+        "scorer": "Tool-Only Encoder",
+        "seed": 1024
+      },
+      "consequence_aware": {
+        "auroc": 0.49800637958532695,
+        "f1": 0.0,
+        "coverage": 0.9736842105263158,
+        "recall": 0.0,
+        "tau": 2.853595229557581,
+        "scorer": "Consequence-Aware Encoder",
+        "seed": 1024
+      }
+    }
+  ],
+  "aggregate": {
+    "tool_only_auroc": {
+      "mean": 0.4901913875598086,
+      "std": 0.026286291524191537,
+      "ci_lower": 0.46602272727272726,
+      "ci_upper": 0.5114832535885168,
+      "n_obs": 5
+    },
+    "consequence_auroc": {
+      "mean": 0.5055821371610845,
+      "std": 0.011437197202109936,
+      "ci_lower": 0.4955342902711323,
+      "ci_upper": 0.5151515151515151,
+      "n_obs": 5
+    },
+    "auroc_paired_test": {
+      "n_pairs": 5,
+      "difference_mean": 0.015390749601275932,
+      "difference_std": 0.02664431730588683,
+      "test_used": "bootstrap_ci",
+      "statistic": NaN,
+      "p_value": NaN,
+      "difference_ci_lower": -0.009170653907496018,
+      "difference_ci_upper": 0.03716108452950558,
+      "significant_by_ci": false
+    }
+  }
+}

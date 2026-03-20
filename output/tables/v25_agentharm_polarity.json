@@ -1,0 +1,47 @@
+{
+  "domain": "agentharm",
+  "n_normal": 176,
+  "n_anomalous": 176,
+  "description": "Paired benign/harmful traces using same target tool sequences",
+  "prediction": "trace_length should NOT invert (same tools -> similar lengths)",
+  "properties": {
+    "trace_length": {
+      "normal_mean": 3.710227272727273,
+      "normal_std": 1.2929476341719117,
+      "anomalous_mean": 3.7045454545454546,
+      "anomalous_std": 1.2894598138640256,
+      "cohens_d": -0.004387881157988812,
+      "cohens_d_magnitude": "negligible",
+      "ks_statistic": 0.005681818181818182,
+      "ks_p_value": 0.9999999999999998
+    },
+    "low_diversity": {
+      "normal_mean": 0.0,
+      "normal_std": 0.0,
+      "anomalous_mean": 0.0,
+      "anomalous_std": 0.0,
+      "cohens_d": NaN,
+      "cohens_d_magnitude": "undefined",
+      "ks_statistic": 0.0,
+      "ks_p_value": 1.0
+    },
+    "repeat_rate": {
+      "normal_mean": 0.0,
+      "normal_std": 0.0,
+      "anomalous_mean": 0.0,
+      "anomalous_std": 0.0,
+      "cohens_d": NaN,
+      "cohens_d_magnitude": "undefined",
+      "ks_statistic": 0.0,
+      "ks_p_value": 1.0
+    }
+  },
+  "vocabulary": {
+    "unique_normal": 76,
+    "unique_harmful": 76,
+    "overlap": 71,
+    "overlap_pct": 87.65432098765432
+  },
+  "prediction_verdict": "CONFIRMED: trace_length does NOT invert (negligible d)",
+  "elapsed_seconds": 7.5
+}

@@ -1,0 +1,411 @@
+{
+  "experiment": "v31_trail_excluded_sensitivity",
+  "features": [
+    "trace_length",
+    "distinct_tools",
+    "repetition_rate"
+  ],
+  "domain_stats": {
+    "synthetic": {
+      "n_traces": 2000,
+      "n_normal": 1715,
+      "n_anomalous": 285,
+      "d_vector": [
+        -0.32253353254233763,
+        0.08664546646938336,
+        -0.5275576909131642
+      ]
+    },
+    "swe_agent": {
+      "n_traces": 5000,
+      "n_normal": 1011,
+      "n_anomalous": 3989,
+      "d_vector": [
+        0.5241125980511547,
+        -0.18463086301469311,
+        0.704237603681384
+      ]
+    },
+    "trail": {
+      "n_traces": 148,
+      "n_normal": 5,
+      "n_anomalous": 143,
+      "d_vector": [
+        0.5048631165534232,
+        0.3456755040028911,
+        0.6423639154775912
+      ]
+    },
+    "atbench": {
+      "n_traces": 499,
+      "n_normal": 249,
+      "n_anomalous": 250,
+      "d_vector": [
+        2.2254076110968417,
+        2.1456101988274963,
+        -0.07724852955054862
+      ]
+    },
+    "rjudge": {
+      "n_traces": 522,
+      "n_normal": 256,
+      "n_anomalous": 266,
+      "d_vector": [
+        0.6060725304352405,
+        0.6493696021896432,
+        0.14321735324516957
+      ]
+    },
+    "agentharm": {
+      "n_traces": 352,
+      "n_normal": 176,
+      "n_anomalous": 176,
+      "d_vector": [
+        -0.004387881157988812,
+        -0.004387881157988812,
+        0.0
+      ]
+    },
+    "injecagent": {
+      "n_traces": 2125,
+      "n_normal": 17,
+      "n_anomalous": 2108,
+      "d_vector": [
+        1.0364636025900722,
+        1.0344968165201063,
+        0.030926125092301936
+      ]
+    },
+    "toolbench": {
+      "n_traces": 5000,
+      "n_normal": 4512,
+      "n_anomalous": 488,
+      "d_vector": [
+        1.670145432881678,
+        1.8517135044122521,
+        -0.30189991659511417
+      ]
+    }
+  },
+  "full_analysis": {
+    "within_flips": 1,
+    "within_total": 9,
+    "within_rate": 0.1111111111111111,
+    "between_flips": 16,
+    "between_total": 37,
+    "between_rate": 0.43243243243243246,
+    "gap_ratio": 3.891891891891892
+  },
+  "full_pair_details": {
+    "agentharm-atbench": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "agentharm-injecagent": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "agentharm-rjudge": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "agentharm-swe_agent": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "agentharm-synthetic": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "agentharm-toolbench": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "agentharm-trail": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "atbench-injecagent": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "atbench-rjudge": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "atbench-swe_agent": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 2,
+      "flip_rate": 0.5
+    },
+    "atbench-synthetic": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 1,
+      "flip_rate": 1.0
+    },
+    "atbench-toolbench": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "atbench-trail": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "injecagent-rjudge": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "injecagent-swe_agent": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 2,
+      "flip_rate": 0.5
+    },
+    "injecagent-synthetic": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 1,
+      "flip_rate": 1.0
+    },
+    "injecagent-toolbench": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "injecagent-trail": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "rjudge-swe_agent": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 3,
+      "flip_rate": 0.3333333333333333
+    },
+    "rjudge-synthetic": {
+      "is_within": false,
+      "n_flipped": 2,
+      "n_comparable": 2,
+      "flip_rate": 1.0
+    },
+    "rjudge-toolbench": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 3,
+      "flip_rate": 0.3333333333333333
+    },
+    "rjudge-trail": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 3,
+      "flip_rate": 0.0
+    },
+    "swe_agent-synthetic": {
+      "is_within": false,
+      "n_flipped": 2,
+      "n_comparable": 2,
+      "flip_rate": 1.0
+    },
+    "swe_agent-toolbench": {
+      "is_within": false,
+      "n_flipped": 2,
+      "n_comparable": 3,
+      "flip_rate": 0.6666666666666666
+    },
+    "swe_agent-trail": {
+      "is_within": true,
+      "n_flipped": 1,
+      "n_comparable": 3,
+      "flip_rate": 0.3333333333333333
+    },
+    "synthetic-toolbench": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 2,
+      "flip_rate": 0.5
+    },
+    "synthetic-trail": {
+      "is_within": false,
+      "n_flipped": 2,
+      "n_comparable": 2,
+      "flip_rate": 1.0
+    },
+    "toolbench-trail": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 3,
+      "flip_rate": 0.3333333333333333
+    }
+  },
+  "no_trail_analysis": {
+    "within_flips": 0,
+    "within_total": 6,
+    "within_rate": 0.0,
+    "between_flips": 13,
+    "between_total": 25,
+    "between_rate": 0.52,
+    "gap_ratio": Infinity
+  },
+  "no_trail_pair_details": {
+    "agentharm-atbench": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "agentharm-injecagent": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "agentharm-rjudge": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "agentharm-swe_agent": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "agentharm-synthetic": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "agentharm-toolbench": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 0,
+      "flip_rate": 0.0
+    },
+    "atbench-injecagent": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "atbench-rjudge": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "atbench-swe_agent": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 2,
+      "flip_rate": 0.5
+    },
+    "atbench-synthetic": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 1,
+      "flip_rate": 1.0
+    },
+    "atbench-toolbench": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "injecagent-rjudge": {
+      "is_within": true,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "injecagent-swe_agent": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 2,
+      "flip_rate": 0.5
+    },
+    "injecagent-synthetic": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 1,
+      "flip_rate": 1.0
+    },
+    "injecagent-toolbench": {
+      "is_within": false,
+      "n_flipped": 0,
+      "n_comparable": 2,
+      "flip_rate": 0.0
+    },
+    "rjudge-swe_agent": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 3,
+      "flip_rate": 0.3333333333333333
+    },
+    "rjudge-synthetic": {
+      "is_within": false,
+      "n_flipped": 2,
+      "n_comparable": 2,
+      "flip_rate": 1.0
+    },
+    "rjudge-toolbench": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 3,
+      "flip_rate": 0.3333333333333333
+    },
+    "swe_agent-synthetic": {
+      "is_within": false,
+      "n_flipped": 2,
+      "n_comparable": 2,
+      "flip_rate": 1.0
+    },
+    "swe_agent-toolbench": {
+      "is_within": false,
+      "n_flipped": 2,
+      "n_comparable": 3,
+      "flip_rate": 0.6666666666666666
+    },
+    "synthetic-toolbench": {
+      "is_within": false,
+      "n_flipped": 1,
+      "n_comparable": 2,
+      "flip_rate": 0.5
+    }
+  },
+  "trail_sensitivity": {
+    "trail_involving_flip_rate": 0.26666666666666666,
+    "non_trail_flip_rate": 0.41935483870967744
+  },
+  "elapsed_seconds": 42.02391076087952
+}

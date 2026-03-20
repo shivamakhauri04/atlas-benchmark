@@ -1,0 +1,1905 @@
+{
+  "experiment": "e1_dual_grouping_polarity",
+  "n_domains": 9,
+  "domains": [
+    "agentdojo",
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic",
+    "toolbench",
+    "trail"
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024,
+    2048,
+    4096,
+    8192,
+    16384,
+    32768
+  ],
+  "d_values": {
+    "synthetic": {
+      "trace_length": -0.3225,
+      "low_diversity": -0.5276,
+      "repeat_rate": -0.1582
+    },
+    "swe_agent": {
+      "trace_length": 0.5241,
+      "low_diversity": 0.7042,
+      "repeat_rate": 0.6048
+    },
+    "atbench": {
+      "trace_length": 2.2254,
+      "low_diversity": -0.0772,
+      "repeat_rate": -0.0665
+    },
+    "agentharm": {
+      "trace_length": -0.0044,
+      "low_diversity": 0.0,
+      "repeat_rate": 0.0
+    },
+    "rjudge": {
+      "trace_length": 0.6061,
+      "low_diversity": 0.1432,
+      "repeat_rate": 0.13
+    },
+    "injecagent": {
+      "trace_length": 1.0365,
+      "low_diversity": 0.0309,
+      "repeat_rate": 0.0309
+    },
+    "toolbench": {
+      "trace_length": 1.6701,
+      "low_diversity": -0.3019,
+      "repeat_rate": -0.3776
+    },
+    "trail": {
+      "trace_length": -0.329,
+      "low_diversity": 0.5077,
+      "repeat_rate": 1.8436
+    },
+    "agentdojo": {
+      "trace_length": 0.0119,
+      "low_diversity": -0.1324,
+      "repeat_rate": 0.0331
+    }
+  },
+  "results": {
+    "4group": {
+      "grouping": {
+        "injected": [
+          "synthetic"
+        ],
+        "failure": [
+          "swe_agent",
+          "trail"
+        ],
+        "safety": [
+          "atbench",
+          "injecagent",
+          "agentdojo",
+          "agentharm",
+          "rjudge"
+        ],
+        "api_misuse": [
+          "toolbench"
+        ]
+      },
+      "n_groups": 4,
+      "multi_dataset_groups": [
+        "failure",
+        "safety"
+      ],
+      "analysis": {
+        "within_group": {
+          "n_pairs": 11,
+          "n_feature_comparisons": 33,
+          "n_reversals": 2,
+          "rate": 0.0606
+        },
+        "between_group": {
+          "n_pairs": 25,
+          "n_feature_comparisons": 75,
+          "n_reversals": 23,
+          "rate": 0.3067
+        },
+        "gap_ratio": 5.1
+      },
+      "within_pairs_detail": [
+        {
+          "source": "agentdojo",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": -0.004387881157988812,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": 0.0,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": 0.0,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": 2.2254076110968417,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": -0.07724852955054862,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": -0.06649236103274303,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "injecagent",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": 1.0364636025900722,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": 0.6060725304352405,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": 0.14321735324516957,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": 0.12998575603909185,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": 2.2254076110968417,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": -0.07724852955054862,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": -0.06649236103274303,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "injecagent",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": 1.0364636025900722,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": 0.6060725304352405,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": 0.14321735324516957,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": 0.12998575603909185,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "injecagent",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": 1.0364636025900722,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": 0.6060725304352405,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": 0.14321735324516957,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": 0.12998575603909185,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "injecagent",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 1.0364636025900722,
+              "d_target": 0.6060725304352405,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.030926125092301936,
+              "d_target": 0.14321735324516957,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.030926125092301936,
+              "d_target": 0.12998575603909185,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "swe_agent",
+          "target": "trail",
+          "source_group": "failure",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 0.5241125980511547,
+              "d_target": -0.32904045280223676,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.704237603681384,
+              "d_target": 0.5077222085251328,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.6048269779590171,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        }
+      ],
+      "between_pairs_detail": [
+        {
+          "source": "agentdojo",
+          "target": "swe_agent",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": 0.5241125980511547,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": 0.704237603681384,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": 0.6048269779590171,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "synthetic",
+          "source_group": "safety",
+          "target_group": "injected",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": -0.32253353254233763,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": -0.5275576909131642,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": -0.1581779808601928,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "toolbench",
+          "source_group": "safety",
+          "target_group": "api_misuse",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": -0.30189991659511417,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": -0.3775647859710958,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "trail",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": -0.32904045280223676,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": 0.5077222085251328,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "swe_agent",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": 0.5241125980511547,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": 0.704237603681384,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": 0.6048269779590171,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "synthetic",
+          "source_group": "safety",
+          "target_group": "injected",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": -0.32253353254233763,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": -0.5275576909131642,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": -0.1581779808601928,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "toolbench",
+          "source_group": "safety",
+          "target_group": "api_misuse",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": -0.30189991659511417,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": -0.3775647859710958,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "trail",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": -0.32904045280223676,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": 0.5077222085251328,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "swe_agent",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": 0.5241125980511547,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": 0.704237603681384,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": 0.6048269779590171,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "synthetic",
+          "source_group": "safety",
+          "target_group": "injected",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": -0.32253353254233763,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": -0.5275576909131642,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": -0.1581779808601928,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "toolbench",
+          "source_group": "safety",
+          "target_group": "api_misuse",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": -0.30189991659511417,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": -0.3775647859710958,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "trail",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": -0.32904045280223676,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": 0.5077222085251328,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "injecagent",
+          "target": "swe_agent",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 1.0364636025900722,
+              "d_target": 0.5241125980511547,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.030926125092301936,
+              "d_target": 0.704237603681384,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.030926125092301936,
+              "d_target": 0.6048269779590171,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "injecagent",
+          "target": "synthetic",
+          "source_group": "safety",
+          "target_group": "injected",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 1.0364636025900722,
+              "d_target": -0.32253353254233763,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.030926125092301936,
+              "d_target": -0.5275576909131642,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.030926125092301936,
+              "d_target": -0.1581779808601928,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "injecagent",
+          "target": "toolbench",
+          "source_group": "safety",
+          "target_group": "api_misuse",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 1.0364636025900722,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.030926125092301936,
+              "d_target": -0.30189991659511417,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.030926125092301936,
+              "d_target": -0.3775647859710958,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "injecagent",
+          "target": "trail",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 1.0364636025900722,
+              "d_target": -0.32904045280223676,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.030926125092301936,
+              "d_target": 0.5077222085251328,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.030926125092301936,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "rjudge",
+          "target": "swe_agent",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.6060725304352405,
+              "d_target": 0.5241125980511547,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.14321735324516957,
+              "d_target": 0.704237603681384,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.12998575603909185,
+              "d_target": 0.6048269779590171,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "rjudge",
+          "target": "synthetic",
+          "source_group": "safety",
+          "target_group": "injected",
+          "n_reversed": 3,
+          "features": {
+            "trace_length": {
+              "d_source": 0.6060725304352405,
+              "d_target": -0.32253353254233763,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.14321735324516957,
+              "d_target": -0.5275576909131642,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.12998575603909185,
+              "d_target": -0.1581779808601928,
+              "reversed": true
+            }
+          }
+        },
+        {
+          "source": "rjudge",
+          "target": "toolbench",
+          "source_group": "safety",
+          "target_group": "api_misuse",
+          "n_reversed": 2,
+          "features": {
+            "trace_length": {
+              "d_source": 0.6060725304352405,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.14321735324516957,
+              "d_target": -0.30189991659511417,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.12998575603909185,
+              "d_target": -0.3775647859710958,
+              "reversed": true
+            }
+          }
+        },
+        {
+          "source": "rjudge",
+          "target": "trail",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 0.6060725304352405,
+              "d_target": -0.32904045280223676,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.14321735324516957,
+              "d_target": 0.5077222085251328,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.12998575603909185,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "swe_agent",
+          "target": "synthetic",
+          "source_group": "failure",
+          "target_group": "injected",
+          "n_reversed": 3,
+          "features": {
+            "trace_length": {
+              "d_source": 0.5241125980511547,
+              "d_target": -0.32253353254233763,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.704237603681384,
+              "d_target": -0.5275576909131642,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.6048269779590171,
+              "d_target": -0.1581779808601928,
+              "reversed": true
+            }
+          }
+        },
+        {
+          "source": "swe_agent",
+          "target": "toolbench",
+          "source_group": "failure",
+          "target_group": "api_misuse",
+          "n_reversed": 2,
+          "features": {
+            "trace_length": {
+              "d_source": 0.5241125980511547,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.704237603681384,
+              "d_target": -0.30189991659511417,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.6048269779590171,
+              "d_target": -0.3775647859710958,
+              "reversed": true
+            }
+          }
+        },
+        {
+          "source": "synthetic",
+          "target": "toolbench",
+          "source_group": "injected",
+          "target_group": "api_misuse",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": -0.32253353254233763,
+              "d_target": 1.670145432881678,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": -0.5275576909131642,
+              "d_target": -0.30189991659511417,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.1581779808601928,
+              "d_target": -0.3775647859710958,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "synthetic",
+          "target": "trail",
+          "source_group": "injected",
+          "target_group": "failure",
+          "n_reversed": 2,
+          "features": {
+            "trace_length": {
+              "d_source": -0.32253353254233763,
+              "d_target": -0.32904045280223676,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.5275576909131642,
+              "d_target": 0.5077222085251328,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": -0.1581779808601928,
+              "d_target": 1.8435778062412154,
+              "reversed": true
+            }
+          }
+        },
+        {
+          "source": "toolbench",
+          "target": "trail",
+          "source_group": "api_misuse",
+          "target_group": "failure",
+          "n_reversed": 3,
+          "features": {
+            "trace_length": {
+              "d_source": 1.670145432881678,
+              "d_target": -0.32904045280223676,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": -0.30189991659511417,
+              "d_target": 0.5077222085251328,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": -0.3775647859710958,
+              "d_target": 1.8435778062412154,
+              "reversed": true
+            }
+          }
+        }
+      ],
+      "wilcoxon": {
+        "n_tested": 75,
+        "n_significant": 33
+      }
+    },
+    "5group": {
+      "grouping": {
+        "injected": [
+          "synthetic"
+        ],
+        "failure": [
+          "swe_agent",
+          "trail"
+        ],
+        "safety": [
+          "atbench",
+          "agentharm",
+          "rjudge"
+        ],
+        "prompt_injection": [
+          "injecagent",
+          "agentdojo"
+        ],
+        "api_misuse": [
+          "toolbench"
+        ]
+      },
+      "n_groups": 5,
+      "multi_dataset_groups": [
+        "failure",
+        "safety",
+        "prompt_injection"
+      ],
+      "analysis": {
+        "within_group": {
+          "n_pairs": 5,
+          "n_feature_comparisons": 15,
+          "n_reversals": 1,
+          "rate": 0.0667
+        },
+        "between_group": {
+          "n_pairs": 31,
+          "n_feature_comparisons": 93,
+          "n_reversals": 24,
+          "rate": 0.2581
+        },
+        "gap_ratio": 3.9
+      },
+      "within_pairs_detail": [
+        {
+          "source": "agentdojo",
+          "target": "injecagent",
+          "source_group": "prompt_injection",
+          "target_group": "prompt_injection",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": 1.0364636025900722,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": 2.2254076110968417,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": -0.07724852955054862,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": -0.06649236103274303,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": 0.6060725304352405,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": 0.14321735324516957,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": 0.12998575603909185,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": 0.6060725304352405,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": 0.14321735324516957,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": 0.12998575603909185,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "swe_agent",
+          "target": "trail",
+          "source_group": "failure",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 0.5241125980511547,
+              "d_target": -0.32904045280223676,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.704237603681384,
+              "d_target": 0.5077222085251328,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.6048269779590171,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        }
+      ],
+      "between_pairs_detail": [
+        {
+          "source": "agentdojo",
+          "target": "agentharm",
+          "source_group": "prompt_injection",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": -0.004387881157988812,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": 0.0,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": 0.0,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "atbench",
+          "source_group": "prompt_injection",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": 2.2254076110968417,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": -0.07724852955054862,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": -0.06649236103274303,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "rjudge",
+          "source_group": "prompt_injection",
+          "target_group": "safety",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": 0.6060725304352405,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": 0.14321735324516957,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": 0.12998575603909185,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "swe_agent",
+          "source_group": "prompt_injection",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": 0.5241125980511547,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": 0.704237603681384,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": 0.6048269779590171,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "synthetic",
+          "source_group": "prompt_injection",
+          "target_group": "injected",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": -0.32253353254233763,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": -0.5275576909131642,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": -0.1581779808601928,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "toolbench",
+          "source_group": "prompt_injection",
+          "target_group": "api_misuse",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": -0.30189991659511417,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": -0.3775647859710958,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentdojo",
+          "target": "trail",
+          "source_group": "prompt_injection",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 0.011911022170608828,
+              "d_target": -0.32904045280223676,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.13236980476980803,
+              "d_target": 0.5077222085251328,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.0331259282815628,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "injecagent",
+          "source_group": "safety",
+          "target_group": "prompt_injection",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": 1.0364636025900722,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "swe_agent",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": 0.5241125980511547,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": 0.704237603681384,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": 0.6048269779590171,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "synthetic",
+          "source_group": "safety",
+          "target_group": "injected",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": -0.32253353254233763,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": -0.5275576909131642,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": -0.1581779808601928,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "toolbench",
+          "source_group": "safety",
+          "target_group": "api_misuse",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": -0.30189991659511417,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": -0.3775647859710958,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "agentharm",
+          "target": "trail",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": -0.004387881157988812,
+              "d_target": -0.32904045280223676,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.0,
+              "d_target": 0.5077222085251328,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.0,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "injecagent",
+          "source_group": "safety",
+          "target_group": "prompt_injection",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": 1.0364636025900722,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": 0.030926125092301936,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "swe_agent",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": 0.5241125980511547,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": 0.704237603681384,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": 0.6048269779590171,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "synthetic",
+          "source_group": "safety",
+          "target_group": "injected",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": -0.32253353254233763,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": -0.5275576909131642,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": -0.1581779808601928,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "toolbench",
+          "source_group": "safety",
+          "target_group": "api_misuse",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": -0.30189991659511417,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": -0.3775647859710958,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "atbench",
+          "target": "trail",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 2.2254076110968417,
+              "d_target": -0.32904045280223676,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": -0.07724852955054862,
+              "d_target": 0.5077222085251328,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.06649236103274303,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "injecagent",
+          "target": "rjudge",
+          "source_group": "prompt_injection",
+          "target_group": "safety",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 1.0364636025900722,
+              "d_target": 0.6060725304352405,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.030926125092301936,
+              "d_target": 0.14321735324516957,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.030926125092301936,
+              "d_target": 0.12998575603909185,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "injecagent",
+          "target": "swe_agent",
+          "source_group": "prompt_injection",
+          "target_group": "failure",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 1.0364636025900722,
+              "d_target": 0.5241125980511547,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.030926125092301936,
+              "d_target": 0.704237603681384,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.030926125092301936,
+              "d_target": 0.6048269779590171,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "injecagent",
+          "target": "synthetic",
+          "source_group": "prompt_injection",
+          "target_group": "injected",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 1.0364636025900722,
+              "d_target": -0.32253353254233763,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.030926125092301936,
+              "d_target": -0.5275576909131642,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.030926125092301936,
+              "d_target": -0.1581779808601928,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "injecagent",
+          "target": "toolbench",
+          "source_group": "prompt_injection",
+          "target_group": "api_misuse",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 1.0364636025900722,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.030926125092301936,
+              "d_target": -0.30189991659511417,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.030926125092301936,
+              "d_target": -0.3775647859710958,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "injecagent",
+          "target": "trail",
+          "source_group": "prompt_injection",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 1.0364636025900722,
+              "d_target": -0.32904045280223676,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.030926125092301936,
+              "d_target": 0.5077222085251328,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.030926125092301936,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "rjudge",
+          "target": "swe_agent",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 0,
+          "features": {
+            "trace_length": {
+              "d_source": 0.6060725304352405,
+              "d_target": 0.5241125980511547,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.14321735324516957,
+              "d_target": 0.704237603681384,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.12998575603909185,
+              "d_target": 0.6048269779590171,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "rjudge",
+          "target": "synthetic",
+          "source_group": "safety",
+          "target_group": "injected",
+          "n_reversed": 3,
+          "features": {
+            "trace_length": {
+              "d_source": 0.6060725304352405,
+              "d_target": -0.32253353254233763,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.14321735324516957,
+              "d_target": -0.5275576909131642,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.12998575603909185,
+              "d_target": -0.1581779808601928,
+              "reversed": true
+            }
+          }
+        },
+        {
+          "source": "rjudge",
+          "target": "toolbench",
+          "source_group": "safety",
+          "target_group": "api_misuse",
+          "n_reversed": 2,
+          "features": {
+            "trace_length": {
+              "d_source": 0.6060725304352405,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.14321735324516957,
+              "d_target": -0.30189991659511417,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.12998575603909185,
+              "d_target": -0.3775647859710958,
+              "reversed": true
+            }
+          }
+        },
+        {
+          "source": "rjudge",
+          "target": "trail",
+          "source_group": "safety",
+          "target_group": "failure",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": 0.6060725304352405,
+              "d_target": -0.32904045280223676,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.14321735324516957,
+              "d_target": 0.5077222085251328,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": 0.12998575603909185,
+              "d_target": 1.8435778062412154,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "swe_agent",
+          "target": "synthetic",
+          "source_group": "failure",
+          "target_group": "injected",
+          "n_reversed": 3,
+          "features": {
+            "trace_length": {
+              "d_source": 0.5241125980511547,
+              "d_target": -0.32253353254233763,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": 0.704237603681384,
+              "d_target": -0.5275576909131642,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.6048269779590171,
+              "d_target": -0.1581779808601928,
+              "reversed": true
+            }
+          }
+        },
+        {
+          "source": "swe_agent",
+          "target": "toolbench",
+          "source_group": "failure",
+          "target_group": "api_misuse",
+          "n_reversed": 2,
+          "features": {
+            "trace_length": {
+              "d_source": 0.5241125980511547,
+              "d_target": 1.670145432881678,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": 0.704237603681384,
+              "d_target": -0.30189991659511417,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": 0.6048269779590171,
+              "d_target": -0.3775647859710958,
+              "reversed": true
+            }
+          }
+        },
+        {
+          "source": "synthetic",
+          "target": "toolbench",
+          "source_group": "injected",
+          "target_group": "api_misuse",
+          "n_reversed": 1,
+          "features": {
+            "trace_length": {
+              "d_source": -0.32253353254233763,
+              "d_target": 1.670145432881678,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": -0.5275576909131642,
+              "d_target": -0.30189991659511417,
+              "reversed": false
+            },
+            "repeat_rate": {
+              "d_source": -0.1581779808601928,
+              "d_target": -0.3775647859710958,
+              "reversed": false
+            }
+          }
+        },
+        {
+          "source": "synthetic",
+          "target": "trail",
+          "source_group": "injected",
+          "target_group": "failure",
+          "n_reversed": 2,
+          "features": {
+            "trace_length": {
+              "d_source": -0.32253353254233763,
+              "d_target": -0.32904045280223676,
+              "reversed": false
+            },
+            "low_diversity": {
+              "d_source": -0.5275576909131642,
+              "d_target": 0.5077222085251328,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": -0.1581779808601928,
+              "d_target": 1.8435778062412154,
+              "reversed": true
+            }
+          }
+        },
+        {
+          "source": "toolbench",
+          "target": "trail",
+          "source_group": "api_misuse",
+          "target_group": "failure",
+          "n_reversed": 3,
+          "features": {
+            "trace_length": {
+              "d_source": 1.670145432881678,
+              "d_target": -0.32904045280223676,
+              "reversed": true
+            },
+            "low_diversity": {
+              "d_source": -0.30189991659511417,
+              "d_target": 0.5077222085251328,
+              "reversed": true
+            },
+            "repeat_rate": {
+              "d_source": -0.3775647859710958,
+              "d_target": 1.8435778062412154,
+              "reversed": true
+            }
+          }
+        }
+      ],
+      "wilcoxon": {
+        "n_tested": 93,
+        "n_significant": 36
+      }
+    }
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "experiment": "v29_expanded_polarity",
+  "n_domains": 6,
+  "domains": [
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic"
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024,
+    2048,
+    4096,
+    8192,
+    16384,
+    32768
+  ],
+  "polarity_table": {
+    "synthetic": {
+      "d_mean": {
+        "trace_length": -0.3021536492193763,
+        "low_diversity": -0.5035612107099734,
+        "repeat_rate": -0.18554183790696926
+      },
+      "d_std": {
+        "trace_length": 0.06186838963887577,
+        "low_diversity": 0.07592295611236595,
+        "repeat_rate": 0.03358778555055481
+      }
+    },
+    "swe_agent": {
+      "d_mean": {
+        "trace_length": 0.5255727795924573,
+        "low_diversity": 0.7093255130928713,
+        "repeat_rate": 0.6001830264333923
+      },
+      "d_std": {
+        "trace_length": 0.021321270539861388,
+        "low_diversity": 0.030392166507569533,
+        "repeat_rate": 0.028483440362993103
+      }
+    },
+    "atbench": {
+      "d_mean": {
+        "trace_length": 2.2382884507875507,
+        "low_diversity": -0.10612250916017915,
+        "repeat_rate": -0.0636016057984147
+      },
+      "d_std": {
+        "trace_length": 0.15155062590548588,
+        "low_diversity": 0.10607052800295837,
+        "repeat_rate": 0.06074847458074409
+      }
+    },
+    "agentharm": {
+      "d_mean": {
+        "trace_length": 0.024277894916347166,
+        "low_diversity": 0.0,
+        "repeat_rate": 0.0
+      },
+      "d_std": {
+        "trace_length": 0.05793298255192921,
+        "low_diversity": 0.0,
+        "repeat_rate": 0.0
+      }
+    },
+    "rjudge": {
+      "d_mean": {
+        "trace_length": 0.6662564830292319,
+        "low_diversity": 0.18656597552326323,
+        "repeat_rate": 0.1747464518782724
+      },
+      "d_std": {
+        "trace_length": 0.13156198206905845,
+        "low_diversity": 0.050402881127638646,
+        "repeat_rate": 0.032578701879702354
+      }
+    },
+    "injecagent": {
+      "d_mean": {
+        "trace_length": 1.0261164471656923,
+        "low_diversity": 0.027094690781760085,
+        "repeat_rate": 0.027094690781760085
+      },
+      "d_std": {
+        "trace_length": 0.02656587599171943,
+        "low_diversity": 0.011295382659651305,
+        "repeat_rate": 0.011295382659651304
+      }
+    }
+  },
+  "reversal_matrix": {
+    "agentharm": {
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "synthetic": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      }
+    },
+    "atbench": {
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "synthetic": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false
+      }
+    },
+    "injecagent": {
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "synthetic": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false
+      }
+    },
+    "rjudge": {
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "synthetic": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true
+      }
+    },
+    "swe_agent": {
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "atbench": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "injecagent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "rjudge": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "swe_agent": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "synthetic": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true
+      }
+    },
+    "synthetic": {
+      "agentharm": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "atbench": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "injecagent": {
+        "trace_length": true,
+        "low_diversity": false,
+        "repeat_rate": false
+      },
+      "rjudge": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true
+      },
+      "swe_agent": {
+        "trace_length": true,
+        "low_diversity": true,
+        "repeat_rate": true
+      },
+      "synthetic": {
+        "trace_length": false,
+        "low_diversity": false,
+        "repeat_rate": false
+      }
+    }
+  },
+  "semantic_group_analysis": {
+    "within_group_pairs": 6,
+    "within_group_reversals": 0,
+    "within_group_rate": 0.0,
+    "between_group_pairs": 9,
+    "between_group_reversals": 8,
+    "between_group_rate": 0.2962962962962963
+  },
+  "wilcoxon_tests": {
+    "agentharm->atbench": {
+      "trace_length": {
+        "p_value": 0.9345703125,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.056628551100208556
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->injecagent": {
+      "trace_length": {
+        "p_value": 0.9345703125,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.02456463091153587
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->rjudge": {
+      "trace_length": {
+        "p_value": 0.9345703125,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.017021008832805905
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->swe_agent": {
+      "trace_length": {
+        "p_value": 0.9345703125,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.013524891869797617
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.0
+      }
+    },
+    "agentharm->synthetic": {
+      "trace_length": {
+        "p_value": 0.1162109375,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": -0.005620091549297501
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.0
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.0
+      }
+    },
+    "atbench->injecagent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 2.2937006018183297
+      },
+      "low_diversity": {
+        "p_value": 0.01953125,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.0031145959011385934
+      },
+      "repeat_rate": {
+        "p_value": 0.001953125,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.0016700025751638886
+      }
+    },
+    "atbench->rjudge": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 1.4967220575025888
+      },
+      "low_diversity": {
+        "p_value": 0.009765625,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.022146694622531556
+      },
+      "repeat_rate": {
+        "p_value": 0.0009765625,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.011307540471255893
+      }
+    },
+    "atbench->swe_agent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 1.1786822162156012
+      },
+      "low_diversity": {
+        "p_value": 0.013671875,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.07621963363151893
+      },
+      "repeat_rate": {
+        "p_value": 0.0009765625,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.0380559430671295
+      }
+    },
+    "atbench->synthetic": {
+      "trace_length": {
+        "p_value": 0.0009765625,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.6773829525507442
+      },
+      "low_diversity": {
+        "p_value": 0.990234375,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.054226463310183014
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.012853368204065402
+      }
+    },
+    "injecagent->rjudge": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.6825399850726549
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.004949031223935769
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.004625902615415943
+      }
+    },
+    "injecagent->swe_agent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.538998880021691
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.01943735784788252
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.01643004529079231
+      }
+    },
+    "injecagent->synthetic": {
+      "trace_length": {
+        "p_value": 0.0009765625,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.3094480204179581
+      },
+      "low_diversity": {
+        "p_value": 0.001953125,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.013935545473805568
+      },
+      "repeat_rate": {
+        "p_value": 0.001953125,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.0050605155054781826
+      }
+    },
+    "rjudge->swe_agent": {
+      "trace_length": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.35053886690676794
+      },
+      "low_diversity": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.1326620612597192
+      },
+      "repeat_rate": {
+        "p_value": 1.0,
+        "significant": "False",
+        "n_pairs": 10,
+        "mean_product": 0.10443836390800212
+      }
+    },
+    "rjudge->synthetic": {
+      "trace_length": {
+        "p_value": 0.0009765625,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.1985247859388804
+      },
+      "low_diversity": {
+        "p_value": 0.0009765625,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.09198290058344066
+      },
+      "repeat_rate": {
+        "p_value": 0.0009765625,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.032073512105753925
+      }
+    },
+    "swe_agent->synthetic": {
+      "trace_length": {
+        "p_value": 0.0009765625,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.15872622490873955
+      },
+      "low_diversity": {
+        "p_value": 0.0009765625,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.3578449805233689
+      },
+      "repeat_rate": {
+        "p_value": 0.0009765625,
+        "significant": "True",
+        "n_pairs": 10,
+        "mean_product": -0.1117706456563617
+      }
+    }
+  }
+}

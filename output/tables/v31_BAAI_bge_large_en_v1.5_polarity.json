@@ -1,0 +1,286 @@
+{
+  "experiment": "v30_llm_polarity",
+  "model": "BAAI/bge-large-en-v1.5",
+  "embedding_dim": 1024,
+  "input_type": "tool_name_plus_args_text",
+  "loaded_domains": [
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic",
+    "toolbench",
+    "trail"
+  ],
+  "n_pairs_total": 28,
+  "n_within_pairs": 7,
+  "n_between_pairs": 21,
+  "cosine_summary": {
+    "within_group_mean": 0.05480219035384305,
+    "between_group_mean": 0.06690937975524851,
+    "gap": -0.012107189401405455,
+    "within_negative_rate": 0.2857142857142857,
+    "between_negative_rate": 0.2857142857142857,
+    "mannwhitney_p": 0.45873534677882505
+  },
+  "reversal_summary": {
+    "within_group_mean": 0.4700688408983698,
+    "between_group_mean": 0.4552977829245532
+  },
+  "pair_results": {
+    "agentharm-atbench": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": -0.014821287994270202,
+      "reversal_rate": 0.5132450331125827,
+      "n_reversed": 310,
+      "n_comparable": 604
+    },
+    "agentharm-injecagent": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": 0.08412660550892898,
+      "reversal_rate": 0.46204620462046203,
+      "n_reversed": 280,
+      "n_comparable": 606
+    },
+    "agentharm-rjudge": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": 0.03622150986823219,
+      "reversal_rate": 0.4958263772954925,
+      "n_reversed": 297,
+      "n_comparable": 599
+    },
+    "agentharm-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.03980920331697114,
+      "reversal_rate": 0.46041666666666664,
+      "n_reversed": 221,
+      "n_comparable": 480
+    },
+    "agentharm-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.33617196925239995,
+      "reversal_rate": 0.27596439169139464,
+      "n_reversed": 93,
+      "n_comparable": 337
+    },
+    "agentharm-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.20624558633178885,
+      "reversal_rate": 0.3761467889908257,
+      "n_reversed": 205,
+      "n_comparable": 545
+    },
+    "agentharm-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.012530680532812612,
+      "reversal_rate": 0.486,
+      "n_reversed": 243,
+      "n_comparable": 500
+    },
+    "atbench-injecagent": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": 0.04701444711328687,
+      "reversal_rate": 0.472,
+      "n_reversed": 354,
+      "n_comparable": 750
+    },
+    "atbench-rjudge": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": -0.047139060687537926,
+      "reversal_rate": 0.519205298013245,
+      "n_reversed": 392,
+      "n_comparable": 755
+    },
+    "atbench-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.01208634773004393,
+      "reversal_rate": 0.4973821989528796,
+      "n_reversed": 285,
+      "n_comparable": 573
+    },
+    "atbench-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.09023664685302414,
+      "reversal_rate": 0.4231678486997636,
+      "n_reversed": 179,
+      "n_comparable": 423
+    },
+    "atbench-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": -0.016983482004790825,
+      "reversal_rate": 0.5154639175257731,
+      "n_reversed": 350,
+      "n_comparable": 679
+    },
+    "atbench-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.08837334586684548,
+      "reversal_rate": 0.5498392282958199,
+      "n_reversed": 342,
+      "n_comparable": 622
+    },
+    "injecagent-rjudge": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": 0.12795539480162882,
+      "reversal_rate": 0.4403183023872679,
+      "n_reversed": 332,
+      "n_comparable": 754
+    },
+    "injecagent-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.051228057504379566,
+      "reversal_rate": 0.5170068027210885,
+      "n_reversed": 304,
+      "n_comparable": 588
+    },
+    "injecagent-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.18907316761837187,
+      "reversal_rate": 0.3847980997624703,
+      "n_reversed": 162,
+      "n_comparable": 421
+    },
+    "injecagent-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.008945086904742409,
+      "reversal_rate": 0.4992636229749632,
+      "n_reversed": 339,
+      "n_comparable": 679
+    },
+    "injecagent-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.01797106979388148,
+      "reversal_rate": 0.4959481361426256,
+      "n_reversed": 306,
+      "n_comparable": 617
+    },
+    "rjudge-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.1356050492073385,
+      "reversal_rate": 0.5546075085324232,
+      "n_reversed": 325,
+      "n_comparable": 586
+    },
+    "rjudge-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.05600219518331113,
+      "reversal_rate": 0.4637002341920375,
+      "n_reversed": 198,
+      "n_comparable": 427
+    },
+    "rjudge-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.23574822173470253,
+      "reversal_rate": 0.40625,
+      "n_reversed": 273,
+      "n_comparable": 672
+    },
+    "rjudge-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.052754200577445454,
+      "reversal_rate": 0.5073170731707317,
+      "n_reversed": 312,
+      "n_comparable": 615
+    },
+    "swe_agent-synthetic": {
+      "group_a": "failure",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.057678692376066786,
+      "reversal_rate": 0.4525316455696203,
+      "n_reversed": 143,
+      "n_comparable": 316
+    },
+    "swe_agent-toolbench": {
+      "group_a": "failure",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": -0.08298533162622022,
+      "reversal_rate": 0.5286259541984732,
+      "n_reversed": 277,
+      "n_comparable": 524
+    },
+    "swe_agent-trail": {
+      "group_a": "failure",
+      "group_b": "failure",
+      "is_within_group": true,
+      "cosine": 0.15025772386663266,
+      "reversal_rate": 0.38784067085953877,
+      "n_reversed": 185,
+      "n_comparable": 477
+    },
+    "synthetic-toolbench": {
+      "group_a": "injected",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.3639199189567179,
+      "reversal_rate": 0.25392670157068065,
+      "n_reversed": 97,
+      "n_comparable": 382
+    },
+    "synthetic-trail": {
+      "group_a": "injected",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.08404601593077024,
+      "reversal_rate": 0.4174174174174174,
+      "n_reversed": 139,
+      "n_comparable": 333
+    },
+    "toolbench-trail": {
+      "group_a": "api_misuse",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.042114599042368174,
+      "reversal_rate": 0.49547920433996384,
+      "n_reversed": 274,
+      "n_comparable": 553
+    }
+  },
+  "elapsed_seconds": 1295.7139582633972
+}

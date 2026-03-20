@@ -1,0 +1,42 @@
+\begin{table*}[h]
+\centering
+\caption{Full cross-domain AUROC (mean $\pm$ std, 10 seeds) for 4 primary scorers across all 26 transfer pairs. Bold: best per row. Pairs grouped by within/between semantic groups.}
+\label{tab:full-crossdomain}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+\textbf{Source} & \textbf{Target} & \textbf{Heuristic} & \textbf{PAFC} & \textbf{LSTM} & \textbf{Hybrid} \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{Within-group transfers}} \\
+swe_agent & trail & .745$\pm$.00 & \textbf{.888$\pm$.00} & .489$\pm$.10 & .671$\pm$.03 \\
+trail & swe_agent & \textbf{.721$\pm$.00} & .675$\pm$.00 & .501$\pm$.00 & .574$\pm$.00 \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{Between-group transfers}} \\
+atbench & synthetic & .365$\pm$.00 & .417$\pm$.00 & \textbf{.500$\pm$.02} & .457$\pm$.01 \\
+atbench & trail & .745$\pm$.00 & \textbf{.888$\pm$.00} & .454$\pm$.12 & .653$\pm$.04 \\
+injecagent & synthetic & .365$\pm$.00 & .417$\pm$.00 & \textbf{.498$\pm$.02} & .464$\pm$.02 \\
+injecagent & trail & .745$\pm$.00 & \textbf{.888$\pm$.00} & .449$\pm$.13 & .684$\pm$.05 \\
+rjudge & synthetic & .365$\pm$.00 & \textbf{.634$\pm$.00} & .498$\pm$.02 & .577$\pm$.01 \\
+rjudge & toolbench & .652$\pm$.00 & \textbf{.864$\pm$.00} & .497$\pm$.01 & .676$\pm$.01 \\
+rjudge & trail & .745$\pm$.00 & \textbf{.888$\pm$.00} & .516$\pm$.11 & .704$\pm$.05 \\
+swe_agent & synthetic & .365$\pm$.00 & \textbf{.634$\pm$.00} & .509$\pm$.02 & .586$\pm$.01 \\
+swe_agent & toolbench & .652$\pm$.00 & \textbf{.864$\pm$.00} & .499$\pm$.00 & .679$\pm$.00 \\
+synthetic & atbench & \textbf{.879$\pm$.00} & .115$\pm$.00 & .496$\pm$.02 & .360$\pm$.01 \\
+synthetic & injecagent & \textbf{.758$\pm$.00} & .242$\pm$.00 & .474$\pm$.06 & .349$\pm$.06 \\
+synthetic & rjudge & \textbf{.787$\pm$.00} & .212$\pm$.00 & .497$\pm$.02 & .366$\pm$.02 \\
+synthetic & swe_agent & \textbf{.721$\pm$.00} & .278$\pm$.00 & .501$\pm$.00 & .359$\pm$.00 \\
+synthetic & toolbench & \textbf{.652$\pm$.00} & .135$\pm$.00 & .499$\pm$.01 & .327$\pm$.01 \\
+synthetic & trail & \textbf{.745$\pm$.00} & .111$\pm$.00 & .544$\pm$.10 & .306$\pm$.04 \\
+toolbench & rjudge & \textbf{.787$\pm$.00} & .748$\pm$.00 & .507$\pm$.02 & .620$\pm$.04 \\
+toolbench & swe_agent & \textbf{.721$\pm$.00} & .324$\pm$.00 & .503$\pm$.00 & .330$\pm$.00 \\
+toolbench & synthetic & .365$\pm$.00 & .417$\pm$.00 & \textbf{.495$\pm$.01} & .461$\pm$.01 \\
+toolbench & trail & \textbf{.745$\pm$.00} & .254$\pm$.00 & .534$\pm$.10 & .359$\pm$.03 \\
+trail & atbench & \textbf{.879$\pm$.00} & .115$\pm$.00 & .497$\pm$.02 & .338$\pm$.01 \\
+trail & injecagent & \textbf{.758$\pm$.00} & .242$\pm$.00 & .491$\pm$.05 & .362$\pm$.05 \\
+trail & rjudge & \textbf{.787$\pm$.00} & .251$\pm$.00 & .494$\pm$.02 & .395$\pm$.01 \\
+trail & synthetic & .365$\pm$.00 & \textbf{.582$\pm$.00} & .505$\pm$.01 & .536$\pm$.01 \\
+trail & toolbench & \textbf{.652$\pm$.00} & .347$\pm$.00 & .505$\pm$.01 & .435$\pm$.01 \\
+\bottomrule
+\end{tabular}
+\end{table*}

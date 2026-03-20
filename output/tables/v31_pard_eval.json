@@ -1,0 +1,164 @@
+{
+  "experiment": "v31_pard_eval",
+  "seeds": [
+    42
+  ],
+  "epochs": 5,
+  "d_bottleneck": 32,
+  "results": {
+    "synthetic->atbench": {
+      "PARD-diag": [
+        0.7705263157894737
+      ],
+      "PARD-flip": [
+        0.7705263157894737
+      ],
+      "PARD-diag+LSTM": [
+        0.76
+      ],
+      "LSTM-only": [
+        0.5627705627705628
+      ],
+      "DANN": [
+        0.6772486772486772
+      ],
+      "CORAL": [
+        0.6767676767676767
+      ],
+      "PAFC": [
+        0.5627705627705628
+      ],
+      "DAPL": [
+        0.5618085618085618
+      ],
+      "LR-heuristic": [
+        0.7705263157894737
+      ]
+    },
+    "synthetic->swe_agent": {
+      "PARD-diag": [
+        0.5946969696969697
+      ],
+      "PARD-flip": [
+        0.600378787878788
+      ],
+      "PARD-diag+LSTM": [
+        0.5975378787878788
+      ],
+      "LSTM-only": [
+        0.5549662487945998
+      ],
+      "DANN": [
+        0.5925747348119575
+      ],
+      "CORAL": [
+        0.5909675345548054
+      ],
+      "PAFC": [
+        0.5549662487945998
+      ],
+      "DAPL": [
+        0.5578592092574735
+      ],
+      "LR-heuristic": [
+        0.600378787878788
+      ]
+    }
+  },
+  "pard_details": {
+    "synthetic->atbench": {
+      "PARD-diag": [
+        {
+          "auroc": 0.7705263157894737,
+          "coverage": 1.0,
+          "coverage_gap": 0.050000000000000044,
+          "reversal_rate_pre": 0.75,
+          "reversal_rate_post": 0.25,
+          "tau": 0.1764990997634397,
+          "d_features": 4,
+          "train_loss_start": 0.0,
+          "train_loss_end": 0.0,
+          "n_test": 100,
+          "seed": 42
+        }
+      ],
+      "PARD-flip": [
+        {
+          "auroc": 0.7705263157894737,
+          "coverage": 1.0,
+          "coverage_gap": 0.050000000000000044,
+          "reversal_rate_pre": 0.75,
+          "reversal_rate_post": 0.25,
+          "tau": 0.1764990997634397,
+          "d_features": 4,
+          "train_loss_start": 0.0,
+          "train_loss_end": 0.0,
+          "n_test": 100,
+          "seed": 42
+        }
+      ],
+      "PARD-diag+LSTM": [
+        {
+          "auroc": 0.76,
+          "coverage": 1.0,
+          "coverage_gap": 0.050000000000000044,
+          "reversal_rate_pre": 0.42857142857142855,
+          "reversal_rate_post": 0.14285714285714285,
+          "tau": 0.20822989078944992,
+          "d_features": 7,
+          "train_loss_start": 7.586705646570771,
+          "train_loss_end": 7.441364026145311,
+          "n_test": 100,
+          "seed": 42
+        }
+      ]
+    },
+    "synthetic->swe_agent": {
+      "PARD-diag": [
+        {
+          "auroc": 0.5946969696969697,
+          "coverage": 1.0,
+          "coverage_gap": 0.050000000000000044,
+          "reversal_rate_pre": 0.75,
+          "reversal_rate_post": 0.75,
+          "tau": 0.8704647763160729,
+          "d_features": 4,
+          "train_loss_start": 0.0,
+          "train_loss_end": 0.0,
+          "n_test": 100,
+          "seed": 42
+        }
+      ],
+      "PARD-flip": [
+        {
+          "auroc": 0.600378787878788,
+          "coverage": 1.0,
+          "coverage_gap": 0.050000000000000044,
+          "reversal_rate_pre": 0.75,
+          "reversal_rate_post": 1.0,
+          "tau": 0.9739335483159544,
+          "d_features": 4,
+          "train_loss_start": 0.0,
+          "train_loss_end": 0.0,
+          "n_test": 100,
+          "seed": 42
+        }
+      ],
+      "PARD-diag+LSTM": [
+        {
+          "auroc": 0.5975378787878788,
+          "coverage": 1.0,
+          "coverage_gap": 0.050000000000000044,
+          "reversal_rate_pre": 0.42857142857142855,
+          "reversal_rate_post": 0.42857142857142855,
+          "tau": 0.8855362952060379,
+          "d_features": 7,
+          "train_loss_start": 7.593000526865945,
+          "train_loss_end": 7.4476881040725855,
+          "n_test": 100,
+          "seed": 42
+        }
+      ]
+    }
+  }
+}

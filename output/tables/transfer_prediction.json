@@ -1,0 +1,1750 @@
+{
+  "experiment": "transfer_prediction",
+  "n_domains": 8,
+  "domains": [
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic",
+    "toolbench",
+    "trail"
+  ],
+  "semantic_groups": {
+    "agentharm": "safety",
+    "atbench": "safety",
+    "injecagent": "safety",
+    "rjudge": "safety",
+    "swe_agent": "failure",
+    "trail": "failure",
+    "synthetic": "injected",
+    "toolbench": "api_misuse"
+  },
+  "pair_divergences": {
+    "agentharm->atbench": {
+      "source": "agentharm",
+      "target": "atbench",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 0.9219632446711603,
+        "low_diversity": 0.011923847695390793,
+        "repeat_rate": 0.007581830327321317
+      },
+      "wasserstein_mean": 0.3138229742312908,
+      "kl_divergence": {
+        "trace_length": 0.9011824828863966,
+        "low_diversity": 0.5975086913902341,
+        "repeat_rate": 0.2499400093857755
+      },
+      "kl_mean": 0.5828770612208021,
+      "mmd_rbf": 0.14003446862888702,
+      "cohens_d_diff": {
+        "trace_length": 2.2297954922548304,
+        "low_diversity": 0.07724852955054862,
+        "repeat_rate": 0.06649236103274303
+      },
+      "cohens_d_diff_mean": 0.7911787942793741
+    },
+    "agentharm->injecagent": {
+      "source": "agentharm",
+      "target": "injecagent",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 1.1953863636363637,
+        "low_diversity": 0.0003137254901960744,
+        "repeat_rate": 0.00047058823529411153
+      },
+      "wasserstein_mean": 0.398723559120618,
+      "kl_divergence": {
+        "trace_length": 5.793488619229981,
+        "low_diversity": 0.009914846062540863,
+        "repeat_rate": 0.009724038962265778
+      },
+      "kl_mean": 1.9377091680849292,
+      "mmd_rbf": 0.5529823847768072,
+      "cohens_d_diff": {
+        "trace_length": 1.040851483748061,
+        "low_diversity": 0.030926125092301936,
+        "repeat_rate": 0.030926125092301936
+      },
+      "cohens_d_diff_mean": 0.36756791131088823
+    },
+    "agentharm->rjudge": {
+      "source": "agentharm",
+      "target": "rjudge",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 1.061792493904563,
+        "low_diversity": 0.01936842425348174,
+        "repeat_rate": 0.020527732165663205
+      },
+      "wasserstein_mean": 0.36722955010790265,
+      "kl_divergence": {
+        "trace_length": 0.645513548114895,
+        "low_diversity": 0.6402545169712152,
+        "repeat_rate": 0.46086860345805675
+      },
+      "kl_mean": 0.5822122228480556,
+      "mmd_rbf": 0.2656496490692444,
+      "cohens_d_diff": {
+        "trace_length": 0.6104604115932293,
+        "low_diversity": 0.14321735324516957,
+        "repeat_rate": 0.12998575603909185
+      },
+      "cohens_d_diff_mean": 0.2945545069591636
+    },
+    "agentharm->swe_agent": {
+      "source": "agentharm",
+      "target": "swe_agent",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "failure",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 21.082213636363637,
+        "low_diversity": 0.5153828652798251,
+        "repeat_rate": 0.20667850238601893
+      },
+      "wasserstein_mean": 7.268091668009827,
+      "kl_divergence": {
+        "trace_length": 9.053331352425111,
+        "low_diversity": 12.550705286374624,
+        "repeat_rate": 8.736150636092235
+      },
+      "kl_mean": 10.113395758297322,
+      "mmd_rbf": 0.6659976803957,
+      "cohens_d_diff": {
+        "trace_length": 0.5285004792091436,
+        "low_diversity": 0.704237603681384,
+        "repeat_rate": 0.6048269779590171
+      },
+      "cohens_d_diff_mean": 0.6125216869498482
+    },
+    "agentharm->synthetic": {
+      "source": "agentharm",
+      "target": "synthetic",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "injected",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 23.075113636363636,
+        "low_diversity": 0.49120940886070463,
+        "repeat_rate": 0.0960753164304694
+      },
+      "wasserstein_mean": 7.887466120551603,
+      "kl_divergence": {
+        "trace_length": 15.360281883400859,
+        "low_diversity": 12.694242420595891,
+        "repeat_rate": 10.548666158744311
+      },
+      "kl_mean": 12.86773015424702,
+      "mmd_rbf": 0.8737932240307787,
+      "cohens_d_diff": {
+        "trace_length": 0.3181456513843488,
+        "low_diversity": 0.5275576909131642,
+        "repeat_rate": 0.1581779808601928
+      },
+      "cohens_d_diff_mean": 0.33462710771923526
+    },
+    "agentharm->toolbench": {
+      "source": "agentharm",
+      "target": "toolbench",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "api_misuse",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 0.5589863636363637,
+        "low_diversity": 0.1428664285714286,
+        "repeat_rate": 0.16477523809523806
+      },
+      "wasserstein_mean": 0.2888760101010101,
+      "kl_divergence": {
+        "trace_length": 0.18286301407547678,
+        "low_diversity": 4.6138310235879185,
+        "repeat_rate": 3.4003486134776373
+      },
+      "kl_mean": 2.7323475503803443,
+      "mmd_rbf": 0.06631527156477879,
+      "cohens_d_diff": {
+        "trace_length": 1.6745333140396668,
+        "low_diversity": 0.30189991659511417,
+        "repeat_rate": 0.3775647859710958
+      },
+      "cohens_d_diff_mean": 0.7846660055352922
+    },
+    "agentharm->trail": {
+      "source": "agentharm",
+      "target": "trail",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "failure",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 16.4074785012285,
+        "low_diversity": 0.6191609704553482,
+        "repeat_rate": 0.44957085975597433
+      },
+      "wasserstein_mean": 5.825403443813273,
+      "kl_divergence": {
+        "trace_length": 16.1874955704774,
+        "low_diversity": 25.672635377886962,
+        "repeat_rate": 25.743672867640925
+      },
+      "kl_mean": 22.534601272001762,
+      "mmd_rbf": 0.7601766729293162,
+      "cohens_d_diff": {
+        "trace_length": 0.32465257164424793,
+        "low_diversity": 0.5077222085251328,
+        "repeat_rate": 1.8435778062412154
+      },
+      "cohens_d_diff_mean": 0.8919841954701987
+    },
+    "atbench->agentharm": {
+      "source": "atbench",
+      "target": "agentharm",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 0.9219632446711603,
+        "low_diversity": 0.011923847695390793,
+        "repeat_rate": 0.007581830327321317
+      },
+      "wasserstein_mean": 0.3138229742312908,
+      "kl_divergence": {
+        "trace_length": 0.9011824828863966,
+        "low_diversity": 0.5975086913902341,
+        "repeat_rate": 0.2499400093857755
+      },
+      "kl_mean": 0.5828770612208021,
+      "mmd_rbf": 0.14003446862888702,
+      "cohens_d_diff": {
+        "trace_length": 2.2297954922548304,
+        "low_diversity": 0.07724852955054862,
+        "repeat_rate": 0.06649236103274303
+      },
+      "cohens_d_diff_mean": 0.7911787942793741
+    },
+    "atbench->injecagent": {
+      "source": "atbench",
+      "target": "injecagent",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 1.9809859719438876,
+        "low_diversity": 0.01161012220519472,
+        "repeat_rate": 0.0071112420920272056
+      },
+      "wasserstein_mean": 0.6665691120803698,
+      "kl_divergence": {
+        "trace_length": 10.080534641084045,
+        "low_diversity": 0.49079668378699437,
+        "repeat_rate": 0.16609535501859896
+      },
+      "kl_mean": 3.57914222662988,
+      "mmd_rbf": 1.02144914133977,
+      "cohens_d_diff": {
+        "trace_length": 1.1889440085067695,
+        "low_diversity": 0.10817465464285056,
+        "repeat_rate": 0.09741848612504497
+      },
+      "cohens_d_diff_mean": 0.4648457164248883
+    },
+    "atbench->rjudge": {
+      "source": "atbench",
+      "target": "rjudge",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 1.8933691137063398,
+        "low_diversity": 0.007444576558090948,
+        "repeat_rate": 0.01294590183834189
+      },
+      "wasserstein_mean": 0.6379198640342576,
+      "kl_divergence": {
+        "trace_length": 1.6480231475608296,
+        "low_diversity": 0.28301100276858615,
+        "repeat_rate": 0.2118953446085143
+      },
+      "kl_mean": 0.7143098316459766,
+      "mmd_rbf": 0.595070116712923,
+      "cohens_d_diff": {
+        "trace_length": 1.6193350806616014,
+        "low_diversity": 0.2204658827957182,
+        "repeat_rate": 0.19647811707183488
+      },
+      "cohens_d_diff_mean": 0.6787596935097181
+    },
+    "atbench->swe_agent": {
+      "source": "atbench",
+      "target": "swe_agent",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "failure",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 20.296614028056112,
+        "low_diversity": 0.5034590175844342,
+        "repeat_rate": 0.19909667205869758
+      },
+      "wasserstein_mean": 6.999723239233081,
+      "kl_divergence": {
+        "trace_length": 8.700330257912496,
+        "low_diversity": 11.301282727743867,
+        "repeat_rate": 7.578706533411914
+      },
+      "kl_mean": 9.193439839689427,
+      "mmd_rbf": 0.6677322568177404,
+      "cohens_d_diff": {
+        "trace_length": 1.701295013045687,
+        "low_diversity": 0.7814861332319326,
+        "repeat_rate": 0.6713193389917601
+      },
+      "cohens_d_diff_mean": 1.0513668284231266
+    },
+    "atbench->synthetic": {
+      "source": "atbench",
+      "target": "synthetic",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "injected",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 22.289514028056114,
+        "low_diversity": 0.4792855611653138,
+        "repeat_rate": 0.0903164860692791
+      },
+      "wasserstein_mean": 7.619705358430235,
+      "kl_divergence": {
+        "trace_length": 13.011670125201729,
+        "low_diversity": 11.96094934202932,
+        "repeat_rate": 10.041773501646665
+      },
+      "kl_mean": 11.671464322959238,
+      "mmd_rbf": 0.8648774419822656,
+      "cohens_d_diff": {
+        "trace_length": 2.5479411436391795,
+        "low_diversity": 0.45030916136261556,
+        "repeat_rate": 0.09168561982744977
+      },
+      "cohens_d_diff_mean": 1.0299786416097483,
+      "auroc_raw": 0.36588205206894786,
+      "auroc_pafc": 0.4179264487749988,
+      "pafc_delta": 0.05204439670605093
+    },
+    "atbench->toolbench": {
+      "source": "atbench",
+      "target": "toolbench",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "api_misuse",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 1.3545859719438877,
+        "low_diversity": 0.1309425808760378,
+        "repeat_rate": 0.1571934077679168
+      },
+      "wasserstein_mean": 0.5475739868626142,
+      "kl_divergence": {
+        "trace_length": 0.8574110258022223,
+        "low_diversity": 2.081907747105627,
+        "repeat_rate": 1.520812080466245
+      },
+      "kl_mean": 1.4867102844580316,
+      "mmd_rbf": 0.31468482875311365,
+      "cohens_d_diff": {
+        "trace_length": 0.5552621782151637,
+        "low_diversity": 0.22465138704456555,
+        "repeat_rate": 0.31107242493835274
+      },
+      "cohens_d_diff_mean": 0.363661996732694
+    },
+    "atbench->trail": {
+      "source": "atbench",
+      "target": "trail",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "failure",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 15.621878892920979,
+        "low_diversity": 0.6072371227599573,
+        "repeat_rate": 0.44198902942865304
+      },
+      "wasserstein_mean": 5.55703501503653,
+      "kl_divergence": {
+        "trace_length": 20.636728610345145,
+        "low_diversity": 25.54212789460712,
+        "repeat_rate": 20.9999232039994
+      },
+      "kl_mean": 22.392926569650555,
+      "mmd_rbf": 0.6621420930506894,
+      "cohens_d_diff": {
+        "trace_length": 2.5544480638990783,
+        "low_diversity": 0.5849707380756815,
+        "repeat_rate": 1.9100701672739584
+      },
+      "cohens_d_diff_mean": 1.6831629897495726,
+      "auroc_raw": 0.7451977401129943,
+      "auroc_pafc": 0.888135593220339,
+      "pafc_delta": 0.14293785310734464
+    },
+    "injecagent->agentharm": {
+      "source": "injecagent",
+      "target": "agentharm",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 1.1953863636363637,
+        "low_diversity": 0.0003137254901960744,
+        "repeat_rate": 0.00047058823529411153
+      },
+      "wasserstein_mean": 0.398723559120618,
+      "kl_divergence": {
+        "trace_length": 5.793488619229981,
+        "low_diversity": 0.009914846062540863,
+        "repeat_rate": 0.009724038962265778
+      },
+      "kl_mean": 1.9377091680849292,
+      "mmd_rbf": 0.5529823847768072,
+      "cohens_d_diff": {
+        "trace_length": 1.040851483748061,
+        "low_diversity": 0.030926125092301936,
+        "repeat_rate": 0.030926125092301936
+      },
+      "cohens_d_diff_mean": 0.36756791131088823
+    },
+    "injecagent->atbench": {
+      "source": "injecagent",
+      "target": "atbench",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 1.9809859719438876,
+        "low_diversity": 0.01161012220519472,
+        "repeat_rate": 0.0071112420920272056
+      },
+      "wasserstein_mean": 0.6665691120803698,
+      "kl_divergence": {
+        "trace_length": 10.080534641084045,
+        "low_diversity": 0.49079668378699437,
+        "repeat_rate": 0.16609535501859896
+      },
+      "kl_mean": 3.57914222662988,
+      "mmd_rbf": 1.02144914133977,
+      "cohens_d_diff": {
+        "trace_length": 1.1889440085067695,
+        "low_diversity": 0.10817465464285056,
+        "repeat_rate": 0.09741848612504497
+      },
+      "cohens_d_diff_mean": 0.4648457164248883
+    },
+    "injecagent->rjudge": {
+      "source": "injecagent",
+      "target": "rjudge",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 0.322344827586207,
+        "low_diversity": 0.01905469876328567,
+        "repeat_rate": 0.020057143930369094
+      },
+      "wasserstein_mean": 0.12048555675995393,
+      "kl_divergence": {
+        "trace_length": 1.2773581368676632,
+        "low_diversity": 0.5226018624983113,
+        "repeat_rate": 0.32568369063788866
+      },
+      "kl_mean": 0.7085478966679544,
+      "mmd_rbf": 0.19816509009257,
+      "cohens_d_diff": {
+        "trace_length": 0.43039107215483174,
+        "low_diversity": 0.11229122815286763,
+        "repeat_rate": 0.0990596309467899
+      },
+      "cohens_d_diff_mean": 0.21391397708482976
+    },
+    "injecagent->swe_agent": {
+      "source": "injecagent",
+      "target": "swe_agent",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "failure",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 22.2776,
+        "low_diversity": 0.5150691397896289,
+        "repeat_rate": 0.20620791415072476
+      },
+      "wasserstein_mean": 7.666292351313451,
+      "kl_divergence": {
+        "trace_length": 10.725554390338415,
+        "low_diversity": 12.211452345495934,
+        "repeat_rate": 8.588151134420649
+      },
+      "kl_mean": 10.508385956751665,
+      "mmd_rbf": 0.6840992505877347,
+      "cohens_d_diff": {
+        "trace_length": 0.5123510045389175,
+        "low_diversity": 0.673311478589082,
+        "repeat_rate": 0.5739008528667151
+      },
+      "cohens_d_diff_mean": 0.5865211119982382
+    },
+    "injecagent->synthetic": {
+      "source": "injecagent",
+      "target": "synthetic",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "injected",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 24.2705,
+        "low_diversity": 0.4908956833705085,
+        "repeat_rate": 0.09566775340525932
+      },
+      "wasserstein_mean": 8.285687812258589,
+      "kl_divergence": {
+        "trace_length": 20.787791565725207,
+        "low_diversity": 12.458708628941336,
+        "repeat_rate": 10.542626820656157
+      },
+      "kl_mean": 14.596375671774235,
+      "mmd_rbf": 0.8779655551848919,
+      "cohens_d_diff": {
+        "trace_length": 1.3589971351324097,
+        "low_diversity": 0.5584838160054661,
+        "repeat_rate": 0.18910410595249474
+      },
+      "cohens_d_diff_mean": 0.7021950190301235,
+      "auroc_raw": 0.36588205206894786,
+      "auroc_pafc": 0.4179264487749988,
+      "pafc_delta": 0.05204439670605093
+    },
+    "injecagent->toolbench": {
+      "source": "injecagent",
+      "target": "toolbench",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "api_misuse",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 0.6363999999999999,
+        "low_diversity": 0.14255270308123252,
+        "repeat_rate": 0.16430464985994395
+      },
+      "wasserstein_mean": 0.3144191176470588,
+      "kl_divergence": {
+        "trace_length": 4.149611194851043,
+        "low_diversity": 3.4682805882164787,
+        "repeat_rate": 2.483306109055384
+      },
+      "kl_mean": 3.3670659640409686,
+      "mmd_rbf": 0.515924403964769,
+      "cohens_d_diff": {
+        "trace_length": 0.6336818302916059,
+        "low_diversity": 0.3328260416874161,
+        "repeat_rate": 0.4084909110633977
+      },
+      "cohens_d_diff_mean": 0.4583329276808065
+    },
+    "injecagent->trail": {
+      "source": "injecagent",
+      "target": "trail",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "failure",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 17.602864864864863,
+        "low_diversity": 0.6188472449651522,
+        "repeat_rate": 0.4491002715206802
+      },
+      "wasserstein_mean": 6.223604127116899,
+      "kl_divergence": {
+        "trace_length": 20.98256991387982,
+        "low_diversity": 25.66888577357536,
+        "repeat_rate": 25.32170313730677
+      },
+      "kl_mean": 23.991052941587316,
+      "mmd_rbf": 0.6792628884364205,
+      "cohens_d_diff": {
+        "trace_length": 1.365504055392309,
+        "low_diversity": 0.4767960834328309,
+        "repeat_rate": 1.8126516811489135
+      },
+      "cohens_d_diff_mean": 1.2183172733246845,
+      "auroc_raw": 0.7451977401129943,
+      "auroc_pafc": 0.888135593220339,
+      "pafc_delta": 0.14293785310734464
+    },
+    "rjudge->agentharm": {
+      "source": "rjudge",
+      "target": "agentharm",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 1.061792493904563,
+        "low_diversity": 0.01936842425348174,
+        "repeat_rate": 0.020527732165663205
+      },
+      "wasserstein_mean": 0.36722955010790265,
+      "kl_divergence": {
+        "trace_length": 0.645513548114895,
+        "low_diversity": 0.6402545169712152,
+        "repeat_rate": 0.46086860345805675
+      },
+      "kl_mean": 0.5822122228480556,
+      "mmd_rbf": 0.2656496490692445,
+      "cohens_d_diff": {
+        "trace_length": 0.6104604115932293,
+        "low_diversity": 0.14321735324516957,
+        "repeat_rate": 0.12998575603909185
+      },
+      "cohens_d_diff_mean": 0.2945545069591636
+    },
+    "rjudge->atbench": {
+      "source": "rjudge",
+      "target": "atbench",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 1.8933691137063398,
+        "low_diversity": 0.007444576558090948,
+        "repeat_rate": 0.01294590183834189
+      },
+      "wasserstein_mean": 0.6379198640342576,
+      "kl_divergence": {
+        "trace_length": 1.6480231475608296,
+        "low_diversity": 0.28301100276858615,
+        "repeat_rate": 0.2118953446085143
+      },
+      "kl_mean": 0.7143098316459766,
+      "mmd_rbf": 0.595070116712923,
+      "cohens_d_diff": {
+        "trace_length": 1.6193350806616014,
+        "low_diversity": 0.2204658827957182,
+        "repeat_rate": 0.19647811707183488
+      },
+      "cohens_d_diff_mean": 0.6787596935097181
+    },
+    "rjudge->injecagent": {
+      "source": "rjudge",
+      "target": "injecagent",
+      "same_semantic_group": true,
+      "source_group": "safety",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 0.322344827586207,
+        "low_diversity": 0.01905469876328567,
+        "repeat_rate": 0.020057143930369094
+      },
+      "wasserstein_mean": 0.12048555675995393,
+      "kl_divergence": {
+        "trace_length": 1.2773581368676632,
+        "low_diversity": 0.5226018624983113,
+        "repeat_rate": 0.32568369063788866
+      },
+      "kl_mean": 0.7085478966679544,
+      "mmd_rbf": 0.19816509009257,
+      "cohens_d_diff": {
+        "trace_length": 0.43039107215483174,
+        "low_diversity": 0.11229122815286763,
+        "repeat_rate": 0.0990596309467899
+      },
+      "cohens_d_diff_mean": 0.21391397708482976
+    },
+    "rjudge->swe_agent": {
+      "source": "rjudge",
+      "target": "swe_agent",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "failure",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 22.105691954022987,
+        "low_diversity": 0.4960144410263433,
+        "repeat_rate": 0.1861598745966152
+      },
+      "wasserstein_mean": 7.595955423215315,
+      "kl_divergence": {
+        "trace_length": 7.547405531682607,
+        "low_diversity": 9.695681415683307,
+        "repeat_rate": 7.214077003422217
+      },
+      "kl_mean": 8.152387983596043,
+      "mmd_rbf": 0.7210660195736939,
+      "cohens_d_diff": {
+        "trace_length": 0.08195993238408572,
+        "low_diversity": 0.5610202504362144,
+        "repeat_rate": 0.4748412219199252
+      },
+      "cohens_d_diff_mean": 0.3726071349134084
+    },
+    "rjudge->synthetic": {
+      "source": "rjudge",
+      "target": "synthetic",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "injected",
+      "n_reversed_features": 3,
+      "wasserstein": {
+        "trace_length": 24.09859195402299,
+        "low_diversity": 0.4718409846072229,
+        "repeat_rate": 0.09188325982858699
+      },
+      "wasserstein_mean": 8.220772066152934,
+      "kl_divergence": {
+        "trace_length": 18.16943926831391,
+        "low_diversity": 10.421138917362596,
+        "repeat_rate": 9.491296923350236
+      },
+      "kl_mean": 12.69395836967558,
+      "mmd_rbf": 0.9247604163007652,
+      "cohens_d_diff": {
+        "trace_length": 0.9286060629775781,
+        "low_diversity": 0.6707750441583338,
+        "repeat_rate": 0.28816373689928465
+      },
+      "cohens_d_diff_mean": 0.6291816146783988,
+      "auroc_raw": 0.36588205206894786,
+      "auroc_pafc": 0.6341179479310523,
+      "pafc_delta": 0.2682358958621044
+    },
+    "rjudge->toolbench": {
+      "source": "rjudge",
+      "target": "toolbench",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "api_misuse",
+      "n_reversed_features": 2,
+      "wasserstein": {
+        "trace_length": 0.5614544061302683,
+        "low_diversity": 0.12349800431794684,
+        "repeat_rate": 0.14424750592957486
+      },
+      "wasserstein_mean": 0.27639997212593004,
+      "kl_divergence": {
+        "trace_length": 0.29476085356283976,
+        "low_diversity": 0.5756192728313292,
+        "repeat_rate": 0.4765762911715675
+      },
+      "kl_mean": 0.4489854725219122,
+      "mmd_rbf": 0.12766809873119855,
+      "cohens_d_diff": {
+        "trace_length": 1.0640729024464375,
+        "low_diversity": 0.44511726984028377,
+        "repeat_rate": 0.5075505420101876
+      },
+      "cohens_d_diff_mean": 0.6722469047656362,
+      "auroc_raw": 0.6522283927740959,
+      "auroc_pafc": 0.8640101805022672,
+      "pafc_delta": 0.21178178772817124
+    },
+    "rjudge->trail": {
+      "source": "rjudge",
+      "target": "trail",
+      "same_semantic_group": false,
+      "source_group": "safety",
+      "target_group": "failure",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 17.430956818887854,
+        "low_diversity": 0.5997925462018665,
+        "repeat_rate": 0.4294394811376754
+      },
+      "wasserstein_mean": 6.153396282075797,
+      "kl_divergence": {
+        "trace_length": 16.208473233305295,
+        "low_diversity": 23.09243221387608,
+        "repeat_rate": 19.778027815883075
+      },
+      "kl_mean": 19.692977754354818,
+      "mmd_rbf": 0.9686012136012809,
+      "cohens_d_diff": {
+        "trace_length": 0.9351129832374772,
+        "low_diversity": 0.36450485527996324,
+        "repeat_rate": 1.7135920502021236
+      },
+      "cohens_d_diff_mean": 1.0044032962398546,
+      "auroc_raw": 0.7451977401129943,
+      "auroc_pafc": 0.888135593220339,
+      "pafc_delta": 0.14293785310734464
+    },
+    "swe_agent->agentharm": {
+      "source": "swe_agent",
+      "target": "agentharm",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 21.082213636363637,
+        "low_diversity": 0.5153828652798251,
+        "repeat_rate": 0.20667850238601893
+      },
+      "wasserstein_mean": 7.268091668009827,
+      "kl_divergence": {
+        "trace_length": 9.053331352425111,
+        "low_diversity": 12.550705286374624,
+        "repeat_rate": 8.736150636092235
+      },
+      "kl_mean": 10.113395758297322,
+      "mmd_rbf": 0.6659976803957,
+      "cohens_d_diff": {
+        "trace_length": 0.5285004792091436,
+        "low_diversity": 0.704237603681384,
+        "repeat_rate": 0.6048269779590171
+      },
+      "cohens_d_diff_mean": 0.6125216869498482
+    },
+    "swe_agent->atbench": {
+      "source": "swe_agent",
+      "target": "atbench",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 20.296614028056112,
+        "low_diversity": 0.5034590175844342,
+        "repeat_rate": 0.19909667205869758
+      },
+      "wasserstein_mean": 6.999723239233081,
+      "kl_divergence": {
+        "trace_length": 8.700330257912496,
+        "low_diversity": 11.301282727743867,
+        "repeat_rate": 7.578706533411914
+      },
+      "kl_mean": 9.193439839689427,
+      "mmd_rbf": 0.6677322568177404,
+      "cohens_d_diff": {
+        "trace_length": 1.701295013045687,
+        "low_diversity": 0.7814861332319326,
+        "repeat_rate": 0.6713193389917601
+      },
+      "cohens_d_diff_mean": 1.0513668284231266
+    },
+    "swe_agent->injecagent": {
+      "source": "swe_agent",
+      "target": "injecagent",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 22.2776,
+        "low_diversity": 0.5150691397896289,
+        "repeat_rate": 0.20620791415072476
+      },
+      "wasserstein_mean": 7.666292351313451,
+      "kl_divergence": {
+        "trace_length": 10.725554390338415,
+        "low_diversity": 12.211452345495934,
+        "repeat_rate": 8.588151134420649
+      },
+      "kl_mean": 10.508385956751665,
+      "mmd_rbf": 0.6840992505877347,
+      "cohens_d_diff": {
+        "trace_length": 0.5123510045389175,
+        "low_diversity": 0.673311478589082,
+        "repeat_rate": 0.5739008528667151
+      },
+      "cohens_d_diff_mean": 0.5865211119982382
+    },
+    "swe_agent->rjudge": {
+      "source": "swe_agent",
+      "target": "rjudge",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 22.105691954022987,
+        "low_diversity": 0.4960144410263433,
+        "repeat_rate": 0.1861598745966152
+      },
+      "wasserstein_mean": 7.595955423215315,
+      "kl_divergence": {
+        "trace_length": 7.547405531682607,
+        "low_diversity": 9.695681415683307,
+        "repeat_rate": 7.214077003422217
+      },
+      "kl_mean": 8.152387983596043,
+      "mmd_rbf": 0.7210660195736939,
+      "cohens_d_diff": {
+        "trace_length": 0.08195993238408572,
+        "low_diversity": 0.5610202504362144,
+        "repeat_rate": 0.4748412219199252
+      },
+      "cohens_d_diff_mean": 0.3726071349134084
+    },
+    "swe_agent->synthetic": {
+      "source": "swe_agent",
+      "target": "synthetic",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "injected",
+      "n_reversed_features": 3,
+      "wasserstein": {
+        "trace_length": 8.7471,
+        "low_diversity": 0.09481936772595652,
+        "repeat_rate": 0.11815014706038168
+      },
+      "wasserstein_mean": 2.9866898382621123,
+      "kl_divergence": {
+        "trace_length": 0.8634367688469478,
+        "low_diversity": 2.4060312291421924,
+        "repeat_rate": 1.7731814590240709
+      },
+      "kl_mean": 1.6808831523377368,
+      "mmd_rbf": 0.1080593621777245,
+      "cohens_d_diff": {
+        "trace_length": 0.8466461305934924,
+        "low_diversity": 1.2317952945945483,
+        "repeat_rate": 0.7630049588192098
+      },
+      "cohens_d_diff_mean": 0.9471487946690834,
+      "auroc_raw": 0.36588205206894786,
+      "auroc_pafc": 0.6341179479310523,
+      "pafc_delta": 0.2682358958621044
+    },
+    "swe_agent->toolbench": {
+      "source": "swe_agent",
+      "target": "toolbench",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "api_misuse",
+      "n_reversed_features": 2,
+      "wasserstein": {
+        "trace_length": 21.641199999999998,
+        "low_diversity": 0.3725164367083965,
+        "repeat_rate": 0.08716985872796162
+      },
+      "wasserstein_mean": 7.366962098478784,
+      "kl_divergence": {
+        "trace_length": 9.276873598537902,
+        "low_diversity": 8.00812967875332,
+        "repeat_rate": 6.45122470054283
+      },
+      "kl_mean": 7.912075992611352,
+      "mmd_rbf": 0.7481955068302676,
+      "cohens_d_diff": {
+        "trace_length": 1.1460328348305233,
+        "low_diversity": 1.0061375202764982,
+        "repeat_rate": 0.9823917639301128
+      },
+      "cohens_d_diff_mean": 1.0448540396790447,
+      "auroc_raw": 0.6522283927740959,
+      "auroc_pafc": 0.8640101805022672,
+      "pafc_delta": 0.21178178772817124
+    },
+    "swe_agent->trail": {
+      "source": "swe_agent",
+      "target": "trail",
+      "same_semantic_group": true,
+      "source_group": "failure",
+      "target_group": "failure",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 4.957567567567569,
+        "low_diversity": 0.11895047533057232,
+        "repeat_rate": 0.24453423960269138
+      },
+      "wasserstein_mean": 1.773684094166944,
+      "kl_divergence": {
+        "trace_length": 1.3764182718704554,
+        "low_diversity": 6.430755548822972,
+        "repeat_rate": 9.382227286703893
+      },
+      "kl_mean": 5.72980036913244,
+      "mmd_rbf": 0.02404219972890609,
+      "cohens_d_diff": {
+        "trace_length": 0.8531530508533915,
+        "low_diversity": 0.19651539515625116,
+        "repeat_rate": 1.2387508282821984
+      },
+      "cohens_d_diff_mean": 0.762806424763947,
+      "auroc_raw": 0.7451977401129943,
+      "auroc_pafc": 0.888135593220339,
+      "pafc_delta": 0.14293785310734464
+    },
+    "synthetic->agentharm": {
+      "source": "synthetic",
+      "target": "agentharm",
+      "same_semantic_group": false,
+      "source_group": "injected",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 23.075113636363636,
+        "low_diversity": 0.49120940886070463,
+        "repeat_rate": 0.0960753164304694
+      },
+      "wasserstein_mean": 7.887466120551603,
+      "kl_divergence": {
+        "trace_length": 15.360281883400859,
+        "low_diversity": 12.694242420595891,
+        "repeat_rate": 10.548666158744311
+      },
+      "kl_mean": 12.86773015424702,
+      "mmd_rbf": 0.8737932240307787,
+      "cohens_d_diff": {
+        "trace_length": 0.3181456513843488,
+        "low_diversity": 0.5275576909131642,
+        "repeat_rate": 0.1581779808601928
+      },
+      "cohens_d_diff_mean": 0.33462710771923526
+    },
+    "synthetic->atbench": {
+      "source": "synthetic",
+      "target": "atbench",
+      "same_semantic_group": false,
+      "source_group": "injected",
+      "target_group": "safety",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 22.289514028056114,
+        "low_diversity": 0.4792855611653138,
+        "repeat_rate": 0.0903164860692791
+      },
+      "wasserstein_mean": 7.619705358430235,
+      "kl_divergence": {
+        "trace_length": 13.011670125201729,
+        "low_diversity": 11.96094934202932,
+        "repeat_rate": 10.041773501646665
+      },
+      "kl_mean": 11.671464322959238,
+      "mmd_rbf": 0.8648774419822656,
+      "cohens_d_diff": {
+        "trace_length": 2.5479411436391795,
+        "low_diversity": 0.45030916136261556,
+        "repeat_rate": 0.09168561982744977
+      },
+      "cohens_d_diff_mean": 1.0299786416097483,
+      "auroc_raw": 0.8795100401606426,
+      "auroc_pafc": 0.11544578313253011,
+      "pafc_delta": -0.7640642570281125
+    },
+    "synthetic->injecagent": {
+      "source": "synthetic",
+      "target": "injecagent",
+      "same_semantic_group": false,
+      "source_group": "injected",
+      "target_group": "safety",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 24.2705,
+        "low_diversity": 0.4908956833705085,
+        "repeat_rate": 0.09566775340525932
+      },
+      "wasserstein_mean": 8.285687812258589,
+      "kl_divergence": {
+        "trace_length": 20.787791565725207,
+        "low_diversity": 12.458708628941336,
+        "repeat_rate": 10.542626820656157
+      },
+      "kl_mean": 14.596375671774235,
+      "mmd_rbf": 0.8779655551848919,
+      "cohens_d_diff": {
+        "trace_length": 1.3589971351324097,
+        "low_diversity": 0.5584838160054661,
+        "repeat_rate": 0.18910410595249474
+      },
+      "cohens_d_diff_mean": 0.7021950190301235,
+      "auroc_raw": 0.7580645161290323,
+      "auroc_pafc": 0.24288425047438328,
+      "pafc_delta": -0.5151802656546489
+    },
+    "synthetic->rjudge": {
+      "source": "synthetic",
+      "target": "rjudge",
+      "same_semantic_group": false,
+      "source_group": "injected",
+      "target_group": "safety",
+      "n_reversed_features": 3,
+      "wasserstein": {
+        "trace_length": 24.09859195402299,
+        "low_diversity": 0.4718409846072229,
+        "repeat_rate": 0.09188325982858699
+      },
+      "wasserstein_mean": 8.220772066152934,
+      "kl_divergence": {
+        "trace_length": 18.16943926831391,
+        "low_diversity": 10.421138917362596,
+        "repeat_rate": 9.491296923350236
+      },
+      "kl_mean": 12.69395836967558,
+      "mmd_rbf": 0.9247604163007652,
+      "cohens_d_diff": {
+        "trace_length": 0.9286060629775781,
+        "low_diversity": 0.6707750441583338,
+        "repeat_rate": 0.28816373689928465
+      },
+      "cohens_d_diff_mean": 0.6291816146783988,
+      "auroc_raw": 0.787843632518797,
+      "auroc_pafc": 0.2121563674812031,
+      "pafc_delta": -0.5756872650375939
+    },
+    "synthetic->swe_agent": {
+      "source": "synthetic",
+      "target": "swe_agent",
+      "same_semantic_group": false,
+      "source_group": "injected",
+      "target_group": "failure",
+      "n_reversed_features": 3,
+      "wasserstein": {
+        "trace_length": 8.7471,
+        "low_diversity": 0.09481936772595652,
+        "repeat_rate": 0.11815014706038168
+      },
+      "wasserstein_mean": 2.9866898382621123,
+      "kl_divergence": {
+        "trace_length": 0.8634367688469478,
+        "low_diversity": 2.4060312291421924,
+        "repeat_rate": 1.7731814590240709
+      },
+      "kl_mean": 1.6808831523377368,
+      "mmd_rbf": 0.1080593621777245,
+      "cohens_d_diff": {
+        "trace_length": 0.8466461305934924,
+        "low_diversity": 1.2317952945945483,
+        "repeat_rate": 0.7630049588192098
+      },
+      "cohens_d_diff_mean": 0.9471487946690834,
+      "auroc_raw": 0.7219775252369336,
+      "auroc_pafc": 0.2780224747630663,
+      "pafc_delta": -0.4439550504738673
+    },
+    "synthetic->toolbench": {
+      "source": "synthetic",
+      "target": "toolbench",
+      "same_semantic_group": false,
+      "source_group": "injected",
+      "target_group": "api_misuse",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 23.6341,
+        "low_diversity": 0.348342980289276,
+        "repeat_rate": 0.1524037589817503
+      },
+      "wasserstein_mean": 8.044948913090343,
+      "kl_divergence": {
+        "trace_length": 16.784744119005452,
+        "low_diversity": 8.512059551097405,
+        "repeat_rate": 9.963840075899792
+      },
+      "kl_mean": 11.753547915334217,
+      "mmd_rbf": 0.9290054757052935,
+      "cohens_d_diff": {
+        "trace_length": 1.9926789654240156,
+        "low_diversity": 0.22565777431805,
+        "repeat_rate": 0.21938680511090297
+      },
+      "cohens_d_diff_mean": 0.8125745149509895,
+      "auroc_raw": 0.6522283927740959,
+      "auroc_pafc": 0.13598981949773278,
+      "pafc_delta": -0.5162385732763631
+    },
+    "synthetic->trail": {
+      "source": "synthetic",
+      "target": "trail",
+      "same_semantic_group": false,
+      "source_group": "injected",
+      "target_group": "failure",
+      "n_reversed_features": 2,
+      "wasserstein": {
+        "trace_length": 11.283499999999998,
+        "low_diversity": 0.12795156159464366,
+        "repeat_rate": 0.3534955433255049
+      },
+      "wasserstein_mean": 3.9216490349733824,
+      "kl_divergence": {
+        "trace_length": 2.0511441448266945,
+        "low_diversity": 6.847171333680585,
+        "repeat_rate": 15.818605635071922
+      },
+      "kl_mean": 8.2389737045264,
+      "mmd_rbf": 0.18658065356152664,
+      "cohens_d_diff": {
+        "trace_length": 0.006506920259899129,
+        "low_diversity": 1.035279899438297,
+        "repeat_rate": 2.0017557871014082
+      },
+      "cohens_d_diff_mean": 1.0145142022665348,
+      "auroc_raw": 0.7451977401129943,
+      "auroc_pafc": 0.111864406779661,
+      "pafc_delta": -0.6333333333333333
+    },
+    "toolbench->agentharm": {
+      "source": "toolbench",
+      "target": "agentharm",
+      "same_semantic_group": false,
+      "source_group": "api_misuse",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 0.5589863636363637,
+        "low_diversity": 0.1428664285714286,
+        "repeat_rate": 0.16477523809523806
+      },
+      "wasserstein_mean": 0.2888760101010101,
+      "kl_divergence": {
+        "trace_length": 0.18286301407547678,
+        "low_diversity": 4.6138310235879185,
+        "repeat_rate": 3.4003486134776373
+      },
+      "kl_mean": 2.7323475503803443,
+      "mmd_rbf": 0.06631527156477857,
+      "cohens_d_diff": {
+        "trace_length": 1.6745333140396668,
+        "low_diversity": 0.30189991659511417,
+        "repeat_rate": 0.3775647859710958
+      },
+      "cohens_d_diff_mean": 0.7846660055352922
+    },
+    "toolbench->atbench": {
+      "source": "toolbench",
+      "target": "atbench",
+      "same_semantic_group": false,
+      "source_group": "api_misuse",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 1.3545859719438877,
+        "low_diversity": 0.1309425808760378,
+        "repeat_rate": 0.1571934077679168
+      },
+      "wasserstein_mean": 0.5475739868626142,
+      "kl_divergence": {
+        "trace_length": 0.8574110258022223,
+        "low_diversity": 2.081907747105627,
+        "repeat_rate": 1.520812080466245
+      },
+      "kl_mean": 1.4867102844580316,
+      "mmd_rbf": 0.31468482875311365,
+      "cohens_d_diff": {
+        "trace_length": 0.5552621782151637,
+        "low_diversity": 0.22465138704456555,
+        "repeat_rate": 0.31107242493835274
+      },
+      "cohens_d_diff_mean": 0.363661996732694
+    },
+    "toolbench->injecagent": {
+      "source": "toolbench",
+      "target": "injecagent",
+      "same_semantic_group": false,
+      "source_group": "api_misuse",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 0.6363999999999999,
+        "low_diversity": 0.14255270308123252,
+        "repeat_rate": 0.16430464985994395
+      },
+      "wasserstein_mean": 0.3144191176470588,
+      "kl_divergence": {
+        "trace_length": 4.149611194851043,
+        "low_diversity": 3.4682805882164787,
+        "repeat_rate": 2.483306109055384
+      },
+      "kl_mean": 3.3670659640409686,
+      "mmd_rbf": 0.5159244039647689,
+      "cohens_d_diff": {
+        "trace_length": 0.6336818302916059,
+        "low_diversity": 0.3328260416874161,
+        "repeat_rate": 0.4084909110633977
+      },
+      "cohens_d_diff_mean": 0.4583329276808065
+    },
+    "toolbench->rjudge": {
+      "source": "toolbench",
+      "target": "rjudge",
+      "same_semantic_group": false,
+      "source_group": "api_misuse",
+      "target_group": "safety",
+      "n_reversed_features": 2,
+      "wasserstein": {
+        "trace_length": 0.5614544061302683,
+        "low_diversity": 0.12349800431794684,
+        "repeat_rate": 0.14424750592957486
+      },
+      "wasserstein_mean": 0.27639997212593004,
+      "kl_divergence": {
+        "trace_length": 0.29476085356283976,
+        "low_diversity": 0.5756192728313292,
+        "repeat_rate": 0.4765762911715675
+      },
+      "kl_mean": 0.4489854725219122,
+      "mmd_rbf": 0.12766809873119866,
+      "cohens_d_diff": {
+        "trace_length": 1.0640729024464375,
+        "low_diversity": 0.44511726984028377,
+        "repeat_rate": 0.5075505420101876
+      },
+      "cohens_d_diff_mean": 0.6722469047656362,
+      "auroc_raw": 0.787843632518797,
+      "auroc_pafc": 0.7483552631578948,
+      "pafc_delta": -0.039488369360902165
+    },
+    "toolbench->swe_agent": {
+      "source": "toolbench",
+      "target": "swe_agent",
+      "same_semantic_group": false,
+      "source_group": "api_misuse",
+      "target_group": "failure",
+      "n_reversed_features": 2,
+      "wasserstein": {
+        "trace_length": 21.641199999999998,
+        "low_diversity": 0.3725164367083965,
+        "repeat_rate": 0.08716985872796162
+      },
+      "wasserstein_mean": 7.366962098478784,
+      "kl_divergence": {
+        "trace_length": 9.276873598537902,
+        "low_diversity": 8.00812967875332,
+        "repeat_rate": 6.45122470054283
+      },
+      "kl_mean": 7.912075992611352,
+      "mmd_rbf": 0.7481955068302676,
+      "cohens_d_diff": {
+        "trace_length": 1.1460328348305233,
+        "low_diversity": 1.0061375202764982,
+        "repeat_rate": 0.9823917639301128
+      },
+      "cohens_d_diff_mean": 1.0448540396790447,
+      "auroc_raw": 0.7219775252369336,
+      "auroc_pafc": 0.3249432973317573,
+      "pafc_delta": -0.3970342279051763
+    },
+    "toolbench->synthetic": {
+      "source": "toolbench",
+      "target": "synthetic",
+      "same_semantic_group": false,
+      "source_group": "api_misuse",
+      "target_group": "injected",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 23.6341,
+        "low_diversity": 0.348342980289276,
+        "repeat_rate": 0.1524037589817503
+      },
+      "wasserstein_mean": 8.044948913090343,
+      "kl_divergence": {
+        "trace_length": 16.784744119005452,
+        "low_diversity": 8.512059551097405,
+        "repeat_rate": 9.963840075899792
+      },
+      "kl_mean": 11.753547915334217,
+      "mmd_rbf": 0.9290054757052935,
+      "cohens_d_diff": {
+        "trace_length": 1.9926789654240156,
+        "low_diversity": 0.22565777431805,
+        "repeat_rate": 0.21938680511090297
+      },
+      "cohens_d_diff_mean": 0.8125745149509895,
+      "auroc_raw": 0.36588205206894786,
+      "auroc_pafc": 0.4179264487749988,
+      "pafc_delta": 0.05204439670605093
+    },
+    "toolbench->trail": {
+      "source": "toolbench",
+      "target": "trail",
+      "same_semantic_group": false,
+      "source_group": "api_misuse",
+      "target_group": "failure",
+      "n_reversed_features": 3,
+      "wasserstein": {
+        "trace_length": 16.966464864864864,
+        "low_diversity": 0.4762945418839196,
+        "repeat_rate": 0.30247134281231947
+      },
+      "wasserstein_mean": 5.915076916520367,
+      "kl_divergence": {
+        "trace_length": 17.252077294844643,
+        "low_diversity": 17.12290863384971,
+        "repeat_rate": 16.980015907772867
+      },
+      "kl_mean": 17.118333945489073,
+      "mmd_rbf": 0.8375761816708861,
+      "cohens_d_diff": {
+        "trace_length": 1.9991858856839149,
+        "low_diversity": 0.809622125120247,
+        "repeat_rate": 2.221142592212311
+      },
+      "cohens_d_diff_mean": 1.6766502010054911,
+      "auroc_raw": 0.7451977401129943,
+      "auroc_pafc": 0.2548022598870057,
+      "pafc_delta": -0.4903954802259886
+    },
+    "trail->agentharm": {
+      "source": "trail",
+      "target": "agentharm",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "safety",
+      "n_reversed_features": 0,
+      "wasserstein": {
+        "trace_length": 16.4074785012285,
+        "low_diversity": 0.6191609704553482,
+        "repeat_rate": 0.44957085975597433
+      },
+      "wasserstein_mean": 5.825403443813273,
+      "kl_divergence": {
+        "trace_length": 16.1874955704774,
+        "low_diversity": 25.672635377886962,
+        "repeat_rate": 25.743672867640925
+      },
+      "kl_mean": 22.534601272001762,
+      "mmd_rbf": 0.7601766729293162,
+      "cohens_d_diff": {
+        "trace_length": 0.32465257164424793,
+        "low_diversity": 0.5077222085251328,
+        "repeat_rate": 1.8435778062412154
+      },
+      "cohens_d_diff_mean": 0.8919841954701987
+    },
+    "trail->atbench": {
+      "source": "trail",
+      "target": "atbench",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "safety",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 15.621878892920979,
+        "low_diversity": 0.6072371227599573,
+        "repeat_rate": 0.44198902942865304
+      },
+      "wasserstein_mean": 5.55703501503653,
+      "kl_divergence": {
+        "trace_length": 20.636728610345145,
+        "low_diversity": 25.54212789460712,
+        "repeat_rate": 20.9999232039994
+      },
+      "kl_mean": 22.392926569650555,
+      "mmd_rbf": 0.6621420930506894,
+      "cohens_d_diff": {
+        "trace_length": 2.5544480638990783,
+        "low_diversity": 0.5849707380756815,
+        "repeat_rate": 1.9100701672739584
+      },
+      "cohens_d_diff_mean": 1.6831629897495726,
+      "auroc_raw": 0.8795100401606426,
+      "auroc_pafc": 0.11544578313253011,
+      "pafc_delta": -0.7640642570281125
+    },
+    "trail->injecagent": {
+      "source": "trail",
+      "target": "injecagent",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "safety",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 17.602864864864863,
+        "low_diversity": 0.6188472449651522,
+        "repeat_rate": 0.4491002715206802
+      },
+      "wasserstein_mean": 6.223604127116899,
+      "kl_divergence": {
+        "trace_length": 20.98256991387982,
+        "low_diversity": 25.66888577357536,
+        "repeat_rate": 25.32170313730677
+      },
+      "kl_mean": 23.991052941587316,
+      "mmd_rbf": 0.6792628884364205,
+      "cohens_d_diff": {
+        "trace_length": 1.365504055392309,
+        "low_diversity": 0.4767960834328309,
+        "repeat_rate": 1.8126516811489135
+      },
+      "cohens_d_diff_mean": 1.2183172733246845,
+      "auroc_raw": 0.7580645161290323,
+      "auroc_pafc": 0.24288425047438328,
+      "pafc_delta": -0.5151802656546489
+    },
+    "trail->rjudge": {
+      "source": "trail",
+      "target": "rjudge",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "safety",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 17.430956818887854,
+        "low_diversity": 0.5997925462018665,
+        "repeat_rate": 0.4294394811376754
+      },
+      "wasserstein_mean": 6.153396282075797,
+      "kl_divergence": {
+        "trace_length": 16.208473233305295,
+        "low_diversity": 23.09243221387608,
+        "repeat_rate": 19.778027815883075
+      },
+      "kl_mean": 19.692977754354818,
+      "mmd_rbf": 0.9686012136012809,
+      "cohens_d_diff": {
+        "trace_length": 0.9351129832374772,
+        "low_diversity": 0.36450485527996324,
+        "repeat_rate": 1.7135920502021236
+      },
+      "cohens_d_diff_mean": 1.0044032962398546,
+      "auroc_raw": 0.787843632518797,
+      "auroc_pafc": 0.25164473684210525,
+      "pafc_delta": -0.5361988956766917
+    },
+    "trail->swe_agent": {
+      "source": "trail",
+      "target": "swe_agent",
+      "same_semantic_group": true,
+      "source_group": "failure",
+      "target_group": "failure",
+      "n_reversed_features": 1,
+      "wasserstein": {
+        "trace_length": 4.957567567567569,
+        "low_diversity": 0.11895047533057232,
+        "repeat_rate": 0.24453423960269138
+      },
+      "wasserstein_mean": 1.773684094166944,
+      "kl_divergence": {
+        "trace_length": 1.3764182718704554,
+        "low_diversity": 6.430755548822972,
+        "repeat_rate": 9.382227286703893
+      },
+      "kl_mean": 5.72980036913244,
+      "mmd_rbf": 0.02404219972890609,
+      "cohens_d_diff": {
+        "trace_length": 0.8531530508533915,
+        "low_diversity": 0.19651539515625116,
+        "repeat_rate": 1.2387508282821984
+      },
+      "cohens_d_diff_mean": 0.762806424763947,
+      "auroc_raw": 0.7219775252369336,
+      "auroc_pafc": 0.6750567026682426,
+      "pafc_delta": -0.04692082256869101
+    },
+    "trail->synthetic": {
+      "source": "trail",
+      "target": "synthetic",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "injected",
+      "n_reversed_features": 2,
+      "wasserstein": {
+        "trace_length": 11.283499999999998,
+        "low_diversity": 0.12795156159464366,
+        "repeat_rate": 0.3534955433255049
+      },
+      "wasserstein_mean": 3.9216490349733824,
+      "kl_divergence": {
+        "trace_length": 2.0511441448266945,
+        "low_diversity": 6.847171333680585,
+        "repeat_rate": 15.818605635071922
+      },
+      "kl_mean": 8.2389737045264,
+      "mmd_rbf": 0.18658065356152675,
+      "cohens_d_diff": {
+        "trace_length": 0.006506920259899129,
+        "low_diversity": 1.035279899438297,
+        "repeat_rate": 2.0017557871014082
+      },
+      "cohens_d_diff_mean": 1.0145142022665348,
+      "auroc_raw": 0.36588205206894786,
+      "auroc_pafc": 0.5820735512250013,
+      "pafc_delta": 0.2161914991560534
+    },
+    "trail->toolbench": {
+      "source": "trail",
+      "target": "toolbench",
+      "same_semantic_group": false,
+      "source_group": "failure",
+      "target_group": "api_misuse",
+      "n_reversed_features": 3,
+      "wasserstein": {
+        "trace_length": 16.966464864864864,
+        "low_diversity": 0.4762945418839196,
+        "repeat_rate": 0.30247134281231947
+      },
+      "wasserstein_mean": 5.915076916520367,
+      "kl_divergence": {
+        "trace_length": 17.252077294844643,
+        "low_diversity": 17.12290863384971,
+        "repeat_rate": 16.980015907772867
+      },
+      "kl_mean": 17.118333945489073,
+      "mmd_rbf": 0.8375761816708861,
+      "cohens_d_diff": {
+        "trace_length": 1.9991858856839149,
+        "low_diversity": 0.809622125120247,
+        "repeat_rate": 2.221142592212311
+      },
+      "cohens_d_diff_mean": 1.6766502010054911,
+      "auroc_raw": 0.6522283927740959,
+      "auroc_pafc": 0.34777160722590394,
+      "pafc_delta": -0.304456785548192
+    }
+  },
+  "correlations": {
+    "wasserstein_mean": {
+      "vs_auroc_raw": {
+        "rho": -0.10162735779271924,
+        "p": 0.6213086521514624
+      },
+      "vs_pafc_delta": {
+        "rho": -0.19865963683586202,
+        "p": 0.33060628895269434
+      }
+    },
+    "kl_mean": {
+      "vs_auroc_raw": {
+        "rho": 0.3181075514470733,
+        "p": 0.11325748056081779
+      },
+      "vs_pafc_delta": {
+        "rho": -0.2667125920149289,
+        "p": 0.18780630068246704
+      }
+    },
+    "mmd_rbf": {
+      "vs_auroc_raw": {
+        "rho": 0.0040010735511300305,
+        "p": 0.9845234508601944
+      },
+      "vs_pafc_delta": {
+        "rho": -0.22521919737590715,
+        "p": 0.2686376279253076
+      }
+    },
+    "d_diff_mean": {
+      "vs_auroc_raw": {
+        "rho": 0.17680375944760748,
+        "p": 0.3875747641900603
+      },
+      "vs_pafc_delta": {
+        "rho": -0.17735012561817437,
+        "p": 0.3860860485051145
+      }
+    },
+    "n_reversed": {
+      "vs_auroc_raw": {
+        "rho": -0.2407562062594436,
+        "p": 0.23610813305458803
+      },
+      "vs_pafc_delta": {
+        "rho": 0.18172434016970188,
+        "p": 0.3742856577407812
+      }
+    },
+    "semantic_group_test": {
+      "within_group_auroc_mean": 0.733587632674964,
+      "between_group_auroc_mean": 0.650534568528527,
+      "mann_whitney_u": 25.5,
+      "p_value": 0.9221383606083416,
+      "n_within": 2,
+      "n_between": 24
+    },
+    "semantic_group_pafc_delta": {
+      "within_group_delta_mean": 0.04800851526932681,
+      "between_group_delta_mean": -0.19725430876778502,
+      "mann_whitney_u": 29.5,
+      "p_value": 0.6293709179920686
+    }
+  },
+  "meta_predictor": {
+    "features": [
+      "wasserstein",
+      "kl",
+      "mmd",
+      "d_diff",
+      "n_reversed"
+    ],
+    "coefficients": [
+      -0.049935926699454194,
+      0.005735438436078695,
+      0.21698015715767904,
+      0.0692311987058181,
+      -0.023964220125214614
+    ],
+    "intercept": 0.7029113928149335,
+    "r_squared": 0.22787094046932133,
+    "n_samples": 26,
+    "group_only_r_squared": 0.01723807890534146
+  },
+  "when_to_correct": {
+    "pafc_helps": {
+      "n_pairs": 12,
+      "pairs": [
+        "atbench->synthetic",
+        "atbench->trail",
+        "injecagent->synthetic",
+        "injecagent->trail",
+        "rjudge->synthetic",
+        "rjudge->toolbench",
+        "rjudge->trail",
+        "swe_agent->synthetic",
+        "swe_agent->toolbench",
+        "swe_agent->trail",
+        "toolbench->synthetic",
+        "trail->synthetic"
+      ],
+      "mean_n_reversed": 1.5833333333333333,
+      "pct_same_group": 8.333333333333332
+    },
+    "pafc_hurts": {
+      "n_pairs": 12,
+      "pairs": [
+        "synthetic->atbench",
+        "synthetic->injecagent",
+        "synthetic->rjudge",
+        "synthetic->swe_agent",
+        "synthetic->toolbench",
+        "synthetic->trail",
+        "toolbench->swe_agent",
+        "toolbench->trail",
+        "trail->atbench",
+        "trail->injecagent",
+        "trail->rjudge",
+        "trail->toolbench"
+      ],
+      "mean_n_reversed": 1.8333333333333333,
+      "pct_same_group": 0.0
+    },
+    "neutral": {
+      "n_pairs": 2
+    },
+    "n_reversed_vs_delta": {
+      "spearman_rho": 0.18172434016970188,
+      "p_value": 0.3742856577407812
+    }
+  },
+  "elapsed_seconds": 53.547547817230225
+}

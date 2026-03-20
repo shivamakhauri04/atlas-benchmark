@@ -1,0 +1,286 @@
+{
+  "experiment": "v30_llm_polarity",
+  "model": "all-MiniLM-L6-v2",
+  "embedding_dim": 384,
+  "input_type": "tool_name_plus_args_text",
+  "loaded_domains": [
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic",
+    "toolbench",
+    "trail"
+  ],
+  "n_pairs_total": 28,
+  "n_within_pairs": 7,
+  "n_between_pairs": 21,
+  "cosine_summary": {
+    "within_group_mean": 0.03825538875669033,
+    "between_group_mean": 0.045954366773747826,
+    "gap": -0.0076989780170574965,
+    "within_negative_rate": 0.5714285714285714,
+    "between_negative_rate": 0.42857142857142855,
+    "mannwhitney_p": 0.4793419141245228
+  },
+  "reversal_summary": {
+    "within_group_mean": 0.4870025230190572,
+    "between_group_mean": 0.4720313282028951
+  },
+  "pair_results": {
+    "agentharm-atbench": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": -0.002688026237158494,
+      "reversal_rate": 0.49295774647887325,
+      "n_reversed": 105,
+      "n_comparable": 213
+    },
+    "agentharm-injecagent": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": 0.07124448094856631,
+      "reversal_rate": 0.5,
+      "n_reversed": 108,
+      "n_comparable": 216
+    },
+    "agentharm-rjudge": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": -0.012431085353672659,
+      "reversal_rate": 0.5488372093023256,
+      "n_reversed": 118,
+      "n_comparable": 215
+    },
+    "agentharm-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.03487921069746705,
+      "reversal_rate": 0.5093167701863354,
+      "n_reversed": 82,
+      "n_comparable": 161
+    },
+    "agentharm-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.2576486154790061,
+      "reversal_rate": 0.3275862068965517,
+      "n_reversed": 38,
+      "n_comparable": 116
+    },
+    "agentharm-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.1320560955013368,
+      "reversal_rate": 0.46153846153846156,
+      "n_reversed": 90,
+      "n_comparable": 195
+    },
+    "agentharm-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.0742789605977531,
+      "reversal_rate": 0.41714285714285715,
+      "n_reversed": 73,
+      "n_comparable": 175
+    },
+    "atbench-injecagent": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": -0.017429763748790437,
+      "reversal_rate": 0.49280575539568344,
+      "n_reversed": 137,
+      "n_comparable": 278
+    },
+    "atbench-rjudge": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": -0.06504821426740984,
+      "reversal_rate": 0.539568345323741,
+      "n_reversed": 150,
+      "n_comparable": 278
+    },
+    "atbench-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.01739398604822858,
+      "reversal_rate": 0.4883720930232558,
+      "n_reversed": 105,
+      "n_comparable": 215
+    },
+    "atbench-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.02808749917474479,
+      "reversal_rate": 0.4931506849315068,
+      "n_reversed": 72,
+      "n_comparable": 146
+    },
+    "atbench-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": -0.006474385041661197,
+      "reversal_rate": 0.4962962962962963,
+      "n_reversed": 134,
+      "n_comparable": 270
+    },
+    "atbench-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.07018251493058258,
+      "reversal_rate": 0.5041666666666667,
+      "n_reversed": 121,
+      "n_comparable": 240
+    },
+    "injecagent-rjudge": {
+      "group_a": "safety",
+      "group_b": "safety",
+      "is_within_group": true,
+      "cosine": 0.1758377712696022,
+      "reversal_rate": 0.4172661870503597,
+      "n_reversed": 116,
+      "n_comparable": 278
+    },
+    "injecagent-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.09736330423914484,
+      "reversal_rate": 0.569377990430622,
+      "n_reversed": 119,
+      "n_comparable": 209
+    },
+    "injecagent-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.10966271012891411,
+      "reversal_rate": 0.4405594405594406,
+      "n_reversed": 63,
+      "n_comparable": 143
+    },
+    "injecagent-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.0457080715960333,
+      "reversal_rate": 0.4696969696969697,
+      "n_reversed": 124,
+      "n_comparable": 264
+    },
+    "injecagent-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.06187417176601277,
+      "reversal_rate": 0.5617021276595745,
+      "n_reversed": 132,
+      "n_comparable": 235
+    },
+    "rjudge-swe_agent": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.06579110841229734,
+      "reversal_rate": 0.5238095238095238,
+      "n_reversed": 110,
+      "n_comparable": 210
+    },
+    "rjudge-synthetic": {
+      "group_a": "safety",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.0734731472770591,
+      "reversal_rate": 0.47651006711409394,
+      "n_reversed": 71,
+      "n_comparable": 149
+    },
+    "rjudge-toolbench": {
+      "group_a": "safety",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.22118939444893154,
+      "reversal_rate": 0.38257575757575757,
+      "n_reversed": 101,
+      "n_comparable": 264
+    },
+    "rjudge-trail": {
+      "group_a": "safety",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": 0.10669858079423944,
+      "reversal_rate": 0.49166666666666664,
+      "n_reversed": 118,
+      "n_comparable": 240
+    },
+    "swe_agent-synthetic": {
+      "group_a": "failure",
+      "group_b": "injected",
+      "is_within_group": false,
+      "cosine": 0.041760803111710224,
+      "reversal_rate": 0.46956521739130436,
+      "n_reversed": 54,
+      "n_comparable": 115
+    },
+    "swe_agent-toolbench": {
+      "group_a": "failure",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": -0.1220450063439278,
+      "reversal_rate": 0.5594059405940595,
+      "n_reversed": 113,
+      "n_comparable": 202
+    },
+    "swe_agent-trail": {
+      "group_a": "failure",
+      "group_b": "failure",
+      "is_within_group": true,
+      "cosine": 0.11830255868569522,
+      "reversal_rate": 0.4175824175824176,
+      "n_reversed": 76,
+      "n_comparable": 182
+    },
+    "synthetic-toolbench": {
+      "group_a": "injected",
+      "group_b": "api_misuse",
+      "is_within_group": false,
+      "cosine": 0.3836739215010736,
+      "reversal_rate": 0.2391304347826087,
+      "n_reversed": 33,
+      "n_comparable": 138
+    },
+    "synthetic-trail": {
+      "group_a": "injected",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.010726155730158707,
+      "reversal_rate": 0.496,
+      "n_reversed": 62,
+      "n_comparable": 125
+    },
+    "toolbench-trail": {
+      "group_a": "api_misuse",
+      "group_b": "failure",
+      "is_within_group": false,
+      "cosine": -0.057254226249074114,
+      "reversal_rate": 0.5350877192982456,
+      "n_reversed": 122,
+      "n_comparable": 228
+    }
+  },
+  "elapsed_seconds": 365.7565162181854
+}

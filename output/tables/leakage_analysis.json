@@ -1,0 +1,111 @@
+{
+  "config": {
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1024
+    ],
+    "encoder_epochs": 30,
+    "n_seeds": 5
+  },
+  "mutual_information": {
+    "mi_bits": 0.024635959517592454,
+    "h_label": 0.037502764429780316,
+    "h_outcome": 6.656003181343983,
+    "h_joint": 6.668869986256171,
+    "n_actions": 273778,
+    "n_anomalous_actions": 1091,
+    "n_normal_actions": 272687
+  },
+  "aggregate": {
+    "seq_only_auroc": {
+      "mean": 0.6789081416464892,
+      "std": 0.005004888872610349,
+      "ci_lower": 0.6746926074455206,
+      "ci_upper": 0.683453295248184,
+      "n_obs": 5
+    },
+    "cq_auroc": {
+      "mean": 0.9362411092615013,
+      "std": 0.0020269400379789304,
+      "ci_lower": 0.934448774213075,
+      "ci_upper": 0.9378783292978208,
+      "n_obs": 5
+    },
+    "shuffled_cq_auroc": {
+      "mean": 0.6587025196731235,
+      "std": 0.010524158114105307,
+      "ci_lower": 0.6497597608958838,
+      "ci_upper": 0.6676452784503633,
+      "n_obs": 5
+    },
+    "outcome_only_auroc": {
+      "mean": 0.9744362893462469,
+      "std": 0.01703476939013746,
+      "ci_lower": 0.9592416389225182,
+      "ci_upper": 0.9892942266949152,
+      "n_obs": 5
+    },
+    "leakage_fraction": {
+      "mean": 1.0791333489004924,
+      "std": 0.04352808504901425,
+      "ci_lower": 1.0413440134104377,
+      "ci_upper": 1.1156231123158356,
+      "n_obs": 5
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "seq_only_auroc": 0.6764244098062955,
+      "cq_auroc": 0.9389471095641646,
+      "shuffled_cq_auroc": 0.6702150802058111,
+      "outcome_only_auroc": 0.9699701119854722,
+      "leakage_fraction": 1.0236525435941783,
+      "structural_fraction": -0.023652543594178344,
+      "cq_advantage": 0.2625226997578691
+    },
+    {
+      "seed": 123,
+      "seq_only_auroc": 0.6799192266949153,
+      "cq_auroc": 0.9374290632566585,
+      "shuffled_cq_auroc": 0.6716905644673123,
+      "outcome_only_auroc": 0.9755410108958837,
+      "leakage_fraction": 1.0319547491368548,
+      "structural_fraction": -0.03195474913685481,
+      "cq_advantage": 0.2575098365617432
+    },
+    {
+      "seed": 456,
+      "seq_only_auroc": 0.6873699493038742,
+      "cq_auroc": 0.9328465496368039,
+      "shuffled_cq_auroc": 0.654415102905569,
+      "outcome_only_auroc": 0.9462299485472154,
+      "leakage_fraction": 1.134248422674951,
+      "structural_fraction": -0.13424842267495096,
+      "cq_advantage": 0.24547660033292973
+    },
+    {
+      "seed": 789,
+      "seq_only_auroc": 0.6787322185230025,
+      "cq_auroc": 0.936275158898305,
+      "shuffled_cq_auroc": 0.652461977905569,
+      "outcome_only_auroc": 0.9819773380750605,
+      "leakage_fraction": 1.1020033419636792,
+      "structural_fraction": -0.10200334196367922,
+      "cq_advantage": 0.25754294037530256
+    },
+    {
+      "seed": 1024,
+      "seq_only_auroc": 0.6720949039043584,
+      "cq_auroc": 0.9357076649515738,
+      "shuffled_cq_auroc": 0.644729872881356,
+      "outcome_only_auroc": 0.9984630372276029,
+      "leakage_fraction": 1.1038076871327984,
+      "structural_fraction": -0.10380768713279842,
+      "cq_advantage": 0.2636127610472153
+    }
+  ]
+}

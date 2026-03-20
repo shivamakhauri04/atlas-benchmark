@@ -1,0 +1,43 @@
+[
+  {
+    "test": "chain_integrity",
+    "n_entries": 100,
+    "verified": true,
+    "denies": 5,
+    "permits": 95
+  },
+  {
+    "test": "tamper_detection",
+    "n_entries": 100,
+    "tamper_positions": 5,
+    "detections": 5,
+    "detection_rate": 1.0
+  },
+  {
+    "test": "save_load_roundtrip",
+    "n_entries": 100,
+    "hashes_match": true,
+    "chain_valid_after_load": true
+  },
+  {
+    "test": "query_functionality",
+    "n_entries": 500,
+    "deny_count": 100,
+    "specific_lookup": true,
+    "time_filter_works": true,
+    "combined_filter_works": true
+  },
+  {
+    "test": "throughput",
+    "n_entries": 10000,
+    "append_total_ms": 39.53,
+    "append_per_entry_us": 3.95,
+    "verify_total_ms": 28.31,
+    "verify_per_entry_us": 2.83,
+    "save_total_ms": 38.72,
+    "load_total_ms": 62.0,
+    "file_size_kb": 3188.11,
+    "entries_per_sec_append": 252971,
+    "entries_per_sec_verify": 353274
+  }
+]

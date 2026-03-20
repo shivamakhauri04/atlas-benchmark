@@ -1,0 +1,460 @@
+{
+  "methods": {
+    "Deep_SVDD_Synthetic": [
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.5560413482448358,
+        "d": 0.12202146649360657,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 42
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.5414118240254242,
+        "d": 0.09078184515237808,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 123
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.4700513618883303,
+        "d": -0.06213410943746567,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 456
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.5816471963943816,
+        "d": 0.08509130030870438,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 789
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.54497194311887,
+        "d": 0.11265511810779572,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 1024
+      }
+    ],
+    "Autoencoder_Synthetic": [
+      {
+        "method": "Autoencoder",
+        "auroc": 0.44991300852308225,
+        "d": -0.09499786049127579,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 42
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.4233937025364784,
+        "d": -0.14070044457912445,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 123
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.4350105513057241,
+        "d": -0.13971786201000214,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 456
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.42102849357392663,
+        "d": -0.16704145073890686,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 789
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.43874105631696325,
+        "d": -0.18951953947544098,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 1024
+      }
+    ],
+    "IsolationForest_Synthetic": [
+      {
+        "method": "IsolationForest",
+        "auroc": 0.511360165539385,
+        "d": 0.03547002321362627,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 42
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.5203694787074398,
+        "d": 0.06344083928415829,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 123
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.52744996018018,
+        "d": 0.07330584142134454,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 456
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.5303534624311672,
+        "d": 0.08205938981785046,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 789
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.5282775939993867,
+        "d": 0.08564283740779917,
+        "n_pos": 418,
+        "n_neg": 7582,
+        "dataset": "Synthetic",
+        "seed": 1024
+      }
+    ],
+    "Deep_SVDD_SWE-agent": [
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.6625118390138566,
+        "d": 0.24385885894298553,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 42
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.7269697038481753,
+        "d": 0.35747769474983215,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 123
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.7056186955770168,
+        "d": 0.29944950342178345,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 456
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.6958740989939862,
+        "d": 0.26736560463905334,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 789
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.7037039993354937,
+        "d": 0.28785985708236694,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 1024
+      }
+    ],
+    "Autoencoder_SWE-agent": [
+      {
+        "method": "Autoencoder",
+        "auroc": 0.7083445684961629,
+        "d": 0.4711957275867462,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 42
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.7157566579720434,
+        "d": 0.43312424421310425,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 123
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.7229926432860537,
+        "d": 0.4042276442050934,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 456
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.7016072123883541,
+        "d": 0.4387046694755554,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 789
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.6914126272670604,
+        "d": 0.395337849855423,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 1024
+      }
+    ],
+    "IsolationForest_SWE-agent": [
+      {
+        "method": "IsolationForest",
+        "auroc": 0.6945649167084685,
+        "d": 0.6988788766950763,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 42
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.6970358626397515,
+        "d": 0.6993418790848059,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 123
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.6976281563116505,
+        "d": 0.6946613331206832,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 456
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.6813443831627459,
+        "d": 0.650095888627525,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 789
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.6924469274188941,
+        "d": 0.6800409042831687,
+        "n_pos": 3997,
+        "n_neg": 1003,
+        "dataset": "SWE-agent",
+        "seed": 1024
+      }
+    ],
+    "Deep_SVDD_ATBench": [
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.15149397590361444,
+        "d": -0.22344987094402313,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 42
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.10452208835341363,
+        "d": -0.16488763689994812,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 123
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.1154457831325301,
+        "d": -0.20759451389312744,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 456
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.11408032128514053,
+        "d": -0.284641295671463,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 789
+      },
+      {
+        "method": "Deep_SVDD",
+        "auroc": 0.16204819277108434,
+        "d": -0.2494441121816635,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 1024
+      }
+    ],
+    "Autoencoder_ATBench": [
+      {
+        "method": "Autoencoder",
+        "auroc": 0.8875983935742973,
+        "d": -0.09059663116931915,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 42
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.6318072289156627,
+        "d": -0.12241648882627487,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 123
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.8872289156626507,
+        "d": -0.09620488435029984,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 456
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.8788032128514056,
+        "d": -0.09100636094808578,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 789
+      },
+      {
+        "method": "Autoencoder",
+        "auroc": 0.8887068273092371,
+        "d": -0.053930651396512985,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 1024
+      }
+    ],
+    "IsolationForest_ATBench": [
+      {
+        "method": "IsolationForest",
+        "auroc": 0.2950682730923695,
+        "d": -0.8874075538722445,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 42
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.2950682730923695,
+        "d": -0.7261775301050052,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 123
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.29294779116465874,
+        "d": -0.590013832538416,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 456
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.2933333333333334,
+        "d": -0.8635351253790701,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 789
+      },
+      {
+        "method": "IsolationForest",
+        "auroc": 0.28221686746987956,
+        "d": -0.7954893367702202,
+        "n_pos": 250,
+        "n_neg": 249,
+        "dataset": "ATBench",
+        "seed": 1024
+      }
+    ]
+  },
+  "polarity_table": [
+    {
+      "method": "Deep_SVDD",
+      "Synthetic_d": 0.06968312412500381,
+      "Synthetic_auroc": 0.5388247347343683,
+      "SWE-agent_d": 0.2912023037672043,
+      "SWE-agent_auroc": 0.6989356673537056,
+      "ATBench_d": -0.22600348591804503,
+      "ATBench_auroc": 0.1295180722891566,
+      "reversal_syn_swe": "no"
+    },
+    {
+      "method": "Autoencoder",
+      "Synthetic_d": -0.14639543145895004,
+      "Synthetic_auroc": 0.4336173624512349,
+      "SWE-agent_d": 0.42851802706718445,
+      "SWE-agent_auroc": 0.7080227418819349,
+      "ATBench_d": -0.09083100333809853,
+      "ATBench_auroc": 0.8348289156626507,
+      "reversal_syn_swe": "YES"
+    },
+    {
+      "method": "IsolationForest",
+      "Synthetic_d": 0.06798378622895575,
+      "Synthetic_auroc": 0.5235621321715117,
+      "SWE-agent_d": 0.6846037763622518,
+      "SWE-agent_auroc": 0.6926040492483022,
+      "ATBench_d": -0.7725246757329911,
+      "ATBench_auroc": 0.2917269076305221,
+      "reversal_syn_swe": "no"
+    }
+  ],
+  "elapsed_seconds": 38.69323110580444
+}

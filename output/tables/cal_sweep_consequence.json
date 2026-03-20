@@ -1,0 +1,83 @@
+{
+  "config": {
+    "scorer": "consequence-aware",
+    "calibration": "normal-only",
+    "alpha": 0.05,
+    "n_trials": 20,
+    "outcome_weight": 0.5
+  },
+  "results": [
+    {
+      "cal_size": 50,
+      "coverage_mean": 0.9587923728813559,
+      "coverage_std": 0.020529814066001725,
+      "f1_mean": 0.5737553974874432,
+      "f1_std": 0.032756399314010025,
+      "tau_mean": 5.638101153373717,
+      "bound_slack": 0.008792372881355925,
+      "bound_holds_frac": 0.9,
+      "n_trials": 20,
+      "bound_holds": true
+    },
+    {
+      "cal_size": 100,
+      "coverage_mean": 0.9454978813559322,
+      "coverage_std": 0.014848373773346817,
+      "f1_mean": 0.5580315252598239,
+      "f1_std": 0.029969109533629072,
+      "tau_mean": 5.531322154045105,
+      "bound_slack": -0.0045021186440677985,
+      "bound_holds_frac": 0.75,
+      "n_trials": 20,
+      "bound_holds": false
+    },
+    {
+      "cal_size": 200,
+      "coverage_mean": 0.9436705508474577,
+      "coverage_std": 0.014867609275821623,
+      "f1_mean": 0.5549398617648741,
+      "f1_std": 0.02918594941783793,
+      "tau_mean": 5.52357326889038,
+      "bound_slack": -0.006329449152542299,
+      "bound_holds_frac": 0.5,
+      "n_trials": 20,
+      "bound_holds": false
+    },
+    {
+      "cal_size": 500,
+      "coverage_mean": 0.9450211864406779,
+      "coverage_std": 0.007224778191919521,
+      "f1_mean": 0.5574526337581833,
+      "f1_std": 0.013283728679059973,
+      "tau_mean": 5.5216464462280275,
+      "bound_slack": -0.0049788135593220595,
+      "bound_holds_frac": 0.4,
+      "n_trials": 20,
+      "bound_holds": false
+    },
+    {
+      "cal_size": 1000,
+      "coverage_mean": 0.9453654661016948,
+      "coverage_std": 0.003999817504051139,
+      "f1_mean": 0.5576755373543854,
+      "f1_std": 0.006963058831289708,
+      "tau_mean": 5.5230552973270415,
+      "bound_slack": -0.004634533898305149,
+      "bound_holds_frac": 0.2,
+      "n_trials": 20,
+      "bound_holds": false
+    },
+    {
+      "cal_size": 1906,
+      "coverage_mean": 0.9438559322033899,
+      "coverage_std": 1.1102230246251565e-16,
+      "f1_mean": 0.5514950166112957,
+      "f1_std": 1.1102230246251565e-16,
+      "tau_mean": 5.51657786474398,
+      "bound_slack": -0.006144067796610031,
+      "bound_holds_frac": 0.0,
+      "n_trials": 20,
+      "bound_holds": false
+    }
+  ]
+}

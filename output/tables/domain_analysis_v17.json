@@ -1,0 +1,595 @@
+{
+  "synthetic_properties": {
+    "domain": "synthetic",
+    "n_normal": 9488,
+    "n_anomalous": 512,
+    "properties": {
+      "lengths": {
+        "normal_mean": 27.62152192242833,
+        "normal_std": 13.158794264158486,
+        "normal_median": 28.0,
+        "anomalous_mean": 22.861328125,
+        "anomalous_std": 10.581819821565853,
+        "anomalous_median": 22.0,
+        "cohens_d": -0.3650306010997792,
+        "cohens_d_magnitude": "small",
+        "point_biserial_r": -0.08020356814647447,
+        "point_biserial_p": 9.56653784884868e-16,
+        "ks_statistic": 0.21742266547217537,
+        "ks_p_value": 1.23881903800435e-20
+      },
+      "diversities": {
+        "normal_mean": 0.5089807533880224,
+        "normal_std": 0.180208356607434,
+        "normal_median": 0.56,
+        "anomalous_mean": 0.4223428931267919,
+        "anomalous_std": 0.17566939831459363,
+        "anomalous_median": 0.4519969278033794,
+        "cohens_d": -0.481330155486559,
+        "cohens_d_magnitude": "small",
+        "point_biserial_r": -0.10550622419962723,
+        "point_biserial_p": 3.7355557881947497e-26,
+        "ks_statistic": 0.288288495994941,
+        "ks_p_value": 3.287446898436202e-36
+      },
+      "repeat_rates": {
+        "normal_mean": 0.09806131761887593,
+        "normal_std": 0.07676035014632099,
+        "normal_median": 0.08888888888888889,
+        "anomalous_mean": 0.08950859296628763,
+        "anomalous_std": 0.071811872466134,
+        "anomalous_median": 0.08333333333333333,
+        "cohens_d": -0.11176757430243231,
+        "cohens_d_magnitude": "negligible",
+        "point_biserial_r": -0.02462917231093855,
+        "point_biserial_p": 0.013778647678923317,
+        "ks_statistic": 0.052395130691399665,
+        "ks_p_value": 0.1338275692022156
+      }
+    }
+  },
+  "swe_properties": {
+    "domain": "swe_agent",
+    "n_normal": 1003,
+    "n_anomalous": 3997,
+    "properties": {
+      "lengths": {
+        "normal_mean": 14.961116650049851,
+        "normal_std": 10.667712186755583,
+        "normal_median": 13.0,
+        "anomalous_mean": 28.59844883662747,
+        "anomalous_std": 29.703953798259477,
+        "anomalous_median": 19.0,
+        "cohens_d": 0.5052769563995176,
+        "cohens_d_magnitude": "medium",
+        "point_biserial_r": 0.19835699317669092,
+        "point_biserial_p": 1.5433604049565623e-45,
+        "ks_statistic": 0.32717958209434744,
+        "ks_p_value": 1.2339779374802301e-76
+      },
+      "diversities": {
+        "normal_mean": 0.3726735679979934,
+        "normal_std": 0.1960190724996941,
+        "normal_median": 0.3571428571428571,
+        "anomalous_mean": 0.5554899846740894,
+        "anomalous_std": 0.27041660151959923,
+        "anomalous_median": 0.5882352941176471,
+        "cohens_d": 0.7105873772564587,
+        "cohens_d_magnitude": "medium",
+        "point_biserial_r": 0.2737400551143926,
+        "point_biserial_p": 1.202789577744823e-86,
+        "ks_statistic": 0.35572716426651996,
+        "ks_p_value": 7.359589137767751e-91
+      },
+      "repeat_rates": {
+        "normal_mean": 0.09822534763264476,
+        "normal_std": 0.13968908485407014,
+        "normal_median": 0.018518518518518517,
+        "anomalous_mean": 0.2390326343194034,
+        "anomalous_std": 0.2485595880497971,
+        "anomalous_median": 0.16666666666666666,
+        "cohens_d": 0.6097663848600735,
+        "cohens_d_magnitude": "medium",
+        "point_biserial_r": 0.23725593382900767,
+        "point_biserial_p": 6.265823710497318e-65,
+        "ks_statistic": 0.29396923066178,
+        "ks_p_value": 1.0518476911482406e-61
+      }
+    }
+  },
+  "swe_label_analysis": {
+    "solved_traces": {
+      "count": 1003,
+      "length_mean": 14.961116650049851,
+      "length_std": 10.667712186755583,
+      "length_median": 13.0,
+      "diversity_mean": 0.3726735679979934,
+      "diversity_std": 0.1960190724996941,
+      "repeat_rate_mean": 0.09822534763264476,
+      "repeat_rate_std": 0.13968908485407014
+    },
+    "failed_traces": {
+      "count": 3997,
+      "length_mean": 28.59844883662747,
+      "length_std": 29.703953798259477,
+      "length_median": 19.0,
+      "diversity_mean": 0.5554899846740894,
+      "diversity_std": 0.27041660151959923,
+      "repeat_rate_mean": 0.2390326343194034,
+      "repeat_rate_std": 0.2485595880497971
+    },
+    "effect_sizes": {
+      "length_cohens_d": 0.5052769563995176,
+      "diversity_cohens_d": 0.7105873772564587
+    },
+    "label_validity_assessment": "SWE-agent labels (solved=normal, unsolved=anomalous) conflate task success with trace safety. The detected pattern is that failed agents exhibit longer, more repetitive traces \u2014 consistent with 'stuck' agents that loop without making progress. This is a proxy for problematic behavior but does not directly measure safety violations. Production deployment would require human-labeled safety annotations."
+  },
+  "domain_inversion_summary": {
+    "lengths": {
+      "synthetic_d": -0.3650306010997792,
+      "swe_agent_d": 0.5052769563995176,
+      "sign_inverted": true,
+      "interpretation": "INVERTED: Synthetic anomalies are SHORTER (d=-0.37), SWE-agent anomalies are LONGER (d=0.51). Synthetic injects malicious actions into shorter traces; real failing agents loop and generate long traces."
+    },
+    "diversities": {
+      "synthetic_d": -0.481330155486559,
+      "swe_agent_d": 0.7105873772564587,
+      "sign_inverted": true,
+      "interpretation": "INVERTED: tool diversity (low = more diverse) has opposite direction: syn d=-0.48, swe d=0.71."
+    },
+    "repeat_rates": {
+      "synthetic_d": -0.11176757430243231,
+      "swe_agent_d": 0.6097663848600735,
+      "sign_inverted": true,
+      "interpretation": "INVERTED: consecutive repeat rate has opposite direction: syn d=-0.11, swe d=0.61."
+    }
+  },
+  "miscoverage_synthetic": {
+    "source": "output/tables/reframing_eval_v16.json",
+    "alpha": 0.05,
+    "scorers": {
+      "transformer_seq_only": {
+        "miscoverage_mean": 0.0576271186440678,
+        "miscoverage_std": 0.0045857755978630016,
+        "miscoverage_ci": {
+          "mean": 0.0576271186440678,
+          "std": 0.0045857755978630016,
+          "ci_lower": 0.05370762711864406,
+          "ci_upper": 0.06186440677966103,
+          "n_obs": 5
+        },
+        "miscoverage_ratio": 1.152542372881356,
+        "ratio_interpretation": "exceeds bound by 15.3%",
+        "n_seeds": 5
+      },
+      "lstm_next_token": {
+        "miscoverage_mean": 0.0551906779661017,
+        "miscoverage_std": 0.0038399510509304793,
+        "miscoverage_ci": {
+          "mean": 0.0551906779661017,
+          "std": 0.0038399510509304793,
+          "ci_lower": 0.05190677966101694,
+          "ci_upper": 0.05847457627118644,
+          "n_obs": 5
+        },
+        "miscoverage_ratio": 1.103813559322034,
+        "ratio_interpretation": "exceeds bound by 10.4%",
+        "n_seeds": 5
+      },
+      "trace_length": {
+        "miscoverage_mean": 0.04396186440677966,
+        "miscoverage_std": 0.0,
+        "miscoverage_ci": {
+          "mean": 0.04396186440677966,
+          "std": 0.0,
+          "ci_lower": 0.04396186440677966,
+          "ci_upper": 0.04396186440677966,
+          "n_obs": 5
+        },
+        "miscoverage_ratio": 0.8792372881355932,
+        "ratio_interpretation": "within bound",
+        "n_seeds": 5
+      },
+      "low_diversity": {
+        "miscoverage_mean": 0.046610169491525424,
+        "miscoverage_std": 0.0,
+        "miscoverage_ci": {
+          "mean": 0.046610169491525424,
+          "std": 0.0,
+          "ci_lower": 0.046610169491525424,
+          "ci_upper": 0.046610169491525424,
+          "n_obs": 5
+        },
+        "miscoverage_ratio": 0.9322033898305084,
+        "ratio_interpretation": "within bound",
+        "n_seeds": 5
+      },
+      "repeat_rate": {
+        "miscoverage_mean": 0.056673728813559324,
+        "miscoverage_std": 0.0,
+        "miscoverage_ci": {
+          "mean": 0.056673728813559324,
+          "std": 0.0,
+          "ci_lower": 0.056673728813559324,
+          "ci_upper": 0.056673728813559324,
+          "n_obs": 5
+        },
+        "miscoverage_ratio": 1.1334745762711864,
+        "ratio_interpretation": "exceeds bound by 13.3%",
+        "n_seeds": 5
+      }
+    }
+  },
+  "miscoverage_swe": {
+    "source": "output/tables/swe_agent_eval_v15.json",
+    "alpha": 0.05,
+    "scorers": {
+      "lstm": {
+        "miscoverage_mean": 0.053717754172989386,
+        "miscoverage_std": 0.004949774333930273,
+        "miscoverage_ci": {
+          "mean": 0.053717754172989386,
+          "std": 0.004949774333930273,
+          "ci_lower": 0.049468892261001485,
+          "ci_upper": 0.05796661608497729,
+          "n_obs": 5
+        },
+        "miscoverage_ratio": 1.0743550834597877,
+        "n_seeds": 5
+      },
+      "trace_length": {
+        "miscoverage_mean": 0.04400606980273136,
+        "miscoverage_std": 0.0049868518134005965,
+        "miscoverage_ci": {
+          "mean": 0.04400606980273136,
+          "std": 0.0049868518134005965,
+          "ci_lower": 0.03975720789074351,
+          "ci_upper": 0.048254931714719215,
+          "n_obs": 5
+        },
+        "miscoverage_ratio": 0.8801213960546272,
+        "n_seeds": 5
+      },
+      "low_diversity": {
+        "miscoverage_mean": 0.05280728376327768,
+        "miscoverage_std": 0.008658781558535457,
+        "miscoverage_ci": {
+          "mean": 0.05280728376327768,
+          "std": 0.008658781558535457,
+          "ci_lower": 0.04582701062215473,
+          "ci_upper": 0.06039453717754173,
+          "n_obs": 5
+        },
+        "miscoverage_ratio": 1.0561456752655536,
+        "n_seeds": 5
+      },
+      "repeat_rate": {
+        "miscoverage_mean": 0.04673748103186641,
+        "miscoverage_std": 0.006745405393290696,
+        "miscoverage_ci": {
+          "mean": 0.04673748103186641,
+          "std": 0.006745405393290696,
+          "ci_lower": 0.04066767830045519,
+          "ci_upper": 0.05220030349013651,
+          "n_obs": 5
+        },
+        "miscoverage_ratio": 0.9347496206373281,
+        "n_seeds": 5
+      }
+    }
+  },
+  "formal_hypotheses": {
+    "hypotheses": {
+      "H1": {
+        "description": "Learned scorers outperform heuristics in-domain (synthetic)",
+        "learned_mean": 0.6789190186138014,
+        "heuristic_mean": 0.4994703389830509,
+        "difference_mean": 0.17944867963075062,
+        "difference_ci": {
+          "mean": 0.17944867963075062,
+          "std": 0.005009386982683069,
+          "ci_lower": 0.17522321428571427,
+          "ci_upper": 0.18399903526029054,
+          "n_obs": 5
+        },
+        "test": "wilcoxon_one_sided",
+        "statistic": 15.0,
+        "p_value": 0.03125,
+        "n_seeds": 5,
+        "verdict": "SUPPORTED"
+      },
+      "H2": {
+        "description": "Heuristic scorers outperform learned scorers cross-domain (SWE-agent)",
+        "lstm_mean": 0.5921970897447478,
+        "heuristic_mean": 0.7090317139476096,
+        "difference_mean": 0.11683462420286177,
+        "difference_ci": {
+          "mean": 0.11683462420286177,
+          "std": 0.008964935835931356,
+          "ci_lower": 0.10864483892009073,
+          "ci_upper": 0.12519476522636708,
+          "n_obs": 5
+        },
+        "test": "wilcoxon_one_sided",
+        "statistic": 15.0,
+        "p_value": 0.03125,
+        "n_seeds": 5,
+        "verdict": "SUPPORTED"
+      },
+      "H3": {
+        "description": "CP provides valid marginal coverage regardless of scorer",
+        "alpha": 0.05,
+        "scorers_tested": [
+          {
+            "scorer": "transformer_seq_only",
+            "domain": "synthetic",
+            "miscoverage_mean": 0.0576271186440678,
+            "miscoverage_ci": {
+              "mean": 0.0576271186440678,
+              "std": 0.0045857755978630016,
+              "ci_lower": 0.05370762711864406,
+              "ci_upper": 0.06186440677966103,
+              "n_obs": 5
+            },
+            "ratio": 1.152542372881356,
+            "holds": false,
+            "n_seeds": 5
+          },
+          {
+            "scorer": "lstm_next_token",
+            "domain": "synthetic",
+            "miscoverage_mean": 0.0551906779661017,
+            "miscoverage_ci": {
+              "mean": 0.0551906779661017,
+              "std": 0.0038399510509304793,
+              "ci_lower": 0.05190677966101694,
+              "ci_upper": 0.05847457627118644,
+              "n_obs": 5
+            },
+            "ratio": 1.103813559322034,
+            "holds": false,
+            "n_seeds": 5
+          },
+          {
+            "scorer": "trace_length",
+            "domain": "synthetic",
+            "miscoverage_mean": 0.04396186440677966,
+            "miscoverage_ci": {
+              "mean": 0.04396186440677966,
+              "std": 0.0,
+              "ci_lower": 0.04396186440677966,
+              "ci_upper": 0.04396186440677966,
+              "n_obs": 5
+            },
+            "ratio": 0.8792372881355932,
+            "holds": true,
+            "n_seeds": 5
+          },
+          {
+            "scorer": "low_diversity",
+            "domain": "synthetic",
+            "miscoverage_mean": 0.046610169491525424,
+            "miscoverage_ci": {
+              "mean": 0.046610169491525424,
+              "std": 0.0,
+              "ci_lower": 0.046610169491525424,
+              "ci_upper": 0.046610169491525424,
+              "n_obs": 5
+            },
+            "ratio": 0.9322033898305084,
+            "holds": true,
+            "n_seeds": 5
+          },
+          {
+            "scorer": "repeat_rate",
+            "domain": "synthetic",
+            "miscoverage_mean": 0.056673728813559324,
+            "miscoverage_ci": {
+              "mean": 0.056673728813559324,
+              "std": 0.0,
+              "ci_lower": 0.056673728813559324,
+              "ci_upper": 0.056673728813559324,
+              "n_obs": 5
+            },
+            "ratio": 1.1334745762711864,
+            "holds": false,
+            "n_seeds": 5
+          }
+        ],
+        "all_hold": false,
+        "verdict": "PARTIALLY_SUPPORTED",
+        "note": "Marginal coverage is guaranteed by theorem for exchangeable data. This test verifies empirical compliance."
+      }
+    }
+  },
+  "trail_limitation": {
+    "dataset": "TRAIL",
+    "source": "output/tables/trail_transfer.json",
+    "problem": "Extreme class imbalance renders CP calibration impossible",
+    "n_seeds_examined": 45,
+    "n_cal_values": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "n_cal_zero_count": 45,
+    "tau_infinity_count": 45,
+    "auroc_values": [
+      0.5972222222222223,
+      0.75,
+      0.5416666666666667,
+      0.6527777777777777,
+      0.6111111111111112,
+      0.4583333333333333,
+      0.625,
+      0.6111111111111112,
+      0.3472222222222222,
+      0.3472222222222222,
+      0.25,
+      0.6527777777777777,
+      0.6527777777777777,
+      0.6388888888888888,
+      0.5138888888888888,
+      0.5972222222222223,
+      0.8333333333333334,
+      0.5694444444444444,
+      0.625,
+      0.6111111111111112,
+      0.5972222222222223,
+      0.6527777777777777,
+      0.6111111111111112,
+      0.5694444444444444,
+      0.4583333333333333,
+      0.3611111111111111,
+      0.5694444444444444,
+      0.6527777777777777,
+      0.6388888888888888,
+      0.4583333333333333,
+      0.7638888888888888,
+      0.5277777777777778,
+      0.5694444444444444,
+      0.9305555555555556,
+      0.5277777777777778,
+      0.5972222222222223,
+      0.6527777777777777,
+      0.6388888888888888,
+      0.5694444444444444,
+      0.7361111111111112,
+      0.8055555555555556,
+      0.5694444444444444,
+      0.9305555555555556,
+      0.6944444444444444,
+      0.4583333333333333
+    ],
+    "anomaly_rates": [
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973,
+      0.972972972972973
+    ],
+    "mean_anomaly_rate": 0.9729729729729732,
+    "conclusion": "With 45/45 seeds having n_cal=0, the CP framework cannot operate on TRAIL. Mean anomaly rate: 97.3%. This dataset should be presented as a stress-test limitation, not a transfer evaluation."
+  },
+  "baseline_bootstrap_variance": {
+    "trace_length": {
+      "bootstrap_auroc_mean": 0.3651311743258889,
+      "bootstrap_auroc_std": 0.023851631628465347,
+      "bootstrap_ci": {
+        "mean": 0.3651311743258889,
+        "std": 0.023851631628465347,
+        "ci_lower": 0.3606220666388786,
+        "ci_upper": 0.36993314985327086,
+        "n_obs": 100
+      },
+      "n_bootstrap": 100
+    },
+    "low_diversity": {
+      "bootstrap_auroc_mean": 0.31012664048919275,
+      "bootstrap_auroc_std": 0.023196401898188244,
+      "bootstrap_ci": {
+        "mean": 0.31012664048919275,
+        "std": 0.023196401898188244,
+        "ci_lower": 0.30569535450310126,
+        "ci_upper": 0.3147646543424852,
+        "n_obs": 100
+      },
+      "n_bootstrap": 100
+    },
+    "repeat_rate": {
+      "bootstrap_auroc_mean": 0.49750175650424533,
+      "bootstrap_auroc_std": 0.02911437990623006,
+      "bootstrap_ci": {
+        "mean": 0.49750175650424533,
+        "std": 0.02911437990623006,
+        "ci_lower": 0.4918801068424618,
+        "ci_upper": 0.5031870807050661,
+        "n_obs": 100
+      },
+      "n_bootstrap": 100
+    }
+  },
+  "elapsed_seconds": 16.578590869903564
+}

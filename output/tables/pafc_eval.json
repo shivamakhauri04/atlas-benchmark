@@ -1,0 +1,2190 @@
+{
+  "source_domain": "synthetic",
+  "source_d": {
+    "trace_length": -0.33608135805533706,
+    "low_diversity": -0.4636251792854478,
+    "repeat_rate": -0.11448557535188873
+  },
+  "targets": {
+    "SWE-agent": {
+      "n_traces": 5000,
+      "seed_sizes": {
+        "20": {
+          "seed_size": 20,
+          "n_seeds": 8,
+          "naive_auroc_mean": 0.2762103980777208,
+          "naive_auroc_std": 0.0,
+          "pafc_auroc_mean": 0.7063425996715882,
+          "pafc_auroc_std": 0.04616042907891265,
+          "oracle_auroc_mean": 0.7237896019222793,
+          "oracle_auroc_std": 0.0,
+          "delta_mean": 0.43013220159386745,
+          "delta_std": 0.04616042907891265,
+          "n_improved": 8,
+          "n_hurt": 0,
+          "n_same": 0,
+          "wilcoxon_p": 0.00390625,
+          "reversal_detection_rate": {
+            "trace_length": 1.0,
+            "low_diversity": 1.0,
+            "repeat_rate": 0.875
+          },
+          "per_seed": [
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.9125840965355233,
+                "low_diversity": 1.283296374009429,
+                "repeat_rate": 0.6026635369944314
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 20,
+              "n_seed_normal": 5,
+              "n_seed_anom": 15,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.6480911299562464,
+                "low_diversity": 1.0969916335994634,
+                "repeat_rate": 0.5007935248384748
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 20,
+              "n_seed_normal": 6,
+              "n_seed_anom": 14,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.6329041775693003,
+                "low_diversity": 0.3058345685012941,
+                "repeat_rate": -0.825848001621539
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity"
+              ],
+              "n_reversed": 2,
+              "seed_size": 20,
+              "n_seed_normal": 5,
+              "n_seed_anom": 15,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.584213583916751,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.30800318583903025,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.9133359786541364,
+                "low_diversity": 0.9121357976501534,
+                "repeat_rate": 0.8526411483823692
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 20,
+              "n_seed_normal": 5,
+              "n_seed_anom": 15,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.2836382234382025,
+                "low_diversity": 0.7906435377470463,
+                "repeat_rate": 1.0143611308088383
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 20,
+              "n_seed_normal": 5,
+              "n_seed_anom": 15,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 1.0530768192455615,
+                "low_diversity": 1.4759148337318584,
+                "repeat_rate": 0.845487837261743
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 20,
+              "n_seed_normal": 3,
+              "n_seed_anom": 17,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.5319895795660528,
+                "low_diversity": 0.5338810210772402,
+                "repeat_rate": 0.4289968257562265
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 20,
+              "n_seed_normal": 5,
+              "n_seed_anom": 15,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.4393368458844315,
+                "low_diversity": 0.5396896161553971,
+                "repeat_rate": 0.22963201544624326
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 20,
+              "n_seed_normal": 2,
+              "n_seed_anom": 18,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            }
+          ]
+        },
+        "50": {
+          "seed_size": 50,
+          "n_seeds": 10,
+          "naive_auroc_mean": 0.2762103980777208,
+          "naive_auroc_std": 0.0,
+          "pafc_auroc_mean": 0.7098320001217264,
+          "pafc_auroc_std": 0.04187280540165846,
+          "oracle_auroc_mean": 0.7237896019222793,
+          "oracle_auroc_std": 0.0,
+          "delta_mean": 0.4336216020440056,
+          "delta_std": 0.04187280540165846,
+          "n_improved": 10,
+          "n_hurt": 0,
+          "n_same": 0,
+          "wilcoxon_p": 0.0009765625,
+          "reversal_detection_rate": {
+            "trace_length": 1.0,
+            "low_diversity": 1.0,
+            "repeat_rate": 0.9
+          },
+          "per_seed": [
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.6791283486581776,
+                "low_diversity": 0.8242104673739833,
+                "repeat_rate": 0.4606564957231755
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 50,
+              "n_seed_normal": 10,
+              "n_seed_anom": 40,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.5127475544576724,
+                "low_diversity": 0.6397224852993417,
+                "repeat_rate": 0.3202989319573619
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 50,
+              "n_seed_normal": 12,
+              "n_seed_anom": 38,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.9776732919251593,
+                "low_diversity": 1.2515872123868728,
+                "repeat_rate": 0.47366154554558637
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 50,
+              "n_seed_normal": 5,
+              "n_seed_anom": 45,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.44034153800867565,
+                "low_diversity": 0.6791835672863884,
+                "repeat_rate": -0.1393457297266947
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity"
+              ],
+              "n_reversed": 2,
+              "seed_size": 50,
+              "n_seed_normal": 13,
+              "n_seed_anom": 37,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.584213583916751,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.30800318583903025,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.3562160429251288,
+                "low_diversity": 0.47841491399782654,
+                "repeat_rate": 0.513417277029082
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 50,
+              "n_seed_normal": 6,
+              "n_seed_anom": 44,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.5560543491508229,
+                "low_diversity": 0.46299426567714713,
+                "repeat_rate": 0.5960949717035995
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 50,
+              "n_seed_normal": 11,
+              "n_seed_anom": 39,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.3820000355784301,
+                "low_diversity": 0.7398523530447428,
+                "repeat_rate": 0.8702479662820592
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 50,
+              "n_seed_normal": 9,
+              "n_seed_anom": 41,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.6255151358631588,
+                "low_diversity": 0.821215027566818,
+                "repeat_rate": 0.43458977111414027
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 50,
+              "n_seed_normal": 11,
+              "n_seed_anom": 39,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.5518982248015668,
+                "low_diversity": 0.8189010878173835,
+                "repeat_rate": 0.6843711383344653
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 50,
+              "n_seed_normal": 10,
+              "n_seed_anom": 40,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.5049985033398728,
+                "low_diversity": 0.45803720994686853,
+                "repeat_rate": 0.6960422812122513
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 50,
+              "n_seed_normal": 10,
+              "n_seed_anom": 40,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            }
+          ]
+        },
+        "100": {
+          "seed_size": 100,
+          "n_seeds": 10,
+          "naive_auroc_mean": 0.2762103980777208,
+          "naive_auroc_std": 0.0,
+          "pafc_auroc_mean": 0.7237896019222793,
+          "pafc_auroc_std": 0.0,
+          "oracle_auroc_mean": 0.7237896019222793,
+          "oracle_auroc_std": 0.0,
+          "delta_mean": 0.44757920384455846,
+          "delta_std": 0.0,
+          "n_improved": 10,
+          "n_hurt": 0,
+          "n_same": 0,
+          "wilcoxon_p": 0.0009765625,
+          "reversal_detection_rate": {
+            "trace_length": 1.0,
+            "low_diversity": 1.0,
+            "repeat_rate": 1.0
+          },
+          "per_seed": [
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.587645401226288,
+                "low_diversity": 0.7511678369758333,
+                "repeat_rate": 0.6070361084814678
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 100,
+              "n_seed_normal": 18,
+              "n_seed_anom": 82,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.5520814325051163,
+                "low_diversity": 0.8119782068360634,
+                "repeat_rate": 0.5728745937155644
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 100,
+              "n_seed_normal": 20,
+              "n_seed_anom": 80,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.39346420756007794,
+                "low_diversity": 0.4069391136986664,
+                "repeat_rate": 0.31111975614878046
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 100,
+              "n_seed_normal": 17,
+              "n_seed_anom": 83,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.36741920853956317,
+                "low_diversity": 0.5498883759543629,
+                "repeat_rate": 0.21388397711513593
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 100,
+              "n_seed_normal": 24,
+              "n_seed_anom": 76,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.317651906690385,
+                "low_diversity": 0.3116387023727921,
+                "repeat_rate": 0.6100188069132662
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 100,
+              "n_seed_normal": 15,
+              "n_seed_anom": 85,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.4562965648757892,
+                "low_diversity": 0.4717314828142762,
+                "repeat_rate": 0.5575289253839455
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 100,
+              "n_seed_normal": 18,
+              "n_seed_anom": 82,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.5454789975702344,
+                "low_diversity": 0.9557116768542631,
+                "repeat_rate": 0.815643052814922
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 100,
+              "n_seed_normal": 24,
+              "n_seed_anom": 76,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.6407058503857381,
+                "low_diversity": 1.0433921705687748,
+                "repeat_rate": 0.47454707557402354
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 100,
+              "n_seed_normal": 20,
+              "n_seed_anom": 80,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.5597246455609977,
+                "low_diversity": 0.7324596075242017,
+                "repeat_rate": 0.6115339447869927
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 100,
+              "n_seed_normal": 22,
+              "n_seed_anom": 78,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 0.4569992108037814,
+                "low_diversity": 0.5102132882384581,
+                "repeat_rate": 0.6885184592791151
+              },
+              "full_target_d": {
+                "trace_length": 0.5052769563995176,
+                "low_diversity": 0.7105873772564587,
+                "repeat_rate": 0.6097663848600735
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 100,
+              "n_seed_normal": 16,
+              "n_seed_anom": 84,
+              "naive_auroc": 0.2762103980777208,
+              "pafc_auroc": 0.7237896019222793,
+              "oracle_auroc": 0.7237896019222793,
+              "delta_pafc": 0.44757920384455846,
+              "delta_oracle": 0.44757920384455846
+            }
+          ]
+        }
+      }
+    },
+    "ATBench": {
+      "n_traces": 499,
+      "seed_sizes": {
+        "20": {
+          "seed_size": 20,
+          "n_seeds": 10,
+          "naive_auroc_mean": 0.1204899598393574,
+          "naive_auroc_std": 0.0,
+          "pafc_auroc_mean": 0.8839453815261044,
+          "pafc_auroc_std": 0.002513575790988605,
+          "oracle_auroc_mean": 0.8845542168674697,
+          "oracle_auroc_std": 0.0,
+          "delta_mean": 0.763455421686747,
+          "delta_std": 0.002513575790988605,
+          "n_improved": 10,
+          "n_hurt": 0,
+          "n_same": 0,
+          "wilcoxon_p": 0.0009765625,
+          "reversal_detection_rate": {
+            "trace_length": 1.0,
+            "low_diversity": 0.3,
+            "repeat_rate": 0.2
+          },
+          "per_seed": [
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.7914526311954124,
+                "low_diversity": -0.36927447293799814,
+                "repeat_rate": NaN
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 20,
+              "n_seed_normal": 12,
+              "n_seed_anom": 8,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 1.4272840255459711,
+                "low_diversity": 0.36927447293799814,
+                "repeat_rate": 0.3692744729379982
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 20,
+              "n_seed_normal": 8,
+              "n_seed_anom": 12,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8795100401606426,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7590200803212852,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 3.3813316615642464,
+                "low_diversity": NaN,
+                "repeat_rate": NaN
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 20,
+              "n_seed_normal": 11,
+              "n_seed_anom": 9,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 1.3154728435652876,
+                "low_diversity": 0.33968311024337877,
+                "repeat_rate": NaN
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity"
+              ],
+              "n_reversed": 2,
+              "seed_size": 20,
+              "n_seed_normal": 7,
+              "n_seed_anom": 13,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8885542168674698,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7680642570281124,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 1.943463192429398,
+                "low_diversity": -0.4048241822200818,
+                "repeat_rate": -0.4472135954999579
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 20,
+              "n_seed_normal": 10,
+              "n_seed_anom": 10,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 1.7299338165872085,
+                "low_diversity": NaN,
+                "repeat_rate": NaN
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 20,
+              "n_seed_normal": 8,
+              "n_seed_anom": 12,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.323053982274252,
+                "low_diversity": -0.03185725945059157,
+                "repeat_rate": -0.3692744729379982
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 20,
+              "n_seed_normal": 12,
+              "n_seed_anom": 8,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.0213695986758076,
+                "low_diversity": NaN,
+                "repeat_rate": NaN
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 20,
+              "n_seed_normal": 13,
+              "n_seed_anom": 7,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 1.8278153875348273,
+                "low_diversity": NaN,
+                "repeat_rate": NaN
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 20,
+              "n_seed_normal": 8,
+              "n_seed_anom": 12,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 1.8407159732336895,
+                "low_diversity": 0.04654100323316475,
+                "repeat_rate": 0.13284223283101432
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 20,
+              "n_seed_normal": 15,
+              "n_seed_anom": 5,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8795100401606426,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7590200803212852,
+              "delta_oracle": 0.7640642570281123
+            }
+          ]
+        },
+        "50": {
+          "seed_size": 50,
+          "n_seeds": 10,
+          "naive_auroc_mean": 0.1204899598393574,
+          "naive_auroc_std": 0.0,
+          "pafc_auroc_mean": 0.8840497991967868,
+          "pafc_auroc_std": 0.0015132530120481325,
+          "oracle_auroc_mean": 0.8845542168674697,
+          "oracle_auroc_std": 0.0,
+          "delta_mean": 0.7635598393574295,
+          "delta_std": 0.0015132530120481325,
+          "n_improved": 10,
+          "n_hurt": 0,
+          "n_same": 0,
+          "wilcoxon_p": 0.0009765625,
+          "reversal_detection_rate": {
+            "trace_length": 1.0,
+            "low_diversity": 0.1,
+            "repeat_rate": 0.1
+          },
+          "per_seed": [
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.0450139820483746,
+                "low_diversity": -0.2519763153394848,
+                "repeat_rate": NaN
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 50,
+              "n_seed_normal": 28,
+              "n_seed_anom": 22,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.1155998530236464,
+                "low_diversity": -0.09330180252922006,
+                "repeat_rate": -0.10571417009393604
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 50,
+              "n_seed_normal": 22,
+              "n_seed_anom": 28,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.558249980013794,
+                "low_diversity": -0.36074631437310567,
+                "repeat_rate": NaN
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 50,
+              "n_seed_normal": 28,
+              "n_seed_anom": 22,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 1.6699926507162208,
+                "low_diversity": -0.05261336417646568,
+                "repeat_rate": -0.2348880878058814
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 50,
+              "n_seed_normal": 30,
+              "n_seed_anom": 20,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.5594916805586094,
+                "low_diversity": -0.5520352187168385,
+                "repeat_rate": -0.32232918561015206
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 50,
+              "n_seed_normal": 22,
+              "n_seed_anom": 28,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 1.9226648173823746,
+                "low_diversity": -0.282842712474619,
+                "repeat_rate": NaN
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 50,
+              "n_seed_normal": 25,
+              "n_seed_anom": 25,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.0454361564157058,
+                "low_diversity": -0.1762403506770749,
+                "repeat_rate": -0.36313651960128146
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 50,
+              "n_seed_normal": 28,
+              "n_seed_anom": 22,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.2659969661246344,
+                "low_diversity": -0.18207672797213684,
+                "repeat_rate": -0.2519763153394847
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 50,
+              "n_seed_normal": 28,
+              "n_seed_anom": 22,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.4282563723162434,
+                "low_diversity": -0.48507125007266594,
+                "repeat_rate": -0.33806170189140655
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 50,
+              "n_seed_normal": 21,
+              "n_seed_anom": 29,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.148448526613524,
+                "low_diversity": 0.03322368336246454,
+                "repeat_rate": 0.037456194506580845
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": -1.0,
+                "repeat_rate": -1.0
+              },
+              "reversed_features": [
+                "trace_length",
+                "low_diversity",
+                "repeat_rate"
+              ],
+              "n_reversed": 3,
+              "seed_size": 50,
+              "n_seed_normal": 27,
+              "n_seed_anom": 23,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8795100401606426,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7590200803212852,
+              "delta_oracle": 0.7640642570281123
+            }
+          ]
+        },
+        "100": {
+          "seed_size": 100,
+          "n_seeds": 10,
+          "naive_auroc_mean": 0.1204899598393574,
+          "naive_auroc_std": 0.0,
+          "pafc_auroc_mean": 0.8845542168674697,
+          "pafc_auroc_std": 0.0,
+          "oracle_auroc_mean": 0.8845542168674697,
+          "oracle_auroc_std": 0.0,
+          "delta_mean": 0.7640642570281122,
+          "delta_std": 1.1102230246251565e-16,
+          "n_improved": 10,
+          "n_hurt": 0,
+          "n_same": 0,
+          "wilcoxon_p": 0.0009765625,
+          "reversal_detection_rate": {
+            "trace_length": 1.0
+          },
+          "per_seed": [
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.1359614880712874,
+                "low_diversity": -0.2520204026903594,
+                "repeat_rate": -0.2919100264642544
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 100,
+              "n_seed_normal": 48,
+              "n_seed_anom": 52,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 1.914176364000727,
+                "low_diversity": -0.2500460875738356,
+                "repeat_rate": -0.057017131786817644
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 100,
+              "n_seed_normal": 47,
+              "n_seed_anom": 53,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.4332569499358,
+                "low_diversity": -0.3378587300063085,
+                "repeat_rate": NaN
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 100,
+              "n_seed_normal": 52,
+              "n_seed_anom": 48,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 1.7754129890394015,
+                "low_diversity": -0.042794449727656315,
+                "repeat_rate": -0.05804508329603697
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 100,
+              "n_seed_normal": 56,
+              "n_seed_anom": 44,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.6335604768819665,
+                "low_diversity": -0.25383178906284887,
+                "repeat_rate": -0.105966716607638
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 100,
+              "n_seed_normal": 47,
+              "n_seed_anom": 53,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.0106495395282464,
+                "low_diversity": -0.14193838543588283,
+                "repeat_rate": NaN
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 100,
+              "n_seed_normal": 51,
+              "n_seed_anom": 49,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.2210713287129105,
+                "low_diversity": -0.36107537190422617,
+                "repeat_rate": -0.40439801622627064
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 100,
+              "n_seed_normal": 51,
+              "n_seed_anom": 49,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.589617984585525,
+                "low_diversity": -0.057841948994563984,
+                "repeat_rate": -0.07881768769857496
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 100,
+              "n_seed_normal": 52,
+              "n_seed_anom": 48,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.2553351495917715,
+                "low_diversity": -0.345149372093248,
+                "repeat_rate": -0.11168577497328581
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 100,
+              "n_seed_normal": 46,
+              "n_seed_anom": 54,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            },
+            {
+              "source_d": {
+                "trace_length": -0.33608135805533706,
+                "low_diversity": -0.4636251792854478,
+                "repeat_rate": -0.11448557535188873
+              },
+              "seed_d": {
+                "trace_length": 2.10858083738557,
+                "low_diversity": -0.026768691379553657,
+                "repeat_rate": -0.03310712803206817
+              },
+              "full_target_d": {
+                "trace_length": 2.2254076110968417,
+                "low_diversity": -0.07724852955054862,
+                "repeat_rate": -0.06649236103274303
+              },
+              "corrections": {
+                "trace_length": -1.0,
+                "low_diversity": 1.0,
+                "repeat_rate": 1.0
+              },
+              "reversed_features": [
+                "trace_length"
+              ],
+              "n_reversed": 1,
+              "seed_size": 100,
+              "n_seed_normal": 45,
+              "n_seed_anom": 55,
+              "naive_auroc": 0.1204899598393574,
+              "pafc_auroc": 0.8845542168674697,
+              "oracle_auroc": 0.8845542168674697,
+              "delta_pafc": 0.7640642570281123,
+              "delta_oracle": 0.7640642570281123
+            }
+          ]
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 30.535656929016113
+}

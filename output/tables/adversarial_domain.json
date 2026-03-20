@@ -1,0 +1,3035 @@
+{
+  "version": "v26.1",
+  "scorer": "logistic_regression_balanced",
+  "n_seeds": 5,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "alpha": 0.05,
+  "domains": [
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic"
+  ],
+  "spearman_rho_auroc_summary": {
+    "mean": -0.04270769488299784,
+    "std": 0.21315721005228327,
+    "ci_lower": -0.21543467313051687,
+    "ci_upper": 0.1300192833645212,
+    "n_obs": 5
+  },
+  "spearman_rho_evasion_summary": {
+    "mean": -0.2232310765173433,
+    "std": 0.09137570679348977,
+    "ci_lower": -0.30193615046243183,
+    "ci_upper": -0.14452600257225484,
+    "n_obs": 5
+  },
+  "pair_aggregate": {
+    "agentharm_to_atbench": {
+      "evasion_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": 0.0020982018445180315,
+        "ci_upper": 0.0020982018445180315,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.5847309236947791,
+        "std": 0.4150950569738112,
+        "ci_lower": 0.24580722891566262,
+        "ci_upper": 0.9236546184738955,
+        "n_obs": 5
+      }
+    },
+    "agentharm_to_injecagent": {
+      "evasion_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": 0.0020982018445180315,
+        "ci_upper": 0.0020982018445180315,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.5516129032258064,
+        "std": 0.2528505540937474,
+        "ci_lower": 0.34516129032258064,
+        "ci_upper": 0.7580645161290323,
+        "n_obs": 5
+      }
+    },
+    "agentharm_to_rjudge": {
+      "evasion_rate": {
+        "mean": 0.9954887218045112,
+        "std": 0.00438417435702654,
+        "ci_lower": 0.9917293233082706,
+        "ci_upper": 0.9992481203007518,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": 0.0020982018445180315,
+        "ci_upper": 0.0020982018445180315,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.5577508223684211,
+        "std": 0.28292009405748136,
+        "ci_lower": 0.3267475328947368,
+        "ci_upper": 0.7887541118421052,
+        "n_obs": 5
+      }
+    },
+    "agentharm_to_swe_agent": {
+      "evasion_rate": {
+        "mean": 0.4622712459262973,
+        "std": 0.43965551461922525,
+        "ci_lower": 0.09641514163950865,
+        "ci_upper": 0.828127350213086,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": 0.0020982018445180315,
+        "ci_upper": 0.0020982018445180315,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.5329246674646078,
+        "std": 0.16129727047820758,
+        "ci_lower": 0.4012259976061766,
+        "ci_upper": 0.6646233373230389,
+        "n_obs": 5
+      }
+    },
+    "agentharm_to_synthetic": {
+      "evasion_rate": {
+        "mean": 0.44070175438596493,
+        "std": 0.45689330567103437,
+        "ci_lower": 0.06315789473684211,
+        "ci_upper": 0.8182456140350878,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.4816762313948136,
+        "std": 0.08976776649507325,
+        "ci_lower": 0.40838115697406774,
+        "ci_upper": 0.5549713058155594,
+        "n_obs": 5
+      }
+    },
+    "atbench_to_agentharm": {
+      "evasion_rate": {
+        "mean": 0.9545454545454547,
+        "std": 1.1102230246251565e-16,
+        "ci_lower": 0.9545454545454547,
+        "ci_upper": 0.9545454545454547,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": 0.0020982018445180315,
+        "ci_upper": 0.0020982018445180315,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.4988378099173554,
+        "std": 0.0,
+        "ci_lower": 0.4988378099173554,
+        "ci_upper": 0.4988378099173554,
+        "n_obs": 5
+      }
+    },
+    "atbench_to_injecagent": {
+      "evasion_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.7580645161290323,
+        "std": 0.0,
+        "ci_lower": 0.7580645161290323,
+        "ci_upper": 0.7580645161290323,
+        "n_obs": 5
+      }
+    },
+    "atbench_to_rjudge": {
+      "evasion_rate": {
+        "mean": 0.9842105263157894,
+        "std": 0.0036834432222303697,
+        "ci_lower": 0.9804511278195488,
+        "ci_upper": 0.987218045112782,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.013912137698715507,
+        "std": 0.0,
+        "ci_lower": 0.013912137698715507,
+        "ci_upper": 0.013912137698715507,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.7875822368421053,
+        "std": 0.0014185703242152836,
+        "ci_lower": 0.7868156719924811,
+        "ci_upper": 0.7890213815789473,
+        "n_obs": 5
+      }
+    },
+    "atbench_to_swe_agent": {
+      "evasion_rate": {
+        "mean": 0.05805966407620957,
+        "std": 0.005752980271704616,
+        "ci_lower": 0.05299573828027073,
+        "ci_upper": 0.06372524442216095,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.013912137698715507,
+        "std": 0.0,
+        "ci_lower": 0.013912137698715507,
+        "ci_upper": 0.013912137698715507,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.6522567624766327,
+        "std": 0.002646375999598283,
+        "ci_lower": 0.6499400056386517,
+        "ci_upper": 0.6545263817734178,
+        "n_obs": 5
+      }
+    },
+    "atbench_to_synthetic": {
+      "evasion_rate": {
+        "mean": 0.04,
+        "std": 0.0047595298127194865,
+        "ci_lower": 0.035789473684210524,
+        "ci_upper": 0.043508771929824566,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.11097064776119621,
+        "std": 1.3877787807814457e-17,
+        "ci_lower": 0.11097064776119621,
+        "ci_upper": 0.11097064776119621,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.4592540535010997,
+        "std": 0.0039013527668222687,
+        "ci_lower": 0.4559852692956882,
+        "ci_upper": 0.4626106081530357,
+        "n_obs": 5
+      }
+    },
+    "injecagent_to_agentharm": {
+      "evasion_rate": {
+        "mean": 0.5227272727272727,
+        "std": 0.0,
+        "ci_lower": 0.5227272727272727,
+        "ci_upper": 0.5227272727272727,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": 0.0020982018445180315,
+        "ci_upper": 0.0020982018445180315,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.4988378099173554,
+        "std": 0.0,
+        "ci_lower": 0.4988378099173554,
+        "ci_upper": 0.4988378099173554,
+        "n_obs": 5
+      }
+    },
+    "injecagent_to_atbench": {
+      "evasion_rate": {
+        "mean": 0.004,
+        "std": 0.0,
+        "ci_lower": 0.004,
+        "ci_upper": 0.004,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.9231662650602409,
+        "std": 0.00024417670682730375,
+        "ci_lower": 0.9230441767068275,
+        "ci_upper": 0.9234104417670682,
+        "n_obs": 5
+      }
+    },
+    "injecagent_to_rjudge": {
+      "evasion_rate": {
+        "mean": 0.8473684210526315,
+        "std": 0.0030075187969925035,
+        "ci_lower": 0.8458646616541353,
+        "ci_upper": 0.8503759398496241,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.7873986724624059,
+        "std": 0.0006813909774435967,
+        "ci_lower": 0.7870579769736842,
+        "ci_upper": 0.7880800634398495,
+        "n_obs": 5
+      }
+    },
+    "injecagent_to_swe_agent": {
+      "evasion_rate": {
+        "mean": 0.002807721233391827,
+        "std": 0.0006016545500125344,
+        "ci_lower": 0.00250689395838556,
+        "ci_upper": 0.0034093757834043623,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.5255949161876664,
+        "std": 0.00030420673292746135,
+        "ci_lower": 0.5252938657470259,
+        "ci_upper": 0.5258584748017482,
+        "n_obs": 5
+      }
+    },
+    "injecagent_to_synthetic": {
+      "evasion_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.09198440996365478,
+        "std": 0.0,
+        "ci_lower": 0.09198440996365478,
+        "ci_upper": 0.09198440996365478,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.4971234207968901,
+        "std": 1.2155655078516644e-05,
+        "ci_lower": 0.4971154416653879,
+        "ci_upper": 0.497135900976932,
+        "n_obs": 5
+      }
+    },
+    "rjudge_to_agentharm": {
+      "evasion_rate": {
+        "mean": 0.8681818181818182,
+        "std": 0.07793830999764656,
+        "ci_lower": 0.8045454545454545,
+        "ci_upper": 0.9318181818181819,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": 0.0020982018445180315,
+        "ci_upper": 0.0020982018445180315,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.4988378099173554,
+        "std": 0.0,
+        "ci_lower": 0.4988378099173554,
+        "ci_upper": 0.4988378099173554,
+        "n_obs": 5
+      }
+    },
+    "rjudge_to_atbench": {
+      "evasion_rate": {
+        "mean": 0.38320000000000004,
+        "std": 0.21169638636500154,
+        "ci_lower": 0.2072,
+        "ci_upper": 0.556,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.013912137698715507,
+        "std": 0.0,
+        "ci_lower": 0.013912137698715507,
+        "ci_upper": 0.013912137698715507,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.924265060240964,
+        "std": 1.1102230246251565e-16,
+        "ci_lower": 0.924265060240964,
+        "ci_upper": 0.924265060240964,
+        "n_obs": 5
+      }
+    },
+    "rjudge_to_injecagent": {
+      "evasion_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.7580645161290323,
+        "std": 0.0,
+        "ci_lower": 0.7580645161290323,
+        "ci_upper": 0.7580645161290323,
+        "n_obs": 5
+      }
+    },
+    "rjudge_to_swe_agent": {
+      "evasion_rate": {
+        "mean": 0.03248934570067687,
+        "std": 0.005447752250727775,
+        "ci_lower": 0.027926798696415144,
+        "ci_upper": 0.036951616946603164,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.07228699732618249,
+        "std": 0.0,
+        "ci_lower": 0.07228699732618249,
+        "ci_upper": 0.07228699732618249,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.6600166531155534,
+        "std": 0.0001612634038687054,
+        "ci_lower": 0.6598826545502605,
+        "ci_upper": 0.6601535032417287,
+        "n_obs": 5
+      }
+    },
+    "rjudge_to_synthetic": {
+      "evasion_rate": {
+        "mean": 0.003508771929824561,
+        "std": 4.336808689942018e-19,
+        "ci_lower": 0.003508771929824561,
+        "ci_upper": 0.003508771929824561,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.11097064776119621,
+        "std": 1.3877787807814457e-17,
+        "ci_lower": 0.11097064776119621,
+        "ci_upper": 0.11097064776119621,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.41337936678430776,
+        "std": 0.0024907698106062877,
+        "ci_lower": 0.4118784716894277,
+        "ci_upper": 0.4158557618536136,
+        "n_obs": 5
+      }
+    },
+    "swe_agent_to_agentharm": {
+      "evasion_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": 0.0020982018445180315,
+        "ci_upper": 0.0020982018445180315,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.4988378099173554,
+        "std": 0.0,
+        "ci_lower": 0.4988378099173554,
+        "ci_upper": 0.4988378099173554,
+        "n_obs": 5
+      }
+    },
+    "swe_agent_to_atbench": {
+      "evasion_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.013912137698715507,
+        "std": 0.0,
+        "ci_lower": 0.013912137698715507,
+        "ci_upper": 0.013912137698715507,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.884059437751004,
+        "std": 0.0050996605729268915,
+        "ci_lower": 0.8798955823293173,
+        "ci_upper": 0.8882232931726908,
+        "n_obs": 5
+      }
+    },
+    "swe_agent_to_injecagent": {
+      "evasion_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.7580645161290323,
+        "std": 0.0,
+        "ci_lower": 0.7580645161290323,
+        "ci_upper": 0.7580645161290323,
+        "n_obs": 5
+      }
+    },
+    "swe_agent_to_rjudge": {
+      "evasion_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.07228699732618249,
+        "std": 0.0,
+        "ci_lower": 0.07228699732618249,
+        "ci_upper": 0.07228699732618249,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.7881050281954887,
+        "std": 1.098936027601054e-05,
+        "ci_lower": 0.788096217105263,
+        "ci_upper": 0.7881138392857142,
+        "n_obs": 5
+      }
+    },
+    "swe_agent_to_synthetic": {
+      "evasion_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.2086343101358877,
+        "std": 0.0,
+        "ci_lower": 0.2086343101358877,
+        "ci_upper": 0.2086343101358877,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.38635323001381006,
+        "std": 0.003938572407305158,
+        "ci_lower": 0.3830159071147256,
+        "ci_upper": 0.38969055291289456,
+        "n_obs": 5
+      }
+    },
+    "synthetic_to_agentharm": {
+      "evasion_rate": {
+        "mean": 0.18636363636363634,
+        "std": 0.37272727272727263,
+        "ci_lower": 0.0,
+        "ci_upper": 0.5590909090909091,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.4993026859504132,
+        "std": 0.0009297520661156966,
+        "ci_lower": 0.4988378099173554,
+        "ci_upper": 0.500232438016529,
+        "n_obs": 5
+      }
+    },
+    "synthetic_to_atbench": {
+      "evasion_rate": {
+        "mean": 0.152,
+        "std": 0.20799999999999996,
+        "ci_lower": 0.048,
+        "ci_upper": 0.36,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.11097064776119621,
+        "std": 1.3877787807814457e-17,
+        "ci_lower": 0.11097064776119621,
+        "ci_upper": 0.11097064776119621,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.7320433734939757,
+        "std": 0.30539921898935346,
+        "ci_lower": 0.42662329317269065,
+        "ci_upper": 0.8848208835341363,
+        "n_obs": 5
+      }
+    },
+    "synthetic_to_injecagent": {
+      "evasion_rate": {
+        "mean": 0.20075901328273246,
+        "std": 0.39962049335863375,
+        "ci_lower": 0.0009487666034155597,
+        "ci_upper": 0.6003795066413662,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.09198440996365478,
+        "std": 0.0,
+        "ci_lower": 0.09198440996365478,
+        "ci_upper": 0.09198440996365478,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.6540796963946869,
+        "std": 0.20607210626185954,
+        "ci_lower": 0.44800759013282737,
+        "ci_upper": 0.7571157495256167,
+        "n_obs": 5
+      }
+    },
+    "synthetic_to_rjudge": {
+      "evasion_rate": {
+        "mean": 0.2593984962406015,
+        "std": 0.36654424521704815,
+        "ci_lower": 0.07518796992481203,
+        "ci_upper": 0.6255639097744361,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.11097064776119621,
+        "std": 1.3877787807814457e-17,
+        "ci_lower": 0.11097064776119621,
+        "ci_upper": 0.11097064776119621,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.6440055216165413,
+        "std": 0.21605675030817903,
+        "ci_lower": 0.4279429041353383,
+        "ci_upper": 0.7520735432330827,
+        "n_obs": 5
+      }
+    },
+    "synthetic_to_swe_agent": {
+      "evasion_rate": {
+        "mean": 0.9585359739283028,
+        "std": 0.011916161215053733,
+        "ci_lower": 0.9516169466031587,
+        "ci_upper": 0.9705189270493857,
+        "n_obs": 5
+      },
+      "abs_fsi": {
+        "mean": 0.2086343101358877,
+        "std": 0.0,
+        "ci_lower": 0.2086343101358877,
+        "ci_upper": 0.2086343101358877,
+        "n_obs": 5
+      },
+      "auroc": {
+        "mean": 0.32128154601216646,
+        "std": 0.01114790984642241,
+        "ci_lower": 0.31175941554408154,
+        "ci_upper": 0.33080367648025144,
+        "n_obs": 5
+      }
+    }
+  },
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "fsi_auroc_spearman_rho": -0.37728824532767835,
+      "fsi_auroc_p_value": 0.039845725167794936,
+      "fsi_evasion_spearman_rho": -0.18519426266785946,
+      "fsi_evasion_p_value": 0.3272050680481056,
+      "n_valid_pairs": 30,
+      "n_total_pairs": 30,
+      "pair_results": [
+        {
+          "source": "agentharm",
+          "target": "atbench",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 250,
+          "auroc": 0.9236546184738956
+        },
+        {
+          "source": "agentharm",
+          "target": "injecagent",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "agentharm",
+          "target": "rjudge",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9924812030075187,
+          "fnr": 0.9924812030075187,
+          "n_anomalies": 266,
+          "auroc": 0.7887541118421052
+        },
+        {
+          "source": "agentharm",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.10278265229380797,
+          "fnr": 0.10278265229380797,
+          "n_anomalies": 3989,
+          "auroc": 0.6646233373230389
+        },
+        {
+          "source": "agentharm",
+          "target": "synthetic",
+          "aggregate_fsi": 0.0,
+          "abs_aggregate_fsi": 0.0,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": 0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.06666666666666667,
+          "fnr": 0.06666666666666667,
+          "n_anomalies": 285,
+          "auroc": 0.4083811569740678
+        },
+        {
+          "source": "atbench",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9545454545454546,
+          "fnr": 0.9545454545454546,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "atbench",
+          "target": "injecagent",
+          "aggregate_fsi": -0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "atbench",
+          "target": "rjudge",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.5631749153682153,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.9849624060150376,
+          "fnr": 0.9849624060150376,
+          "n_anomalies": 266,
+          "auroc": 0.7868156719924811
+        },
+        {
+          "source": "atbench",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.05765856104286789,
+          "fnr": 0.05765856104286789,
+          "n_anomalies": 3989,
+          "auroc": 0.6501769579498914
+        },
+        {
+          "source": "atbench",
+          "target": "synthetic",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": 0.013912137698715507,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.011705960081990305
+          },
+          "evasion_rate": 0.042105263157894736,
+          "fnr": 0.042105263157894736,
+          "n_anomalies": 285,
+          "auroc": 0.46506265664160396
+        },
+        {
+          "source": "injecagent",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.5227272727272727,
+          "fnr": 0.5227272727272727,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "injecagent",
+          "target": "atbench",
+          "aggregate_fsi": -0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.004,
+          "fnr": 0.004,
+          "n_anomalies": 250,
+          "auroc": 0.9230441767068274
+        },
+        {
+          "source": "injecagent",
+          "target": "rjudge",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.8458646616541353,
+          "fnr": 0.8458646616541353,
+          "n_anomalies": 266,
+          "auroc": 0.7870579769736842
+        },
+        {
+          "source": "injecagent",
+          "target": "swe_agent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.00250689395838556,
+          "fnr": 0.00250689395838556,
+          "n_anomalies": 3989,
+          "auroc": 0.5256439630348443
+        },
+        {
+          "source": "injecagent",
+          "target": "synthetic",
+          "aggregate_fsi": -0.09198440996365478,
+          "abs_aggregate_fsi": 0.09198440996365478,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": -0.09198440996365478,
+            "repeat_rate": -0.002756316964995782
+          },
+          "evasion_rate": 0.0,
+          "fnr": 0.0,
+          "n_anomalies": 285,
+          "auroc": 0.49711523707227245
+        },
+        {
+          "source": "rjudge",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9318181818181818,
+          "fnr": 0.9318181818181818,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "rjudge",
+          "target": "atbench",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.5631749153682153,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.556,
+          "fnr": 0.556,
+          "n_anomalies": 250,
+          "auroc": 0.9242650602409639
+        },
+        {
+          "source": "rjudge",
+          "target": "injecagent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "rjudge",
+          "target": "swe_agent",
+          "aggregate_fsi": 0.07228699732618249,
+          "abs_aggregate_fsi": 0.07228699732618249,
+          "per_feature_fsi": {
+            "low_diversity": 0.07773925481246843,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.07228699732618249
+          },
+          "evasion_rate": 0.03685134118826774,
+          "fnr": 0.03685134118826774,
+          "n_anomalies": 3989,
+          "auroc": 0.6599824839773274
+        },
+        {
+          "source": "rjudge",
+          "target": "synthetic",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": -0.07773925481246843,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.0035087719298245615,
+          "fnr": 0.0035087719298245615,
+          "n_anomalies": 285,
+          "auroc": 0.4182977852795253
+        },
+        {
+          "source": "swe_agent",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "swe_agent",
+          "target": "atbench",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 250,
+          "auroc": 0.8798955823293173
+        },
+        {
+          "source": "swe_agent",
+          "target": "injecagent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "swe_agent",
+          "target": "rjudge",
+          "aggregate_fsi": 0.07228699732618249,
+          "abs_aggregate_fsi": 0.07228699732618249,
+          "per_feature_fsi": {
+            "low_diversity": 0.07773925481246843,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.07228699732618249
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 266,
+          "auroc": 0.7881079652255638
+        },
+        {
+          "source": "swe_agent",
+          "target": "synthetic",
+          "aggregate_fsi": -0.2086343101358877,
+          "abs_aggregate_fsi": 0.2086343101358877,
+          "per_feature_fsi": {
+            "low_diversity": -0.2086343101358877,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 285,
+          "auroc": 0.38582783489335587
+        },
+        {
+          "source": "synthetic",
+          "target": "agentharm",
+          "aggregate_fsi": 0.0,
+          "abs_aggregate_fsi": 0.0,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": 0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.0,
+          "fnr": 0.0,
+          "n_anomalies": 176,
+          "auroc": 0.5011621900826446
+        },
+        {
+          "source": "synthetic",
+          "target": "atbench",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": 0.013912137698715507,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.011705960081990305
+          },
+          "evasion_rate": 0.048,
+          "fnr": 0.048,
+          "n_anomalies": 250,
+          "auroc": 0.12124497991967868
+        },
+        {
+          "source": "synthetic",
+          "target": "injecagent",
+          "aggregate_fsi": -0.09198440996365478,
+          "abs_aggregate_fsi": 0.09198440996365478,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": -0.09198440996365478,
+            "repeat_rate": -0.002756316964995782
+          },
+          "evasion_rate": 0.0009487666034155598,
+          "fnr": 0.0009487666034155598,
+          "n_anomalies": 2108,
+          "auroc": 0.24193548387096775
+        },
+        {
+          "source": "synthetic",
+          "target": "rjudge",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": -0.07773925481246843,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.07894736842105263,
+          "fnr": 0.07894736842105263,
+          "n_anomalies": 266,
+          "auroc": 0.2118920347744361
+        },
+        {
+          "source": "synthetic",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.2086343101358877,
+          "abs_aggregate_fsi": 0.2086343101358877,
+          "per_feature_fsi": {
+            "low_diversity": -0.2086343101358877,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.9543745299573828,
+          "fnr": 0.9543745299573828,
+          "n_anomalies": 3989,
+          "auroc": 0.3137123628058268
+        }
+      ]
+    },
+    {
+      "seed": 123,
+      "fsi_auroc_spearman_rho": 0.18997534433446245,
+      "fsi_auroc_p_value": 0.31464703116400294,
+      "fsi_evasion_spearman_rho": -0.332290012045553,
+      "fsi_evasion_p_value": 0.07280327890372515,
+      "n_valid_pairs": 30,
+      "n_total_pairs": 30,
+      "pair_results": [
+        {
+          "source": "agentharm",
+          "target": "atbench",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 250,
+          "auroc": 0.0763453815261044
+        },
+        {
+          "source": "agentharm",
+          "target": "injecagent",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.24193548387096775
+        },
+        {
+          "source": "agentharm",
+          "target": "rjudge",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 266,
+          "auroc": 0.21124588815789475
+        },
+        {
+          "source": "agentharm",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 3989,
+          "auroc": 0.3353766626769611
+        },
+        {
+          "source": "agentharm",
+          "target": "synthetic",
+          "aggregate_fsi": 0.0,
+          "abs_aggregate_fsi": 0.0,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": 0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 285,
+          "auroc": 0.5916188430259323
+        },
+        {
+          "source": "atbench",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9545454545454546,
+          "fnr": 0.9545454545454546,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "atbench",
+          "target": "injecagent",
+          "aggregate_fsi": -0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "atbench",
+          "target": "rjudge",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.5631749153682153,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.9849624060150376,
+          "fnr": 0.9849624060150376,
+          "n_anomalies": 266,
+          "auroc": 0.7868156719924811
+        },
+        {
+          "source": "atbench",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.05765856104286789,
+          "fnr": 0.05765856104286789,
+          "n_anomalies": 3989,
+          "auroc": 0.6531171651814993
+        },
+        {
+          "source": "atbench",
+          "target": "synthetic",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": 0.013912137698715507,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.011705960081990305
+          },
+          "evasion_rate": 0.042105263157894736,
+          "fnr": 0.042105263157894736,
+          "n_anomalies": 285,
+          "auroc": 0.4572676589432766
+        },
+        {
+          "source": "injecagent",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.5227272727272727,
+          "fnr": 0.5227272727272727,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "injecagent",
+          "target": "atbench",
+          "aggregate_fsi": -0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.004,
+          "fnr": 0.004,
+          "n_anomalies": 250,
+          "auroc": 0.9230441767068274
+        },
+        {
+          "source": "injecagent",
+          "target": "rjudge",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.8458646616541353,
+          "fnr": 0.8458646616541353,
+          "n_anomalies": 266,
+          "auroc": 0.7870579769736842
+        },
+        {
+          "source": "injecagent",
+          "target": "swe_agent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.00250689395838556,
+          "fnr": 0.00250689395838556,
+          "n_anomalies": 3989,
+          "auroc": 0.5260104505986913
+        },
+        {
+          "source": "injecagent",
+          "target": "synthetic",
+          "aggregate_fsi": -0.09198440996365478,
+          "abs_aggregate_fsi": 0.09198440996365478,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": -0.09198440996365478,
+            "repeat_rate": -0.002756316964995782
+          },
+          "evasion_rate": 0.0,
+          "fnr": 0.0,
+          "n_anomalies": 285,
+          "auroc": 0.49712342079689004
+        },
+        {
+          "source": "rjudge",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.7727272727272727,
+          "fnr": 0.7727272727272727,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "rjudge",
+          "target": "atbench",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.5631749153682153,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.116,
+          "fnr": 0.116,
+          "n_anomalies": 250,
+          "auroc": 0.9242650602409639
+        },
+        {
+          "source": "rjudge",
+          "target": "injecagent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "rjudge",
+          "target": "swe_agent",
+          "aggregate_fsi": 0.07228699732618249,
+          "abs_aggregate_fsi": 0.07228699732618249,
+          "per_feature_fsi": {
+            "low_diversity": 0.07773925481246843,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.07228699732618249
+          },
+          "evasion_rate": 0.025570318375532714,
+          "fnr": 0.025570318375532714,
+          "n_anomalies": 3989,
+          "auroc": 0.6601632481410922
+        },
+        {
+          "source": "rjudge",
+          "target": "synthetic",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": -0.07773925481246843,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.0035087719298245615,
+          "fnr": 0.0035087719298245615,
+          "n_anomalies": 285,
+          "auroc": 0.4128095749578027
+        },
+        {
+          "source": "swe_agent",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "swe_agent",
+          "target": "atbench",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 250,
+          "auroc": 0.8798955823293173
+        },
+        {
+          "source": "swe_agent",
+          "target": "injecagent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "swe_agent",
+          "target": "rjudge",
+          "aggregate_fsi": 0.07228699732618249,
+          "abs_aggregate_fsi": 0.07228699732618249,
+          "per_feature_fsi": {
+            "low_diversity": 0.07773925481246843,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.07228699732618249
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 266,
+          "auroc": 0.7881226503759398
+        },
+        {
+          "source": "swe_agent",
+          "target": "synthetic",
+          "aggregate_fsi": -0.2086343101358877,
+          "abs_aggregate_fsi": 0.2086343101358877,
+          "per_feature_fsi": {
+            "low_diversity": -0.2086343101358877,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 285,
+          "auroc": 0.3842626975602271
+        },
+        {
+          "source": "synthetic",
+          "target": "agentharm",
+          "aggregate_fsi": 0.0,
+          "abs_aggregate_fsi": 0.0,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": 0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.0,
+          "fnr": 0.0,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "synthetic",
+          "target": "atbench",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": 0.013912137698715507,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.011705960081990305
+          },
+          "evasion_rate": 0.048,
+          "fnr": 0.048,
+          "n_anomalies": 250,
+          "auroc": 0.8845220883534135
+        },
+        {
+          "source": "synthetic",
+          "target": "injecagent",
+          "aggregate_fsi": -0.09198440996365478,
+          "abs_aggregate_fsi": 0.09198440996365478,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": -0.09198440996365478,
+            "repeat_rate": -0.002756316964995782
+          },
+          "evasion_rate": 0.0009487666034155598,
+          "fnr": 0.0009487666034155598,
+          "n_anomalies": 2108,
+          "auroc": 0.7571157495256167
+        },
+        {
+          "source": "synthetic",
+          "target": "rjudge",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": -0.07773925481246843,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.07518796992481203,
+          "fnr": 0.07518796992481203,
+          "n_anomalies": 266,
+          "auroc": 0.7520999765037594
+        },
+        {
+          "source": "synthetic",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.2086343101358877,
+          "abs_aggregate_fsi": 0.2086343101358877,
+          "per_feature_fsi": {
+            "low_diversity": -0.2086343101358877,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.9533717723740286,
+          "fnr": 0.9533717723740286,
+          "n_anomalies": 3989,
+          "auroc": 0.33024124948950856
+        }
+      ]
+    },
+    {
+      "seed": 456,
+      "fsi_auroc_spearman_rho": -0.10436413919778896,
+      "fsi_auroc_p_value": 0.5831158451607933,
+      "fsi_evasion_spearman_rho": -0.10965250592406565,
+      "fsi_evasion_p_value": 0.5640642173036292,
+      "n_valid_pairs": 30,
+      "n_total_pairs": 30,
+      "pair_results": [
+        {
+          "source": "agentharm",
+          "target": "atbench",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 250,
+          "auroc": 0.9236546184738956
+        },
+        {
+          "source": "agentharm",
+          "target": "injecagent",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "agentharm",
+          "target": "rjudge",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9962406015037594,
+          "fnr": 0.9962406015037594,
+          "n_anomalies": 266,
+          "auroc": 0.7887541118421052
+        },
+        {
+          "source": "agentharm",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.14063675106542994,
+          "fnr": 0.14063675106542994,
+          "n_anomalies": 3989,
+          "auroc": 0.6646233373230389
+        },
+        {
+          "source": "agentharm",
+          "target": "synthetic",
+          "aggregate_fsi": 0.0,
+          "abs_aggregate_fsi": 0.0,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": 0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.0912280701754386,
+          "fnr": 0.0912280701754386,
+          "n_anomalies": 285,
+          "auroc": 0.4083811569740678
+        },
+        {
+          "source": "atbench",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9545454545454546,
+          "fnr": 0.9545454545454546,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "atbench",
+          "target": "injecagent",
+          "aggregate_fsi": -0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "atbench",
+          "target": "rjudge",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.5631749153682153,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.9849624060150376,
+          "fnr": 0.9849624060150376,
+          "n_anomalies": 266,
+          "auroc": 0.7868156719924811
+        },
+        {
+          "source": "atbench",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.05715718225119078,
+          "fnr": 0.05715718225119078,
+          "n_anomalies": 3989,
+          "auroc": 0.6548261180164344
+        },
+        {
+          "source": "atbench",
+          "target": "synthetic",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": 0.013912137698715507,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.011705960081990305
+          },
+          "evasion_rate": 0.03859649122807018,
+          "fnr": 0.03859649122807018,
+          "n_anomalies": 285,
+          "auroc": 0.4564963428980615
+        },
+        {
+          "source": "injecagent",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.5227272727272727,
+          "fnr": 0.5227272727272727,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "injecagent",
+          "target": "atbench",
+          "aggregate_fsi": -0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.004,
+          "fnr": 0.004,
+          "n_anomalies": 250,
+          "auroc": 0.9236546184738956
+        },
+        {
+          "source": "injecagent",
+          "target": "rjudge",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.8533834586466166,
+          "fnr": 0.8533834586466166,
+          "n_anomalies": 266,
+          "auroc": 0.7887614544172932
+        },
+        {
+          "source": "injecagent",
+          "target": "swe_agent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.004011030333416896,
+          "fnr": 0.004011030333416896,
+          "n_anomalies": 3989,
+          "auroc": 0.5250611287866559
+        },
+        {
+          "source": "injecagent",
+          "target": "synthetic",
+          "aggregate_fsi": -0.09198440996365478,
+          "abs_aggregate_fsi": 0.09198440996365478,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": -0.09198440996365478,
+            "repeat_rate": -0.002756316964995782
+          },
+          "evasion_rate": 0.0,
+          "fnr": 0.0,
+          "n_anomalies": 285,
+          "auroc": 0.4971469490051659
+        },
+        {
+          "source": "rjudge",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.7727272727272727,
+          "fnr": 0.7727272727272727,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "rjudge",
+          "target": "atbench",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.5631749153682153,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.132,
+          "fnr": 0.132,
+          "n_anomalies": 250,
+          "auroc": 0.9242650602409639
+        },
+        {
+          "source": "rjudge",
+          "target": "injecagent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "rjudge",
+          "target": "swe_agent",
+          "aggregate_fsi": 0.07228699732618249,
+          "abs_aggregate_fsi": 0.07228699732618249,
+          "per_feature_fsi": {
+            "low_diversity": 0.07773925481246843,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.07228699732618249
+          },
+          "evasion_rate": 0.026071697167209827,
+          "fnr": 0.026071697167209827,
+          "n_anomalies": 3989,
+          "auroc": 0.6597596902857735
+        },
+        {
+          "source": "rjudge",
+          "target": "synthetic",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": -0.07773925481246843,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.0035087719298245615,
+          "fnr": 0.0035087719298245615,
+          "n_anomalies": 285,
+          "auroc": 0.41202700629123834
+        },
+        {
+          "source": "swe_agent",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "swe_agent",
+          "target": "atbench",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 250,
+          "auroc": 0.8798955823293173
+        },
+        {
+          "source": "swe_agent",
+          "target": "injecagent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "swe_agent",
+          "target": "rjudge",
+          "aggregate_fsi": 0.07228699732618249,
+          "abs_aggregate_fsi": 0.07228699732618249,
+          "per_feature_fsi": {
+            "low_diversity": 0.07773925481246843,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.07228699732618249
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 266,
+          "auroc": 0.7881079652255638
+        },
+        {
+          "source": "swe_agent",
+          "target": "synthetic",
+          "aggregate_fsi": -0.2086343101358877,
+          "abs_aggregate_fsi": 0.2086343101358877,
+          "per_feature_fsi": {
+            "low_diversity": -0.2086343101358877,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 285,
+          "auroc": 0.380363152779909
+        },
+        {
+          "source": "synthetic",
+          "target": "agentharm",
+          "aggregate_fsi": 0.0,
+          "abs_aggregate_fsi": 0.0,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": 0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9318181818181818,
+          "fnr": 0.9318181818181818,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "synthetic",
+          "target": "atbench",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": 0.013912137698715507,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.011705960081990305
+          },
+          "evasion_rate": 0.568,
+          "fnr": 0.568,
+          "n_anomalies": 250,
+          "auroc": 0.8847951807228913
+        },
+        {
+          "source": "synthetic",
+          "target": "injecagent",
+          "aggregate_fsi": -0.09198440996365478,
+          "abs_aggregate_fsi": 0.09198440996365478,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": -0.09198440996365478,
+            "repeat_rate": -0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7571157495256167
+        },
+        {
+          "source": "synthetic",
+          "target": "rjudge",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": -0.07773925481246843,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.9924812030075187,
+          "fnr": 0.9924812030075187,
+          "n_anomalies": 266,
+          "auroc": 0.7520265507518797
+        },
+        {
+          "source": "synthetic",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.2086343101358877,
+          "abs_aggregate_fsi": 0.2086343101358877,
+          "per_feature_fsi": {
+            "low_diversity": -0.2086343101358877,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.9822010528954626,
+          "fnr": 0.9822010528954626,
+          "n_anomalies": 3989,
+          "auroc": 0.32052585758213925
+        }
+      ]
+    },
+    {
+      "seed": 789,
+      "fsi_auroc_spearman_rho": 0.18725493367573504,
+      "fsi_auroc_p_value": 0.3217552759435153,
+      "fsi_evasion_spearman_rho": -0.3299532327765969,
+      "fsi_evasion_p_value": 0.07496405238066221,
+      "n_valid_pairs": 30,
+      "n_total_pairs": 30,
+      "pair_results": [
+        {
+          "source": "agentharm",
+          "target": "atbench",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 250,
+          "auroc": 0.0763453815261044
+        },
+        {
+          "source": "agentharm",
+          "target": "injecagent",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.24193548387096775
+        },
+        {
+          "source": "agentharm",
+          "target": "rjudge",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 266,
+          "auroc": 0.21124588815789475
+        },
+        {
+          "source": "agentharm",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 3989,
+          "auroc": 0.3353766626769611
+        },
+        {
+          "source": "agentharm",
+          "target": "synthetic",
+          "aggregate_fsi": 0.0,
+          "abs_aggregate_fsi": 0.0,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": 0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 285,
+          "auroc": 0.5916188430259323
+        },
+        {
+          "source": "atbench",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9545454545454546,
+          "fnr": 0.9545454545454546,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "atbench",
+          "target": "injecagent",
+          "aggregate_fsi": -0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "atbench",
+          "target": "rjudge",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.5631749153682153,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.9887218045112782,
+          "fnr": 0.9887218045112782,
+          "n_anomalies": 266,
+          "auroc": 0.7904135338345863
+        },
+        {
+          "source": "atbench",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.06793682627224869,
+          "fnr": 0.06793682627224869,
+          "n_anomalies": 3989,
+          "auroc": 0.6482323174089776
+        },
+        {
+          "source": "atbench",
+          "target": "synthetic",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": 0.013912137698715507,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.011705960081990305
+          },
+          "evasion_rate": 0.0456140350877193,
+          "fnr": 0.0456140350877193,
+          "n_anomalies": 285,
+          "auroc": 0.4626106081530357
+        },
+        {
+          "source": "injecagent",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.5227272727272727,
+          "fnr": 0.5227272727272727,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "injecagent",
+          "target": "atbench",
+          "aggregate_fsi": -0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.004,
+          "fnr": 0.004,
+          "n_anomalies": 250,
+          "auroc": 0.9230441767068274
+        },
+        {
+          "source": "injecagent",
+          "target": "rjudge",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.8458646616541353,
+          "fnr": 0.8458646616541353,
+          "n_anomalies": 266,
+          "auroc": 0.7870579769736842
+        },
+        {
+          "source": "injecagent",
+          "target": "swe_agent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.00250689395838556,
+          "fnr": 0.00250689395838556,
+          "n_anomalies": 3989,
+          "auroc": 0.5256419793403173
+        },
+        {
+          "source": "injecagent",
+          "target": "synthetic",
+          "aggregate_fsi": -0.09198440996365478,
+          "abs_aggregate_fsi": 0.09198440996365478,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": -0.09198440996365478,
+            "repeat_rate": -0.002756316964995782
+          },
+          "evasion_rate": 0.0,
+          "fnr": 0.0,
+          "n_anomalies": 285,
+          "auroc": 0.49711523707227245
+        },
+        {
+          "source": "rjudge",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9318181818181818,
+          "fnr": 0.9318181818181818,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "rjudge",
+          "target": "atbench",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.5631749153682153,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.556,
+          "fnr": 0.556,
+          "n_anomalies": 250,
+          "auroc": 0.9242650602409639
+        },
+        {
+          "source": "rjudge",
+          "target": "injecagent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "rjudge",
+          "target": "swe_agent",
+          "aggregate_fsi": 0.07228699732618249,
+          "abs_aggregate_fsi": 0.07228699732618249,
+          "per_feature_fsi": {
+            "low_diversity": 0.07773925481246843,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.07228699732618249
+          },
+          "evasion_rate": 0.03685134118826774,
+          "fnr": 0.03685134118826774,
+          "n_anomalies": 3989,
+          "auroc": 0.6599646307265852
+        },
+        {
+          "source": "rjudge",
+          "target": "synthetic",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": -0.07773925481246843,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.0035087719298245615,
+          "fnr": 0.0035087719298245615,
+          "n_anomalies": 285,
+          "auroc": 0.4115758784716894
+        },
+        {
+          "source": "swe_agent",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "swe_agent",
+          "target": "atbench",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 250,
+          "auroc": 0.8903052208835341
+        },
+        {
+          "source": "swe_agent",
+          "target": "injecagent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "swe_agent",
+          "target": "rjudge",
+          "aggregate_fsi": 0.07228699732618249,
+          "abs_aggregate_fsi": 0.07228699732618249,
+          "per_feature_fsi": {
+            "low_diversity": 0.07773925481246843,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.07228699732618249
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 266,
+          "auroc": 0.7880932800751879
+        },
+        {
+          "source": "swe_agent",
+          "target": "synthetic",
+          "aggregate_fsi": -0.2086343101358877,
+          "abs_aggregate_fsi": 0.2086343101358877,
+          "per_feature_fsi": {
+            "low_diversity": -0.2086343101358877,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 285,
+          "auroc": 0.3906930591785587
+        },
+        {
+          "source": "synthetic",
+          "target": "agentharm",
+          "aggregate_fsi": 0.0,
+          "abs_aggregate_fsi": 0.0,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": 0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.0,
+          "fnr": 0.0,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "synthetic",
+          "target": "atbench",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": 0.013912137698715507,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.011705960081990305
+          },
+          "evasion_rate": 0.048,
+          "fnr": 0.048,
+          "n_anomalies": 250,
+          "auroc": 0.884859437751004
+        },
+        {
+          "source": "synthetic",
+          "target": "injecagent",
+          "aggregate_fsi": -0.09198440996365478,
+          "abs_aggregate_fsi": 0.09198440996365478,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": -0.09198440996365478,
+            "repeat_rate": -0.002756316964995782
+          },
+          "evasion_rate": 0.0009487666034155598,
+          "fnr": 0.0009487666034155598,
+          "n_anomalies": 2108,
+          "auroc": 0.7571157495256167
+        },
+        {
+          "source": "synthetic",
+          "target": "rjudge",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": -0.07773925481246843,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.07518796992481203,
+          "fnr": 0.07518796992481203,
+          "n_anomalies": 266,
+          "auroc": 0.751938439849624
+        },
+        {
+          "source": "synthetic",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.2086343101358877,
+          "abs_aggregate_fsi": 0.2086343101358877,
+          "per_feature_fsi": {
+            "low_diversity": -0.2086343101358877,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.9501128102281273,
+          "fnr": 0.9501128102281273,
+          "n_anomalies": 3989,
+          "auroc": 0.30542324726330744
+        }
+      ]
+    },
+    {
+      "seed": 1024,
+      "fsi_auroc_spearman_rho": -0.10911636789971933,
+      "fsi_auroc_p_value": 0.5659827063349543,
+      "fsi_evasion_spearman_rho": -0.15906536917264166,
+      "fsi_evasion_p_value": 0.4011431542837022,
+      "n_valid_pairs": 30,
+      "n_total_pairs": 30,
+      "pair_results": [
+        {
+          "source": "agentharm",
+          "target": "atbench",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 250,
+          "auroc": 0.9236546184738956
+        },
+        {
+          "source": "agentharm",
+          "target": "injecagent",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "agentharm",
+          "target": "rjudge",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9887218045112782,
+          "fnr": 0.9887218045112782,
+          "n_anomalies": 266,
+          "auroc": 0.7887541118421052
+        },
+        {
+          "source": "agentharm",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.06793682627224869,
+          "fnr": 0.06793682627224869,
+          "n_anomalies": 3989,
+          "auroc": 0.6646233373230389
+        },
+        {
+          "source": "agentharm",
+          "target": "synthetic",
+          "aggregate_fsi": 0.0,
+          "abs_aggregate_fsi": 0.0,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": 0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.0456140350877193,
+          "fnr": 0.0456140350877193,
+          "n_anomalies": 285,
+          "auroc": 0.4083811569740678
+        },
+        {
+          "source": "atbench",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9545454545454546,
+          "fnr": 0.9545454545454546,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "atbench",
+          "target": "injecagent",
+          "aggregate_fsi": -0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "atbench",
+          "target": "rjudge",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.5631749153682153,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.9774436090225563,
+          "fnr": 0.9774436090225563,
+          "n_anomalies": 266,
+          "auroc": 0.7870506343984962
+        },
+        {
+          "source": "atbench",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.04988718977187265,
+          "fnr": 0.04988718977187265,
+          "n_anomalies": 3989,
+          "auroc": 0.6549312538263607
+        },
+        {
+          "source": "atbench",
+          "target": "synthetic",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": 0.013912137698715507,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.011705960081990305
+          },
+          "evasion_rate": 0.031578947368421054,
+          "fnr": 0.031578947368421054,
+          "n_anomalies": 285,
+          "auroc": 0.4548330008695207
+        },
+        {
+          "source": "injecagent",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.5227272727272727,
+          "fnr": 0.5227272727272727,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "injecagent",
+          "target": "atbench",
+          "aggregate_fsi": -0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.004,
+          "fnr": 0.004,
+          "n_anomalies": 250,
+          "auroc": 0.9230441767068274
+        },
+        {
+          "source": "injecagent",
+          "target": "rjudge",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.8458646616541353,
+          "fnr": 0.8458646616541353,
+          "n_anomalies": 266,
+          "auroc": 0.7870579769736842
+        },
+        {
+          "source": "injecagent",
+          "target": "swe_agent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 0.00250689395838556,
+          "fnr": 0.00250689395838556,
+          "n_anomalies": 3989,
+          "auroc": 0.525617059177823
+        },
+        {
+          "source": "injecagent",
+          "target": "synthetic",
+          "aggregate_fsi": -0.09198440996365478,
+          "abs_aggregate_fsi": 0.09198440996365478,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": -0.09198440996365478,
+            "repeat_rate": -0.002756316964995782
+          },
+          "evasion_rate": 0.0,
+          "fnr": 0.0,
+          "n_anomalies": 285,
+          "auroc": 0.4971162600378496
+        },
+        {
+          "source": "rjudge",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.9318181818181818,
+          "fnr": 0.9318181818181818,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "rjudge",
+          "target": "atbench",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.5631749153682153,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 0.556,
+          "fnr": 0.556,
+          "n_anomalies": 250,
+          "auroc": 0.9242650602409639
+        },
+        {
+          "source": "rjudge",
+          "target": "injecagent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "rjudge",
+          "target": "swe_agent",
+          "aggregate_fsi": 0.07228699732618249,
+          "abs_aggregate_fsi": 0.07228699732618249,
+          "per_feature_fsi": {
+            "low_diversity": 0.07773925481246843,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.07228699732618249
+          },
+          "evasion_rate": 0.03710203058410629,
+          "fnr": 0.03710203058410629,
+          "n_anomalies": 3989,
+          "auroc": 0.6602132124469888
+        },
+        {
+          "source": "rjudge",
+          "target": "synthetic",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": -0.07773925481246843,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.0035087719298245615,
+          "fnr": 0.0035087719298245615,
+          "n_anomalies": 285,
+          "auroc": 0.41218658892128285
+        },
+        {
+          "source": "swe_agent",
+          "target": "agentharm",
+          "aggregate_fsi": -0.0020982018445180315,
+          "abs_aggregate_fsi": 0.0020982018445180315,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": -0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "swe_agent",
+          "target": "atbench",
+          "aggregate_fsi": -0.013912137698715507,
+          "abs_aggregate_fsi": 0.013912137698715507,
+          "per_feature_fsi": {
+            "low_diversity": -0.013912137698715507,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.011705960081990305
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 250,
+          "auroc": 0.8903052208835341
+        },
+        {
+          "source": "swe_agent",
+          "target": "injecagent",
+          "aggregate_fsi": 0.002756316964995782,
+          "abs_aggregate_fsi": 0.002756316964995782,
+          "per_feature_fsi": {
+            "low_diversity": 0.002756316964995782,
+            "trace_length": 0.09198440996365478,
+            "repeat_rate": 0.002756316964995782
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 2108,
+          "auroc": 0.7580645161290323
+        },
+        {
+          "source": "swe_agent",
+          "target": "rjudge",
+          "aggregate_fsi": 0.07228699732618249,
+          "abs_aggregate_fsi": 0.07228699732618249,
+          "per_feature_fsi": {
+            "low_diversity": 0.07773925481246843,
+            "trace_length": 0.2291719997383319,
+            "repeat_rate": 0.07228699732618249
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 266,
+          "auroc": 0.7880932800751879
+        },
+        {
+          "source": "swe_agent",
+          "target": "synthetic",
+          "aggregate_fsi": -0.2086343101358877,
+          "abs_aggregate_fsi": 0.2086343101358877,
+          "per_feature_fsi": {
+            "low_diversity": -0.2086343101358877,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 1.0,
+          "fnr": 1.0,
+          "n_anomalies": 285,
+          "auroc": 0.3906194056569997
+        },
+        {
+          "source": "synthetic",
+          "target": "agentharm",
+          "aggregate_fsi": 0.0,
+          "abs_aggregate_fsi": 0.0,
+          "per_feature_fsi": {
+            "low_diversity": 0.0,
+            "trace_length": 0.0020982018445180315,
+            "repeat_rate": 0.0
+          },
+          "evasion_rate": 0.0,
+          "fnr": 0.0,
+          "n_anomalies": 176,
+          "auroc": 0.4988378099173554
+        },
+        {
+          "source": "synthetic",
+          "target": "atbench",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": 0.013912137698715507,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.011705960081990305
+          },
+          "evasion_rate": 0.048,
+          "fnr": 0.048,
+          "n_anomalies": 250,
+          "auroc": 0.8847951807228913
+        },
+        {
+          "source": "synthetic",
+          "target": "injecagent",
+          "aggregate_fsi": -0.09198440996365478,
+          "abs_aggregate_fsi": 0.09198440996365478,
+          "per_feature_fsi": {
+            "low_diversity": -0.002756316964995782,
+            "trace_length": -0.09198440996365478,
+            "repeat_rate": -0.002756316964995782
+          },
+          "evasion_rate": 0.0009487666034155598,
+          "fnr": 0.0009487666034155598,
+          "n_anomalies": 2108,
+          "auroc": 0.7571157495256167
+        },
+        {
+          "source": "synthetic",
+          "target": "rjudge",
+          "aggregate_fsi": -0.1109706477611962,
+          "abs_aggregate_fsi": 0.1109706477611962,
+          "per_feature_fsi": {
+            "low_diversity": -0.07773925481246843,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.07518796992481203,
+          "fnr": 0.07518796992481203,
+          "n_anomalies": 266,
+          "auroc": 0.7520706062030075
+        },
+        {
+          "source": "synthetic",
+          "target": "swe_agent",
+          "aggregate_fsi": -0.2086343101358877,
+          "abs_aggregate_fsi": 0.2086343101358877,
+          "per_feature_fsi": {
+            "low_diversity": -0.2086343101358877,
+            "trace_length": -0.1109706477611962,
+            "repeat_rate": -0.06726049830085305
+          },
+          "evasion_rate": 0.9526197041865129,
+          "fnr": 0.9526197041865129,
+          "n_anomalies": 3989,
+          "auroc": 0.3365050129200504
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 39.507222175598145
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "model": "Claude Haiku 4.5",
+    "n_within": 8,
+    "n_between": 9,
+    "within_mean": 0.62,
+    "within_std": 0.1342,
+    "between_mean": 0.7256,
+    "between_std": 0.1686,
+    "delta": -0.1056,
+    "inverted": "True"
+  },
+  {
+    "model": "Llama 3.3 70B",
+    "n_within": 8,
+    "n_between": 9,
+    "within_mean": 0.5616,
+    "within_std": 0.2704,
+    "between_mean": 0.6629,
+    "between_std": 0.3333,
+    "delta": -0.1013,
+    "inverted": "True"
+  }
+]

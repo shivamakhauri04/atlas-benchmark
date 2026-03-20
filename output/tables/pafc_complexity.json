@@ -1,0 +1,364 @@
+{
+  "analytical": {
+    "trace_length (syn)": {
+      "d": -0.336,
+      "abs_d": 0.336,
+      "n_95": 155,
+      "n_99": 305
+    },
+    "low_diversity (syn)": {
+      "d": -0.464,
+      "abs_d": 0.464,
+      "n_95": 80,
+      "n_99": 160
+    },
+    "repeat_rate (syn)": {
+      "d": -0.114,
+      "abs_d": 0.114,
+      "n_95": 1305,
+      "n_99": 2607
+    },
+    "trace_length (SWE)": {
+      "d": 0.51,
+      "abs_d": 0.51,
+      "n_95": 70,
+      "n_99": 135
+    },
+    "low_diversity (SWE)": {
+      "d": 0.71,
+      "abs_d": 0.71,
+      "n_95": 35,
+      "n_99": 70
+    },
+    "repeat_rate (SWE)": {
+      "d": 0.61,
+      "abs_d": 0.61,
+      "n_95": 50,
+      "n_99": 95
+    },
+    "trace_length (ATB)": {
+      "d": 2.23,
+      "abs_d": 2.23,
+      "n_95": 4,
+      "n_99": 10
+    }
+  },
+  "formula_table": [
+    {
+      "d": 0.1,
+      "n_95": 1695,
+      "n_99": 3386,
+      "category": "negligible"
+    },
+    {
+      "d": 0.2,
+      "n_95": 425,
+      "n_99": 850,
+      "category": "small"
+    },
+    {
+      "d": 0.3,
+      "n_95": 190,
+      "n_99": 380,
+      "category": "small"
+    },
+    {
+      "d": 0.5,
+      "n_95": 70,
+      "n_99": 140,
+      "category": "medium"
+    },
+    {
+      "d": 0.8,
+      "n_95": 30,
+      "n_99": 58,
+      "category": "large"
+    },
+    {
+      "d": 1.0,
+      "n_95": 20,
+      "n_99": 40,
+      "category": "large"
+    },
+    {
+      "d": 1.5,
+      "n_95": 8,
+      "n_99": 20,
+      "category": "large"
+    },
+    {
+      "d": 2.0,
+      "n_95": 5,
+      "n_99": 14,
+      "category": "large"
+    }
+  ],
+  "mc_results": {
+    "small (|d|=0.11, repeat_rate)": {
+      "true_d": 0.114,
+      "sweep": [
+        {
+          "N": 5,
+          "detection_prob": 0.5585
+        },
+        {
+          "N": 10,
+          "detection_prob": 0.555
+        },
+        {
+          "N": 15,
+          "detection_prob": 0.5735
+        },
+        {
+          "N": 20,
+          "detection_prob": 0.5805
+        },
+        {
+          "N": 30,
+          "detection_prob": 0.597
+        },
+        {
+          "N": 50,
+          "detection_prob": 0.626
+        },
+        {
+          "N": 75,
+          "detection_prob": 0.653
+        },
+        {
+          "N": 100,
+          "detection_prob": 0.666
+        },
+        {
+          "N": 150,
+          "detection_prob": 0.7235
+        },
+        {
+          "N": 200,
+          "detection_prob": 0.7205
+        },
+        {
+          "N": 300,
+          "detection_prob": 0.798
+        },
+        {
+          "N": 500,
+          "detection_prob": 0.8445
+        }
+      ]
+    },
+    "medium (|d|=0.34, trace_length)": {
+      "true_d": 0.336,
+      "sweep": [
+        {
+          "N": 5,
+          "detection_prob": 0.6555
+        },
+        {
+          "N": 10,
+          "detection_prob": 0.6705
+        },
+        {
+          "N": 15,
+          "detection_prob": 0.7115
+        },
+        {
+          "N": 20,
+          "detection_prob": 0.723
+        },
+        {
+          "N": 30,
+          "detection_prob": 0.763
+        },
+        {
+          "N": 50,
+          "detection_prob": 0.833
+        },
+        {
+          "N": 75,
+          "detection_prob": 0.878
+        },
+        {
+          "N": 100,
+          "detection_prob": 0.909
+        },
+        {
+          "N": 150,
+          "detection_prob": 0.952
+        },
+        {
+          "N": 200,
+          "detection_prob": 0.9765
+        },
+        {
+          "N": 300,
+          "detection_prob": 0.991
+        },
+        {
+          "N": 500,
+          "detection_prob": 0.9985
+        }
+      ]
+    },
+    "medium (|d|=0.46, low_diversity)": {
+      "true_d": 0.464,
+      "sweep": [
+        {
+          "N": 5,
+          "detection_prob": 0.688
+        },
+        {
+          "N": 10,
+          "detection_prob": 0.7315
+        },
+        {
+          "N": 15,
+          "detection_prob": 0.7615
+        },
+        {
+          "N": 20,
+          "detection_prob": 0.786
+        },
+        {
+          "N": 30,
+          "detection_prob": 0.835
+        },
+        {
+          "N": 50,
+          "detection_prob": 0.9145
+        },
+        {
+          "N": 75,
+          "detection_prob": 0.944
+        },
+        {
+          "N": 100,
+          "detection_prob": 0.9665
+        },
+        {
+          "N": 150,
+          "detection_prob": 0.987
+        },
+        {
+          "N": 200,
+          "detection_prob": 0.998
+        },
+        {
+          "N": 300,
+          "detection_prob": 1.0
+        },
+        {
+          "N": 500,
+          "detection_prob": 1.0
+        }
+      ]
+    },
+    "large (|d|=0.51, SWE trace_length)": {
+      "true_d": 0.51,
+      "sweep": [
+        {
+          "N": 5,
+          "detection_prob": 0.703
+        },
+        {
+          "N": 10,
+          "detection_prob": 0.728
+        },
+        {
+          "N": 15,
+          "detection_prob": 0.78
+        },
+        {
+          "N": 20,
+          "detection_prob": 0.8105
+        },
+        {
+          "N": 30,
+          "detection_prob": 0.854
+        },
+        {
+          "N": 50,
+          "detection_prob": 0.926
+        },
+        {
+          "N": 75,
+          "detection_prob": 0.9545
+        },
+        {
+          "N": 100,
+          "detection_prob": 0.9755
+        },
+        {
+          "N": 150,
+          "detection_prob": 0.9955
+        },
+        {
+          "N": 200,
+          "detection_prob": 0.9985
+        },
+        {
+          "N": 300,
+          "detection_prob": 1.0
+        },
+        {
+          "N": 500,
+          "detection_prob": 1.0
+        }
+      ]
+    },
+    "very large (|d|=2.23, ATB trace_length)": {
+      "true_d": 2.23,
+      "sweep": [
+        {
+          "N": 5,
+          "detection_prob": 0.9945
+        },
+        {
+          "N": 10,
+          "detection_prob": 0.996
+        },
+        {
+          "N": 15,
+          "detection_prob": 1.0
+        },
+        {
+          "N": 20,
+          "detection_prob": 1.0
+        },
+        {
+          "N": 30,
+          "detection_prob": 1.0
+        },
+        {
+          "N": 50,
+          "detection_prob": 1.0
+        },
+        {
+          "N": 75,
+          "detection_prob": 1.0
+        },
+        {
+          "N": 100,
+          "detection_prob": 1.0
+        },
+        {
+          "N": 150,
+          "detection_prob": 1.0
+        },
+        {
+          "N": 200,
+          "detection_prob": 1.0
+        },
+        {
+          "N": 300,
+          "detection_prob": 1.0
+        },
+        {
+          "N": 500,
+          "detection_prob": 1.0
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 2.5456719398498535
+}

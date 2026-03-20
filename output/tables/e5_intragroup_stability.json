@@ -1,0 +1,75 @@
+{
+  "experiment": "e5_intragroup_stability",
+  "grouping": "5group",
+  "groups": {
+    "Failure": {
+      "n_datasets": 2,
+      "datasets": [
+        "swe_agent",
+        "trail"
+      ],
+      "sign_agreement": 0.833,
+      "mean_pairwise_cosine": 0.612,
+      "d_values": {
+        "swe_agent": {
+          "trace_length": 0.5255727795924573,
+          "low_diversity": 0.7093255130928713,
+          "repeat_rate": 0.6001830264333923
+        },
+        "trail": {
+          "trace_length": -0.3531313130107976,
+          "low_diversity": 0.48719072486007586,
+          "repeat_rate": 1.860199070822159
+        }
+      }
+    },
+    "Safety": {
+      "n_datasets": 3,
+      "datasets": [
+        "atbench",
+        "agentharm",
+        "rjudge"
+      ],
+      "sign_agreement": 0.667,
+      "mean_pairwise_cosine": 0.948,
+      "d_values": {
+        "atbench": {
+          "trace_length": 2.2382884507875507,
+          "low_diversity": -0.10612250916017915,
+          "repeat_rate": -0.0636016057984147
+        },
+        "agentharm": {
+          "trace_length": 0.024277894916347166,
+          "low_diversity": 0.0,
+          "repeat_rate": 0.0
+        },
+        "rjudge": {
+          "trace_length": 0.6662564830292319,
+          "low_diversity": 0.18656597552326323,
+          "repeat_rate": 0.1747464518782724
+        }
+      }
+    },
+    "Prompt-Inj.": {
+      "n_datasets": 2,
+      "datasets": [
+        "injecagent",
+        "agentdojo"
+      ],
+      "sign_agreement": 0.833,
+      "mean_pairwise_cosine": 0.077,
+      "d_values": {
+        "injecagent": {
+          "trace_length": 1.0261164471656923,
+          "low_diversity": 0.027094690781760085,
+          "repeat_rate": 0.027094690781760085
+        },
+        "agentdojo": {
+          "trace_length": 0.012349585812469612,
+          "low_diversity": -0.12494765922651863,
+          "repeat_rate": 0.039632095182444094
+        }
+      }
+    }
+  }
+}

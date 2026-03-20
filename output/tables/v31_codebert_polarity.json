@@ -1,0 +1,72 @@
+{
+  "experiment": "v31_codebert_polarity",
+  "models_tested": [
+    "codebert"
+  ],
+  "results": {
+    "codebert": {
+      "model": "codebert",
+      "model_name": "microsoft/codebert-base",
+      "model_params": "125M",
+      "embedding_dim": 768,
+      "n_domains": 8,
+      "domains": [
+        "agentharm",
+        "atbench",
+        "injecagent",
+        "rjudge",
+        "swe_agent",
+        "synthetic",
+        "toolbench",
+        "trail"
+      ],
+      "polarity": {
+        "within_cos_mean": -0.08503684313042285,
+        "between_cos_mean": 0.024923168101623074,
+        "within_neg_pct": 42.857142857142854,
+        "between_neg_pct": 47.61904761904761,
+        "within_neg": 3,
+        "within_total": 7,
+        "between_neg": 10,
+        "between_total": 21,
+        "mannwhitney_p": 0.8639412519847303
+      },
+      "prototype_scorer": {
+        "within_auroc_mean": 0.5115248989991963,
+        "between_auroc_mean": 0.46554637782448066,
+        "anti_predict_pct": 50.0,
+        "n_anti": 28,
+        "total_pairs": 56
+      },
+      "prototype_reversal": {
+        "within_rev": 1,
+        "within_total": 7,
+        "between_rev": 5,
+        "between_total": 21
+      },
+      "domain_d_proto": {
+        "agentharm": 0.007039081147919058,
+        "atbench": 1.027720685997214,
+        "injecagent": -0.06354176048675324,
+        "rjudge": -0.1935195230991733,
+        "swe_agent": 0.29020670155744466,
+        "synthetic": -0.03096014978188079,
+        "toolbench": -0.2756420265956765,
+        "trail": 0.13731915669436628
+      }
+    },
+    "minilm_reference": {
+      "model": "minilm",
+      "model_name": "all-MiniLM-L6-v2",
+      "model_params": "22M",
+      "embedding_dim": 384,
+      "polarity": {
+        "within_cos_mean": 0.03825539014297363,
+        "between_cos_mean": 0.045954368205350295,
+        "within_neg_pct": 57.14285714285714,
+        "between_neg_pct": 42.857142857142854
+      }
+    }
+  },
+  "elapsed_s": 1004.3756861686707
+}

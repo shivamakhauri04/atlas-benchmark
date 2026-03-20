@@ -1,0 +1,1217 @@
+{
+  "model": "us.anthropic.claude-sonnet-4-6",
+  "n_eval": 50,
+  "n_examples": 5,
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "n_seeds": 3,
+  "aggregated": {
+    "zero_shot": {
+      "agentharm": {
+        "auroc_mean": 0.9275,
+        "auroc_std": 0.0297,
+        "aurocs": [
+          0.8944,
+          0.9216,
+          0.9664
+        ],
+        "n_seeds": 3,
+        "group": "safety"
+      },
+      "atbench": {
+        "auroc_mean": 0.3411,
+        "auroc_std": 0.024,
+        "aurocs": [
+          0.372,
+          0.3376,
+          0.3136
+        ],
+        "n_seeds": 3,
+        "group": "safety"
+      },
+      "injecagent": {
+        "auroc_mean": 0.9721,
+        "auroc_std": 0.0037,
+        "aurocs": [
+          0.9679,
+          0.9768,
+          0.9715
+        ],
+        "n_seeds": 3,
+        "group": "prompt_injection"
+      },
+      "rjudge": {
+        "auroc_mean": 0.7667,
+        "auroc_std": 0.0452,
+        "aurocs": [
+          0.8192,
+          0.7088,
+          0.772
+        ],
+        "n_seeds": 3,
+        "group": "safety"
+      },
+      "swe_agent": {
+        "auroc_mean": 0.6856,
+        "auroc_std": 0.0436,
+        "aurocs": [
+          0.6912,
+          0.736,
+          0.6296
+        ],
+        "n_seeds": 3,
+        "group": "failure"
+      },
+      "synthetic": {
+        "auroc_mean": 0.8,
+        "auroc_std": 0.0514,
+        "aurocs": [
+          0.728,
+          0.8272,
+          0.8448
+        ],
+        "n_seeds": 3,
+        "group": "injected"
+      },
+      "toolbench": {
+        "auroc_mean": 1.0,
+        "auroc_std": 0.0,
+        "aurocs": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "n_seeds": 3,
+        "group": "api_misuse"
+      },
+      "trail": {
+        "auroc_mean": 0.5348,
+        "auroc_std": 0.0454,
+        "aurocs": [
+          0.4711,
+          0.5733,
+          0.56
+        ],
+        "n_seeds": 3,
+        "group": "failure"
+      }
+    },
+    "few_shot": {
+      "agentharm\u2192atbench": {
+        "source": "agentharm",
+        "target": "atbench",
+        "source_group": "safety",
+        "target_group": "safety",
+        "transfer_type": "within",
+        "auroc_mean": 0.2685,
+        "auroc_std": 0.0604,
+        "aurocs": [
+          0.3464,
+          0.1992,
+          0.26
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 1.0
+      },
+      "agentharm\u2192rjudge": {
+        "source": "agentharm",
+        "target": "rjudge",
+        "source_group": "safety",
+        "target_group": "safety",
+        "transfer_type": "within",
+        "auroc_mean": 0.644,
+        "auroc_std": 0.0446,
+        "aurocs": [
+          0.7016,
+          0.6376,
+          0.5928
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "atbench\u2192agentharm": {
+        "source": "atbench",
+        "target": "agentharm",
+        "source_group": "safety",
+        "target_group": "safety",
+        "transfer_type": "within",
+        "auroc_mean": 0.9331,
+        "auroc_std": 0.026,
+        "aurocs": [
+          0.9184,
+          0.9112,
+          0.9696
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "atbench\u2192rjudge": {
+        "source": "atbench",
+        "target": "rjudge",
+        "source_group": "safety",
+        "target_group": "safety",
+        "transfer_type": "within",
+        "auroc_mean": 0.7136,
+        "auroc_std": 0.0074,
+        "aurocs": [
+          0.7072,
+          0.7096,
+          0.724
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "atbench\u2192swe_agent": {
+        "source": "atbench",
+        "target": "swe_agent",
+        "source_group": "safety",
+        "target_group": "failure",
+        "transfer_type": "between",
+        "auroc_mean": 0.6488,
+        "auroc_std": 0.0586,
+        "aurocs": [
+          0.7272,
+          0.6328,
+          0.5864
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "injecagent\u2192atbench": {
+        "source": "injecagent",
+        "target": "atbench",
+        "source_group": "prompt_injection",
+        "target_group": "safety",
+        "transfer_type": "between",
+        "auroc_mean": 0.3195,
+        "auroc_std": 0.0378,
+        "aurocs": [
+          0.34,
+          0.2664,
+          0.352
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 1.0
+      },
+      "rjudge\u2192agentharm": {
+        "source": "rjudge",
+        "target": "agentharm",
+        "source_group": "safety",
+        "target_group": "safety",
+        "transfer_type": "within",
+        "auroc_mean": 0.9264,
+        "auroc_std": 0.0217,
+        "aurocs": [
+          0.9184,
+          0.9048,
+          0.956
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "rjudge\u2192atbench": {
+        "source": "rjudge",
+        "target": "atbench",
+        "source_group": "safety",
+        "target_group": "safety",
+        "transfer_type": "within",
+        "auroc_mean": 0.5267,
+        "auroc_std": 0.0134,
+        "aurocs": [
+          0.5264,
+          0.5104,
+          0.5432
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "rjudge\u2192toolbench": {
+        "source": "rjudge",
+        "target": "toolbench",
+        "source_group": "safety",
+        "target_group": "api_misuse",
+        "transfer_type": "between",
+        "auroc_mean": 1.0,
+        "auroc_std": 0.0,
+        "aurocs": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "swe_agent\u2192synthetic": {
+        "source": "swe_agent",
+        "target": "synthetic",
+        "source_group": "failure",
+        "target_group": "injected",
+        "transfer_type": "between",
+        "auroc_mean": 0.8227,
+        "auroc_std": 0.048,
+        "aurocs": [
+          0.7584,
+          0.836,
+          0.8736
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "swe_agent\u2192toolbench": {
+        "source": "swe_agent",
+        "target": "toolbench",
+        "source_group": "failure",
+        "target_group": "api_misuse",
+        "transfer_type": "between",
+        "auroc_mean": 0.9957,
+        "auroc_std": 0.006,
+        "aurocs": [
+          0.9872,
+          1.0,
+          1.0
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "swe_agent\u2192trail": {
+        "source": "swe_agent",
+        "target": "trail",
+        "source_group": "failure",
+        "target_group": "failure",
+        "transfer_type": "within",
+        "auroc_mean": 0.5067,
+        "auroc_std": 0.0091,
+        "aurocs": [
+          0.4956,
+          0.5067,
+          0.5178
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.3333
+      },
+      "synthetic\u2192atbench": {
+        "source": "synthetic",
+        "target": "atbench",
+        "source_group": "injected",
+        "target_group": "safety",
+        "transfer_type": "between",
+        "auroc_mean": 0.2595,
+        "auroc_std": 0.0338,
+        "aurocs": [
+          0.3072,
+          0.236,
+          0.2352
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 1.0
+      },
+      "synthetic\u2192swe_agent": {
+        "source": "synthetic",
+        "target": "swe_agent",
+        "source_group": "injected",
+        "target_group": "failure",
+        "transfer_type": "between",
+        "auroc_mean": 0.6424,
+        "auroc_std": 0.0922,
+        "aurocs": [
+          0.7728,
+          0.5776,
+          0.5768
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "synthetic\u2192toolbench": {
+        "source": "synthetic",
+        "target": "toolbench",
+        "source_group": "injected",
+        "target_group": "api_misuse",
+        "transfer_type": "between",
+        "auroc_mean": 1.0,
+        "auroc_std": 0.0,
+        "aurocs": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "toolbench\u2192synthetic": {
+        "source": "toolbench",
+        "target": "synthetic",
+        "source_group": "api_misuse",
+        "target_group": "injected",
+        "transfer_type": "between",
+        "auroc_mean": 0.8373,
+        "auroc_std": 0.0348,
+        "aurocs": [
+          0.7928,
+          0.8776,
+          0.8416
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      },
+      "trail\u2192swe_agent": {
+        "source": "trail",
+        "target": "swe_agent",
+        "source_group": "failure",
+        "target_group": "failure",
+        "transfer_type": "within",
+        "auroc_mean": 0.6464,
+        "auroc_std": 0.027,
+        "aurocs": [
+          0.6216,
+          0.684,
+          0.6336
+        ],
+        "n_seeds": 3,
+        "anti_predict_rate": 0.0
+      }
+    },
+    "summary": {
+      "within_mean": 0.6457,
+      "within_std": 0.2067,
+      "between_mean": 0.7251,
+      "between_std": 0.2668,
+      "mann_whitney_p": 0.1101,
+      "inverted": true,
+      "n_within_pairs": 8,
+      "n_between_pairs": 9,
+      "n_within_seed_obs": 24,
+      "n_between_seed_obs": 27
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "zero_shot": {
+        "agentharm": {
+          "auroc": 0.8944,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.9272,
+          "mean_score_anomalous": 0.9918,
+          "group": "safety"
+        },
+        "atbench": {
+          "auroc": 0.372,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.9574,
+          "mean_score_anomalous": 0.9754,
+          "group": "safety"
+        },
+        "injecagent": {
+          "auroc": 0.9679,
+          "n_traces": 50,
+          "n_anomalous": 33,
+          "mean_score_normal": 0.7221,
+          "mean_score_anomalous": 0.9611,
+          "group": "prompt_injection"
+        },
+        "rjudge": {
+          "auroc": 0.8192,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.6444,
+          "mean_score_anomalous": 0.9498,
+          "group": "safety"
+        },
+        "swe_agent": {
+          "auroc": 0.6912,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.1772,
+          "mean_score_anomalous": 0.386,
+          "group": "failure"
+        },
+        "synthetic": {
+          "auroc": 0.728,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.94,
+          "mean_score_anomalous": 0.9682,
+          "group": "injected"
+        },
+        "toolbench": {
+          "auroc": 1.0,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.5864,
+          "mean_score_anomalous": 0.9988,
+          "group": "api_misuse"
+        },
+        "trail": {
+          "auroc": 0.4711,
+          "n_traces": 50,
+          "n_anomalous": 45,
+          "mean_score_normal": 0.57,
+          "mean_score_anomalous": 0.3883,
+          "group": "failure"
+        }
+      },
+      "few_shot": {
+        "swe_agent\u2192trail": {
+          "source": "swe_agent",
+          "target": "trail",
+          "source_group": "failure",
+          "target_group": "failure",
+          "transfer_type": "within",
+          "auroc": 0.4956,
+          "n_target_traces": 50,
+          "n_anomalous": 45,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "trail\u2192swe_agent": {
+          "source": "trail",
+          "target": "swe_agent",
+          "source_group": "failure",
+          "target_group": "failure",
+          "transfer_type": "within",
+          "auroc": 0.6216,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "atbench\u2192rjudge": {
+          "source": "atbench",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.7072,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192atbench": {
+          "source": "rjudge",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.5264,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192agentharm": {
+          "source": "rjudge",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.9184,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192rjudge": {
+          "source": "agentharm",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.7016,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192atbench": {
+          "source": "agentharm",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.3464,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "atbench\u2192agentharm": {
+          "source": "atbench",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.9184,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "synthetic\u2192atbench": {
+          "source": "synthetic",
+          "target": "atbench",
+          "source_group": "injected",
+          "target_group": "safety",
+          "transfer_type": "between",
+          "auroc": 0.3072,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "synthetic\u2192swe_agent": {
+          "source": "synthetic",
+          "target": "swe_agent",
+          "source_group": "injected",
+          "target_group": "failure",
+          "transfer_type": "between",
+          "auroc": 0.7728,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "swe_agent\u2192synthetic": {
+          "source": "swe_agent",
+          "target": "synthetic",
+          "source_group": "failure",
+          "target_group": "injected",
+          "transfer_type": "between",
+          "auroc": 0.7584,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192toolbench": {
+          "source": "rjudge",
+          "target": "toolbench",
+          "source_group": "safety",
+          "target_group": "api_misuse",
+          "transfer_type": "between",
+          "auroc": 1.0,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "toolbench\u2192synthetic": {
+          "source": "toolbench",
+          "target": "synthetic",
+          "source_group": "api_misuse",
+          "target_group": "injected",
+          "transfer_type": "between",
+          "auroc": 0.7928,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "atbench\u2192swe_agent": {
+          "source": "atbench",
+          "target": "swe_agent",
+          "source_group": "safety",
+          "target_group": "failure",
+          "transfer_type": "between",
+          "auroc": 0.7272,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "swe_agent\u2192toolbench": {
+          "source": "swe_agent",
+          "target": "toolbench",
+          "source_group": "failure",
+          "target_group": "api_misuse",
+          "transfer_type": "between",
+          "auroc": 0.9872,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "injecagent\u2192atbench": {
+          "source": "injecagent",
+          "target": "atbench",
+          "source_group": "prompt_injection",
+          "target_group": "safety",
+          "transfer_type": "between",
+          "auroc": 0.34,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "synthetic\u2192toolbench": {
+          "source": "synthetic",
+          "target": "toolbench",
+          "source_group": "injected",
+          "target_group": "api_misuse",
+          "transfer_type": "between",
+          "auroc": 1.0,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "zero_shot": {
+        "agentharm": {
+          "auroc": 0.9216,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.9562,
+          "mean_score_anomalous": 0.9944,
+          "group": "safety"
+        },
+        "atbench": {
+          "auroc": 0.3376,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.9578,
+          "mean_score_anomalous": 0.9782,
+          "group": "safety"
+        },
+        "injecagent": {
+          "auroc": 0.9768,
+          "n_traces": 50,
+          "n_anomalous": 33,
+          "mean_score_normal": 0.7206,
+          "mean_score_anomalous": 0.9658,
+          "group": "prompt_injection"
+        },
+        "rjudge": {
+          "auroc": 0.7088,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.76,
+          "mean_score_anomalous": 0.9814,
+          "group": "safety"
+        },
+        "swe_agent": {
+          "auroc": 0.736,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.2538,
+          "mean_score_anomalous": 0.5236,
+          "group": "failure"
+        },
+        "synthetic": {
+          "auroc": 0.8272,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.8976,
+          "mean_score_anomalous": 0.9742,
+          "group": "injected"
+        },
+        "toolbench": {
+          "auroc": 1.0,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.6234,
+          "mean_score_anomalous": 0.999,
+          "group": "api_misuse"
+        },
+        "trail": {
+          "auroc": 0.5733,
+          "n_traces": 50,
+          "n_anomalous": 45,
+          "mean_score_normal": 0.57,
+          "mean_score_anomalous": 0.5354,
+          "group": "failure"
+        }
+      },
+      "few_shot": {
+        "swe_agent\u2192trail": {
+          "source": "swe_agent",
+          "target": "trail",
+          "source_group": "failure",
+          "target_group": "failure",
+          "transfer_type": "within",
+          "auroc": 0.5067,
+          "n_target_traces": 50,
+          "n_anomalous": 45,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "trail\u2192swe_agent": {
+          "source": "trail",
+          "target": "swe_agent",
+          "source_group": "failure",
+          "target_group": "failure",
+          "transfer_type": "within",
+          "auroc": 0.684,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "atbench\u2192rjudge": {
+          "source": "atbench",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.7096,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192atbench": {
+          "source": "rjudge",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.5104,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192agentharm": {
+          "source": "rjudge",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.9048,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192rjudge": {
+          "source": "agentharm",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.6376,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192atbench": {
+          "source": "agentharm",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.1992,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "atbench\u2192agentharm": {
+          "source": "atbench",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.9112,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "synthetic\u2192atbench": {
+          "source": "synthetic",
+          "target": "atbench",
+          "source_group": "injected",
+          "target_group": "safety",
+          "transfer_type": "between",
+          "auroc": 0.236,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "synthetic\u2192swe_agent": {
+          "source": "synthetic",
+          "target": "swe_agent",
+          "source_group": "injected",
+          "target_group": "failure",
+          "transfer_type": "between",
+          "auroc": 0.5776,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "swe_agent\u2192synthetic": {
+          "source": "swe_agent",
+          "target": "synthetic",
+          "source_group": "failure",
+          "target_group": "injected",
+          "transfer_type": "between",
+          "auroc": 0.836,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192toolbench": {
+          "source": "rjudge",
+          "target": "toolbench",
+          "source_group": "safety",
+          "target_group": "api_misuse",
+          "transfer_type": "between",
+          "auroc": 1.0,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "toolbench\u2192synthetic": {
+          "source": "toolbench",
+          "target": "synthetic",
+          "source_group": "api_misuse",
+          "target_group": "injected",
+          "transfer_type": "between",
+          "auroc": 0.8776,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "atbench\u2192swe_agent": {
+          "source": "atbench",
+          "target": "swe_agent",
+          "source_group": "safety",
+          "target_group": "failure",
+          "transfer_type": "between",
+          "auroc": 0.6328,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "swe_agent\u2192toolbench": {
+          "source": "swe_agent",
+          "target": "toolbench",
+          "source_group": "failure",
+          "target_group": "api_misuse",
+          "transfer_type": "between",
+          "auroc": 1.0,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "injecagent\u2192atbench": {
+          "source": "injecagent",
+          "target": "atbench",
+          "source_group": "prompt_injection",
+          "target_group": "safety",
+          "transfer_type": "between",
+          "auroc": 0.2664,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "synthetic\u2192toolbench": {
+          "source": "synthetic",
+          "target": "toolbench",
+          "source_group": "injected",
+          "target_group": "api_misuse",
+          "transfer_type": "between",
+          "auroc": 1.0,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        }
+      }
+    },
+    {
+      "seed": 456,
+      "zero_shot": {
+        "agentharm": {
+          "auroc": 0.9664,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.9544,
+          "mean_score_anomalous": 0.9956,
+          "group": "safety"
+        },
+        "atbench": {
+          "auroc": 0.3136,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.9886,
+          "mean_score_anomalous": 0.9794,
+          "group": "safety"
+        },
+        "injecagent": {
+          "auroc": 0.9715,
+          "n_traces": 50,
+          "n_anomalous": 33,
+          "mean_score_normal": 0.7221,
+          "mean_score_anomalous": 0.9608,
+          "group": "prompt_injection"
+        },
+        "rjudge": {
+          "auroc": 0.772,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.7208,
+          "mean_score_anomalous": 0.9484,
+          "group": "safety"
+        },
+        "swe_agent": {
+          "auroc": 0.6296,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.27,
+          "mean_score_anomalous": 0.4176,
+          "group": "failure"
+        },
+        "synthetic": {
+          "auroc": 0.8448,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.9048,
+          "mean_score_anomalous": 0.978,
+          "group": "injected"
+        },
+        "toolbench": {
+          "auroc": 1.0,
+          "n_traces": 50,
+          "n_anomalous": 25,
+          "mean_score_normal": 0.6876,
+          "mean_score_anomalous": 0.9994,
+          "group": "api_misuse"
+        },
+        "trail": {
+          "auroc": 0.56,
+          "n_traces": 50,
+          "n_anomalous": 45,
+          "mean_score_normal": 0.57,
+          "mean_score_anomalous": 0.5156,
+          "group": "failure"
+        }
+      },
+      "few_shot": {
+        "swe_agent\u2192trail": {
+          "source": "swe_agent",
+          "target": "trail",
+          "source_group": "failure",
+          "target_group": "failure",
+          "transfer_type": "within",
+          "auroc": 0.5178,
+          "n_target_traces": 50,
+          "n_anomalous": 45,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "trail\u2192swe_agent": {
+          "source": "trail",
+          "target": "swe_agent",
+          "source_group": "failure",
+          "target_group": "failure",
+          "transfer_type": "within",
+          "auroc": 0.6336,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "atbench\u2192rjudge": {
+          "source": "atbench",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.724,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192atbench": {
+          "source": "rjudge",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.5432,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192agentharm": {
+          "source": "rjudge",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.956,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192rjudge": {
+          "source": "agentharm",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.5928,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192atbench": {
+          "source": "agentharm",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.26,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "atbench\u2192agentharm": {
+          "source": "atbench",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.9696,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "synthetic\u2192atbench": {
+          "source": "synthetic",
+          "target": "atbench",
+          "source_group": "injected",
+          "target_group": "safety",
+          "transfer_type": "between",
+          "auroc": 0.2352,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "synthetic\u2192swe_agent": {
+          "source": "synthetic",
+          "target": "swe_agent",
+          "source_group": "injected",
+          "target_group": "failure",
+          "transfer_type": "between",
+          "auroc": 0.5768,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "swe_agent\u2192synthetic": {
+          "source": "swe_agent",
+          "target": "synthetic",
+          "source_group": "failure",
+          "target_group": "injected",
+          "transfer_type": "between",
+          "auroc": 0.8736,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192toolbench": {
+          "source": "rjudge",
+          "target": "toolbench",
+          "source_group": "safety",
+          "target_group": "api_misuse",
+          "transfer_type": "between",
+          "auroc": 1.0,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "toolbench\u2192synthetic": {
+          "source": "toolbench",
+          "target": "synthetic",
+          "source_group": "api_misuse",
+          "target_group": "injected",
+          "transfer_type": "between",
+          "auroc": 0.8416,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "atbench\u2192swe_agent": {
+          "source": "atbench",
+          "target": "swe_agent",
+          "source_group": "safety",
+          "target_group": "failure",
+          "transfer_type": "between",
+          "auroc": 0.5864,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "swe_agent\u2192toolbench": {
+          "source": "swe_agent",
+          "target": "toolbench",
+          "source_group": "failure",
+          "target_group": "api_misuse",
+          "transfer_type": "between",
+          "auroc": 1.0,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "injecagent\u2192atbench": {
+          "source": "injecagent",
+          "target": "atbench",
+          "source_group": "prompt_injection",
+          "target_group": "safety",
+          "transfer_type": "between",
+          "auroc": 0.352,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "synthetic\u2192toolbench": {
+          "source": "synthetic",
+          "target": "toolbench",
+          "source_group": "injected",
+          "target_group": "api_misuse",
+          "transfer_type": "between",
+          "auroc": 1.0,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 6451.6
+}

@@ -1,0 +1,139 @@
+{
+  "experiment": "v31_multisource_lstm_polarity",
+  "d_hidden": 128,
+  "input_type": "raw_tool_sequences",
+  "n_seeds": 3,
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "epochs": 30,
+  "source_domains": [
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic",
+    "toolbench",
+    "trail"
+  ],
+  "loaded_domains": [
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic",
+    "toolbench",
+    "trail"
+  ],
+  "per_source_results": {
+    "agentharm": {
+      "n_seeds": 3,
+      "within_cos_mean": 0.11959619668637124,
+      "within_cos_std": 0.02114055643071062,
+      "between_cos_mean": 0.07087018314367191,
+      "between_cos_std": 0.07283839782060202,
+      "within_neg_total": 9,
+      "within_pairs_total": 21,
+      "between_neg_total": 27,
+      "between_pairs_total": 63,
+      "within_neg_rate": 0.42857142857142855,
+      "between_neg_rate": 0.42857142857142855
+    },
+    "atbench": {
+      "n_seeds": 3,
+      "within_cos_mean": 0.42470784345139584,
+      "within_cos_std": 0.040410808179539,
+      "between_cos_mean": 0.1931162654251208,
+      "between_cos_std": 0.016391665279653744,
+      "within_neg_total": 3,
+      "within_pairs_total": 21,
+      "between_neg_total": 23,
+      "between_pairs_total": 63,
+      "within_neg_rate": 0.14285714285714285,
+      "between_neg_rate": 0.36507936507936506
+    },
+    "injecagent": {
+      "n_seeds": 3,
+      "within_cos_mean": 0.38050399090223036,
+      "within_cos_std": 0.29808109427704965,
+      "between_cos_mean": 0.22264335438105812,
+      "between_cos_std": 0.027426344087448713,
+      "within_neg_total": 5,
+      "within_pairs_total": 21,
+      "between_neg_total": 21,
+      "between_pairs_total": 63,
+      "within_neg_rate": 0.23809523809523808,
+      "between_neg_rate": 0.3333333333333333
+    },
+    "rjudge": {
+      "n_seeds": 3,
+      "within_cos_mean": 0.059578756123232345,
+      "within_cos_std": 0.03474148446422382,
+      "between_cos_mean": 0.053807461438102853,
+      "between_cos_std": 0.06836498571808351,
+      "within_neg_total": 9,
+      "within_pairs_total": 21,
+      "between_neg_total": 32,
+      "between_pairs_total": 63,
+      "within_neg_rate": 0.42857142857142855,
+      "between_neg_rate": 0.5079365079365079
+    },
+    "swe_agent": {
+      "n_seeds": 3,
+      "within_cos_mean": 0.08205549955602488,
+      "within_cos_std": 0.0664327331229735,
+      "between_cos_mean": 0.0839646028723788,
+      "between_cos_std": 0.05953759661426277,
+      "within_neg_total": 8,
+      "within_pairs_total": 21,
+      "between_neg_total": 25,
+      "between_pairs_total": 63,
+      "within_neg_rate": 0.38095238095238093,
+      "between_neg_rate": 0.3968253968253968
+    },
+    "synthetic": {
+      "n_seeds": 3,
+      "within_cos_mean": 0.23906974115799484,
+      "within_cos_std": 0.14855405404666513,
+      "between_cos_mean": 0.19295700153144593,
+      "between_cos_std": 0.06777527729753897,
+      "within_neg_total": 6,
+      "within_pairs_total": 21,
+      "between_neg_total": 28,
+      "between_pairs_total": 63,
+      "within_neg_rate": 0.2857142857142857,
+      "between_neg_rate": 0.4444444444444444
+    },
+    "toolbench": {
+      "n_seeds": 3,
+      "within_cos_mean": 0.036240300173394975,
+      "within_cos_std": 0.038135875855788696,
+      "between_cos_mean": 0.05988657351744089,
+      "between_cos_std": 0.030033184894651375,
+      "within_neg_total": 7,
+      "within_pairs_total": 21,
+      "between_neg_total": 23,
+      "between_pairs_total": 63,
+      "within_neg_rate": 0.3333333333333333,
+      "between_neg_rate": 0.36507936507936506
+    },
+    "trail": {
+      "n_seeds": 3,
+      "within_cos_mean": 0.13497276799554378,
+      "within_cos_std": 0.05624267541065953,
+      "between_cos_mean": 0.050924013908253817,
+      "between_cos_std": 0.02822286824676684,
+      "within_neg_total": 8,
+      "within_pairs_total": 21,
+      "between_neg_total": 24,
+      "between_pairs_total": 63,
+      "within_neg_rate": 0.38095238095238093,
+      "between_neg_rate": 0.38095238095238093
+    }
+  },
+  "elapsed_seconds": 4084.190218448639
+}

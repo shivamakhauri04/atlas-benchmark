@@ -1,0 +1,2913 @@
+{
+  "version": "v26",
+  "n_seeds": 5,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "domains": [
+    "agentharm",
+    "atbench",
+    "injecagent",
+    "rjudge",
+    "swe_agent",
+    "synthetic"
+  ],
+  "features": [
+    "low_diversity",
+    "repeat_rate",
+    "trace_length"
+  ],
+  "n_permutations": 1000,
+  "domain_sizes": {
+    "synthetic": 2000,
+    "swe_agent": 5000,
+    "atbench": 499,
+    "agentharm": 352,
+    "rjudge": 522,
+    "injecagent": 2125
+  },
+  "fsi_summary": {
+    "agentharm_vs_atbench": {
+      "low_diversity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": -0.0020982018445180315,
+        "ci_upper": -0.0020982018445180315,
+        "n_obs": 5
+      }
+    },
+    "agentharm_vs_injecagent": {
+      "low_diversity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": -0.0020982018445180315,
+        "ci_upper": -0.0020982018445180315,
+        "n_obs": 5
+      }
+    },
+    "agentharm_vs_rjudge": {
+      "low_diversity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": -0.0020982018445180315,
+        "ci_upper": -0.0020982018445180315,
+        "n_obs": 5
+      }
+    },
+    "agentharm_vs_swe_agent": {
+      "low_diversity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": -0.0020982018445180315,
+        "ci_upper": -0.0020982018445180315,
+        "n_obs": 5
+      }
+    },
+    "agentharm_vs_synthetic": {
+      "low_diversity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": 0.0020982018445180315,
+        "ci_upper": 0.0020982018445180315,
+        "n_obs": 5
+      }
+    },
+    "atbench_vs_agentharm": {
+      "low_diversity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": -0.0020982018445180315,
+        "ci_upper": -0.0020982018445180315,
+        "n_obs": 5
+      }
+    },
+    "atbench_vs_injecagent": {
+      "low_diversity": {
+        "mean": -0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": -0.002756316964995782,
+        "ci_upper": -0.002756316964995782,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.09198440996365478,
+        "std": 0.0,
+        "ci_lower": 0.09198440996365478,
+        "ci_upper": 0.09198440996365478,
+        "n_obs": 5
+      }
+    },
+    "atbench_vs_rjudge": {
+      "low_diversity": {
+        "mean": -0.013912137698715507,
+        "std": 0.0,
+        "ci_lower": -0.013912137698715507,
+        "ci_upper": -0.013912137698715507,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.011705960081990305,
+        "std": 0.0,
+        "ci_lower": 0.011705960081990305,
+        "ci_upper": 0.011705960081990305,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.5631749153682153,
+        "std": 0.0,
+        "ci_lower": 0.5631749153682153,
+        "ci_upper": 0.5631749153682153,
+        "n_obs": 5
+      }
+    },
+    "atbench_vs_swe_agent": {
+      "low_diversity": {
+        "mean": -0.013912137698715507,
+        "std": 0.0,
+        "ci_lower": -0.013912137698715507,
+        "ci_upper": -0.013912137698715507,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.011705960081990305,
+        "std": 0.0,
+        "ci_lower": 0.011705960081990305,
+        "ci_upper": 0.011705960081990305,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.2291719997383319,
+        "std": 0.0,
+        "ci_lower": 0.2291719997383319,
+        "ci_upper": 0.2291719997383319,
+        "n_obs": 5
+      }
+    },
+    "atbench_vs_synthetic": {
+      "low_diversity": {
+        "mean": 0.013912137698715507,
+        "std": 0.0,
+        "ci_lower": 0.013912137698715507,
+        "ci_upper": 0.013912137698715507,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": -0.011705960081990305,
+        "std": 0.0,
+        "ci_lower": -0.011705960081990305,
+        "ci_upper": -0.011705960081990305,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.11097064776119621,
+        "std": 1.3877787807814457e-17,
+        "ci_lower": -0.11097064776119621,
+        "ci_upper": -0.11097064776119621,
+        "n_obs": 5
+      }
+    },
+    "injecagent_vs_agentharm": {
+      "low_diversity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": -0.0020982018445180315,
+        "ci_upper": -0.0020982018445180315,
+        "n_obs": 5
+      }
+    },
+    "injecagent_vs_atbench": {
+      "low_diversity": {
+        "mean": -0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": -0.002756316964995782,
+        "ci_upper": -0.002756316964995782,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.09198440996365478,
+        "std": 0.0,
+        "ci_lower": 0.09198440996365478,
+        "ci_upper": 0.09198440996365478,
+        "n_obs": 5
+      }
+    },
+    "injecagent_vs_rjudge": {
+      "low_diversity": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.09198440996365478,
+        "std": 0.0,
+        "ci_lower": 0.09198440996365478,
+        "ci_upper": 0.09198440996365478,
+        "n_obs": 5
+      }
+    },
+    "injecagent_vs_swe_agent": {
+      "low_diversity": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.09198440996365478,
+        "std": 0.0,
+        "ci_lower": 0.09198440996365478,
+        "ci_upper": 0.09198440996365478,
+        "n_obs": 5
+      }
+    },
+    "injecagent_vs_synthetic": {
+      "low_diversity": {
+        "mean": -0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": -0.002756316964995782,
+        "ci_upper": -0.002756316964995782,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": -0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": -0.002756316964995782,
+        "ci_upper": -0.002756316964995782,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.09198440996365478,
+        "std": 0.0,
+        "ci_lower": -0.09198440996365478,
+        "ci_upper": -0.09198440996365478,
+        "n_obs": 5
+      }
+    },
+    "rjudge_vs_agentharm": {
+      "low_diversity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": -0.0020982018445180315,
+        "ci_upper": -0.0020982018445180315,
+        "n_obs": 5
+      }
+    },
+    "rjudge_vs_atbench": {
+      "low_diversity": {
+        "mean": -0.013912137698715507,
+        "std": 0.0,
+        "ci_lower": -0.013912137698715507,
+        "ci_upper": -0.013912137698715507,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.011705960081990305,
+        "std": 0.0,
+        "ci_lower": 0.011705960081990305,
+        "ci_upper": 0.011705960081990305,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.5631749153682153,
+        "std": 0.0,
+        "ci_lower": 0.5631749153682153,
+        "ci_upper": 0.5631749153682153,
+        "n_obs": 5
+      }
+    },
+    "rjudge_vs_injecagent": {
+      "low_diversity": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.09198440996365478,
+        "std": 0.0,
+        "ci_lower": 0.09198440996365478,
+        "ci_upper": 0.09198440996365478,
+        "n_obs": 5
+      }
+    },
+    "rjudge_vs_swe_agent": {
+      "low_diversity": {
+        "mean": 0.07773925481246843,
+        "std": 0.0,
+        "ci_lower": 0.07773925481246843,
+        "ci_upper": 0.07773925481246843,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.07228699732618249,
+        "std": 0.0,
+        "ci_lower": 0.07228699732618249,
+        "ci_upper": 0.07228699732618249,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.2291719997383319,
+        "std": 0.0,
+        "ci_lower": 0.2291719997383319,
+        "ci_upper": 0.2291719997383319,
+        "n_obs": 5
+      }
+    },
+    "rjudge_vs_synthetic": {
+      "low_diversity": {
+        "mean": -0.07773925481246843,
+        "std": 0.0,
+        "ci_lower": -0.07773925481246843,
+        "ci_upper": -0.07773925481246843,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": -0.06726049830085305,
+        "std": 0.0,
+        "ci_lower": -0.06726049830085305,
+        "ci_upper": -0.06726049830085305,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.11097064776119621,
+        "std": 1.3877787807814457e-17,
+        "ci_lower": -0.11097064776119621,
+        "ci_upper": -0.11097064776119621,
+        "n_obs": 5
+      }
+    },
+    "swe_agent_vs_agentharm": {
+      "low_diversity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": -0.0020982018445180315,
+        "ci_upper": -0.0020982018445180315,
+        "n_obs": 5
+      }
+    },
+    "swe_agent_vs_atbench": {
+      "low_diversity": {
+        "mean": -0.013912137698715507,
+        "std": 0.0,
+        "ci_lower": -0.013912137698715507,
+        "ci_upper": -0.013912137698715507,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.011705960081990305,
+        "std": 0.0,
+        "ci_lower": 0.011705960081990305,
+        "ci_upper": 0.011705960081990305,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.2291719997383319,
+        "std": 0.0,
+        "ci_lower": 0.2291719997383319,
+        "ci_upper": 0.2291719997383319,
+        "n_obs": 5
+      }
+    },
+    "swe_agent_vs_injecagent": {
+      "low_diversity": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": 0.002756316964995782,
+        "ci_upper": 0.002756316964995782,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.09198440996365478,
+        "std": 0.0,
+        "ci_lower": 0.09198440996365478,
+        "ci_upper": 0.09198440996365478,
+        "n_obs": 5
+      }
+    },
+    "swe_agent_vs_rjudge": {
+      "low_diversity": {
+        "mean": 0.07773925481246843,
+        "std": 0.0,
+        "ci_lower": 0.07773925481246843,
+        "ci_upper": 0.07773925481246843,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.07228699732618249,
+        "std": 0.0,
+        "ci_lower": 0.07228699732618249,
+        "ci_upper": 0.07228699732618249,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.2291719997383319,
+        "std": 0.0,
+        "ci_lower": 0.2291719997383319,
+        "ci_upper": 0.2291719997383319,
+        "n_obs": 5
+      }
+    },
+    "swe_agent_vs_synthetic": {
+      "low_diversity": {
+        "mean": -0.2086343101358877,
+        "std": 0.0,
+        "ci_lower": -0.2086343101358877,
+        "ci_upper": -0.2086343101358877,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": -0.06726049830085305,
+        "std": 0.0,
+        "ci_lower": -0.06726049830085305,
+        "ci_upper": -0.06726049830085305,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.11097064776119621,
+        "std": 1.3877787807814457e-17,
+        "ci_lower": -0.11097064776119621,
+        "ci_upper": -0.11097064776119621,
+        "n_obs": 5
+      }
+    },
+    "synthetic_vs_agentharm": {
+      "low_diversity": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": 0.0020982018445180315,
+        "std": 0.0,
+        "ci_lower": 0.0020982018445180315,
+        "ci_upper": 0.0020982018445180315,
+        "n_obs": 5
+      }
+    },
+    "synthetic_vs_atbench": {
+      "low_diversity": {
+        "mean": 0.013912137698715507,
+        "std": 0.0,
+        "ci_lower": 0.013912137698715507,
+        "ci_upper": 0.013912137698715507,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": -0.011705960081990305,
+        "std": 0.0,
+        "ci_lower": -0.011705960081990305,
+        "ci_upper": -0.011705960081990305,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.11097064776119621,
+        "std": 1.3877787807814457e-17,
+        "ci_lower": -0.11097064776119621,
+        "ci_upper": -0.11097064776119621,
+        "n_obs": 5
+      }
+    },
+    "synthetic_vs_injecagent": {
+      "low_diversity": {
+        "mean": -0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": -0.002756316964995782,
+        "ci_upper": -0.002756316964995782,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": -0.002756316964995782,
+        "std": 0.0,
+        "ci_lower": -0.002756316964995782,
+        "ci_upper": -0.002756316964995782,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.09198440996365478,
+        "std": 0.0,
+        "ci_lower": -0.09198440996365478,
+        "ci_upper": -0.09198440996365478,
+        "n_obs": 5
+      }
+    },
+    "synthetic_vs_rjudge": {
+      "low_diversity": {
+        "mean": -0.07773925481246843,
+        "std": 0.0,
+        "ci_lower": -0.07773925481246843,
+        "ci_upper": -0.07773925481246843,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": -0.06726049830085305,
+        "std": 0.0,
+        "ci_lower": -0.06726049830085305,
+        "ci_upper": -0.06726049830085305,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.11097064776119621,
+        "std": 1.3877787807814457e-17,
+        "ci_lower": -0.11097064776119621,
+        "ci_upper": -0.11097064776119621,
+        "n_obs": 5
+      }
+    },
+    "synthetic_vs_swe_agent": {
+      "low_diversity": {
+        "mean": -0.2086343101358877,
+        "std": 0.0,
+        "ci_lower": -0.2086343101358877,
+        "ci_upper": -0.2086343101358877,
+        "n_obs": 5
+      },
+      "repeat_rate": {
+        "mean": -0.06726049830085305,
+        "std": 0.0,
+        "ci_lower": -0.06726049830085305,
+        "ci_upper": -0.06726049830085305,
+        "n_obs": 5
+      },
+      "trace_length": {
+        "mean": -0.11097064776119621,
+        "std": 1.3877787807814457e-17,
+        "ci_lower": -0.11097064776119621,
+        "ci_upper": -0.11097064776119621,
+        "n_obs": 5
+      }
+    }
+  },
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "per_domain_correlations": {
+        "synthetic": {
+          "trace_length": -0.1109706477611962,
+          "low_diversity": -0.2086343101358877,
+          "repeat_rate": -0.06726049830085305
+        },
+        "swe_agent": {
+          "trace_length": 0.2291719997383319,
+          "low_diversity": 0.2803225587389374,
+          "repeat_rate": 0.26563597495957153
+        },
+        "atbench": {
+          "trace_length": 0.7568917841141402,
+          "low_diversity": -0.013912137698715507,
+          "repeat_rate": 0.011705960081990305
+        },
+        "agentharm": {
+          "trace_length": -0.0020982018445180315,
+          "low_diversity": 0.0,
+          "repeat_rate": 0.0
+        },
+        "rjudge": {
+          "trace_length": 0.5631749153682153,
+          "low_diversity": 0.07773925481246843,
+          "repeat_rate": 0.07228699732618249
+        },
+        "injecagent": {
+          "trace_length": 0.09198440996365478,
+          "low_diversity": 0.002756316964995782,
+          "repeat_rate": 0.002756316964995782
+        }
+      },
+      "fsi_matrix": {
+        "agentharm": {
+          "agentharm": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "injecagent": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "rjudge": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "swe_agent": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "synthetic": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          }
+        },
+        "atbench": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.7568917841141402,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": -0.011705960081990305
+          }
+        },
+        "injecagent": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "swe_agent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "synthetic": {
+            "trace_length": -0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": -0.002756316964995782
+          }
+        },
+        "rjudge": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.07773925481246843,
+            "repeat_rate": -0.06726049830085305
+          }
+        },
+        "swe_agent": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.2803225587389374,
+            "repeat_rate": 0.26563597495957153
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.2086343101358877,
+            "repeat_rate": -0.06726049830085305
+          }
+        },
+        "synthetic": {
+          "agentharm": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": -0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": -0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": -0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.07773925481246843,
+            "repeat_rate": -0.06726049830085305
+          },
+          "swe_agent": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.2086343101358877,
+            "repeat_rate": -0.06726049830085305
+          },
+          "synthetic": {
+            "trace_length": 0.1109706477611962,
+            "low_diversity": 0.2086343101358877,
+            "repeat_rate": 0.06726049830085305
+          }
+        }
+      },
+      "puf_by_pair": {
+        "agentharm_vs_atbench": [
+          "trace_length"
+        ],
+        "agentharm_vs_injecagent": [
+          "trace_length"
+        ],
+        "agentharm_vs_rjudge": [
+          "trace_length"
+        ],
+        "agentharm_vs_swe_agent": [
+          "trace_length"
+        ],
+        "agentharm_vs_synthetic": [],
+        "atbench_vs_agentharm": [
+          "trace_length"
+        ],
+        "atbench_vs_injecagent": [
+          "low_diversity"
+        ],
+        "atbench_vs_rjudge": [
+          "low_diversity"
+        ],
+        "atbench_vs_swe_agent": [
+          "low_diversity"
+        ],
+        "atbench_vs_synthetic": [
+          "repeat_rate",
+          "trace_length"
+        ],
+        "injecagent_vs_agentharm": [
+          "trace_length"
+        ],
+        "injecagent_vs_atbench": [
+          "low_diversity"
+        ],
+        "injecagent_vs_rjudge": [],
+        "injecagent_vs_swe_agent": [],
+        "injecagent_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "rjudge_vs_agentharm": [
+          "trace_length"
+        ],
+        "rjudge_vs_atbench": [
+          "low_diversity"
+        ],
+        "rjudge_vs_injecagent": [],
+        "rjudge_vs_swe_agent": [],
+        "rjudge_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "swe_agent_vs_agentharm": [
+          "trace_length"
+        ],
+        "swe_agent_vs_atbench": [
+          "low_diversity"
+        ],
+        "swe_agent_vs_injecagent": [],
+        "swe_agent_vs_rjudge": [],
+        "swe_agent_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_agentharm": [],
+        "synthetic_vs_atbench": [
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_injecagent": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_rjudge": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_swe_agent": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ]
+      },
+      "aggregate_fsi_by_pair": {
+        "agentharm_vs_atbench": -0.0020982018445180315,
+        "agentharm_vs_injecagent": -0.0020982018445180315,
+        "agentharm_vs_rjudge": -0.0020982018445180315,
+        "agentharm_vs_swe_agent": -0.0020982018445180315,
+        "agentharm_vs_synthetic": 0.0,
+        "atbench_vs_agentharm": -0.0020982018445180315,
+        "atbench_vs_injecagent": -0.002756316964995782,
+        "atbench_vs_rjudge": -0.013912137698715507,
+        "atbench_vs_swe_agent": -0.013912137698715507,
+        "atbench_vs_synthetic": -0.1109706477611962,
+        "injecagent_vs_agentharm": -0.0020982018445180315,
+        "injecagent_vs_atbench": -0.002756316964995782,
+        "injecagent_vs_rjudge": 0.002756316964995782,
+        "injecagent_vs_swe_agent": 0.002756316964995782,
+        "injecagent_vs_synthetic": -0.09198440996365478,
+        "rjudge_vs_agentharm": -0.0020982018445180315,
+        "rjudge_vs_atbench": -0.013912137698715507,
+        "rjudge_vs_injecagent": 0.002756316964995782,
+        "rjudge_vs_swe_agent": 0.07228699732618249,
+        "rjudge_vs_synthetic": -0.1109706477611962,
+        "swe_agent_vs_agentharm": -0.0020982018445180315,
+        "swe_agent_vs_atbench": -0.013912137698715507,
+        "swe_agent_vs_injecagent": 0.002756316964995782,
+        "swe_agent_vs_rjudge": 0.07228699732618249,
+        "swe_agent_vs_synthetic": -0.2086343101358877,
+        "synthetic_vs_agentharm": 0.0,
+        "synthetic_vs_atbench": -0.1109706477611962,
+        "synthetic_vs_injecagent": -0.09198440996365478,
+        "synthetic_vs_rjudge": -0.1109706477611962,
+        "synthetic_vs_swe_agent": -0.2086343101358877
+      },
+      "significance": {
+        "synthetic": {
+          "trace_length": {
+            "rho": -0.1109706477611962,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": -0.2086343101358877,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": -0.06726049830085305,
+            "p_value": 0.001998001998001998
+          }
+        },
+        "swe_agent": {
+          "trace_length": {
+            "rho": 0.2291719997383319,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.2803225587389374,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": 0.26563597495957153,
+            "p_value": 0.000999000999000999
+          }
+        },
+        "atbench": {
+          "trace_length": {
+            "rho": 0.7568917841141402,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": -0.013912137698715507,
+            "p_value": 0.6793206793206793
+          },
+          "repeat_rate": {
+            "rho": 0.011705960081990305,
+            "p_value": 1.0
+          }
+        },
+        "agentharm": {
+          "trace_length": {
+            "rho": -0.0020982018445180315,
+            "p_value": 0.971028971028971
+          },
+          "low_diversity": {
+            "rho": 0.0,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": 0.0,
+            "p_value": 0.000999000999000999
+          }
+        },
+        "rjudge": {
+          "trace_length": {
+            "rho": 0.5631749153682153,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.07773925481246843,
+            "p_value": 0.06893106893106893
+          },
+          "repeat_rate": {
+            "rho": 0.07228699732618249,
+            "p_value": 0.10589410589410589
+          }
+        },
+        "injecagent": {
+          "trace_length": {
+            "rho": 0.09198440996365478,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.002756316964995782,
+            "p_value": 1.0
+          },
+          "repeat_rate": {
+            "rho": 0.002756316964995782,
+            "p_value": 1.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "per_domain_correlations": {
+        "synthetic": {
+          "trace_length": -0.1109706477611962,
+          "low_diversity": -0.2086343101358877,
+          "repeat_rate": -0.06726049830085305
+        },
+        "swe_agent": {
+          "trace_length": 0.2291719997383319,
+          "low_diversity": 0.2803225587389374,
+          "repeat_rate": 0.26563597495957153
+        },
+        "atbench": {
+          "trace_length": 0.7568917841141402,
+          "low_diversity": -0.013912137698715507,
+          "repeat_rate": 0.011705960081990305
+        },
+        "agentharm": {
+          "trace_length": -0.0020982018445180315,
+          "low_diversity": 0.0,
+          "repeat_rate": 0.0
+        },
+        "rjudge": {
+          "trace_length": 0.5631749153682153,
+          "low_diversity": 0.07773925481246843,
+          "repeat_rate": 0.07228699732618249
+        },
+        "injecagent": {
+          "trace_length": 0.09198440996365478,
+          "low_diversity": 0.002756316964995782,
+          "repeat_rate": 0.002756316964995782
+        }
+      },
+      "fsi_matrix": {
+        "agentharm": {
+          "agentharm": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "injecagent": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "rjudge": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "swe_agent": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "synthetic": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          }
+        },
+        "atbench": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.7568917841141402,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": -0.011705960081990305
+          }
+        },
+        "injecagent": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "swe_agent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "synthetic": {
+            "trace_length": -0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": -0.002756316964995782
+          }
+        },
+        "rjudge": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.07773925481246843,
+            "repeat_rate": -0.06726049830085305
+          }
+        },
+        "swe_agent": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.2803225587389374,
+            "repeat_rate": 0.26563597495957153
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.2086343101358877,
+            "repeat_rate": -0.06726049830085305
+          }
+        },
+        "synthetic": {
+          "agentharm": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": -0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": -0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": -0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.07773925481246843,
+            "repeat_rate": -0.06726049830085305
+          },
+          "swe_agent": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.2086343101358877,
+            "repeat_rate": -0.06726049830085305
+          },
+          "synthetic": {
+            "trace_length": 0.1109706477611962,
+            "low_diversity": 0.2086343101358877,
+            "repeat_rate": 0.06726049830085305
+          }
+        }
+      },
+      "puf_by_pair": {
+        "agentharm_vs_atbench": [
+          "trace_length"
+        ],
+        "agentharm_vs_injecagent": [
+          "trace_length"
+        ],
+        "agentharm_vs_rjudge": [
+          "trace_length"
+        ],
+        "agentharm_vs_swe_agent": [
+          "trace_length"
+        ],
+        "agentharm_vs_synthetic": [],
+        "atbench_vs_agentharm": [
+          "trace_length"
+        ],
+        "atbench_vs_injecagent": [
+          "low_diversity"
+        ],
+        "atbench_vs_rjudge": [
+          "low_diversity"
+        ],
+        "atbench_vs_swe_agent": [
+          "low_diversity"
+        ],
+        "atbench_vs_synthetic": [
+          "repeat_rate",
+          "trace_length"
+        ],
+        "injecagent_vs_agentharm": [
+          "trace_length"
+        ],
+        "injecagent_vs_atbench": [
+          "low_diversity"
+        ],
+        "injecagent_vs_rjudge": [],
+        "injecagent_vs_swe_agent": [],
+        "injecagent_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "rjudge_vs_agentharm": [
+          "trace_length"
+        ],
+        "rjudge_vs_atbench": [
+          "low_diversity"
+        ],
+        "rjudge_vs_injecagent": [],
+        "rjudge_vs_swe_agent": [],
+        "rjudge_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "swe_agent_vs_agentharm": [
+          "trace_length"
+        ],
+        "swe_agent_vs_atbench": [
+          "low_diversity"
+        ],
+        "swe_agent_vs_injecagent": [],
+        "swe_agent_vs_rjudge": [],
+        "swe_agent_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_agentharm": [],
+        "synthetic_vs_atbench": [
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_injecagent": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_rjudge": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_swe_agent": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ]
+      },
+      "aggregate_fsi_by_pair": {
+        "agentharm_vs_atbench": -0.0020982018445180315,
+        "agentharm_vs_injecagent": -0.0020982018445180315,
+        "agentharm_vs_rjudge": -0.0020982018445180315,
+        "agentharm_vs_swe_agent": -0.0020982018445180315,
+        "agentharm_vs_synthetic": 0.0,
+        "atbench_vs_agentharm": -0.0020982018445180315,
+        "atbench_vs_injecagent": -0.002756316964995782,
+        "atbench_vs_rjudge": -0.013912137698715507,
+        "atbench_vs_swe_agent": -0.013912137698715507,
+        "atbench_vs_synthetic": -0.1109706477611962,
+        "injecagent_vs_agentharm": -0.0020982018445180315,
+        "injecagent_vs_atbench": -0.002756316964995782,
+        "injecagent_vs_rjudge": 0.002756316964995782,
+        "injecagent_vs_swe_agent": 0.002756316964995782,
+        "injecagent_vs_synthetic": -0.09198440996365478,
+        "rjudge_vs_agentharm": -0.0020982018445180315,
+        "rjudge_vs_atbench": -0.013912137698715507,
+        "rjudge_vs_injecagent": 0.002756316964995782,
+        "rjudge_vs_swe_agent": 0.07228699732618249,
+        "rjudge_vs_synthetic": -0.1109706477611962,
+        "swe_agent_vs_agentharm": -0.0020982018445180315,
+        "swe_agent_vs_atbench": -0.013912137698715507,
+        "swe_agent_vs_injecagent": 0.002756316964995782,
+        "swe_agent_vs_rjudge": 0.07228699732618249,
+        "swe_agent_vs_synthetic": -0.2086343101358877,
+        "synthetic_vs_agentharm": 0.0,
+        "synthetic_vs_atbench": -0.1109706477611962,
+        "synthetic_vs_injecagent": -0.09198440996365478,
+        "synthetic_vs_rjudge": -0.1109706477611962,
+        "synthetic_vs_swe_agent": -0.2086343101358877
+      },
+      "significance": {
+        "synthetic": {
+          "trace_length": {
+            "rho": -0.1109706477611962,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": -0.2086343101358877,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": -0.06726049830085305,
+            "p_value": 0.003996003996003996
+          }
+        },
+        "swe_agent": {
+          "trace_length": {
+            "rho": 0.2291719997383319,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.2803225587389374,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": 0.26563597495957153,
+            "p_value": 0.000999000999000999
+          }
+        },
+        "atbench": {
+          "trace_length": {
+            "rho": 0.7568917841141402,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": -0.013912137698715507,
+            "p_value": 0.6823176823176823
+          },
+          "repeat_rate": {
+            "rho": 0.011705960081990305,
+            "p_value": 1.0
+          }
+        },
+        "agentharm": {
+          "trace_length": {
+            "rho": -0.0020982018445180315,
+            "p_value": 0.9630369630369631
+          },
+          "low_diversity": {
+            "rho": 0.0,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": 0.0,
+            "p_value": 0.000999000999000999
+          }
+        },
+        "rjudge": {
+          "trace_length": {
+            "rho": 0.5631749153682153,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.07773925481246843,
+            "p_value": 0.07892107892107893
+          },
+          "repeat_rate": {
+            "rho": 0.07228699732618249,
+            "p_value": 0.1028971028971029
+          }
+        },
+        "injecagent": {
+          "trace_length": {
+            "rho": 0.09198440996365478,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.002756316964995782,
+            "p_value": 1.0
+          },
+          "repeat_rate": {
+            "rho": 0.002756316964995782,
+            "p_value": 1.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 456,
+      "per_domain_correlations": {
+        "synthetic": {
+          "trace_length": -0.1109706477611962,
+          "low_diversity": -0.2086343101358877,
+          "repeat_rate": -0.06726049830085305
+        },
+        "swe_agent": {
+          "trace_length": 0.2291719997383319,
+          "low_diversity": 0.2803225587389374,
+          "repeat_rate": 0.26563597495957153
+        },
+        "atbench": {
+          "trace_length": 0.7568917841141402,
+          "low_diversity": -0.013912137698715507,
+          "repeat_rate": 0.011705960081990305
+        },
+        "agentharm": {
+          "trace_length": -0.0020982018445180315,
+          "low_diversity": 0.0,
+          "repeat_rate": 0.0
+        },
+        "rjudge": {
+          "trace_length": 0.5631749153682153,
+          "low_diversity": 0.07773925481246843,
+          "repeat_rate": 0.07228699732618249
+        },
+        "injecagent": {
+          "trace_length": 0.09198440996365478,
+          "low_diversity": 0.002756316964995782,
+          "repeat_rate": 0.002756316964995782
+        }
+      },
+      "fsi_matrix": {
+        "agentharm": {
+          "agentharm": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "injecagent": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "rjudge": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "swe_agent": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "synthetic": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          }
+        },
+        "atbench": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.7568917841141402,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": -0.011705960081990305
+          }
+        },
+        "injecagent": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "swe_agent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "synthetic": {
+            "trace_length": -0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": -0.002756316964995782
+          }
+        },
+        "rjudge": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.07773925481246843,
+            "repeat_rate": -0.06726049830085305
+          }
+        },
+        "swe_agent": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.2803225587389374,
+            "repeat_rate": 0.26563597495957153
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.2086343101358877,
+            "repeat_rate": -0.06726049830085305
+          }
+        },
+        "synthetic": {
+          "agentharm": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": -0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": -0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": -0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.07773925481246843,
+            "repeat_rate": -0.06726049830085305
+          },
+          "swe_agent": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.2086343101358877,
+            "repeat_rate": -0.06726049830085305
+          },
+          "synthetic": {
+            "trace_length": 0.1109706477611962,
+            "low_diversity": 0.2086343101358877,
+            "repeat_rate": 0.06726049830085305
+          }
+        }
+      },
+      "puf_by_pair": {
+        "agentharm_vs_atbench": [
+          "trace_length"
+        ],
+        "agentharm_vs_injecagent": [
+          "trace_length"
+        ],
+        "agentharm_vs_rjudge": [
+          "trace_length"
+        ],
+        "agentharm_vs_swe_agent": [
+          "trace_length"
+        ],
+        "agentharm_vs_synthetic": [],
+        "atbench_vs_agentharm": [
+          "trace_length"
+        ],
+        "atbench_vs_injecagent": [
+          "low_diversity"
+        ],
+        "atbench_vs_rjudge": [
+          "low_diversity"
+        ],
+        "atbench_vs_swe_agent": [
+          "low_diversity"
+        ],
+        "atbench_vs_synthetic": [
+          "repeat_rate",
+          "trace_length"
+        ],
+        "injecagent_vs_agentharm": [
+          "trace_length"
+        ],
+        "injecagent_vs_atbench": [
+          "low_diversity"
+        ],
+        "injecagent_vs_rjudge": [],
+        "injecagent_vs_swe_agent": [],
+        "injecagent_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "rjudge_vs_agentharm": [
+          "trace_length"
+        ],
+        "rjudge_vs_atbench": [
+          "low_diversity"
+        ],
+        "rjudge_vs_injecagent": [],
+        "rjudge_vs_swe_agent": [],
+        "rjudge_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "swe_agent_vs_agentharm": [
+          "trace_length"
+        ],
+        "swe_agent_vs_atbench": [
+          "low_diversity"
+        ],
+        "swe_agent_vs_injecagent": [],
+        "swe_agent_vs_rjudge": [],
+        "swe_agent_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_agentharm": [],
+        "synthetic_vs_atbench": [
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_injecagent": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_rjudge": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_swe_agent": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ]
+      },
+      "aggregate_fsi_by_pair": {
+        "agentharm_vs_atbench": -0.0020982018445180315,
+        "agentharm_vs_injecagent": -0.0020982018445180315,
+        "agentharm_vs_rjudge": -0.0020982018445180315,
+        "agentharm_vs_swe_agent": -0.0020982018445180315,
+        "agentharm_vs_synthetic": 0.0,
+        "atbench_vs_agentharm": -0.0020982018445180315,
+        "atbench_vs_injecagent": -0.002756316964995782,
+        "atbench_vs_rjudge": -0.013912137698715507,
+        "atbench_vs_swe_agent": -0.013912137698715507,
+        "atbench_vs_synthetic": -0.1109706477611962,
+        "injecagent_vs_agentharm": -0.0020982018445180315,
+        "injecagent_vs_atbench": -0.002756316964995782,
+        "injecagent_vs_rjudge": 0.002756316964995782,
+        "injecagent_vs_swe_agent": 0.002756316964995782,
+        "injecagent_vs_synthetic": -0.09198440996365478,
+        "rjudge_vs_agentharm": -0.0020982018445180315,
+        "rjudge_vs_atbench": -0.013912137698715507,
+        "rjudge_vs_injecagent": 0.002756316964995782,
+        "rjudge_vs_swe_agent": 0.07228699732618249,
+        "rjudge_vs_synthetic": -0.1109706477611962,
+        "swe_agent_vs_agentharm": -0.0020982018445180315,
+        "swe_agent_vs_atbench": -0.013912137698715507,
+        "swe_agent_vs_injecagent": 0.002756316964995782,
+        "swe_agent_vs_rjudge": 0.07228699732618249,
+        "swe_agent_vs_synthetic": -0.2086343101358877,
+        "synthetic_vs_agentharm": 0.0,
+        "synthetic_vs_atbench": -0.1109706477611962,
+        "synthetic_vs_injecagent": -0.09198440996365478,
+        "synthetic_vs_rjudge": -0.1109706477611962,
+        "synthetic_vs_swe_agent": -0.2086343101358877
+      },
+      "significance": {
+        "synthetic": {
+          "trace_length": {
+            "rho": -0.1109706477611962,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": -0.2086343101358877,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": -0.06726049830085305,
+            "p_value": 0.002997002997002997
+          }
+        },
+        "swe_agent": {
+          "trace_length": {
+            "rho": 0.2291719997383319,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.2803225587389374,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": 0.26563597495957153,
+            "p_value": 0.000999000999000999
+          }
+        },
+        "atbench": {
+          "trace_length": {
+            "rho": 0.7568917841141402,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": -0.013912137698715507,
+            "p_value": 0.6543456543456544
+          },
+          "repeat_rate": {
+            "rho": 0.011705960081990305,
+            "p_value": 1.0
+          }
+        },
+        "agentharm": {
+          "trace_length": {
+            "rho": -0.0020982018445180315,
+            "p_value": 0.9760239760239761
+          },
+          "low_diversity": {
+            "rho": 0.0,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": 0.0,
+            "p_value": 0.000999000999000999
+          }
+        },
+        "rjudge": {
+          "trace_length": {
+            "rho": 0.5631749153682153,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.07773925481246843,
+            "p_value": 0.07792207792207792
+          },
+          "repeat_rate": {
+            "rho": 0.07228699732618249,
+            "p_value": 0.11588411588411589
+          }
+        },
+        "injecagent": {
+          "trace_length": {
+            "rho": 0.09198440996365478,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.002756316964995782,
+            "p_value": 1.0
+          },
+          "repeat_rate": {
+            "rho": 0.002756316964995782,
+            "p_value": 1.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 789,
+      "per_domain_correlations": {
+        "synthetic": {
+          "trace_length": -0.1109706477611962,
+          "low_diversity": -0.2086343101358877,
+          "repeat_rate": -0.06726049830085305
+        },
+        "swe_agent": {
+          "trace_length": 0.2291719997383319,
+          "low_diversity": 0.2803225587389374,
+          "repeat_rate": 0.26563597495957153
+        },
+        "atbench": {
+          "trace_length": 0.7568917841141402,
+          "low_diversity": -0.013912137698715507,
+          "repeat_rate": 0.011705960081990305
+        },
+        "agentharm": {
+          "trace_length": -0.0020982018445180315,
+          "low_diversity": 0.0,
+          "repeat_rate": 0.0
+        },
+        "rjudge": {
+          "trace_length": 0.5631749153682153,
+          "low_diversity": 0.07773925481246843,
+          "repeat_rate": 0.07228699732618249
+        },
+        "injecagent": {
+          "trace_length": 0.09198440996365478,
+          "low_diversity": 0.002756316964995782,
+          "repeat_rate": 0.002756316964995782
+        }
+      },
+      "fsi_matrix": {
+        "agentharm": {
+          "agentharm": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "injecagent": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "rjudge": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "swe_agent": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "synthetic": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          }
+        },
+        "atbench": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.7568917841141402,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": -0.011705960081990305
+          }
+        },
+        "injecagent": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "swe_agent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "synthetic": {
+            "trace_length": -0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": -0.002756316964995782
+          }
+        },
+        "rjudge": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.07773925481246843,
+            "repeat_rate": -0.06726049830085305
+          }
+        },
+        "swe_agent": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.2803225587389374,
+            "repeat_rate": 0.26563597495957153
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.2086343101358877,
+            "repeat_rate": -0.06726049830085305
+          }
+        },
+        "synthetic": {
+          "agentharm": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": -0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": -0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": -0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.07773925481246843,
+            "repeat_rate": -0.06726049830085305
+          },
+          "swe_agent": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.2086343101358877,
+            "repeat_rate": -0.06726049830085305
+          },
+          "synthetic": {
+            "trace_length": 0.1109706477611962,
+            "low_diversity": 0.2086343101358877,
+            "repeat_rate": 0.06726049830085305
+          }
+        }
+      },
+      "puf_by_pair": {
+        "agentharm_vs_atbench": [
+          "trace_length"
+        ],
+        "agentharm_vs_injecagent": [
+          "trace_length"
+        ],
+        "agentharm_vs_rjudge": [
+          "trace_length"
+        ],
+        "agentharm_vs_swe_agent": [
+          "trace_length"
+        ],
+        "agentharm_vs_synthetic": [],
+        "atbench_vs_agentharm": [
+          "trace_length"
+        ],
+        "atbench_vs_injecagent": [
+          "low_diversity"
+        ],
+        "atbench_vs_rjudge": [
+          "low_diversity"
+        ],
+        "atbench_vs_swe_agent": [
+          "low_diversity"
+        ],
+        "atbench_vs_synthetic": [
+          "repeat_rate",
+          "trace_length"
+        ],
+        "injecagent_vs_agentharm": [
+          "trace_length"
+        ],
+        "injecagent_vs_atbench": [
+          "low_diversity"
+        ],
+        "injecagent_vs_rjudge": [],
+        "injecagent_vs_swe_agent": [],
+        "injecagent_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "rjudge_vs_agentharm": [
+          "trace_length"
+        ],
+        "rjudge_vs_atbench": [
+          "low_diversity"
+        ],
+        "rjudge_vs_injecagent": [],
+        "rjudge_vs_swe_agent": [],
+        "rjudge_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "swe_agent_vs_agentharm": [
+          "trace_length"
+        ],
+        "swe_agent_vs_atbench": [
+          "low_diversity"
+        ],
+        "swe_agent_vs_injecagent": [],
+        "swe_agent_vs_rjudge": [],
+        "swe_agent_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_agentharm": [],
+        "synthetic_vs_atbench": [
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_injecagent": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_rjudge": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_swe_agent": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ]
+      },
+      "aggregate_fsi_by_pair": {
+        "agentharm_vs_atbench": -0.0020982018445180315,
+        "agentharm_vs_injecagent": -0.0020982018445180315,
+        "agentharm_vs_rjudge": -0.0020982018445180315,
+        "agentharm_vs_swe_agent": -0.0020982018445180315,
+        "agentharm_vs_synthetic": 0.0,
+        "atbench_vs_agentharm": -0.0020982018445180315,
+        "atbench_vs_injecagent": -0.002756316964995782,
+        "atbench_vs_rjudge": -0.013912137698715507,
+        "atbench_vs_swe_agent": -0.013912137698715507,
+        "atbench_vs_synthetic": -0.1109706477611962,
+        "injecagent_vs_agentharm": -0.0020982018445180315,
+        "injecagent_vs_atbench": -0.002756316964995782,
+        "injecagent_vs_rjudge": 0.002756316964995782,
+        "injecagent_vs_swe_agent": 0.002756316964995782,
+        "injecagent_vs_synthetic": -0.09198440996365478,
+        "rjudge_vs_agentharm": -0.0020982018445180315,
+        "rjudge_vs_atbench": -0.013912137698715507,
+        "rjudge_vs_injecagent": 0.002756316964995782,
+        "rjudge_vs_swe_agent": 0.07228699732618249,
+        "rjudge_vs_synthetic": -0.1109706477611962,
+        "swe_agent_vs_agentharm": -0.0020982018445180315,
+        "swe_agent_vs_atbench": -0.013912137698715507,
+        "swe_agent_vs_injecagent": 0.002756316964995782,
+        "swe_agent_vs_rjudge": 0.07228699732618249,
+        "swe_agent_vs_synthetic": -0.2086343101358877,
+        "synthetic_vs_agentharm": 0.0,
+        "synthetic_vs_atbench": -0.1109706477611962,
+        "synthetic_vs_injecagent": -0.09198440996365478,
+        "synthetic_vs_rjudge": -0.1109706477611962,
+        "synthetic_vs_swe_agent": -0.2086343101358877
+      },
+      "significance": {
+        "synthetic": {
+          "trace_length": {
+            "rho": -0.1109706477611962,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": -0.2086343101358877,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": -0.06726049830085305,
+            "p_value": 0.001998001998001998
+          }
+        },
+        "swe_agent": {
+          "trace_length": {
+            "rho": 0.2291719997383319,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.2803225587389374,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": 0.26563597495957153,
+            "p_value": 0.000999000999000999
+          }
+        },
+        "atbench": {
+          "trace_length": {
+            "rho": 0.7568917841141402,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": -0.013912137698715507,
+            "p_value": 0.6723276723276723
+          },
+          "repeat_rate": {
+            "rho": 0.011705960081990305,
+            "p_value": 1.0
+          }
+        },
+        "agentharm": {
+          "trace_length": {
+            "rho": -0.0020982018445180315,
+            "p_value": 0.9600399600399601
+          },
+          "low_diversity": {
+            "rho": 0.0,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": 0.0,
+            "p_value": 0.000999000999000999
+          }
+        },
+        "rjudge": {
+          "trace_length": {
+            "rho": 0.5631749153682153,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.07773925481246843,
+            "p_value": 0.060939060939060936
+          },
+          "repeat_rate": {
+            "rho": 0.07228699732618249,
+            "p_value": 0.11288711288711288
+          }
+        },
+        "injecagent": {
+          "trace_length": {
+            "rho": 0.09198440996365478,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.002756316964995782,
+            "p_value": 1.0
+          },
+          "repeat_rate": {
+            "rho": 0.002756316964995782,
+            "p_value": 1.0
+          }
+        }
+      }
+    },
+    {
+      "seed": 1024,
+      "per_domain_correlations": {
+        "synthetic": {
+          "trace_length": -0.1109706477611962,
+          "low_diversity": -0.2086343101358877,
+          "repeat_rate": -0.06726049830085305
+        },
+        "swe_agent": {
+          "trace_length": 0.2291719997383319,
+          "low_diversity": 0.2803225587389374,
+          "repeat_rate": 0.26563597495957153
+        },
+        "atbench": {
+          "trace_length": 0.7568917841141402,
+          "low_diversity": -0.013912137698715507,
+          "repeat_rate": 0.011705960081990305
+        },
+        "agentharm": {
+          "trace_length": -0.0020982018445180315,
+          "low_diversity": 0.0,
+          "repeat_rate": 0.0
+        },
+        "rjudge": {
+          "trace_length": 0.5631749153682153,
+          "low_diversity": 0.07773925481246843,
+          "repeat_rate": 0.07228699732618249
+        },
+        "injecagent": {
+          "trace_length": 0.09198440996365478,
+          "low_diversity": 0.002756316964995782,
+          "repeat_rate": 0.002756316964995782
+        }
+      },
+      "fsi_matrix": {
+        "agentharm": {
+          "agentharm": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "injecagent": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "rjudge": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "swe_agent": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "synthetic": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          }
+        },
+        "atbench": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.7568917841141402,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": -0.011705960081990305
+          }
+        },
+        "injecagent": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "swe_agent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "synthetic": {
+            "trace_length": -0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": -0.002756316964995782
+          }
+        },
+        "rjudge": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.5631749153682153,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.07773925481246843,
+            "repeat_rate": -0.06726049830085305
+          }
+        },
+        "swe_agent": {
+          "agentharm": {
+            "trace_length": -0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": -0.013912137698715507,
+            "repeat_rate": 0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": 0.09198440996365478,
+            "low_diversity": 0.002756316964995782,
+            "repeat_rate": 0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.07773925481246843,
+            "repeat_rate": 0.07228699732618249
+          },
+          "swe_agent": {
+            "trace_length": 0.2291719997383319,
+            "low_diversity": 0.2803225587389374,
+            "repeat_rate": 0.26563597495957153
+          },
+          "synthetic": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.2086343101358877,
+            "repeat_rate": -0.06726049830085305
+          }
+        },
+        "synthetic": {
+          "agentharm": {
+            "trace_length": 0.0020982018445180315,
+            "low_diversity": 0.0,
+            "repeat_rate": 0.0
+          },
+          "atbench": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": 0.013912137698715507,
+            "repeat_rate": -0.011705960081990305
+          },
+          "injecagent": {
+            "trace_length": -0.09198440996365478,
+            "low_diversity": -0.002756316964995782,
+            "repeat_rate": -0.002756316964995782
+          },
+          "rjudge": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.07773925481246843,
+            "repeat_rate": -0.06726049830085305
+          },
+          "swe_agent": {
+            "trace_length": -0.1109706477611962,
+            "low_diversity": -0.2086343101358877,
+            "repeat_rate": -0.06726049830085305
+          },
+          "synthetic": {
+            "trace_length": 0.1109706477611962,
+            "low_diversity": 0.2086343101358877,
+            "repeat_rate": 0.06726049830085305
+          }
+        }
+      },
+      "puf_by_pair": {
+        "agentharm_vs_atbench": [
+          "trace_length"
+        ],
+        "agentharm_vs_injecagent": [
+          "trace_length"
+        ],
+        "agentharm_vs_rjudge": [
+          "trace_length"
+        ],
+        "agentharm_vs_swe_agent": [
+          "trace_length"
+        ],
+        "agentharm_vs_synthetic": [],
+        "atbench_vs_agentharm": [
+          "trace_length"
+        ],
+        "atbench_vs_injecagent": [
+          "low_diversity"
+        ],
+        "atbench_vs_rjudge": [
+          "low_diversity"
+        ],
+        "atbench_vs_swe_agent": [
+          "low_diversity"
+        ],
+        "atbench_vs_synthetic": [
+          "repeat_rate",
+          "trace_length"
+        ],
+        "injecagent_vs_agentharm": [
+          "trace_length"
+        ],
+        "injecagent_vs_atbench": [
+          "low_diversity"
+        ],
+        "injecagent_vs_rjudge": [],
+        "injecagent_vs_swe_agent": [],
+        "injecagent_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "rjudge_vs_agentharm": [
+          "trace_length"
+        ],
+        "rjudge_vs_atbench": [
+          "low_diversity"
+        ],
+        "rjudge_vs_injecagent": [],
+        "rjudge_vs_swe_agent": [],
+        "rjudge_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "swe_agent_vs_agentharm": [
+          "trace_length"
+        ],
+        "swe_agent_vs_atbench": [
+          "low_diversity"
+        ],
+        "swe_agent_vs_injecagent": [],
+        "swe_agent_vs_rjudge": [],
+        "swe_agent_vs_synthetic": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_agentharm": [],
+        "synthetic_vs_atbench": [
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_injecagent": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_rjudge": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ],
+        "synthetic_vs_swe_agent": [
+          "low_diversity",
+          "repeat_rate",
+          "trace_length"
+        ]
+      },
+      "aggregate_fsi_by_pair": {
+        "agentharm_vs_atbench": -0.0020982018445180315,
+        "agentharm_vs_injecagent": -0.0020982018445180315,
+        "agentharm_vs_rjudge": -0.0020982018445180315,
+        "agentharm_vs_swe_agent": -0.0020982018445180315,
+        "agentharm_vs_synthetic": 0.0,
+        "atbench_vs_agentharm": -0.0020982018445180315,
+        "atbench_vs_injecagent": -0.002756316964995782,
+        "atbench_vs_rjudge": -0.013912137698715507,
+        "atbench_vs_swe_agent": -0.013912137698715507,
+        "atbench_vs_synthetic": -0.1109706477611962,
+        "injecagent_vs_agentharm": -0.0020982018445180315,
+        "injecagent_vs_atbench": -0.002756316964995782,
+        "injecagent_vs_rjudge": 0.002756316964995782,
+        "injecagent_vs_swe_agent": 0.002756316964995782,
+        "injecagent_vs_synthetic": -0.09198440996365478,
+        "rjudge_vs_agentharm": -0.0020982018445180315,
+        "rjudge_vs_atbench": -0.013912137698715507,
+        "rjudge_vs_injecagent": 0.002756316964995782,
+        "rjudge_vs_swe_agent": 0.07228699732618249,
+        "rjudge_vs_synthetic": -0.1109706477611962,
+        "swe_agent_vs_agentharm": -0.0020982018445180315,
+        "swe_agent_vs_atbench": -0.013912137698715507,
+        "swe_agent_vs_injecagent": 0.002756316964995782,
+        "swe_agent_vs_rjudge": 0.07228699732618249,
+        "swe_agent_vs_synthetic": -0.2086343101358877,
+        "synthetic_vs_agentharm": 0.0,
+        "synthetic_vs_atbench": -0.1109706477611962,
+        "synthetic_vs_injecagent": -0.09198440996365478,
+        "synthetic_vs_rjudge": -0.1109706477611962,
+        "synthetic_vs_swe_agent": -0.2086343101358877
+      },
+      "significance": {
+        "synthetic": {
+          "trace_length": {
+            "rho": -0.1109706477611962,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": -0.2086343101358877,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": -0.06726049830085305,
+            "p_value": 0.002997002997002997
+          }
+        },
+        "swe_agent": {
+          "trace_length": {
+            "rho": 0.2291719997383319,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.2803225587389374,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": 0.26563597495957153,
+            "p_value": 0.000999000999000999
+          }
+        },
+        "atbench": {
+          "trace_length": {
+            "rho": 0.7568917841141402,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": -0.013912137698715507,
+            "p_value": 0.6823176823176823
+          },
+          "repeat_rate": {
+            "rho": 0.011705960081990305,
+            "p_value": 1.0
+          }
+        },
+        "agentharm": {
+          "trace_length": {
+            "rho": -0.0020982018445180315,
+            "p_value": 0.968031968031968
+          },
+          "low_diversity": {
+            "rho": 0.0,
+            "p_value": 0.000999000999000999
+          },
+          "repeat_rate": {
+            "rho": 0.0,
+            "p_value": 0.000999000999000999
+          }
+        },
+        "rjudge": {
+          "trace_length": {
+            "rho": 0.5631749153682153,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.07773925481246843,
+            "p_value": 0.07292707292707293
+          },
+          "repeat_rate": {
+            "rho": 0.07228699732618249,
+            "p_value": 0.0989010989010989
+          }
+        },
+        "injecagent": {
+          "trace_length": {
+            "rho": 0.09198440996365478,
+            "p_value": 0.000999000999000999
+          },
+          "low_diversity": {
+            "rho": 0.002756316964995782,
+            "p_value": 1.0
+          },
+          "repeat_rate": {
+            "rho": 0.002756316964995782,
+            "p_value": 1.0
+          }
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 63.51605486869812
+}

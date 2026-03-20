@@ -1,0 +1,160 @@
+{
+  "analysis_1_baserate_correlation": {
+    "point_biserial_r": 0.1433018190319466,
+    "point_biserial_p": 0.4044035313565462,
+    "spearman_rho": 0.11306720235351432,
+    "spearman_p": 0.5114563373031297,
+    "n_pairs": 36
+  },
+  "analysis_2_group_vs_baserate": {
+    "same_group_4": {
+      "rho_group_reversal": -0.35058392848088593,
+      "p_group_reversal": 0.036053965239401534,
+      "partial_r_group_given_baserate": -0.3262204699919292,
+      "partial_p_group_given_baserate": 0.05216904477752585
+    },
+    "same_group_5": {
+      "rho_group_reversal": -0.1975658322294524,
+      "p_group_reversal": 0.24809518274812925,
+      "partial_r_group_given_baserate": -0.16913740845106545,
+      "partial_p_group_given_baserate": 0.32406531374894765
+    }
+  },
+  "analysis_3_stratified": {
+    "median_baserate_diff": 0.3575,
+    "similar_baserate": {
+      "n_pairs": 18,
+      "n_within": 6,
+      "n_between": 12,
+      "within_frac_reversed": 0.05555555555555555,
+      "between_frac_reversed": 0.25,
+      "within_any_reversed_rate": 0.16666666666666666,
+      "between_any_reversed_rate": 0.5,
+      "gap": 4.5
+    },
+    "different_baserate": {
+      "n_pairs": 18,
+      "n_within": 5,
+      "n_between": 13,
+      "within_frac_reversed": 0.06666666666666667,
+      "between_frac_reversed": 0.3589743589743589,
+      "within_any_reversed_rate": 0.2,
+      "between_any_reversed_rate": 0.6153846153846154,
+      "gap": 5.384615384615384
+    }
+  },
+  "analysis_4_per_feature": {
+    "trace_length": {
+      "n_reversed": 10,
+      "n_total": 36,
+      "reversal_rate": 0.2777777777777778,
+      "r_baserate_diff": 0.2290366837033729,
+      "p_baserate_diff": 0.1790574877335245,
+      "r_same_group": -0.2767443090425033,
+      "p_same_group": 0.10226806197097182
+    },
+    "low_diversity": {
+      "n_reversed": 9,
+      "n_total": 36,
+      "reversal_rate": 0.25,
+      "r_baserate_diff": -0.05148233882983776,
+      "p_baserate_diff": 0.7655578540010941,
+      "r_same_group": -0.24370871833797697,
+      "p_same_group": 0.15204448034630802
+    },
+    "repeat_rate": {
+      "n_reversed": 6,
+      "n_total": 36,
+      "reversal_rate": 0.16666666666666666,
+      "r_baserate_diff": 0.0630432804156045,
+      "p_baserate_diff": 0.7149069273123962,
+      "r_same_group": -0.2966479394838265,
+      "p_same_group": 0.07894157838590779
+    }
+  },
+  "analysis_5_ols_comparison": {
+    "same_group_4": {
+      "r2_baserate_only": 0.012256898894187351,
+      "r2_group_only": 0.13156357251177275,
+      "r2_both": 0.13159251490028467,
+      "delta_r2_group_over_baserate": 0.11933561600609732,
+      "beta_intercept": 0.30370858037044646,
+      "beta_baserate_diff": 0.007481250116894623,
+      "beta_same_group": -0.24495038854325882
+    },
+    "same_group_5": {
+      "r2_baserate_only": 0.012256898894187351,
+      "r2_group_only": 0.04486674785465472,
+      "r2_both": 0.048506373032851324,
+      "delta_r2_group_over_baserate": 0.03624947413866397,
+      "beta_intercept": 0.2271451597508594,
+      "beta_baserate_diff": 0.08282209001325105,
+      "beta_same_group": -0.17752327920891997
+    }
+  },
+  "analysis_6_matched_pairs": {
+    "similar_baserate_different_group": {
+      "n": 3,
+      "pairs": [
+        [
+          "synthetic",
+          "toolbench",
+          "br_diff=0.045",
+          "rev=1/3"
+        ],
+        [
+          "synthetic",
+          "trail",
+          "br_diff=0.060",
+          "rev=2/3"
+        ],
+        [
+          "toolbench",
+          "trail",
+          "br_diff=0.105",
+          "rev=3/3"
+        ]
+      ],
+      "mean_frac_reversed": 0.6666666666666666,
+      "mean_base_rate_diff": 0.07
+    },
+    "different_baserate_same_group": {
+      "n": 5,
+      "pairs": [
+        [
+          "agentdojo",
+          "injecagent",
+          "br_diff=0.414",
+          "rev=0/3"
+        ],
+        [
+          "agentharm",
+          "injecagent",
+          "br_diff=0.492",
+          "rev=0/3"
+        ],
+        [
+          "atbench",
+          "injecagent",
+          "br_diff=0.491",
+          "rev=0/3"
+        ],
+        [
+          "injecagent",
+          "rjudge",
+          "br_diff=0.482",
+          "rev=0/3"
+        ],
+        [
+          "swe_agent",
+          "trail",
+          "br_diff=0.595",
+          "rev=1/3"
+        ]
+      ],
+      "mean_frac_reversed": 0.06666666666666667,
+      "mean_base_rate_diff": 0.4948
+    },
+    "interpretation": "If base rate drives reversal, similar_br_diff_group should have LOW reversal and diff_br_same_group should have HIGH reversal. If semantic group drives reversal, the opposite pattern should hold."
+  }
+}

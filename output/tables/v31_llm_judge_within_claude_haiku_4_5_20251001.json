@@ -1,0 +1,369 @@
+{
+  "model": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "n_eval": 50,
+  "n_examples": 5,
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "n_seeds": 3,
+  "pairs_evaluated": [
+    [
+      "trail",
+      "swe_agent"
+    ],
+    [
+      "rjudge",
+      "atbench"
+    ],
+    [
+      "rjudge",
+      "agentharm"
+    ],
+    [
+      "agentharm",
+      "rjudge"
+    ],
+    [
+      "agentharm",
+      "atbench"
+    ],
+    [
+      "atbench",
+      "agentharm"
+    ]
+  ],
+  "aggregated": {
+    "agentharm\u2192atbench": {
+      "source": "agentharm",
+      "target": "atbench",
+      "source_group": "safety",
+      "target_group": "safety",
+      "transfer_type": "within",
+      "auroc_mean": 0.5,
+      "auroc_std": 0.0163,
+      "aurocs": [
+        0.5,
+        0.48,
+        0.52
+      ],
+      "n_seeds": 3,
+      "anti_predict_rate": 0.3333
+    },
+    "agentharm\u2192rjudge": {
+      "source": "agentharm",
+      "target": "rjudge",
+      "source_group": "safety",
+      "target_group": "safety",
+      "transfer_type": "within",
+      "auroc_mean": 0.636,
+      "auroc_std": 0.0231,
+      "aurocs": [
+        0.66,
+        0.6048,
+        0.6432
+      ],
+      "n_seeds": 3,
+      "anti_predict_rate": 0.0
+    },
+    "atbench\u2192agentharm": {
+      "source": "atbench",
+      "target": "agentharm",
+      "source_group": "safety",
+      "target_group": "safety",
+      "transfer_type": "within",
+      "auroc_mean": 0.8187,
+      "auroc_std": 0.0327,
+      "aurocs": [
+        0.816,
+        0.78,
+        0.86
+      ],
+      "n_seeds": 3,
+      "anti_predict_rate": 0.0
+    },
+    "rjudge\u2192agentharm": {
+      "source": "rjudge",
+      "target": "agentharm",
+      "source_group": "safety",
+      "target_group": "safety",
+      "transfer_type": "within",
+      "auroc_mean": 0.8355,
+      "auroc_std": 0.0351,
+      "aurocs": [
+        0.8152,
+        0.8064,
+        0.8848
+      ],
+      "n_seeds": 3,
+      "anti_predict_rate": 0.0
+    },
+    "rjudge\u2192atbench": {
+      "source": "rjudge",
+      "target": "atbench",
+      "source_group": "safety",
+      "target_group": "safety",
+      "transfer_type": "within",
+      "auroc_mean": 0.48,
+      "auroc_std": 0.0163,
+      "aurocs": [
+        0.46,
+        0.48,
+        0.5
+      ],
+      "n_seeds": 3,
+      "anti_predict_rate": 0.6667
+    },
+    "trail\u2192swe_agent": {
+      "source": "trail",
+      "target": "swe_agent",
+      "source_group": "failure",
+      "target_group": "failure",
+      "transfer_type": "within",
+      "auroc_mean": 0.5203,
+      "auroc_std": 0.1856,
+      "aurocs": [
+        0.26,
+        0.68,
+        0.6208
+      ],
+      "n_seeds": 3,
+      "anti_predict_rate": 0.3333
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "few_shot": {
+        "trail\u2192swe_agent": {
+          "source": "trail",
+          "target": "swe_agent",
+          "source_group": "failure",
+          "target_group": "failure",
+          "transfer_type": "within",
+          "auroc": 0.26,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "rjudge\u2192atbench": {
+          "source": "rjudge",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.46,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "rjudge\u2192agentharm": {
+          "source": "rjudge",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.8152,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192rjudge": {
+          "source": "agentharm",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.66,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192atbench": {
+          "source": "agentharm",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.5,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "atbench\u2192agentharm": {
+          "source": "atbench",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.816,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "few_shot": {
+        "trail\u2192swe_agent": {
+          "source": "trail",
+          "target": "swe_agent",
+          "source_group": "failure",
+          "target_group": "failure",
+          "transfer_type": "within",
+          "auroc": 0.68,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192atbench": {
+          "source": "rjudge",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.48,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "rjudge\u2192agentharm": {
+          "source": "rjudge",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.8064,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192rjudge": {
+          "source": "agentharm",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.6048,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192atbench": {
+          "source": "agentharm",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.48,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": true
+        },
+        "atbench\u2192agentharm": {
+          "source": "atbench",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.78,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        }
+      }
+    },
+    {
+      "seed": 456,
+      "few_shot": {
+        "trail\u2192swe_agent": {
+          "source": "trail",
+          "target": "swe_agent",
+          "source_group": "failure",
+          "target_group": "failure",
+          "transfer_type": "within",
+          "auroc": 0.6208,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192atbench": {
+          "source": "rjudge",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.5,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "rjudge\u2192agentharm": {
+          "source": "rjudge",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.8848,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192rjudge": {
+          "source": "agentharm",
+          "target": "rjudge",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.6432,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "agentharm\u2192atbench": {
+          "source": "agentharm",
+          "target": "atbench",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.52,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        },
+        "atbench\u2192agentharm": {
+          "source": "atbench",
+          "target": "agentharm",
+          "source_group": "safety",
+          "target_group": "safety",
+          "transfer_type": "within",
+          "auroc": 0.86,
+          "n_target_traces": 50,
+          "n_anomalous": 25,
+          "n_examples": 5,
+          "anti_predict": false
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 1544.7
+}

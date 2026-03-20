@@ -1,0 +1,269 @@
+{
+  "config": {
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1024
+    ],
+    "alpha": 0.05,
+    "max_traces": 5000,
+    "anomaly_rate": 0.1,
+    "data_source": "toolbench"
+  },
+  "aggregate": {
+    "tool_only_auroc": {
+      "mean": 0.9194476173436433,
+      "std": 0.006581598383302255,
+      "ci_lower": 0.9147876666873573,
+      "ci_upper": 0.9260317833385667,
+      "n_obs": 5
+    },
+    "consequence_auroc": {
+      "mean": 0.9980172326041357,
+      "std": 0.0015105710994612904,
+      "ci_lower": 0.9967645271323207,
+      "ci_upper": 0.9992699380759509,
+      "n_obs": 5
+    },
+    "cq_shuffled_auroc": {
+      "mean": 0.855058169959064,
+      "std": 0.031008051014773247,
+      "ci_lower": 0.8282951752666072,
+      "ci_upper": 0.881821164651521,
+      "n_obs": 5
+    },
+    "tool_only_f1": {
+      "mean": 0.3913429706575345,
+      "std": 0.06903815440696923,
+      "ci_lower": 0.3337090450533074,
+      "ci_upper": 0.44897689626176146,
+      "n_obs": 5
+    },
+    "consequence_f1": {
+      "mean": 0.6485294698654619,
+      "std": 0.08248880355087303,
+      "ci_lower": 0.5671191553544495,
+      "ci_upper": 0.7109626830464318,
+      "n_obs": 5
+    },
+    "auroc_paired_test": {
+      "n_pairs": 5,
+      "difference_mean": 0.07856961526049251,
+      "difference_std": 0.006656305793613726,
+      "test_used": "bootstrap_ci",
+      "statistic": NaN,
+      "p_value": NaN,
+      "difference_ci_lower": 0.07175676597377637,
+      "difference_ci_upper": 0.08280765924228102,
+      "significant_by_ci": true
+    },
+    "f1_paired_test": {
+      "n_pairs": 5,
+      "difference_mean": 0.25718649920792747,
+      "difference_std": 0.07394029050598067,
+      "test_used": "bootstrap_ci",
+      "statistic": NaN,
+      "p_value": NaN,
+      "difference_ci_lower": 0.19640549112595643,
+      "difference_ci_upper": 0.32528807996889003,
+      "significant_by_ci": true
+    },
+    "shuffled_vs_tool_test": {
+      "n_pairs": 5,
+      "difference_mean": -0.06438944738457911,
+      "difference_std": 0.028244343923019645,
+      "test_used": "bootstrap_ci",
+      "statistic": NaN,
+      "p_value": NaN,
+      "difference_ci_lower": -0.0892332830667534,
+      "difference_ci_upper": -0.0395456117024048,
+      "significant_by_ci": true
+    },
+    "leakage_fraction": {
+      "mean": 1.8232476651235667,
+      "std": 0.34994284615517973,
+      "ci_lower": 1.5248431082234553,
+      "ci_upper": 2.121652222023678,
+      "n_obs": 5
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "n_cal": 1000,
+      "n_test": 1000,
+      "n_cal_anomalous": 89,
+      "n_test_anomalous": 114,
+      "tool_only": {
+        "auroc": 0.9149637638113342,
+        "f1": 0.49710982658959535,
+        "coverage": 0.981941309255079,
+        "recall": 0.37719298245614036,
+        "tau": 10.003365564346314,
+        "scorer": "Tool-Only Encoder",
+        "seed": 42
+      },
+      "consequence_aware": {
+        "auroc": 0.9958813512336144,
+        "f1": 0.711864406779661,
+        "coverage": 1.0,
+        "recall": 0.5526315789473685,
+        "tau": 13.452469623565673,
+        "scorer": "Consequence-Aware Encoder",
+        "seed": 42
+      },
+      "cq_shuffled": {
+        "auroc": 0.8119975446516969,
+        "f1": 0.2702702702702703,
+        "coverage": 0.9480812641083521,
+        "recall": 0.21929824561403508,
+        "tau": 11.380533626556396,
+        "scorer": "CQ Shuffled Outcomes",
+        "seed": 42
+      },
+      "leakage_fraction": 2.272482564541784
+    },
+    {
+      "seed": 123,
+      "n_cal": 1000,
+      "n_test": 1000,
+      "n_cal_anomalous": 100,
+      "n_test_anomalous": 87,
+      "tool_only": {
+        "auroc": 0.9175510820712316,
+        "f1": 0.3114754098360656,
+        "coverage": 0.9824753559693319,
+        "recall": 0.21839080459770116,
+        "tau": 10.030901290893555,
+        "scorer": "Tool-Only Encoder",
+        "seed": 123
+      },
+      "consequence_aware": {
+        "auroc": 0.999735619594365,
+        "f1": 0.5,
+        "coverage": 1.0,
+        "recall": 0.3333333333333333,
+        "tau": 14.916099465370177,
+        "scorer": "Consequence-Aware Encoder",
+        "seed": 123
+      },
+      "cq_shuffled": {
+        "auroc": 0.8807392579723282,
+        "f1": 0.22556390977443608,
+        "coverage": 0.9660460021905805,
+        "recall": 0.1724137931034483,
+        "tau": 11.934055395126343,
+        "scorer": "CQ Shuffled Outcomes",
+        "seed": 123
+      },
+      "leakage_fraction": 1.4479166666666654
+    },
+    {
+      "seed": 456,
+      "n_cal": 1000,
+      "n_test": 1000,
+      "n_cal_anomalous": 94,
+      "n_test_anomalous": 122,
+      "tool_only": {
+        "auroc": 0.9129915232084843,
+        "f1": 0.32,
+        "coverage": 0.9715261958997722,
+        "recall": 0.22950819672131148,
+        "tau": 9.915450981140136,
+        "scorer": "Tool-Only Encoder",
+        "seed": 456
+      },
+      "consequence_aware": {
+        "auroc": 0.9973673400799133,
+        "f1": 0.6951871657754011,
+        "coverage": 1.0,
+        "recall": 0.5327868852459017,
+        "tau": 13.580705226898193,
+        "scorer": "Consequence-Aware Encoder",
+        "seed": 456
+      },
+      "cq_shuffled": {
+        "auroc": 0.82476007319168,
+        "f1": 0.1878453038674033,
+        "coverage": 0.9521640091116174,
+        "recall": 0.13934426229508196,
+        "tau": 11.39490062046051,
+        "scorer": "CQ Shuffled Outcomes",
+        "seed": 456
+      },
+      "leakage_fraction": 2.0456959504315138
+    },
+    {
+      "seed": 789,
+      "n_cal": 1000,
+      "n_test": 1000,
+      "n_cal_anomalous": 86,
+      "n_test_anomalous": 100,
+      "tool_only": {
+        "auroc": 0.9199999999999999,
+        "f1": 0.40559440559440557,
+        "coverage": 0.9844444444444445,
+        "recall": 0.29,
+        "tau": 10.115526489257812,
+        "scorer": "Tool-Only Encoder",
+        "seed": 789
+      },
+      "consequence_aware": {
+        "auroc": 0.9997555555555555,
+        "f1": 0.717948717948718,
+        "coverage": 1.0,
+        "recall": 0.56,
+        "tau": 14.660702658653257,
+        "scorer": "Consequence-Aware Encoder",
+        "seed": 789
+      },
+      "cq_shuffled": {
+        "auroc": 0.8898333333333333,
+        "f1": 0.26490066225165565,
+        "coverage": 0.9655555555555555,
+        "recall": 0.2,
+        "tau": 11.692736417770384,
+        "scorer": "CQ Shuffled Outcomes",
+        "seed": 789
+      },
+      "leakage_fraction": 1.3782390638060742
+    },
+    {
+      "seed": 1024,
+      "n_cal": 1000,
+      "n_test": 1000,
+      "n_cal_anomalous": 114,
+      "n_test_anomalous": 94,
+      "tool_only": {
+        "auroc": 0.9317317176271664,
+        "f1": 0.4225352112676056,
+        "coverage": 0.9801324503311258,
+        "recall": 0.3191489361702128,
+        "tau": 10.028462923049927,
+        "scorer": "Tool-Only Encoder",
+        "seed": 1024
+      },
+      "consequence_aware": {
+        "auroc": 0.9973462965572307,
+        "f1": 0.6176470588235294,
+        "coverage": 1.0,
+        "recall": 0.44680851063829785,
+        "tau": 14.372965770721436,
+        "scorer": "Consequence-Aware Encoder",
+        "seed": 1024
+      },
+      "cq_shuffled": {
+        "auroc": 0.8679606406462825,
+        "f1": 0.1951219512195122,
+        "coverage": 0.9812362030905077,
+        "recall": 0.1276595744680851,
+        "tau": 11.726027282714842,
+        "scorer": "CQ Shuffled Outcomes",
+        "seed": 1024
+      },
+      "leakage_fraction": 1.9719040801717973
+    }
+  ]
+}

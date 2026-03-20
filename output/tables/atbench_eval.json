@@ -1,0 +1,1845 @@
+{
+  "config": {
+    "dataset": "AI45Research/ATBench",
+    "max_traces": null,
+    "epochs": 30,
+    "d_model": 64,
+    "alpha": 0.05,
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1024
+    ],
+    "n_seeds": 5
+  },
+  "data_stats": {
+    "n_traces": 499,
+    "n_safe": 249,
+    "n_unsafe": 250,
+    "safe_rate": 0.49899799599198397,
+    "mean_trace_length": 4.492985971943888,
+    "vocab_size": 232,
+    "unique_tools": 1365,
+    "risk_distribution": {
+      "indirect_prompt_injection": 127,
+      "unreliable_or_misinformation": 94,
+      "corrupted_tool_feedback": 88,
+      "malicious_tool_execution": 66,
+      "inherent_agent_failures": 34,
+      "direct_prompt_injection": 31,
+      "malicious_user_instruction_or_jailbreak": 30,
+      "tool_description_injection": 29
+    },
+    "top_tools": {
+      "unknown": 499,
+      "generate_qr_code": 17,
+      "searchLocation": 13,
+      "getWeatherForecast": 10,
+      "send_sms": 9,
+      "getHistoricalData": 8,
+      "search_brands_influencers": 7,
+      "getCrimeStatistics": 7,
+      "search": 7,
+      "searchDatasets": 6,
+      "send_message": 5,
+      "send_email": 5,
+      "capture_screenshot": 5,
+      "get_instagram_user_info": 5,
+      "get_transactions": 5,
+      "get_amazon_product_reviews": 5,
+      "extract_text_from_image": 5,
+      "getHistoricalWeather": 5,
+      "getTopHeadlines": 5,
+      "getTransportationData": 4
+    }
+  },
+  "aggregate": {
+    "auroc": {
+      "mean": 0.41254901960784307,
+      "std": 0.015498880663034885,
+      "ci_lower": 0.39749019607843145,
+      "ci_upper": 0.42274509803921567,
+      "n_obs": 5
+    },
+    "f1": {
+      "mean": 0.0653921127605338,
+      "std": 0.046413259986988684,
+      "ci_lower": 0.02807017543859649,
+      "ci_upper": 0.10671764882291197,
+      "n_obs": 5
+    },
+    "coverage": {
+      "mean": 0.9647058823529411,
+      "std": 0.01467316622264289,
+      "ci_lower": 0.9529411764705882,
+      "ci_upper": 0.976470588235294,
+      "n_obs": 5
+    },
+    "miscoverage_ratio": {
+      "mean": 0.7058823529411766,
+      "std": 0.29346332445285783,
+      "ci_lower": 0.4705882352941182,
+      "ci_upper": 0.9411764705882355,
+      "n_obs": 5
+    },
+    "bound_holds_pct": 80.0
+  },
+  "rac_aggregate": {
+    "var_improvement_mean": 0.34,
+    "var_improvement_std": 0.07999999999999954,
+    "defer_rate_mean": 0.11881188118811883
+  },
+  "baselines": {
+    "trace_length": {
+      "auroc_mean": 0.924235294117647,
+      "auroc_std": 0.021555289993885278,
+      "auroc_ci": {
+        "mean": 0.924235294117647,
+        "std": 0.021555289993885278,
+        "ci_lower": 0.9070980392156862,
+        "ci_upper": 0.944392156862745,
+        "n_obs": 5
+      },
+      "coverage_mean": 0.9882352941176471,
+      "miscoverage_ratio_mean": 0.23529411764705888,
+      "bound_holds_pct": 100.0
+    },
+    "low_diversity": {
+      "auroc_mean": 0.4972941176470589,
+      "auroc_std": 0.019243037756928403,
+      "auroc_ci": {
+        "mean": 0.4972941176470589,
+        "std": 0.019243037756928403,
+        "ci_lower": 0.47937254901960785,
+        "ci_upper": 0.5132156862745099,
+        "n_obs": 5
+      },
+      "coverage_mean": 0.9490196078431372,
+      "miscoverage_ratio_mean": 1.0196078431372548,
+      "bound_holds_pct": 40.0
+    },
+    "repeat_rate": {
+      "auroc_mean": 0.5097647058823529,
+      "auroc_std": 0.011030278833020463,
+      "auroc_ci": {
+        "mean": 0.5097647058823529,
+        "std": 0.011030278833020463,
+        "ci_lower": 0.5016862745098039,
+        "ci_upper": 0.519921568627451,
+        "n_obs": 5
+      },
+      "coverage_mean": 0.9803921568627452,
+      "miscoverage_ratio_mean": 0.392156862745098,
+      "bound_holds_pct": 100.0
+    }
+  },
+  "per_risk_category": {
+    "corrupted_tool_feedback": {
+      "coverage_mean": 0.9800000000000001,
+      "coverage_std": 0.039999999999999994,
+      "detection_mean": 0.05,
+      "n_seeds": 5
+    },
+    "indirect_prompt_injection": {
+      "coverage_mean": 0.9328362573099416,
+      "coverage_std": 0.019618412282225068,
+      "detection_mean": 0.07858585858585858,
+      "n_seeds": 5
+    },
+    "inherent_agent_failures": {
+      "coverage_mean": 1.0,
+      "coverage_std": 0.0,
+      "detection_mean": 0.06666666666666667,
+      "n_seeds": 4
+    },
+    "malicious_tool_execution": {
+      "coverage_mean": 0.96,
+      "coverage_std": 0.07999999999999999,
+      "detection_mean": 0.06857142857142857,
+      "n_seeds": 5
+    },
+    "unreliable_or_misinformation": {
+      "coverage_mean": 0.9875,
+      "coverage_std": 0.024999999999999998,
+      "detection_mean": 0.0,
+      "n_seeds": 5
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "tau": 4.084115320322464,
+      "coverage": 0.9411764705882353,
+      "miscoverage": 0.05882352941176472,
+      "bound_holds": false,
+      "miscoverage_ratio": 1.1764705882352944,
+      "auroc": 0.38274509803921575,
+      "f1": 0.14035087719298245,
+      "recall": 0.08,
+      "n_cal": 49,
+      "n_cal_normal": 49,
+      "n_test": 101,
+      "n_test_normal": 51,
+      "n_test_anomalous": 50,
+      "finite_sample_excess": 0.02,
+      "scorer": "lstm",
+      "rac": {
+        "alpha": 0.05,
+        "cost_ratio": 5.0,
+        "defer_budget": 0.15,
+        "tau_low": 3.4761509895324707,
+        "tau_high": 4.084115320322464,
+        "defer_width": 0.6079643307899936,
+        "coverage_approve_normal": 0.7450980392156863,
+        "fnr": 0.84,
+        "fpr": 0.058823529411764705,
+        "defer_rate": 0.13861386138613863,
+        "defer_rate_normal": 0.19607843137254902,
+        "defer_rate_anomalous": 0.08,
+        "reject_rate": 0.06930693069306931,
+        "reject_rate_anomalous": 0.08,
+        "var_cost": 4.258823529411765,
+        "binary_var_cost": 4.658823529411765,
+        "var_improvement": 0.40000000000000036,
+        "n_cal": 49,
+        "n_test": 101,
+        "n_anomalous": 50,
+        "calibration": "normal_only"
+      },
+      "baselines": {
+        "trace_length": {
+          "auroc": 0.9117647058823529,
+          "coverage": 0.9803921568627451,
+          "miscoverage": 0.019607843137254943,
+          "miscoverage_ratio": 0.39215686274509887,
+          "bound_holds": true,
+          "f1": 0.5833333333333334,
+          "recall": 0.42,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 16,
+              "n_normal": 12,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.75,
+              "meets_target": true
+            },
+            "direct_prompt_injection": {
+              "n_traces": 8,
+              "n_normal": 0,
+              "n_anomalous": 8,
+              "coverage": NaN,
+              "detection_rate": 0.375,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 29,
+              "n_normal": 19,
+              "n_anomalous": 10,
+              "coverage": 1.0,
+              "detection_rate": 0.4,
+              "meets_target": true
+            },
+            "inherent_agent_failures": {
+              "n_traces": 6,
+              "n_normal": 3,
+              "n_anomalous": 3,
+              "coverage": 0.6666666666666667,
+              "detection_rate": 0.0,
+              "meets_target": false
+            },
+            "malicious_tool_execution": {
+              "n_traces": 12,
+              "n_normal": 5,
+              "n_anomalous": 7,
+              "coverage": 1.0,
+              "detection_rate": 0.42857142857142855,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.3333333333333333,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 8,
+              "n_normal": 0,
+              "n_anomalous": 8,
+              "coverage": NaN,
+              "detection_rate": 0.625,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 16,
+              "n_normal": 12,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.25,
+              "meets_target": true
+            }
+          }
+        },
+        "low_diversity": {
+          "auroc": 0.5098039215686274,
+          "coverage": 1.0,
+          "miscoverage": 0.0,
+          "miscoverage_ratio": 0.0,
+          "bound_holds": true,
+          "f1": 0.0,
+          "recall": 0.0,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 16,
+              "n_normal": 12,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "direct_prompt_injection": {
+              "n_traces": 8,
+              "n_normal": 0,
+              "n_anomalous": 8,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 29,
+              "n_normal": 19,
+              "n_anomalous": 10,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "inherent_agent_failures": {
+              "n_traces": 6,
+              "n_normal": 3,
+              "n_anomalous": 3,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_tool_execution": {
+              "n_traces": 12,
+              "n_normal": 5,
+              "n_anomalous": 7,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 8,
+              "n_normal": 0,
+              "n_anomalous": 8,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 16,
+              "n_normal": 12,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            }
+          }
+        },
+        "repeat_rate": {
+          "auroc": 0.51,
+          "coverage": 1.0,
+          "miscoverage": 0.0,
+          "miscoverage_ratio": 0.0,
+          "bound_holds": true,
+          "f1": 0.0,
+          "recall": 0.0,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 16,
+              "n_normal": 12,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "direct_prompt_injection": {
+              "n_traces": 8,
+              "n_normal": 0,
+              "n_anomalous": 8,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 29,
+              "n_normal": 19,
+              "n_anomalous": 10,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "inherent_agent_failures": {
+              "n_traces": 6,
+              "n_normal": 3,
+              "n_anomalous": 3,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_tool_execution": {
+              "n_traces": 12,
+              "n_normal": 5,
+              "n_anomalous": 7,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 8,
+              "n_normal": 0,
+              "n_anomalous": 8,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 16,
+              "n_normal": 12,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "tau": 4.510322989249715,
+      "coverage": 0.9803921568627451,
+      "miscoverage": 0.019607843137254943,
+      "bound_holds": true,
+      "miscoverage_ratio": 0.39215686274509887,
+      "auroc": 0.4203921568627451,
+      "f1": 0.0,
+      "recall": 0.0,
+      "n_cal": 49,
+      "n_cal_normal": 49,
+      "n_test": 101,
+      "n_test_normal": 51,
+      "n_test_anomalous": 50,
+      "finite_sample_excess": 0.02,
+      "scorer": "lstm",
+      "rac": {
+        "alpha": 0.05,
+        "cost_ratio": 5.0,
+        "defer_budget": 0.15,
+        "tau_low": 3.8008241653442383,
+        "tau_high": 4.510322989249715,
+        "defer_width": 0.7094988239054771,
+        "coverage_approve_normal": 0.8627450980392157,
+        "fnr": 0.92,
+        "fpr": 0.0196078431372549,
+        "defer_rate": 0.09900990099009901,
+        "defer_rate_normal": 0.11764705882352941,
+        "defer_rate_anomalous": 0.08,
+        "reject_rate": 0.009900990099009901,
+        "reject_rate_anomalous": 0.0,
+        "var_cost": 4.619607843137255,
+        "binary_var_cost": 5.019607843137255,
+        "var_improvement": 0.39999999999999947,
+        "n_cal": 49,
+        "n_test": 101,
+        "n_anomalous": 50,
+        "calibration": "normal_only"
+      },
+      "baselines": {
+        "trace_length": {
+          "auroc": 0.9331372549019608,
+          "coverage": 1.0,
+          "miscoverage": 0.0,
+          "miscoverage_ratio": 0.0,
+          "bound_holds": true,
+          "f1": 0.5915492957746479,
+          "recall": 0.42,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 22,
+              "n_normal": 16,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.16666666666666666,
+              "meets_target": true
+            },
+            "direct_prompt_injection": {
+              "n_traces": 9,
+              "n_normal": 0,
+              "n_anomalous": 9,
+              "coverage": NaN,
+              "detection_rate": 0.5555555555555556,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 27,
+              "n_normal": 20,
+              "n_anomalous": 7,
+              "coverage": 1.0,
+              "detection_rate": 0.42857142857142855,
+              "meets_target": true
+            },
+            "inherent_agent_failures": {
+              "n_traces": 8,
+              "n_normal": 1,
+              "n_anomalous": 7,
+              "coverage": 1.0,
+              "detection_rate": 0.42857142857142855,
+              "meets_target": true
+            },
+            "malicious_tool_execution": {
+              "n_traces": 8,
+              "n_normal": 3,
+              "n_anomalous": 5,
+              "coverage": 1.0,
+              "detection_rate": 0.4,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 3,
+              "n_normal": 0,
+              "n_anomalous": 3,
+              "coverage": NaN,
+              "detection_rate": 0.3333333333333333,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 7,
+              "n_normal": 0,
+              "n_anomalous": 7,
+              "coverage": NaN,
+              "detection_rate": 0.7142857142857143,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 17,
+              "n_normal": 11,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.16666666666666666,
+              "meets_target": true
+            }
+          }
+        },
+        "low_diversity": {
+          "auroc": 0.5188235294117648,
+          "coverage": 0.9607843137254902,
+          "miscoverage": 0.039215686274509776,
+          "miscoverage_ratio": 0.7843137254901955,
+          "bound_holds": true,
+          "f1": 0.0,
+          "recall": 0.0,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 22,
+              "n_normal": 16,
+              "n_anomalous": 6,
+              "coverage": 0.9375,
+              "detection_rate": 0.0,
+              "meets_target": false
+            },
+            "direct_prompt_injection": {
+              "n_traces": 9,
+              "n_normal": 0,
+              "n_anomalous": 9,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 27,
+              "n_normal": 20,
+              "n_anomalous": 7,
+              "coverage": 0.95,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "inherent_agent_failures": {
+              "n_traces": 8,
+              "n_normal": 1,
+              "n_anomalous": 7,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_tool_execution": {
+              "n_traces": 8,
+              "n_normal": 3,
+              "n_anomalous": 5,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 3,
+              "n_normal": 0,
+              "n_anomalous": 3,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 7,
+              "n_normal": 0,
+              "n_anomalous": 7,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 17,
+              "n_normal": 11,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            }
+          }
+        },
+        "repeat_rate": {
+          "auroc": 0.5092156862745099,
+          "coverage": 0.9607843137254902,
+          "miscoverage": 0.039215686274509776,
+          "miscoverage_ratio": 0.7843137254901955,
+          "bound_holds": true,
+          "f1": 0.10909090909090909,
+          "recall": 0.06,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 22,
+              "n_normal": 16,
+              "n_anomalous": 6,
+              "coverage": 0.9375,
+              "detection_rate": 0.16666666666666666,
+              "meets_target": false
+            },
+            "direct_prompt_injection": {
+              "n_traces": 9,
+              "n_normal": 0,
+              "n_anomalous": 9,
+              "coverage": NaN,
+              "detection_rate": 0.1111111111111111,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 27,
+              "n_normal": 20,
+              "n_anomalous": 7,
+              "coverage": 0.95,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "inherent_agent_failures": {
+              "n_traces": 8,
+              "n_normal": 1,
+              "n_anomalous": 7,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_tool_execution": {
+              "n_traces": 8,
+              "n_normal": 3,
+              "n_anomalous": 5,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 3,
+              "n_normal": 0,
+              "n_anomalous": 3,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 7,
+              "n_normal": 0,
+              "n_anomalous": 7,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 17,
+              "n_normal": 11,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.16666666666666666,
+              "meets_target": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 456,
+      "tau": 4.128927357342777,
+      "coverage": 0.9607843137254902,
+      "miscoverage": 0.039215686274509776,
+      "bound_holds": true,
+      "miscoverage_ratio": 0.7843137254901955,
+      "auroc": 0.42705882352941177,
+      "f1": 0.07407407407407407,
+      "recall": 0.04,
+      "n_cal": 49,
+      "n_cal_normal": 49,
+      "n_test": 101,
+      "n_test_normal": 51,
+      "n_test_anomalous": 50,
+      "finite_sample_excess": 0.02,
+      "scorer": "lstm",
+      "rac": {
+        "alpha": 0.05,
+        "cost_ratio": 5.0,
+        "defer_budget": 0.15,
+        "tau_low": 3.4963555335998535,
+        "tau_high": 4.128927357342777,
+        "defer_width": 0.6325718237429232,
+        "coverage_approve_normal": 0.8235294117647058,
+        "fnr": 0.88,
+        "fpr": 0.0392156862745098,
+        "defer_rate": 0.10891089108910891,
+        "defer_rate_normal": 0.13725490196078433,
+        "defer_rate_anomalous": 0.08,
+        "reject_rate": 0.039603960396039604,
+        "reject_rate_anomalous": 0.04,
+        "var_cost": 4.43921568627451,
+        "binary_var_cost": 4.8392156862745095,
+        "var_improvement": 0.39999999999999947,
+        "n_cal": 49,
+        "n_test": 101,
+        "n_anomalous": 50,
+        "calibration": "normal_only"
+      },
+      "baselines": {
+        "trace_length": {
+          "auroc": 0.922156862745098,
+          "coverage": 1.0,
+          "miscoverage": 0.0,
+          "miscoverage_ratio": 0.0,
+          "bound_holds": true,
+          "f1": 0.5714285714285714,
+          "recall": 0.4,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 15,
+              "n_normal": 11,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.75,
+              "meets_target": true
+            },
+            "direct_prompt_injection": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.3333333333333333,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 25,
+              "n_normal": 16,
+              "n_anomalous": 9,
+              "coverage": 1.0,
+              "detection_rate": 0.3333333333333333,
+              "meets_target": true
+            },
+            "inherent_agent_failures": {
+              "n_traces": 8,
+              "n_normal": 0,
+              "n_anomalous": 8,
+              "coverage": NaN,
+              "detection_rate": 0.375,
+              "meets_target": null
+            },
+            "malicious_tool_execution": {
+              "n_traces": 13,
+              "n_normal": 8,
+              "n_anomalous": 5,
+              "coverage": 1.0,
+              "detection_rate": 0.6,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 5,
+              "n_normal": 0,
+              "n_anomalous": 5,
+              "coverage": NaN,
+              "detection_rate": 0.4,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.3333333333333333,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 23,
+              "n_normal": 16,
+              "n_anomalous": 7,
+              "coverage": 1.0,
+              "detection_rate": 0.2857142857142857,
+              "meets_target": true
+            }
+          }
+        },
+        "low_diversity": {
+          "auroc": 0.5088235294117648,
+          "coverage": 0.9411764705882353,
+          "miscoverage": 0.05882352941176472,
+          "miscoverage_ratio": 1.1764705882352944,
+          "bound_holds": false,
+          "f1": 0.14035087719298245,
+          "recall": 0.08,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 15,
+              "n_normal": 11,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "direct_prompt_injection": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.16666666666666666,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 25,
+              "n_normal": 16,
+              "n_anomalous": 9,
+              "coverage": 0.8125,
+              "detection_rate": 0.1111111111111111,
+              "meets_target": false
+            },
+            "inherent_agent_failures": {
+              "n_traces": 8,
+              "n_normal": 0,
+              "n_anomalous": 8,
+              "coverage": NaN,
+              "detection_rate": 0.125,
+              "meets_target": null
+            },
+            "malicious_tool_execution": {
+              "n_traces": 13,
+              "n_normal": 8,
+              "n_anomalous": 5,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 5,
+              "n_normal": 0,
+              "n_anomalous": 5,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.16666666666666666,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 23,
+              "n_normal": 16,
+              "n_anomalous": 7,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            }
+          }
+        },
+        "repeat_rate": {
+          "auroc": 0.53,
+          "coverage": 1.0,
+          "miscoverage": 0.0,
+          "miscoverage_ratio": 0.0,
+          "bound_holds": true,
+          "f1": 0.11320754716981132,
+          "recall": 0.06,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 15,
+              "n_normal": 11,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "direct_prompt_injection": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.16666666666666666,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 25,
+              "n_normal": 16,
+              "n_anomalous": 9,
+              "coverage": 1.0,
+              "detection_rate": 0.1111111111111111,
+              "meets_target": true
+            },
+            "inherent_agent_failures": {
+              "n_traces": 8,
+              "n_normal": 0,
+              "n_anomalous": 8,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "malicious_tool_execution": {
+              "n_traces": 13,
+              "n_normal": 8,
+              "n_anomalous": 5,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 5,
+              "n_normal": 0,
+              "n_anomalous": 5,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.16666666666666666,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 23,
+              "n_normal": 16,
+              "n_anomalous": 7,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 789,
+      "tau": 4.225599308403169,
+      "coverage": 0.9803921568627451,
+      "miscoverage": 0.019607843137254943,
+      "bound_holds": true,
+      "miscoverage_ratio": 0.39215686274509887,
+      "auroc": 0.4188235294117647,
+      "f1": 0.038461538461538464,
+      "recall": 0.02,
+      "n_cal": 49,
+      "n_cal_normal": 49,
+      "n_test": 101,
+      "n_test_normal": 51,
+      "n_test_anomalous": 50,
+      "finite_sample_excess": 0.02,
+      "scorer": "lstm",
+      "rac": {
+        "alpha": 0.05,
+        "cost_ratio": 5.0,
+        "defer_budget": 0.15,
+        "tau_low": 3.729309558868408,
+        "tau_high": 4.225599308403169,
+        "defer_width": 0.49628974953476046,
+        "coverage_approve_normal": 0.8235294117647058,
+        "fnr": 0.94,
+        "fpr": 0.0196078431372549,
+        "defer_rate": 0.09900990099009901,
+        "defer_rate_normal": 0.1568627450980392,
+        "defer_rate_anomalous": 0.04,
+        "reject_rate": 0.019801980198019802,
+        "reject_rate_anomalous": 0.02,
+        "var_cost": 4.719607843137254,
+        "binary_var_cost": 4.919607843137255,
+        "var_improvement": 0.20000000000000107,
+        "n_cal": 49,
+        "n_test": 101,
+        "n_anomalous": 50,
+        "calibration": "normal_only"
+      },
+      "baselines": {
+        "trace_length": {
+          "auroc": 0.8949019607843137,
+          "coverage": 0.9607843137254902,
+          "miscoverage": 0.039215686274509776,
+          "miscoverage_ratio": 0.7843137254901955,
+          "bound_holds": true,
+          "f1": 0.6133333333333333,
+          "recall": 0.46,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 26,
+              "n_normal": 17,
+              "n_anomalous": 9,
+              "coverage": 1.0,
+              "detection_rate": 0.3333333333333333,
+              "meets_target": true
+            },
+            "direct_prompt_injection": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.5,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 29,
+              "n_normal": 18,
+              "n_anomalous": 11,
+              "coverage": 0.9444444444444444,
+              "detection_rate": 0.36363636363636365,
+              "meets_target": false
+            },
+            "inherent_agent_failures": {
+              "n_traces": 5,
+              "n_normal": 2,
+              "n_anomalous": 3,
+              "coverage": 0.5,
+              "detection_rate": 0.3333333333333333,
+              "meets_target": false
+            },
+            "malicious_tool_execution": {
+              "n_traces": 10,
+              "n_normal": 4,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.3333333333333333,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.5,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 5,
+              "n_normal": 0,
+              "n_anomalous": 5,
+              "coverage": NaN,
+              "detection_rate": 1.0,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 14,
+              "n_normal": 10,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.5,
+              "meets_target": true
+            }
+          }
+        },
+        "low_diversity": {
+          "auroc": 0.4690196078431373,
+          "coverage": 0.9019607843137255,
+          "miscoverage": 0.0980392156862745,
+          "miscoverage_ratio": 1.96078431372549,
+          "bound_holds": false,
+          "f1": 0.07017543859649122,
+          "recall": 0.04,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 26,
+              "n_normal": 17,
+              "n_anomalous": 9,
+              "coverage": 0.9411764705882353,
+              "detection_rate": 0.1111111111111111,
+              "meets_target": false
+            },
+            "direct_prompt_injection": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 29,
+              "n_normal": 18,
+              "n_anomalous": 11,
+              "coverage": 0.7777777777777778,
+              "detection_rate": 0.09090909090909091,
+              "meets_target": false
+            },
+            "inherent_agent_failures": {
+              "n_traces": 5,
+              "n_normal": 2,
+              "n_anomalous": 3,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_tool_execution": {
+              "n_traces": 10,
+              "n_normal": 4,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 5,
+              "n_normal": 0,
+              "n_anomalous": 5,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 14,
+              "n_normal": 10,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            }
+          }
+        },
+        "repeat_rate": {
+          "auroc": 0.4996078431372549,
+          "coverage": 0.9607843137254902,
+          "miscoverage": 0.039215686274509776,
+          "miscoverage_ratio": 0.7843137254901955,
+          "bound_holds": true,
+          "f1": 0.07407407407407407,
+          "recall": 0.04,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 26,
+              "n_normal": 17,
+              "n_anomalous": 9,
+              "coverage": 0.9411764705882353,
+              "detection_rate": 0.1111111111111111,
+              "meets_target": false
+            },
+            "direct_prompt_injection": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 29,
+              "n_normal": 18,
+              "n_anomalous": 11,
+              "coverage": 0.9444444444444444,
+              "detection_rate": 0.09090909090909091,
+              "meets_target": false
+            },
+            "inherent_agent_failures": {
+              "n_traces": 5,
+              "n_normal": 2,
+              "n_anomalous": 3,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_tool_execution": {
+              "n_traces": 10,
+              "n_normal": 4,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 6,
+              "n_normal": 0,
+              "n_anomalous": 6,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 5,
+              "n_normal": 0,
+              "n_anomalous": 5,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 14,
+              "n_normal": 10,
+              "n_anomalous": 4,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 1024,
+      "tau": 4.013290599900849,
+      "coverage": 0.9607843137254902,
+      "miscoverage": 0.039215686274509776,
+      "bound_holds": true,
+      "miscoverage_ratio": 0.7843137254901955,
+      "auroc": 0.41372549019607846,
+      "f1": 0.07407407407407407,
+      "recall": 0.04,
+      "n_cal": 49,
+      "n_cal_normal": 49,
+      "n_test": 101,
+      "n_test_normal": 51,
+      "n_test_anomalous": 50,
+      "finite_sample_excess": 0.02,
+      "scorer": "lstm",
+      "rac": {
+        "alpha": 0.05,
+        "cost_ratio": 5.0,
+        "defer_budget": 0.15,
+        "tau_low": 3.3172242641448975,
+        "tau_high": 4.013290599900849,
+        "defer_width": 0.6960663357559511,
+        "coverage_approve_normal": 0.7254901960784313,
+        "fnr": 0.9,
+        "fpr": 0.0392156862745098,
+        "defer_rate": 0.1485148514851485,
+        "defer_rate_normal": 0.23529411764705882,
+        "defer_rate_anomalous": 0.06,
+        "reject_rate": 0.039603960396039604,
+        "reject_rate_anomalous": 0.04,
+        "var_cost": 4.53921568627451,
+        "binary_var_cost": 4.8392156862745095,
+        "var_improvement": 0.2999999999999998,
+        "n_cal": 49,
+        "n_test": 101,
+        "n_anomalous": 50,
+        "calibration": "normal_only"
+      },
+      "baselines": {
+        "trace_length": {
+          "auroc": 0.9592156862745097,
+          "coverage": 1.0,
+          "miscoverage": 0.0,
+          "miscoverage_ratio": 0.0,
+          "bound_holds": true,
+          "f1": 0.0,
+          "recall": 0.0,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 16,
+              "n_normal": 10,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "direct_prompt_injection": {
+              "n_traces": 7,
+              "n_normal": 0,
+              "n_anomalous": 7,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 27,
+              "n_normal": 16,
+              "n_anomalous": 11,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "inherent_agent_failures": {
+              "n_traces": 7,
+              "n_normal": 1,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_tool_execution": {
+              "n_traces": 12,
+              "n_normal": 7,
+              "n_anomalous": 5,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 9,
+              "n_normal": 0,
+              "n_anomalous": 9,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 3,
+              "n_normal": 0,
+              "n_anomalous": 3,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 20,
+              "n_normal": 17,
+              "n_anomalous": 3,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            }
+          }
+        },
+        "low_diversity": {
+          "auroc": 0.48,
+          "coverage": 0.9411764705882353,
+          "miscoverage": 0.05882352941176472,
+          "miscoverage_ratio": 1.1764705882352944,
+          "bound_holds": false,
+          "f1": 0.0,
+          "recall": 0.0,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 16,
+              "n_normal": 10,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "direct_prompt_injection": {
+              "n_traces": 7,
+              "n_normal": 0,
+              "n_anomalous": 7,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 27,
+              "n_normal": 16,
+              "n_anomalous": 11,
+              "coverage": 0.9375,
+              "detection_rate": 0.0,
+              "meets_target": false
+            },
+            "inherent_agent_failures": {
+              "n_traces": 7,
+              "n_normal": 1,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_tool_execution": {
+              "n_traces": 12,
+              "n_normal": 7,
+              "n_anomalous": 5,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 9,
+              "n_normal": 0,
+              "n_anomalous": 9,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 3,
+              "n_normal": 0,
+              "n_anomalous": 3,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 20,
+              "n_normal": 17,
+              "n_anomalous": 3,
+              "coverage": 0.8823529411764706,
+              "detection_rate": 0.0,
+              "meets_target": false
+            }
+          }
+        },
+        "repeat_rate": {
+          "auroc": 0.5,
+          "coverage": 0.9803921568627451,
+          "miscoverage": 0.019607843137254943,
+          "miscoverage_ratio": 0.39215686274509887,
+          "bound_holds": true,
+          "f1": 0.038461538461538464,
+          "recall": 0.02,
+          "per_risk_category": {
+            "corrupted_tool_feedback": {
+              "n_traces": 16,
+              "n_normal": 10,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "direct_prompt_injection": {
+              "n_traces": 7,
+              "n_normal": 0,
+              "n_anomalous": 7,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "indirect_prompt_injection": {
+              "n_traces": 27,
+              "n_normal": 16,
+              "n_anomalous": 11,
+              "coverage": 1.0,
+              "detection_rate": 0.09090909090909091,
+              "meets_target": true
+            },
+            "inherent_agent_failures": {
+              "n_traces": 7,
+              "n_normal": 1,
+              "n_anomalous": 6,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_tool_execution": {
+              "n_traces": 12,
+              "n_normal": 7,
+              "n_anomalous": 5,
+              "coverage": 1.0,
+              "detection_rate": 0.0,
+              "meets_target": true
+            },
+            "malicious_user_instruction_or_jailbreak": {
+              "n_traces": 9,
+              "n_normal": 0,
+              "n_anomalous": 9,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "tool_description_injection": {
+              "n_traces": 3,
+              "n_normal": 0,
+              "n_anomalous": 3,
+              "coverage": NaN,
+              "detection_rate": 0.0,
+              "meets_target": null
+            },
+            "unreliable_or_misinformation": {
+              "n_traces": 20,
+              "n_normal": 17,
+              "n_anomalous": 3,
+              "coverage": 0.9411764705882353,
+              "detection_rate": 0.0,
+              "meets_target": false
+            }
+          }
+        }
+      }
+    }
+  ],
+  "per_seed_risk_categories": [
+    {
+      "corrupted_tool_feedback": {
+        "n_traces": 16,
+        "n_normal": 12,
+        "n_anomalous": 4,
+        "coverage": 1.0,
+        "detection_rate": 0.25,
+        "meets_target": true
+      },
+      "direct_prompt_injection": {
+        "n_traces": 8,
+        "n_normal": 0,
+        "n_anomalous": 8,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "indirect_prompt_injection": {
+        "n_traces": 29,
+        "n_normal": 19,
+        "n_anomalous": 10,
+        "coverage": 0.8947368421052632,
+        "detection_rate": 0.1,
+        "meets_target": false
+      },
+      "inherent_agent_failures": {
+        "n_traces": 6,
+        "n_normal": 3,
+        "n_anomalous": 3,
+        "coverage": 1.0,
+        "detection_rate": 0.3333333333333333,
+        "meets_target": true
+      },
+      "malicious_tool_execution": {
+        "n_traces": 12,
+        "n_normal": 5,
+        "n_anomalous": 7,
+        "coverage": 0.8,
+        "detection_rate": 0.14285714285714285,
+        "meets_target": false
+      },
+      "malicious_user_instruction_or_jailbreak": {
+        "n_traces": 6,
+        "n_normal": 0,
+        "n_anomalous": 6,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "tool_description_injection": {
+        "n_traces": 8,
+        "n_normal": 0,
+        "n_anomalous": 8,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "unreliable_or_misinformation": {
+        "n_traces": 16,
+        "n_normal": 12,
+        "n_anomalous": 4,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      }
+    },
+    {
+      "corrupted_tool_feedback": {
+        "n_traces": 22,
+        "n_normal": 16,
+        "n_anomalous": 6,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      },
+      "direct_prompt_injection": {
+        "n_traces": 9,
+        "n_normal": 0,
+        "n_anomalous": 9,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "indirect_prompt_injection": {
+        "n_traces": 27,
+        "n_normal": 20,
+        "n_anomalous": 7,
+        "coverage": 0.95,
+        "detection_rate": 0.0,
+        "meets_target": true
+      },
+      "inherent_agent_failures": {
+        "n_traces": 8,
+        "n_normal": 1,
+        "n_anomalous": 7,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      },
+      "malicious_tool_execution": {
+        "n_traces": 8,
+        "n_normal": 3,
+        "n_anomalous": 5,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      },
+      "malicious_user_instruction_or_jailbreak": {
+        "n_traces": 3,
+        "n_normal": 0,
+        "n_anomalous": 3,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "tool_description_injection": {
+        "n_traces": 7,
+        "n_normal": 0,
+        "n_anomalous": 7,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "unreliable_or_misinformation": {
+        "n_traces": 17,
+        "n_normal": 11,
+        "n_anomalous": 6,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      }
+    },
+    {
+      "corrupted_tool_feedback": {
+        "n_traces": 15,
+        "n_normal": 11,
+        "n_anomalous": 4,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      },
+      "direct_prompt_injection": {
+        "n_traces": 6,
+        "n_normal": 0,
+        "n_anomalous": 6,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "indirect_prompt_injection": {
+        "n_traces": 25,
+        "n_normal": 16,
+        "n_anomalous": 9,
+        "coverage": 0.9375,
+        "detection_rate": 0.1111111111111111,
+        "meets_target": false
+      },
+      "inherent_agent_failures": {
+        "n_traces": 8,
+        "n_normal": 0,
+        "n_anomalous": 8,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "malicious_tool_execution": {
+        "n_traces": 13,
+        "n_normal": 8,
+        "n_anomalous": 5,
+        "coverage": 1.0,
+        "detection_rate": 0.2,
+        "meets_target": true
+      },
+      "malicious_user_instruction_or_jailbreak": {
+        "n_traces": 5,
+        "n_normal": 0,
+        "n_anomalous": 5,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "tool_description_injection": {
+        "n_traces": 6,
+        "n_normal": 0,
+        "n_anomalous": 6,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "unreliable_or_misinformation": {
+        "n_traces": 23,
+        "n_normal": 16,
+        "n_anomalous": 7,
+        "coverage": 0.9375,
+        "detection_rate": 0.0,
+        "meets_target": false
+      }
+    },
+    {
+      "corrupted_tool_feedback": {
+        "n_traces": 26,
+        "n_normal": 17,
+        "n_anomalous": 9,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      },
+      "direct_prompt_injection": {
+        "n_traces": 6,
+        "n_normal": 0,
+        "n_anomalous": 6,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "indirect_prompt_injection": {
+        "n_traces": 29,
+        "n_normal": 18,
+        "n_anomalous": 11,
+        "coverage": 0.9444444444444444,
+        "detection_rate": 0.09090909090909091,
+        "meets_target": false
+      },
+      "inherent_agent_failures": {
+        "n_traces": 5,
+        "n_normal": 2,
+        "n_anomalous": 3,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      },
+      "malicious_tool_execution": {
+        "n_traces": 10,
+        "n_normal": 4,
+        "n_anomalous": 6,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      },
+      "malicious_user_instruction_or_jailbreak": {
+        "n_traces": 6,
+        "n_normal": 0,
+        "n_anomalous": 6,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "tool_description_injection": {
+        "n_traces": 5,
+        "n_normal": 0,
+        "n_anomalous": 5,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "unreliable_or_misinformation": {
+        "n_traces": 14,
+        "n_normal": 10,
+        "n_anomalous": 4,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      }
+    },
+    {
+      "corrupted_tool_feedback": {
+        "n_traces": 16,
+        "n_normal": 10,
+        "n_anomalous": 6,
+        "coverage": 0.9,
+        "detection_rate": 0.0,
+        "meets_target": false
+      },
+      "direct_prompt_injection": {
+        "n_traces": 7,
+        "n_normal": 0,
+        "n_anomalous": 7,
+        "coverage": NaN,
+        "detection_rate": 0.14285714285714285,
+        "meets_target": null
+      },
+      "indirect_prompt_injection": {
+        "n_traces": 27,
+        "n_normal": 16,
+        "n_anomalous": 11,
+        "coverage": 0.9375,
+        "detection_rate": 0.09090909090909091,
+        "meets_target": false
+      },
+      "inherent_agent_failures": {
+        "n_traces": 7,
+        "n_normal": 1,
+        "n_anomalous": 6,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      },
+      "malicious_tool_execution": {
+        "n_traces": 12,
+        "n_normal": 7,
+        "n_anomalous": 5,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      },
+      "malicious_user_instruction_or_jailbreak": {
+        "n_traces": 9,
+        "n_normal": 0,
+        "n_anomalous": 9,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "tool_description_injection": {
+        "n_traces": 3,
+        "n_normal": 0,
+        "n_anomalous": 3,
+        "coverage": NaN,
+        "detection_rate": 0.0,
+        "meets_target": null
+      },
+      "unreliable_or_misinformation": {
+        "n_traces": 20,
+        "n_normal": 17,
+        "n_anomalous": 3,
+        "coverage": 1.0,
+        "detection_rate": 0.0,
+        "meets_target": true
+      }
+    }
+  ],
+  "elapsed_seconds": 38.83710193634033
+}

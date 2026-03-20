@@ -1,0 +1,14 @@
+\begin{tabular}{lccccr}
+\toprule
+Method & AUROC & F1 & Coverage & Unsafe\% & Deferral\% \\
+\midrule
+LSTM Next-Token & 0.728 & 0.208 & 0.954 & 0.795 & 0.054 \\
+LSTM+Outcome & 0.973 & 0.698 & 0.978 & 0.268 & 0.061 \\
+N-gram LM & 0.646 & 0.134 & 0.942 & 0.857 & 0.063 \\
+Isolation Forest & 0.575 & 0.093 & 0.951 & 0.911 & 0.051 \\
+\midrule
+TrustLens (Split CP) & 0.706 & 0.188 & 0.948 & 0.798 & -- \\
+TrustLens (ACI) & -- & 0.107 & 0.316 & -- & -- \\
+TrustLens (FA-CP) & -- & 0.112 & 0.351 & -- & -- \\
+\bottomrule
+\end{tabular}
