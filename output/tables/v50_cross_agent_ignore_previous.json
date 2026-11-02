@@ -1,0 +1,72 @@
+{
+  "attack": "ignore_previous",
+  "n_configurations": 3,
+  "configurations": [
+    "gpt-4o-2024-05-13",
+    "meta-llama_Llama-3.3-70B-Instruct",
+    "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt"
+  ],
+  "tau=0.1": {
+    "cross": 0.34,
+    "within": 0.14666666666666667,
+    "pair_bootstrap_ci95": [
+      0.08,
+      0.52
+    ],
+    "different_model": {
+      "rate": 0.47000000000000003,
+      "n_pairs": 2,
+      "ci95": [
+        0.42000000000000004,
+        0.52
+      ]
+    },
+    "same_model_scaffold": {
+      "rate": 0.08,
+      "n_pairs": 1,
+      "ci95": null
+    }
+  },
+  "tau=0.2": {
+    "cross": 0.19333333333333333,
+    "within": 0.04666666666666667,
+    "pair_bootstrap_ci95": [
+      0.0,
+      0.32
+    ],
+    "different_model": {
+      "rate": 0.29000000000000004,
+      "n_pairs": 2,
+      "ci95": [
+        0.26,
+        0.32
+      ]
+    },
+    "same_model_scaffold": {
+      "rate": 0.0,
+      "n_pairs": 1,
+      "ci95": null
+    }
+  },
+  "tau=0.3": {
+    "cross": 0.09333333333333334,
+    "within": 0.02,
+    "pair_bootstrap_ci95": [
+      0.0,
+      0.18000000000000002
+    ],
+    "different_model": {
+      "rate": 0.14,
+      "n_pairs": 2,
+      "ci95": [
+        0.1,
+        0.18000000000000002
+      ]
+    },
+    "same_model_scaffold": {
+      "rate": 0.0,
+      "n_pairs": 1,
+      "ci95": null
+    }
+  }
+}

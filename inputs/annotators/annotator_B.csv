@@ -1,0 +1,73 @@
+dataset,feature,entanglement,predicted_sign,justification
+synthetic,trace_length,edit,0,injection swaps trace segment length changes unclear
+synthetic,low_diversity,edit,0,injection changes tool identities unknown direction
+synthetic,repeat_rate,edit,0,injection changes adjacent tool repeats unknown direction
+synthetic,mean_arg_length,edit,0,injected pattern args length unknown vs original
+synthetic,arg_diversity,edit,0,injected args uniqueness unknown direction
+synthetic,arg_empty_rate,edit,0,injected args emptiness unknown without registry data
+toolbench,trace_length,edit,0,same injector as synthetic alters segment length
+toolbench,low_diversity,edit,0,injected tools alter diversity ratio unknown direction
+toolbench,repeat_rate,edit,0,injected tools alter adjacent repeats unknown direction
+toolbench,mean_arg_length,edit,0,injected args length unknown vs original
+toolbench,arg_diversity,edit,0,injected args uniqueness unknown direction
+toolbench,arg_empty_rate,edit,0,injected args emptiness unknown direction
+toolace,trace_length,none,0,corruption explicitly preserves trace length
+toolace,low_diversity,edit,0,docstring states low diversity shifts from corruption
+toolace,repeat_rate,edit,0,docstring states repeat rate shifts from corruption
+toolace,mean_arg_length,edit,-1,corruption shortens args to braces or five chars
+toolace,arg_diversity,edit,-1,scramble and corruption create duplicate arg strings
+toolace,arg_empty_rate,edit,+1,corruption sets some args to empty braces
+apibank,trace_length,none,0,corruption explicitly preserves trace length
+apibank,low_diversity,edit,0,docstring states low diversity shifts from corruption
+apibank,repeat_rate,edit,0,docstring states repeat rate shifts from corruption
+apibank,mean_arg_length,edit,-1,corruption shortens args to braces or five chars
+apibank,arg_diversity,edit,-1,scramble and corruption create duplicate arg strings
+apibank,arg_empty_rate,edit,+1,corruption sets some args to empty braces
+injecagent,trace_length,definition,+1,benign fixed two actions attack length variable
+injecagent,low_diversity,none,0,both classes mostly use distinct tool names
+injecagent,repeat_rate,none,0,distinct tools in both classes rarely repeat
+injecagent,mean_arg_length,definition,-1,attacker actions padded with empty braces args
+injecagent,arg_diversity,definition,-1,more attacker tools dilute unique arg ratio
+injecagent,arg_empty_rate,definition,+1,attacker padding actions always use empty braces
+swe_agent,trace_length,concept,+1,unsolved tasks plausibly need more debugging steps
+swe_agent,low_diversity,none,0,no mechanical or conceptual tie to diversity
+swe_agent,repeat_rate,concept,+1,unsolved tasks plausibly retry same failing commands
+swe_agent,mean_arg_length,none,0,no mechanical or conceptual tie to arg length
+swe_agent,arg_diversity,none,0,no mechanical or conceptual tie to arg uniqueness
+swe_agent,arg_empty_rate,none,0,no mechanical or conceptual tie to arg emptiness
+trail,trace_length,definition,-1,denominator in error_frac label formula
+trail,low_diversity,concept,1,stuck repeating few tools during errors
+trail,repeat_rate,concept,1,error traces often retry same failed call
+trail,mean_arg_length,none,0,no link to error annotation shown
+trail,arg_diversity,none,0,no link to error annotation shown
+trail,arg_empty_rate,concept,1,malformed empty args may cause errors
+agentdojo,trace_length,concept,1,successful injection needs extra malicious actions
+agentdojo,low_diversity,concept,-1,malicious action adds a new unseen tool
+agentdojo,repeat_rate,none,0,no clear link to injection success
+agentdojo,mean_arg_length,concept,1,compromised call carries attacker payload text
+agentdojo,arg_diversity,none,0,no clear link to injection success
+agentdojo,arg_empty_rate,concept,-1,payload-bearing args rarely near empty
+stabletoolbench,trace_length,concept,1,failed tasks loop through retries
+stabletoolbench,low_diversity,none,0,no clear link to win judgment
+stabletoolbench,repeat_rate,concept,1,failed calls get retried repeatedly
+stabletoolbench,mean_arg_length,none,0,no clear link to win judgment
+stabletoolbench,arg_diversity,none,0,no clear link to win judgment
+stabletoolbench,arg_empty_rate,concept,1,missing required args often causes failure
+atbench,trace_length,concept,1,unsafe path needs an extra harmful step
+atbench,low_diversity,none,0,no clear link to safety label
+atbench,repeat_rate,none,0,no clear link to safety label
+atbench,mean_arg_length,concept,1,harmful action args carry sensitive payload detail
+atbench,arg_diversity,none,0,no clear link to safety label
+atbench,arg_empty_rate,none,0,no clear link to safety label
+rjudge,trace_length,concept,1,risk often needs more turns to surface
+rjudge,low_diversity,none,0,no clear link to label field
+rjudge,repeat_rate,none,0,no clear link to label field
+rjudge,mean_arg_length,concept,1,risky turn content likely longer than safe
+rjudge,arg_diversity,none,0,no clear link to label field
+rjudge,arg_empty_rate,none,0,no clear link to label field
+agentharm,trace_length,none,0,paired scenarios share identical target tool sequence
+agentharm,low_diversity,none,0,paired scenarios share identical target tool sequence
+agentharm,repeat_rate,none,0,paired scenarios share identical target tool sequence
+agentharm,mean_arg_length,definition,0,args is truncated prompt text by construction
+agentharm,arg_diversity,definition,0,every action shares identical args string
+agentharm,arg_empty_rate,definition,0,prompt text args are mechanically never empty

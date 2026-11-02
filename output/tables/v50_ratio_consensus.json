@@ -1,0 +1,38 @@
+{
+  "tau=0.1/annotators_lenient_R1-R3": {
+    "ratio": 0.8427350427350427,
+    "placebo_p95": 1.5338345864661656,
+    "share_construction_tied": 0.27419354838709675,
+    "n_cells": 336,
+    "n_reversed": 124,
+    "refuted": true
+  },
+  "tau=0.1/annotators_strict_R1": {
+    "ratio": 1.586206896551724,
+    "placebo_p95": 2.017543859649123,
+    "share_construction_tied": 0.06451612903225806,
+    "n_cells": 336,
+    "n_reversed": 124,
+    "refuted": true
+  },
+  "tau=0.2/annotators_lenient_R1-R3": {
+    "ratio": 0.8579881656804733,
+    "placebo_p95": 1.7020872865275143,
+    "share_construction_tied": 0.2777777777777778,
+    "n_cells": 336,
+    "n_reversed": 108,
+    "refuted": true
+  },
+  "tau=0.2/annotators_strict_R1": {
+    "ratio": 1.84,
+    "placebo_p95": 2.346938775510204,
+    "share_construction_tied": 0.07407407407407407,
+    "n_cells": 336,
+    "n_reversed": 108,
+    "refuted": true
+  },
+  "n_tied_cells": {
+    "annotators_lenient_R1-R3": 8,
+    "annotators_strict_R1": 1
+  }
+}

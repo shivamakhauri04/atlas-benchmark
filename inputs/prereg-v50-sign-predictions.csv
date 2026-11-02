@@ -1,0 +1,466 @@
+dataset,sub_corpus,feature,stratum,rule,predicted_sign,evidence
+synthetic,,trace_length,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.358 (label-free, injector on 2000 clean traces)"
+synthetic,,low_diversity,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.449 (label-free, injector on 2000 clean traces)"
+synthetic,,repeat_rate,iii_injected,free,0,"v50_r2_shift.json std_shift=-0.061 (label-free, injector on 2000 clean traces)"
+synthetic,,mean_arg_length,iii_injected,R2,1,"v50_r2_shift.json std_shift=0.368 (label-free, injector on 2000 clean traces)"
+synthetic,,arg_diversity,iii_injected,R2,1,"v50_r2_shift.json std_shift=0.521 (label-free, injector on 2000 clean traces)"
+synthetic,,arg_empty_rate,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.250 (label-free, injector on 2000 clean traces)"
+toolbench,,trace_length,iii_injected,R2,1,"v50_r2_shift.json std_shift=1.595 (label-free, injector on 5000 clean traces)"
+toolbench,,low_diversity,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.326 (label-free, injector on 5000 clean traces)"
+toolbench,,repeat_rate,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.443 (label-free, injector on 5000 clean traces)"
+toolbench,,mean_arg_length,iii_injected,free,0,"v50_r2_shift.json std_shift=0.051 (label-free, injector on 5000 clean traces)"
+toolbench,,arg_diversity,iii_injected,R2,1,"v50_r2_shift.json std_shift=0.671 (label-free, injector on 5000 clean traces)"
+toolbench,,arg_empty_rate,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.632 (label-free, injector on 5000 clean traces)"
+toolace,,trace_length,iii_injected,free,0,"v50_r2_shift.json std_shift=0.000 (label-free, injector on 2563 clean traces)"
+toolace,,low_diversity,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.465 (label-free, injector on 2563 clean traces)"
+toolace,,repeat_rate,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.565 (label-free, injector on 2563 clean traces)"
+toolace,,mean_arg_length,iii_injected,free,0,"v50_r2_shift.json std_shift=-0.120 (label-free, injector on 2563 clean traces)"
+toolace,,arg_diversity,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.639 (label-free, injector on 2563 clean traces)"
+toolace,,arg_empty_rate,iii_injected,R2,1,"v50_r2_shift.json std_shift=0.453 (label-free, injector on 2563 clean traces)"
+apibank,,trace_length,iii_injected,free,0,"v50_r2_shift.json std_shift=0.000 (label-free, injector on 5000 clean traces)"
+apibank,,low_diversity,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.466 (label-free, injector on 5000 clean traces)"
+apibank,,repeat_rate,iii_injected,free,0,"v50_r2_shift.json std_shift=-0.114 (label-free, injector on 5000 clean traces)"
+apibank,,mean_arg_length,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.343 (label-free, injector on 5000 clean traces)"
+apibank,,arg_diversity,iii_injected,R2,-1,"v50_r2_shift.json std_shift=-0.735 (label-free, injector on 5000 clean traces)"
+apibank,,arg_empty_rate,iii_injected,R2,1,"v50_r2_shift.json std_shift=0.449 (label-free, injector on 5000 clean traces)"
+trail,all,trace_length,i_executed,R1,-1,label = n_errors/n_actions > 0.3 (src/data/domain_loader.py:289-294); length is the denominator
+trail,all,low_diversity,i_executed,free,0,no documented construction tie
+trail,all,repeat_rate,i_executed,free,0,no documented construction tie
+trail,all,mean_arg_length,i_executed,free,0,no documented construction tie
+trail,all,arg_diversity,i_executed,free,0,no documented construction tie
+trail,all,arg_empty_rate,i_executed,free,0,no documented construction tie
+trail,gaia,trace_length,i_executed,R1,-1,label = n_errors/n_actions > 0.3 (src/data/domain_loader.py:289-294); length is the denominator
+trail,gaia,low_diversity,i_executed,free,0,no documented construction tie
+trail,gaia,repeat_rate,i_executed,free,0,no documented construction tie
+trail,gaia,mean_arg_length,i_executed,free,0,no documented construction tie
+trail,gaia,arg_diversity,i_executed,free,0,no documented construction tie
+trail,gaia,arg_empty_rate,i_executed,free,0,no documented construction tie
+trail,swe,trace_length,i_executed,R1,-1,label = n_errors/n_actions > 0.3 (src/data/domain_loader.py:289-294); length is the denominator
+trail,swe,low_diversity,i_executed,free,0,no documented construction tie
+trail,swe,repeat_rate,i_executed,free,0,no documented construction tie
+trail,swe,mean_arg_length,i_executed,free,0,no documented construction tie
+trail,swe,arg_diversity,i_executed,free,0,no documented construction tie
+trail,swe,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,Meta-SecAlign-70B,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,Meta-SecAlign-70B,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,Meta-SecAlign-70B,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,Meta-SecAlign-70B,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,Meta-SecAlign-70B,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,Meta-SecAlign-70B,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,Meta-SecAlign-70B-repeat_user_prompt,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,Meta-SecAlign-70B-repeat_user_prompt,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,Meta-SecAlign-70B-repeat_user_prompt,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,Meta-SecAlign-70B-repeat_user_prompt,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,Meta-SecAlign-70B-repeat_user_prompt,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,Meta-SecAlign-70B-repeat_user_prompt,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-5-sonnet-20240620,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,claude-3-5-sonnet-20240620,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-5-sonnet-20240620,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-5-sonnet-20240620,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-5-sonnet-20240620,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-5-sonnet-20240620,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-5-sonnet-20241022,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,claude-3-5-sonnet-20241022,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-5-sonnet-20241022,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-5-sonnet-20241022,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-5-sonnet-20241022,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-5-sonnet-20241022,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-7-sonnet-20250219,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,claude-3-7-sonnet-20250219,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-7-sonnet-20250219,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-7-sonnet-20250219,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-7-sonnet-20250219,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-7-sonnet-20250219,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-haiku-20240307,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,claude-3-haiku-20240307,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-haiku-20240307,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-haiku-20240307,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-haiku-20240307,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-haiku-20240307,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-opus-20240229,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,claude-3-opus-20240229,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-opus-20240229,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-opus-20240229,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-opus-20240229,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-opus-20240229,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-sonnet-20240229,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,claude-3-sonnet-20240229,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-sonnet-20240229,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-sonnet-20240229,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-sonnet-20240229,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-sonnet-20240229,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-sonnet-20240229-repeat_user_prompt,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,claude-3-sonnet-20240229-repeat_user_prompt,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-sonnet-20240229-repeat_user_prompt,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-sonnet-20240229-repeat_user_prompt,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-sonnet-20240229-repeat_user_prompt,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,claude-3-sonnet-20240229-repeat_user_prompt,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,command-r,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,command-r,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,command-r,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,command-r,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,command-r,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,command-r,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,command-r-plus,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,command-r-plus,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,command-r-plus,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,command-r-plus,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,command-r-plus,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,command-r-plus,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-flash-001,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gemini-1.5-flash-001,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-flash-001,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-flash-001,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-flash-001,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-flash-001,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-flash-002,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gemini-1.5-flash-002,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-flash-002,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-flash-002,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-flash-002,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-flash-002,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-pro-001,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gemini-1.5-pro-001,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-pro-001,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-pro-001,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-pro-001,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-pro-001,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-pro-002,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gemini-1.5-pro-002,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-pro-002,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-pro-002,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-pro-002,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-1.5-pro-002,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-2.0-flash-001,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gemini-2.0-flash-001,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-2.0-flash-001,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-2.0-flash-001,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gemini-2.0-flash-001,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-2.0-flash-001,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-2.0-flash-exp,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gemini-2.0-flash-exp,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-2.0-flash-exp,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gemini-2.0-flash-exp,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gemini-2.0-flash-exp,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gemini-2.0-flash-exp,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-3.5-turbo-0125,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gpt-3.5-turbo-0125,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-3.5-turbo-0125,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-3.5-turbo-0125,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gpt-3.5-turbo-0125,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-3.5-turbo-0125,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4-0125-preview,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gpt-4-0125-preview,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4-0125-preview,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4-0125-preview,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4-0125-preview,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4-0125-preview,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4-turbo-2024-04-09,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gpt-4-turbo-2024-04-09,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4-turbo-2024-04-09,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4-turbo-2024-04-09,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4-turbo-2024-04-09,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4-turbo-2024-04-09,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gpt-4o-2024-05-13,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-repeat_user_prompt,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gpt-4o-2024-05-13-repeat_user_prompt,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-repeat_user_prompt,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-repeat_user_prompt,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-repeat_user_prompt,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-repeat_user_prompt,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-spotlighting_with_delimiting,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gpt-4o-2024-05-13-spotlighting_with_delimiting,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-spotlighting_with_delimiting,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-spotlighting_with_delimiting,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-spotlighting_with_delimiting,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-spotlighting_with_delimiting,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-tool_filter,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gpt-4o-2024-05-13-tool_filter,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-tool_filter,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-tool_filter,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-tool_filter,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-tool_filter,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-transformers_pi_detector,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gpt-4o-2024-05-13-transformers_pi_detector,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-transformers_pi_detector,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-transformers_pi_detector,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-transformers_pi_detector,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-2024-05-13-transformers_pi_detector,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-mini-2024-07-18,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,gpt-4o-mini-2024-07-18,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-mini-2024-07-18,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-mini-2024-07-18,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-mini-2024-07-18,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,gpt-4o-mini-2024-07-18,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3-70b-chat-hf,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,meta-llama_Llama-3-70b-chat-hf,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3-70b-chat-hf,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3-70b-chat-hf,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3-70b-chat-hf,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3-70b-chat-hf,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3.3-70B-Instruct,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,meta-llama_Llama-3.3-70B-Instruct,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3.3-70B-Instruct,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3.3-70B-Instruct,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3.3-70B-Instruct,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3.3-70B-Instruct,arg_empty_rate,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt,trace_length,i_executed,R3,1,positive = injection task succeeded (upstream InjectionTask.security docstring); success adds the injection task's tool calls
+agentdojo,meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt,low_diversity,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt,repeat_rate,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt,mean_arg_length,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt,arg_diversity,i_executed,free,0,no documented construction tie
+agentdojo,meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt,arg_empty_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,.DS_Store,trace_length,i_executed,R3,1,win==valid_data==final answer exists (765/765 files); no answer = run continued to its step budget
+stabletoolbench,.DS_Store,low_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,.DS_Store,repeat_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,.DS_Store,mean_arg_length,i_executed,free,0,no documented construction tie
+stabletoolbench,.DS_Store,arg_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,.DS_Store,arg_empty_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,chatgpt_cot,trace_length,i_executed,R3,1,win==valid_data==final answer exists (765/765 files); no answer = run continued to its step budget
+stabletoolbench,chatgpt_cot,low_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,chatgpt_cot,repeat_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,chatgpt_cot,mean_arg_length,i_executed,free,0,no documented construction tie
+stabletoolbench,chatgpt_cot,arg_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,chatgpt_cot,arg_empty_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,chatgpt_dfs,trace_length,i_executed,R3,1,win==valid_data==final answer exists (765/765 files); no answer = run continued to its step budget
+stabletoolbench,chatgpt_dfs,low_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,chatgpt_dfs,repeat_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,chatgpt_dfs,mean_arg_length,i_executed,free,0,no documented construction tie
+stabletoolbench,chatgpt_dfs,arg_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,chatgpt_dfs,arg_empty_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-3.5-turbo-1106_cot,trace_length,i_executed,R3,1,win==valid_data==final answer exists (765/765 files); no answer = run continued to its step budget
+stabletoolbench,gpt-3.5-turbo-1106_cot,low_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-3.5-turbo-1106_cot,repeat_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-3.5-turbo-1106_cot,mean_arg_length,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-3.5-turbo-1106_cot,arg_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-3.5-turbo-1106_cot,arg_empty_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-3.5-turbo-1106_dfs,trace_length,i_executed,R3,1,win==valid_data==final answer exists (765/765 files); no answer = run continued to its step budget
+stabletoolbench,gpt-3.5-turbo-1106_dfs,low_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-3.5-turbo-1106_dfs,repeat_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-3.5-turbo-1106_dfs,mean_arg_length,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-3.5-turbo-1106_dfs,arg_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-3.5-turbo-1106_dfs,arg_empty_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-0613_cot,trace_length,i_executed,R3,1,win==valid_data==final answer exists (765/765 files); no answer = run continued to its step budget
+stabletoolbench,gpt-4-0613_cot,low_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-0613_cot,repeat_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-0613_cot,mean_arg_length,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-0613_cot,arg_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-0613_cot,arg_empty_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-0613_dfs,trace_length,i_executed,R3,1,win==valid_data==final answer exists (765/765 files); no answer = run continued to its step budget
+stabletoolbench,gpt-4-0613_dfs,low_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-0613_dfs,repeat_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-0613_dfs,mean_arg_length,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-0613_dfs,arg_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-0613_dfs,arg_empty_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-turbo-preview_cot,trace_length,i_executed,R3,1,win==valid_data==final answer exists (765/765 files); no answer = run continued to its step budget
+stabletoolbench,gpt-4-turbo-preview_cot,low_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-turbo-preview_cot,repeat_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-turbo-preview_cot,mean_arg_length,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-turbo-preview_cot,arg_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-turbo-preview_cot,arg_empty_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-turbo-preview_dfs,trace_length,i_executed,R3,1,win==valid_data==final answer exists (765/765 files); no answer = run continued to its step budget
+stabletoolbench,gpt-4-turbo-preview_dfs,low_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-turbo-preview_dfs,repeat_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-turbo-preview_dfs,mean_arg_length,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-turbo-preview_dfs,arg_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,gpt-4-turbo-preview_dfs,arg_empty_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,toolllama_cot,trace_length,i_executed,R3,1,win==valid_data==final answer exists (765/765 files); no answer = run continued to its step budget
+stabletoolbench,toolllama_cot,low_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,toolllama_cot,repeat_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,toolllama_cot,mean_arg_length,i_executed,free,0,no documented construction tie
+stabletoolbench,toolllama_cot,arg_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,toolllama_cot,arg_empty_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,toolllama_dfs,trace_length,i_executed,R3,1,win==valid_data==final answer exists (765/765 files); no answer = run continued to its step budget
+stabletoolbench,toolllama_dfs,low_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,toolllama_dfs,repeat_rate,i_executed,free,0,no documented construction tie
+stabletoolbench,toolllama_dfs,mean_arg_length,i_executed,free,0,no documented construction tie
+stabletoolbench,toolllama_dfs,arg_diversity,i_executed,free,0,no documented construction tie
+stabletoolbench,toolllama_dfs,arg_empty_rate,i_executed,free,0,no documented construction tie
+swe_agent,,trace_length,i_executed,free,0,"label = not solved; MAX_TRACE_LEN filter is selection, not construction"
+swe_agent,,low_diversity,i_executed,free,0,"label = not solved; MAX_TRACE_LEN filter is selection, not construction"
+swe_agent,,repeat_rate,i_executed,free,0,"label = not solved; MAX_TRACE_LEN filter is selection, not construction"
+swe_agent,,mean_arg_length,i_executed,free,0,"label = not solved; MAX_TRACE_LEN filter is selection, not construction"
+swe_agent,,arg_diversity,i_executed,free,0,"label = not solved; MAX_TRACE_LEN filter is selection, not construction"
+swe_agent,,arg_empty_rate,i_executed,free,0,"label = not solved; MAX_TRACE_LEN filter is selection, not construction"
+injecagent,,trace_length,excluded,n/a,0,"constructed, no execution: benign = fixed 2 actions"
+injecagent,,low_diversity,excluded,n/a,0,"constructed, no execution: benign = fixed 2 actions"
+injecagent,,repeat_rate,excluded,n/a,0,"constructed, no execution: benign = fixed 2 actions"
+injecagent,,mean_arg_length,excluded,n/a,0,"constructed, no execution: benign = fixed 2 actions"
+injecagent,,arg_diversity,excluded,n/a,0,"constructed, no execution: benign = fixed 2 actions"
+injecagent,,arg_empty_rate,excluded,n/a,0,"constructed, no execution: benign = fixed 2 actions"
+agentharm,,trace_length,excluded,n/a,0,"gold target_functions, no execution"
+agentharm,,low_diversity,excluded,n/a,0,"gold target_functions, no execution"
+agentharm,,repeat_rate,excluded,n/a,0,"gold target_functions, no execution"
+agentharm,,mean_arg_length,excluded,n/a,0,"gold target_functions, no execution"
+agentharm,,arg_diversity,excluded,n/a,0,"gold target_functions, no execution"
+agentharm,,arg_empty_rate,excluded,n/a,0,"gold target_functions, no execution"
+atbench,,trace_length,excluded,n/a,0,simulated by generation engine with risk injection
+atbench,,low_diversity,excluded,n/a,0,simulated by generation engine with risk injection
+atbench,,repeat_rate,excluded,n/a,0,simulated by generation engine with risk injection
+atbench,,mean_arg_length,excluded,n/a,0,simulated by generation engine with risk injection
+atbench,,arg_diversity,excluded,n/a,0,simulated by generation engine with risk injection
+atbench,,arg_empty_rate,excluded,n/a,0,simulated by generation engine with risk injection
+rjudge,,trace_length,excluded,n/a,0,"curated, provenance unconfirmed, no license"
+rjudge,,low_diversity,excluded,n/a,0,"curated, provenance unconfirmed, no license"
+rjudge,,repeat_rate,excluded,n/a,0,"curated, provenance unconfirmed, no license"
+rjudge,,mean_arg_length,excluded,n/a,0,"curated, provenance unconfirmed, no license"
+rjudge,,arg_diversity,excluded,n/a,0,"curated, provenance unconfirmed, no license"
+rjudge,,arg_empty_rate,excluded,n/a,0,"curated, provenance unconfirmed, no license"
+agentdrift,full_hijack/email,trace_length,ii_external,R3,1,label grammar B+ I H+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,full_hijack/email,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/email,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/email,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/email,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/email,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/banking,trace_length,ii_external,R3,1,label grammar B+ I H+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,full_hijack/banking,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/banking,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/banking,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/banking,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/banking,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/web,trace_length,ii_external,R3,1,label grammar B+ I H+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,full_hijack/web,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/web,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/web,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/web,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/web,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/coding,trace_length,ii_external,R3,1,label grammar B+ I H+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,full_hijack/coding,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/coding,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/coding,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/coding,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/coding,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/medical,trace_length,ii_external,R3,1,label grammar B+ I H+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,full_hijack/medical,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/medical,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/medical,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/medical,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,full_hijack/medical,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/email,trace_length,ii_external,R3,1,"label grammar B+ I H{1,2} B+ adds role steps beyond benign B+ (arXiv 2609.06972)"
+agentdrift,partial_hijack/email,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/email,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/email,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/email,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/email,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/banking,trace_length,ii_external,R3,1,"label grammar B+ I H{1,2} B+ adds role steps beyond benign B+ (arXiv 2609.06972)"
+agentdrift,partial_hijack/banking,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/banking,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/banking,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/banking,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/banking,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/web,trace_length,ii_external,R3,1,"label grammar B+ I H{1,2} B+ adds role steps beyond benign B+ (arXiv 2609.06972)"
+agentdrift,partial_hijack/web,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/web,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/web,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/web,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/web,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/coding,trace_length,ii_external,R3,1,"label grammar B+ I H{1,2} B+ adds role steps beyond benign B+ (arXiv 2609.06972)"
+agentdrift,partial_hijack/coding,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/coding,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/coding,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/coding,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/coding,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/medical,trace_length,ii_external,R3,1,"label grammar B+ I H{1,2} B+ adds role steps beyond benign B+ (arXiv 2609.06972)"
+agentdrift,partial_hijack/medical,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/medical,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/medical,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/medical,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,partial_hijack/medical,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/email,trace_length,ii_external,R3,1,label grammar B+ I B+ H B+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,delayed_execution/email,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/email,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/email,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/email,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/email,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/banking,trace_length,ii_external,R3,1,label grammar B+ I B+ H B+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,delayed_execution/banking,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/banking,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/banking,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/banking,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/banking,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/web,trace_length,ii_external,R3,1,label grammar B+ I B+ H B+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,delayed_execution/web,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/web,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/web,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/web,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/web,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/coding,trace_length,ii_external,R3,1,label grammar B+ I B+ H B+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,delayed_execution/coding,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/coding,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/coding,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/coding,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/coding,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/medical,trace_length,ii_external,R3,1,label grammar B+ I B+ H B+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,delayed_execution/medical,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/medical,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/medical,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/medical,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,delayed_execution/medical,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/email,trace_length,ii_external,R3,1,label grammar B+ F B+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,failed_attack/email,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/email,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/email,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/email,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/email,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/banking,trace_length,ii_external,R3,1,label grammar B+ F B+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,failed_attack/banking,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/banking,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/banking,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/banking,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/banking,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/web,trace_length,ii_external,R3,1,label grammar B+ F B+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,failed_attack/web,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/web,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/web,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/web,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/web,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/coding,trace_length,ii_external,R3,1,label grammar B+ F B+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,failed_attack/coding,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/coding,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/coding,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/coding,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/coding,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/medical,trace_length,ii_external,R3,1,label grammar B+ F B+ adds role steps beyond benign B+ (arXiv 2609.06972)
+agentdrift,failed_attack/medical,low_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/medical,repeat_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/medical,mean_arg_length,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/medical,arg_diversity,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,failed_attack/medical,arg_empty_rate,ii_external,free,0,no construction tie in protocol or validator
+agentdrift,hard_negative/email,trace_length,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/email,low_diversity,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/email,repeat_rate,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/email,mean_arg_length,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/email,arg_diversity,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/email,arg_empty_rate,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/banking,trace_length,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/banking,low_diversity,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/banking,repeat_rate,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/banking,mean_arg_length,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/banking,arg_diversity,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/banking,arg_empty_rate,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/web,trace_length,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/web,low_diversity,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/web,repeat_rate,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/web,mean_arg_length,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/web,arg_diversity,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/web,arg_empty_rate,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/coding,trace_length,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/coding,low_diversity,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/coding,repeat_rate,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/coding,mean_arg_length,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/coding,arg_diversity,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/coding,arg_empty_rate,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/medical,trace_length,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/medical,low_diversity,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/medical,repeat_rate,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/medical,mean_arg_length,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/medical,arg_diversity,ii_external,free,0,hard_negative shares benign grammar B+
+agentdrift,hard_negative/medical,arg_empty_rate,ii_external,free,0,hard_negative shares benign grammar B+
+trajbench,task_failure,all,unavailable,n/a,0,TrajBench not released (no repo/HF/availability statement); audited from arXiv 2602.06443 only
+trajbench,process_inefficiency,all,unavailable,n/a,0,TrajBench not released (no repo/HF/availability statement); audited from arXiv 2602.06443 only
+trajbench,unwarranted_continuation,all,unavailable,n/a,0,TrajBench not released (no repo/HF/availability statement); audited from arXiv 2602.06443 only

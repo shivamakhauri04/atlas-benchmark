@@ -1,0 +1,2781 @@
+{
+  "n_pairs": 462,
+  "loto_r2": 0.30420774865610345,
+  "spearman_rho": -0.5089799994290578,
+  "spearman_p": 8.146840006599447e-32,
+  "mean_auroc": 0.6749348066956907,
+  "rows": [
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.8167872804017595,
+      "wasserstein": 0.14647340833381428
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.6975579266677264,
+      "wasserstein": 0.2936687929664728
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.7120837633131487,
+      "wasserstein": 0.1761079920166803
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.7645385718083088,
+      "wasserstein": 0.1723065754201978
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.7330793751763653,
+      "wasserstein": 0.23123928728995102
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.7913549410350209,
+      "wasserstein": 0.1440628506747329
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.817732326965143,
+      "wasserstein": 0.15191498824199742
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.8196826859697672,
+      "wasserstein": 0.16517700251094738
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.8298193815730585,
+      "wasserstein": 0.1044919486974416
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.5549301783548819,
+      "wasserstein": 0.19180197931290935
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.6979570446860828,
+      "wasserstein": 0.16755601979033263
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.7677272197624815,
+      "wasserstein": 0.07805043352036418
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.6507121522219136,
+      "wasserstein": 0.16936678411371497
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.6863579520251946,
+      "wasserstein": 0.19096380972249663
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.6972357789124394,
+      "wasserstein": 0.17270069086299733
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.815559835018575,
+      "wasserstein": 0.1215000722682466
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.510436300620553,
+      "wasserstein": 0.3814201346740628
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.6477016188773433,
+      "wasserstein": 0.2188941050092225
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5990897685108776,
+      "wasserstein": 0.14261549670533694
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.7438710328377428,
+      "wasserstein": 0.23901972880130162
+    },
+    {
+      "source": "claude-3-5-sonnet-20240620",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.6224970329426347,
+      "wasserstein": 0.42045382654106994
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7493979557788402,
+      "wasserstein": 0.14647340833381428
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.6269391458697611,
+      "wasserstein": 0.29391962951559164
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.7413987811289161,
+      "wasserstein": 0.18918781352044975
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.6974398353839144,
+      "wasserstein": 0.16049918792103549
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.8053945275321283,
+      "wasserstein": 0.23268977945847258
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.8222130145655253,
+      "wasserstein": 0.14835071560559598
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.8218251621910158,
+      "wasserstein": 0.18480534591288234
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.855588935503852,
+      "wasserstein": 0.13275463419654324
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.8078660552921118,
+      "wasserstein": 0.12595509718542328
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6667089073896706,
+      "wasserstein": 0.21451678441439773
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.7109343536657626,
+      "wasserstein": 0.1767182065955045
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.757816266579008,
+      "wasserstein": 0.15083922657094567
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.6740655671051256,
+      "wasserstein": 0.18345081949080533
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.6630903399312779,
+      "wasserstein": 0.18784490107896276
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.6873638923276046,
+      "wasserstein": 0.1859039275811664
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.8217768222116048,
+      "wasserstein": 0.13996386664851337
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.34312447008629404,
+      "wasserstein": 0.3726512023736323
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.5916301619013685,
+      "wasserstein": 0.22632430016384786
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5079330564266197,
+      "wasserstein": 0.10993811861437275
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6243135614429977,
+      "wasserstein": 0.22824195433368125
+    },
+    {
+      "source": "claude-3-7-sonnet-20250219",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.45014536869445365,
+      "wasserstein": 0.4191020062723618
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.6879607573749851,
+      "wasserstein": 0.2936687929664728
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.7939410875351276,
+      "wasserstein": 0.29391962951559164
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.8043756693082031,
+      "wasserstein": 0.2934695044847673
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.6629076716412243,
+      "wasserstein": 0.2471557584567808
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.6420037784037917,
+      "wasserstein": 0.3698478070428967
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.744830947569225,
+      "wasserstein": 0.3512601069410685
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.7653899079486663,
+      "wasserstein": 0.3748485047907744
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.7910631533702864,
+      "wasserstein": 0.35025957967856897
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.7354809507903528,
+      "wasserstein": 0.30877387602848444
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.5466013100332336,
+      "wasserstein": 0.3505137030267114
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.6652892543883664,
+      "wasserstein": 0.2835831687445833
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.7724311527133753,
+      "wasserstein": 0.3025576432743072
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.7357402055733802,
+      "wasserstein": 0.26316217902011246
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.7025050389582319,
+      "wasserstein": 0.23965188892706576
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.774388779372611,
+      "wasserstein": 0.265919079046667
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.6319050977613532,
+      "wasserstein": 0.29856305961854085
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.6045012781492103,
+      "wasserstein": 0.22557873884087346
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.6661541903295474,
+      "wasserstein": 0.2730128740182631
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5081948417719584,
+      "wasserstein": 0.3324624841395364
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6304483031864757,
+      "wasserstein": 0.2968787992600707
+    },
+    {
+      "source": "claude-3-haiku-20240307",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.5016183115977684,
+      "wasserstein": 0.2642154770885956
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7389741410441059,
+      "wasserstein": 0.1761079920166803
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.7930978997532994,
+      "wasserstein": 0.18918781352044975
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.6682712296225649,
+      "wasserstein": 0.2934695044847673
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.6767602244246982,
+      "wasserstein": 0.12392301935170524
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.7538482803479959,
+      "wasserstein": 0.2303352587204008
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.7912368648976564,
+      "wasserstein": 0.19396502413695269
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.8035218407280491,
+      "wasserstein": 0.21256469857134452
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.8294255628149481,
+      "wasserstein": 0.2139921621641452
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.7485555540607879,
+      "wasserstein": 0.19005793556446668
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.5788546677525532,
+      "wasserstein": 0.24424240049058987
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.6879364944657977,
+      "wasserstein": 0.17518884525795805
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.7643518498316968,
+      "wasserstein": 0.15158254416627517
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.6930882256666812,
+      "wasserstein": 0.18099756969036554
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.6730028165923109,
+      "wasserstein": 0.16896316189216884
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.7040911278790337,
+      "wasserstein": 0.17615489580582158
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.7846396312944671,
+      "wasserstein": 0.16879237325378524
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.4081732667297355,
+      "wasserstein": 0.36369597279856797
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.6384774947372056,
+      "wasserstein": 0.19165784292055074
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5180283539026731,
+      "wasserstein": 0.19913051036066823
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6317412068293068,
+      "wasserstein": 0.18687300124828146
+    },
+    {
+      "source": "claude-3-opus-20240229",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.4227266263958061,
+      "wasserstein": 0.40491520674613596
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7732254616407338,
+      "wasserstein": 0.1723065754201978
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.7646528124897589,
+      "wasserstein": 0.16049918792103549
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.6891487331991029,
+      "wasserstein": 0.2471557584567808
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.7600683424521506,
+      "wasserstein": 0.12392301935170524
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.6790401228220372,
+      "wasserstein": 0.20500333759222253
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.7424125611668012,
+      "wasserstein": 0.19249510894337674
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.8068003986651437,
+      "wasserstein": 0.2161811455181973
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.8264756150822452,
+      "wasserstein": 0.20171337929124955
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.69550053789761,
+      "wasserstein": 0.1554665607178497
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6227440616406579,
+      "wasserstein": 0.19043136407361708
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.7342559487960052,
+      "wasserstein": 0.12638152750266643
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.8203346459492499,
+      "wasserstein": 0.14781134404829044
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.7824188745312461,
+      "wasserstein": 0.13489311789401678
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.7153773705195748,
+      "wasserstein": 0.14355341518237139
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.7739729500372323,
+      "wasserstein": 0.12494988055517514
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.7229357658017819,
+      "wasserstein": 0.14663710722599402
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.5418033671877787,
+      "wasserstein": 0.3089683477641731
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.685933125699888,
+      "wasserstein": 0.14933682164023224
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5446078912300648,
+      "wasserstein": 0.17739281944276977
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6834190661443003,
+      "wasserstein": 0.1478972985381514
+    },
+    {
+      "source": "claude-3-sonnet-20240229",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.614683522446598,
+      "wasserstein": 0.3602060858136789
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.766077905148005,
+      "wasserstein": 0.23123928728995102
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.7851527821867117,
+      "wasserstein": 0.23268977945847258
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.5958250808032639,
+      "wasserstein": 0.3698478070428967
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.7042919449366225,
+      "wasserstein": 0.2303352587204008
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.6830590443912812,
+      "wasserstein": 0.20500333759222253
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.8262324027817876,
+      "wasserstein": 0.16231445296074057
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.8111867305725399,
+      "wasserstein": 0.2016462839305864
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.864019703738222,
+      "wasserstein": 0.2879924013461694
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.8051034320886222,
+      "wasserstein": 0.22430964774773485
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6880356689851274,
+      "wasserstein": 0.1553230205025297
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.6780993844667589,
+      "wasserstein": 0.22406750390740962
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.6857736805802015,
+      "wasserstein": 0.21785421287791482
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.6163659651664064,
+      "wasserstein": 0.2502453854839238
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.6301852860136282,
+      "wasserstein": 0.2595714623824219
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.6365426488458141,
+      "wasserstein": 0.25028113059635
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.8188120427339592,
+      "wasserstein": 0.24537024083737966
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.3568574122060336,
+      "wasserstein": 0.4002313251590253
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.5873956246546007,
+      "wasserstein": 0.25589419857105494
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5326905109020557,
+      "wasserstein": 0.2266513926702125
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6707226588227094,
+      "wasserstein": 0.26862869428219066
+    },
+    {
+      "source": "gemini-1.5-flash-001",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.49155098624517224,
+      "wasserstein": 0.45655358809521046
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.767877986952384,
+      "wasserstein": 0.1440628506747329
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.7875370500946451,
+      "wasserstein": 0.14835071560559598
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.6439244886875432,
+      "wasserstein": 0.3512601069410685
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.6805218819161848,
+      "wasserstein": 0.19396502413695269
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.6834586940836941,
+      "wasserstein": 0.19249510894337674
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.8100581563302611,
+      "wasserstein": 0.16231445296074057
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.8008893517585314,
+      "wasserstein": 0.088940740136706
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.882067726908657,
+      "wasserstein": 0.19576565259734058
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.8012993869410971,
+      "wasserstein": 0.12938962856008265
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6112315785910423,
+      "wasserstein": 0.16734689109596226
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.695780178345251,
+      "wasserstein": 0.20851088286035754
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.6900922669436056,
+      "wasserstein": 0.14993421714632038
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.6082361110403871,
+      "wasserstein": 0.21787125341199687
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.6123839235493594,
+      "wasserstein": 0.24476044902341246
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.6092817913171935,
+      "wasserstein": 0.21254939338850767
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.7422477906595032,
+      "wasserstein": 0.16150602201363037
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.3643193431700855,
+      "wasserstein": 0.41155171467910406
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.5736466722142639,
+      "wasserstein": 0.2600380123487743
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5060730670016443,
+      "wasserstein": 0.14441416334097845
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6379083002777246,
+      "wasserstein": 0.2620116261274576
+    },
+    {
+      "source": "gemini-1.5-pro-001",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.48897624469098294,
+      "wasserstein": 0.45545929644682914
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7716371353175614,
+      "wasserstein": 0.15191498824199742
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.8256530195801922,
+      "wasserstein": 0.18480534591288234
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.6611311220614987,
+      "wasserstein": 0.3748485047907744
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.7318999591113534,
+      "wasserstein": 0.21256469857134452
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.7020440779980254,
+      "wasserstein": 0.2161811455181973
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.8042417484922257,
+      "wasserstein": 0.2016462839305864
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.8313618747951971,
+      "wasserstein": 0.088940740136706
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.8804363023467058,
+      "wasserstein": 0.19149562957344293
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.8214566623836106,
+      "wasserstein": 0.15781179559006792
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6573650560233851,
+      "wasserstein": 0.20642664569073213
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.6858891437894898,
+      "wasserstein": 0.22114415070500895
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.7653131809942524,
+      "wasserstein": 0.15957083446088935
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.6713996676533657,
+      "wasserstein": 0.24278046084459817
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.6371392944378049,
+      "wasserstein": 0.27684787234161756
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.6842307692871016,
+      "wasserstein": 0.23365110852746418
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.7792083968481484,
+      "wasserstein": 0.16453460804753536
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.41422394766774406,
+      "wasserstein": 0.4396510799054046
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.5876164484137083,
+      "wasserstein": 0.28221980740647123
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.520499776885319,
+      "wasserstein": 0.1658751104589604
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6725360419910664,
+      "wasserstein": 0.2801498892287266
+    },
+    {
+      "source": "gemini-1.5-pro-002",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.49812130004261845,
+      "wasserstein": 0.4742575079607116
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7309020205776797,
+      "wasserstein": 0.16517700251094738
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.8176861910525266,
+      "wasserstein": 0.13275463419654324
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.6873826895565094,
+      "wasserstein": 0.35025957967856897
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.7557194130207623,
+      "wasserstein": 0.2139921621641452
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.7231708532695376,
+      "wasserstein": 0.20171337929124955
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.738240763237566,
+      "wasserstein": 0.2879924013461694
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.8017371456832715,
+      "wasserstein": 0.19576565259734058
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.7908958617960835,
+      "wasserstein": 0.19149562957344293
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.8168385877333095,
+      "wasserstein": 0.16505242306529141
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6097732491572099,
+      "wasserstein": 0.27009273316962473
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.7031528466739425,
+      "wasserstein": 0.2063450637582979
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.7150760208570499,
+      "wasserstein": 0.157233554356404
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.6831871956062454,
+      "wasserstein": 0.2157274236798392
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.656727754483784,
+      "wasserstein": 0.23607961157892773
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.6798421902484918,
+      "wasserstein": 0.21658867906902676
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.6885045606074888,
+      "wasserstein": 0.16339231553822553
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.37468480397298,
+      "wasserstein": 0.4074443310403851
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.626307288561103,
+      "wasserstein": 0.26606256521770866
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5428932931115634,
+      "wasserstein": 0.1535987004070669
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.7044019557365971,
+      "wasserstein": 0.26611107171255477
+    },
+    {
+      "source": "gemini-2.0-flash-001",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.4989204215749939,
+      "wasserstein": 0.4501108646061159
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7824678479206308,
+      "wasserstein": 0.1044919486974416
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.822404326672916,
+      "wasserstein": 0.12595509718542328
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.7315452608664936,
+      "wasserstein": 0.30877387602848444
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.757438293840093,
+      "wasserstein": 0.19005793556446668
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.7284016622996885,
+      "wasserstein": 0.1554665607178497
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.7998727012717437,
+      "wasserstein": 0.22430964774773485
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.8152506788190192,
+      "wasserstein": 0.12938962856008265
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.8241133582685689,
+      "wasserstein": 0.15781179559006792
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.9118240089091257,
+      "wasserstein": 0.16505242306529141
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6346654387386723,
+      "wasserstein": 0.18284179893187413
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.700001006826956,
+      "wasserstein": 0.14987531168456697
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.7809974988056844,
+      "wasserstein": 0.10689263365896085
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.6593879985705465,
+      "wasserstein": 0.16181364254259217
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.6882595584052303,
+      "wasserstein": 0.20353196277983365
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.6971081288589592,
+      "wasserstein": 0.1581597512975469
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.727888783798278,
+      "wasserstein": 0.12240056136629168
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.45069349393978236,
+      "wasserstein": 0.37023097892115236
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.6504546704345486,
+      "wasserstein": 0.21204547182344644
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5727926775595533,
+      "wasserstein": 0.12058941252336831
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.7359318450041156,
+      "wasserstein": 0.22634003883344023
+    },
+    {
+      "source": "gemini-2.0-flash-exp",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.5673884747395158,
+      "wasserstein": 0.40125699075105414
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.5807546085156027,
+      "wasserstein": 0.19180197931290935
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.7076576006184754,
+      "wasserstein": 0.21451678441439773
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.6658903084653561,
+      "wasserstein": 0.3505137030267114
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.6218634838424943,
+      "wasserstein": 0.24424240049058987
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.6177754993544469,
+      "wasserstein": 0.19043136407361708
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.6704046957428389,
+      "wasserstein": 0.1553230205025297
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.6471091190153377,
+      "wasserstein": 0.16734689109596226
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.6904433245985352,
+      "wasserstein": 0.20642664569073213
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.6924439812923084,
+      "wasserstein": 0.27009273316962473
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.6553729441658344,
+      "wasserstein": 0.18284179893187413
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.5770732574593407,
+      "wasserstein": 0.20229505107337128
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.6558782793580239,
+      "wasserstein": 0.194734936280636
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.6171232501500548,
+      "wasserstein": 0.22711667724797943
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.6671596365381554,
+      "wasserstein": 0.21468977259417565
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.6302943490547264,
+      "wasserstein": 0.22683892875878434
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.4886950346311482,
+      "wasserstein": 0.21368631625134196
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.25588490689233,
+      "wasserstein": 0.38672668057849613
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.653248741564986,
+      "wasserstein": 0.19505099726210498
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.47097945052661183,
+      "wasserstein": 0.1972181220467029
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6565690637410753,
+      "wasserstein": 0.2655711483927689
+    },
+    {
+      "source": "gpt-3.5-turbo-0125",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.3867257421323055,
+      "wasserstein": 0.43329268079320604
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7432128086907754,
+      "wasserstein": 0.16755601979033263
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.7828621818325194,
+      "wasserstein": 0.1767182065955045
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.6357507771242868,
+      "wasserstein": 0.2835831687445833
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.6954152144706868,
+      "wasserstein": 0.17518884525795805
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.769648505734032,
+      "wasserstein": 0.12638152750266643
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.801179918979544,
+      "wasserstein": 0.22406750390740962
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.8174278015521781,
+      "wasserstein": 0.20851088286035754
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.8007095045055135,
+      "wasserstein": 0.22114415070500895
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.8343073799274926,
+      "wasserstein": 0.2063450637582979
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.7672630598214767,
+      "wasserstein": 0.14987531168456697
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.660899382916402,
+      "wasserstein": 0.20229505107337128
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.7437349538855177,
+      "wasserstein": 0.1462036292588385
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.6794816139350042,
+      "wasserstein": 0.08439098639299254
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.6815813831840616,
+      "wasserstein": 0.16912997279364164
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.6777907550723896,
+      "wasserstein": 0.1076367643233504
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.7593337796975773,
+      "wasserstein": 0.1449884758841817
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.4729521892035148,
+      "wasserstein": 0.320916259367612
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.6411207990812379,
+      "wasserstein": 0.16145669156663267
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.525846750777845,
+      "wasserstein": 0.18542187577681635
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6182928723170182,
+      "wasserstein": 0.15423560150010437
+    },
+    {
+      "source": "gpt-4-0125-preview",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.4876257310535264,
+      "wasserstein": 0.3481029619599038
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7627001409487706,
+      "wasserstein": 0.07805043352036418
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.8431516516156377,
+      "wasserstein": 0.15083922657094567
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.7167709911867041,
+      "wasserstein": 0.3025576432743072
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.8102387118129247,
+      "wasserstein": 0.15158254416627517
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.7557481535277588,
+      "wasserstein": 0.14781134404829044
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.7866867033666056,
+      "wasserstein": 0.21785421287791482
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.772239236652938,
+      "wasserstein": 0.14993421714632038
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.8397874159182364,
+      "wasserstein": 0.15957083446088935
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.7973882932414414,
+      "wasserstein": 0.157233554356404
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.7954821276464497,
+      "wasserstein": 0.10689263365896085
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6565722947584731,
+      "wasserstein": 0.194734936280636
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.7141612888115061,
+      "wasserstein": 0.1462036292588385
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.796228109861101,
+      "wasserstein": 0.1579028023617575
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.7462133632676419,
+      "wasserstein": 0.19705927194401082
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.8081079835703685,
+      "wasserstein": 0.15032647284695824
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.7702787393026967,
+      "wasserstein": 0.11081876093975468
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.5732811307638986,
+      "wasserstein": 0.3761661628364341
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.6851115741935836,
+      "wasserstein": 0.20773243867790558
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5586700225559773,
+      "wasserstein": 0.1391674912120341
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6747753429010459,
+      "wasserstein": 0.21923531668604998
+    },
+    {
+      "source": "gpt-4-turbo-2024-04-09",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.6067829810247778,
+      "wasserstein": 0.40504709690354074
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.6879421503289108,
+      "wasserstein": 0.16936678411371497
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.7525932679340801,
+      "wasserstein": 0.18345081949080533
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.7237692161641851,
+      "wasserstein": 0.26316217902011246
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.8070995670995671,
+      "wasserstein": 0.18099756969036554
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.7380303504974558,
+      "wasserstein": 0.13489311789401678
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.6335146114222582,
+      "wasserstein": 0.2502453854839238
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.6576813345173838,
+      "wasserstein": 0.21787125341199687
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.7719153247179855,
+      "wasserstein": 0.24278046084459817
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.8392139714647742,
+      "wasserstein": 0.2157274236798392
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.6420645036357854,
+      "wasserstein": 0.16181364254259217
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6005278832578987,
+      "wasserstein": 0.22711667724797943
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.7290637482677103,
+      "wasserstein": 0.08439098639299254
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.8486732591597062,
+      "wasserstein": 0.1579028023617575
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.7428225853726003,
+      "wasserstein": 0.1328254441159998
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.8428299378559856,
+      "wasserstein": 0.05864502703345123
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.68133513829166,
+      "wasserstein": 0.1477234246029501
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.6168351995300563,
+      "wasserstein": 0.30638974197080365
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.7176931145562165,
+      "wasserstein": 0.13086945987319
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5266677975218987,
+      "wasserstein": 0.1974617061480195
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6245249706038033,
+      "wasserstein": 0.14828808925606646
+    },
+    {
+      "source": "gpt-4o-2024-05-13",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.603409093003131,
+      "wasserstein": 0.3425507367452783
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7582708962243163,
+      "wasserstein": 0.19096380972249663
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.821233557613535,
+      "wasserstein": 0.18784490107896276
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.7345226359525954,
+      "wasserstein": 0.23965188892706576
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.8329883759418992,
+      "wasserstein": 0.16896316189216884
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.7715577058175742,
+      "wasserstein": 0.14355341518237139
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.6832412869530282,
+      "wasserstein": 0.2595714623824219
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.7384343126112333,
+      "wasserstein": 0.24476044902341246
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.8252070371116934,
+      "wasserstein": 0.27684787234161756
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.8497417750951979,
+      "wasserstein": 0.23607961157892773
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.7698646910796495,
+      "wasserstein": 0.20353196277983365
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.636217453768511,
+      "wasserstein": 0.21468977259417565
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.71289331041053,
+      "wasserstein": 0.16912997279364164
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.8226286612481261,
+      "wasserstein": 0.19705927194401082
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.7507245744183445,
+      "wasserstein": 0.1328254441159998
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.8016300093132089,
+      "wasserstein": 0.12944569642837855
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.7405260164266376,
+      "wasserstein": 0.17709716067541684
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.6359892537649696,
+      "wasserstein": 0.3063638154445185
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.7049369714482047,
+      "wasserstein": 0.11689790145045843
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5614144783089741,
+      "wasserstein": 0.22198412499238787
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.7436978135907647,
+      "wasserstein": 0.173728950033046
+    },
+    {
+      "source": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.6187339068753273,
+      "wasserstein": 0.3645390823840928
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.6954495160145516,
+      "wasserstein": 0.17270069086299733
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.7902202280393706,
+      "wasserstein": 0.1859039275811664
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.7551759590420177,
+      "wasserstein": 0.265919079046667
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.8326534784555776,
+      "wasserstein": 0.17615489580582158
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.7242194976076555,
+      "wasserstein": 0.12494988055517514
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.6607794560055098,
+      "wasserstein": 0.25028113059635
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.6503885049658245,
+      "wasserstein": 0.21254939338850767
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.7884278035342336,
+      "wasserstein": 0.23365110852746418
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.8567296801702089,
+      "wasserstein": 0.21658867906902676
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.6375981761574204,
+      "wasserstein": 0.1581597512975469
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6264875597619279,
+      "wasserstein": 0.22683892875878434
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.7110796865513469,
+      "wasserstein": 0.1076367643233504
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.8744649518459692,
+      "wasserstein": 0.15032647284695824
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.8486556710512556,
+      "wasserstein": 0.05864502703345123
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.7684932742175226,
+      "wasserstein": 0.12944569642837855
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.6993351664602775,
+      "wasserstein": 0.14147509540404546
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.6436064840956146,
+      "wasserstein": 0.3104306694506569
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.7180087083793867,
+      "wasserstein": 0.1386013922782585
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5244295599444964,
+      "wasserstein": 0.20026989157464445
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6124104538050947,
+      "wasserstein": 0.15388868375437478
+    },
+    {
+      "source": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.5934363988080205,
+      "wasserstein": 0.3469205042764354
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.737999885312069,
+      "wasserstein": 0.1215000722682466
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.8060315118240149,
+      "wasserstein": 0.13996386664851337
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.5656794229852171,
+      "wasserstein": 0.29856305961854085
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.7046828533785054,
+      "wasserstein": 0.16879237325378524
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.6651633107389687,
+      "wasserstein": 0.14663710722599402
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.8111483573509085,
+      "wasserstein": 0.24537024083737966
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.8178333583055897,
+      "wasserstein": 0.16150602201363037
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.7862846275019224,
+      "wasserstein": 0.16453460804753536
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.8287010666395878,
+      "wasserstein": 0.16339231553822553
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.7852312571448071,
+      "wasserstein": 0.12240056136629168
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6260485283780797,
+      "wasserstein": 0.21368631625134196
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.6613016721236079,
+      "wasserstein": 0.1449884758841817
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.697876986782045,
+      "wasserstein": 0.11081876093975468
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.6234104269415166,
+      "wasserstein": 0.1477234246029501
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.6322735466427892,
+      "wasserstein": 0.17709716067541684
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.6473444585005705,
+      "wasserstein": 0.14147509540404546
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.43126394196118484,
+      "wasserstein": 0.364802212816799
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.5508710799453906,
+      "wasserstein": 0.1766010267789819
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.520260669771934,
+      "wasserstein": 0.16399592275184535
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6095816811354247,
+      "wasserstein": 0.20523197380477284
+    },
+    {
+      "source": "gpt-4o-2024-05-13-tool_filter",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.47696153417346565,
+      "wasserstein": 0.39011472730164004
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.4584527186314034,
+      "wasserstein": 0.3814201346740628
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.31946446755354974,
+      "wasserstein": 0.3726512023736323
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.4720578692665007,
+      "wasserstein": 0.22557873884087346
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.5034731335630885,
+      "wasserstein": 0.36369597279856797
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.4687233946608947,
+      "wasserstein": 0.3089683477641731
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.3393567530597897,
+      "wasserstein": 0.4002313251590253
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.34696457959510835,
+      "wasserstein": 0.41155171467910406
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.3602732722644031,
+      "wasserstein": 0.4396510799054046
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.29695307766225454,
+      "wasserstein": 0.4074443310403851
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.4035776397997857,
+      "wasserstein": 0.37023097892115236
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.4109235117014901,
+      "wasserstein": 0.38672668057849613
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.4717724686666934,
+      "wasserstein": 0.320916259367612
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.5028878802658976,
+      "wasserstein": 0.3761661628364341
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.5764282667771791,
+      "wasserstein": 0.30638974197080365
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.5212571185168897,
+      "wasserstein": 0.3063638154445185
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.5405599205302738,
+      "wasserstein": 0.3104306694506569
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.43906693621866644,
+      "wasserstein": 0.364802212816799
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.4571741430462035,
+      "wasserstein": 0.29269281647342216
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5366971844761086,
+      "wasserstein": 0.3850895599422545
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.4316114260763225,
+      "wasserstein": 0.29419916708159405
+    },
+    {
+      "source": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.6967238096441015,
+      "wasserstein": 0.21002675662407091
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7585938641005123,
+      "wasserstein": 0.2188941050092225
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.7683786619178093,
+      "wasserstein": 0.22632430016384786
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.7485203774351366,
+      "wasserstein": 0.2730128740182631
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.7251520343724243,
+      "wasserstein": 0.19165784292055074
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.7751243402065771,
+      "wasserstein": 0.14933682164023224
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.7525336325765365,
+      "wasserstein": 0.25589419857105494
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.7719065988883081,
+      "wasserstein": 0.2600380123487743
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.7976938863878996,
+      "wasserstein": 0.28221980740647123
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.8371548800295677,
+      "wasserstein": 0.26606256521770866
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.8105184439381192,
+      "wasserstein": 0.21204547182344644
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.6876304856023784,
+      "wasserstein": 0.19505099726210498
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.7261892573084687,
+      "wasserstein": 0.16145669156663267
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.7298982698422857,
+      "wasserstein": 0.20773243867790558
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.7972529434168562,
+      "wasserstein": 0.13086945987319
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.7535316749364942,
+      "wasserstein": 0.11689790145045843
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.7940543876305958,
+      "wasserstein": 0.1386013922782585
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.6815126655854252,
+      "wasserstein": 0.1766010267789819
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.5426482981493586,
+      "wasserstein": 0.29269281647342216
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.541734976435422,
+      "wasserstein": 0.23252114845038407
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.6997137568573308,
+      "wasserstein": 0.13908598388222315
+    },
+    {
+      "source": "gpt-4o-mini-2024-07-18",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.6128672793747323,
+      "wasserstein": 0.3297118967117689
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7121569286223085,
+      "wasserstein": 0.14261549670533694
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.739560620458117,
+      "wasserstein": 0.10993811861437275
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.6212044499196383,
+      "wasserstein": 0.3324624841395364
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.5855265873556728,
+      "wasserstein": 0.19913051036066823
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.6365315751499961,
+      "wasserstein": 0.17739281944276977
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.6405833233691883,
+      "wasserstein": 0.2266513926702125
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.6816718621141635,
+      "wasserstein": 0.14441416334097845
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.6715350325128596,
+      "wasserstein": 0.1658751104589604
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.8108355225275273,
+      "wasserstein": 0.1535987004070669
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.7575593070942548,
+      "wasserstein": 0.12058941252336831
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.4674964028347216,
+      "wasserstein": 0.1972181220467029
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.5653499620995049,
+      "wasserstein": 0.18542187577681635
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.6245534528166132,
+      "wasserstein": 0.1391674912120341
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.5499132329033876,
+      "wasserstein": 0.1974617061480195
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.5740713783212839,
+      "wasserstein": 0.22198412499238787
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.5572347011169417,
+      "wasserstein": 0.20026989157464445
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.6905396998742163,
+      "wasserstein": 0.16399592275184535
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.4747890210708344,
+      "wasserstein": 0.3850895599422545
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.5031458739328981,
+      "wasserstein": 0.23252114845038407
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.5506850437118949,
+      "wasserstein": 0.24015494120090072
+    },
+    {
+      "source": "meta-llama_Llama-3-70b-chat-hf",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.573848535900648,
+      "wasserstein": 0.4301487938272346
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.7095017840477019,
+      "wasserstein": 0.23901972880130162
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.7310487392833855,
+      "wasserstein": 0.22824195433368125
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.670548945583638,
+      "wasserstein": 0.2968787992600707
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.650357548498478,
+      "wasserstein": 0.18687300124828146
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.6846913923065239,
+      "wasserstein": 0.1478972985381514
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.6529181497300115,
+      "wasserstein": 0.26862869428219066
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.6536305933286312,
+      "wasserstein": 0.2620116261274576
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.7152923171104989,
+      "wasserstein": 0.2801498892287266
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.7833116332611745,
+      "wasserstein": 0.26611107171255477
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.7780693768700091,
+      "wasserstein": 0.22634003883344023
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.621473728646498,
+      "wasserstein": 0.2655711483927689
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.6223218950490881,
+      "wasserstein": 0.15423560150010437
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.6977832637107113,
+      "wasserstein": 0.21923531668604998
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.5781344315630854,
+      "wasserstein": 0.14828808925606646
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.6633178241929836,
+      "wasserstein": 0.173728950033046
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.5963844626464269,
+      "wasserstein": 0.15388868375437478
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.7238321670442345,
+      "wasserstein": 0.20523197380477284
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.5691135062357227,
+      "wasserstein": 0.29419916708159405
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.6389733074526258,
+      "wasserstein": 0.13908598388222315
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5791410619647539,
+      "wasserstein": 0.24015494120090072
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct",
+      "target": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "auroc": 0.7309033276733644,
+      "wasserstein": 0.31395142962692996
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "claude-3-5-sonnet-20240620",
+      "auroc": 0.6833212562024478,
+      "wasserstein": 0.42045382654106994
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "claude-3-7-sonnet-20250219",
+      "auroc": 0.5720824211968372,
+      "wasserstein": 0.4191020062723618
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "claude-3-haiku-20240307",
+      "auroc": 0.5722112718345432,
+      "wasserstein": 0.2642154770885956
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "claude-3-opus-20240229",
+      "auroc": 0.545419368237959,
+      "wasserstein": 0.40491520674613596
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "claude-3-sonnet-20240229",
+      "auroc": 0.6675762085137086,
+      "wasserstein": 0.3602060858136789
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gemini-1.5-flash-001",
+      "auroc": 0.5925623125744321,
+      "wasserstein": 0.45655358809521046
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gemini-1.5-pro-001",
+      "auroc": 0.6266768041846194,
+      "wasserstein": 0.45545929644682914
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gemini-1.5-pro-002",
+      "auroc": 0.6045686876152507,
+      "wasserstein": 0.4742575079607116
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gemini-2.0-flash-001",
+      "auroc": 0.6566776508682339,
+      "wasserstein": 0.4501108646061159
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gemini-2.0-flash-exp",
+      "auroc": 0.6839108240573886,
+      "wasserstein": 0.40125699075105414
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gpt-3.5-turbo-0125",
+      "auroc": 0.4545679807487441,
+      "wasserstein": 0.43329268079320604
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gpt-4-0125-preview",
+      "auroc": 0.624743319961698,
+      "wasserstein": 0.3481029619599038
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gpt-4-turbo-2024-04-09",
+      "auroc": 0.5841141737469059,
+      "wasserstein": 0.40504709690354074
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gpt-4o-2024-05-13",
+      "auroc": 0.5969449747880595,
+      "wasserstein": 0.3425507367452783
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gpt-4o-2024-05-13-repeat_user_prompt",
+      "auroc": 0.5681482075032418,
+      "wasserstein": 0.3645390823840928
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+      "auroc": 0.5904457619429563,
+      "wasserstein": 0.3469205042764354
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gpt-4o-2024-05-13-tool_filter",
+      "auroc": 0.5381106333280246,
+      "wasserstein": 0.39011472730164004
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gpt-4o-2024-05-13-transformers_pi_detector",
+      "auroc": 0.670056448058834,
+      "wasserstein": 0.21002675662407091
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "gpt-4o-mini-2024-07-18",
+      "auroc": 0.540229397387327,
+      "wasserstein": 0.3297118967117689
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "meta-llama_Llama-3-70b-chat-hf",
+      "auroc": 0.5700858685885094,
+      "wasserstein": 0.4301487938272346
+    },
+    {
+      "source": "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt",
+      "target": "meta-llama_Llama-3.3-70B-Instruct",
+      "auroc": 0.7138966186446287,
+      "wasserstein": 0.31395142962692996
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "threshold": 0.2,
+  "seed": 0,
+  "datasets": {
+    "synthetic": {
+      "n_clean": 2000,
+      "meets_min_traces": true,
+      "lengths": {
+        "median": 28.0,
+        "share_below_10": 0.113
+      },
+      "features": {
+        "trace_length": {
+          "std_shift": -0.3579405166841203,
+          "tied_r2": true,
+          "predicted_sign": -1
+        },
+        "low_diversity": {
+          "std_shift": -0.4492627639012674,
+          "tied_r2": true,
+          "predicted_sign": -1
+        },
+        "repeat_rate": {
+          "std_shift": -0.06075560406105784,
+          "tied_r2": false,
+          "predicted_sign": 0
+        },
+        "mean_arg_length": {
+          "std_shift": 0.3680460265339753,
+          "tied_r2": true,
+          "predicted_sign": 1
+        },
+        "arg_diversity": {
+          "std_shift": 0.5213208712569999,
+          "tied_r2": true,
+          "predicted_sign": 1
+        },
+        "arg_empty_rate": {
+          "std_shift": -0.25006484725940775,
+          "tied_r2": true,
+          "predicted_sign": -1
+        }
+      }
+    },
+    "toolbench": {
+      "n_clean": 5000,
+      "meets_min_traces": true,
+      "lengths": {
+        "median": 3.0,
+        "share_below_10": 1.0
+      },
+      "features": {
+        "trace_length": {
+          "std_shift": 1.5946468274858807,
+          "tied_r2": true,
+          "predicted_sign": 1
+        },
+        "low_diversity": {
+          "std_shift": -0.3259536282704383,
+          "tied_r2": true,
+          "predicted_sign": -1
+        },
+        "repeat_rate": {
+          "std_shift": -0.4428664400302661,
+          "tied_r2": true,
+          "predicted_sign": -1
+        },
+        "mean_arg_length": {
+          "std_shift": 0.05085522823963249,
+          "tied_r2": false,
+          "predicted_sign": 0
+        },
+        "arg_diversity": {
+          "std_shift": 0.6708280588950913,
+          "tied_r2": true,
+          "predicted_sign": 1
+        },
+        "arg_empty_rate": {
+          "std_shift": -0.6316773943499107,
+          "tied_r2": true,
+          "predicted_sign": -1
+        }
+      }
+    },
+    "toolace": {
+      "n_clean": 2563,
+      "meets_min_traces": true,
+      "lengths": {
+        "median": 3.0,
+        "share_below_10": 0.999219664455716
+      },
+      "features": {
+        "trace_length": {
+          "std_shift": 0.0,
+          "tied_r2": false,
+          "predicted_sign": 0
+        },
+        "low_diversity": {
+          "std_shift": -0.4653305972689012,
+          "tied_r2": true,
+          "predicted_sign": -1
+        },
+        "repeat_rate": {
+          "std_shift": -0.5649476617120798,
+          "tied_r2": true,
+          "predicted_sign": -1
+        },
+        "mean_arg_length": {
+          "std_shift": -0.12010388329679329,
+          "tied_r2": false,
+          "predicted_sign": 0
+        },
+        "arg_diversity": {
+          "std_shift": -0.6394221194144125,
+          "tied_r2": true,
+          "predicted_sign": -1
+        },
+        "arg_empty_rate": {
+          "std_shift": 0.45333639731058034,
+          "tied_r2": true,
+          "predicted_sign": 1
+        }
+      }
+    },
+    "apibank": {
+      "n_clean": 5000,
+      "meets_min_traces": true,
+      "lengths": {
+        "median": 4.0,
+        "share_below_10": 1.0
+      },
+      "features": {
+        "trace_length": {
+          "std_shift": 0.0,
+          "tied_r2": false,
+          "predicted_sign": 0
+        },
+        "low_diversity": {
+          "std_shift": -0.4662780722111736,
+          "tied_r2": true,
+          "predicted_sign": -1
+        },
+        "repeat_rate": {
+          "std_shift": -0.113935510723551,
+          "tied_r2": false,
+          "predicted_sign": 0
+        },
+        "mean_arg_length": {
+          "std_shift": -0.3426089128052172,
+          "tied_r2": true,
+          "predicted_sign": -1
+        },
+        "arg_diversity": {
+          "std_shift": -0.7353351490605281,
+          "tied_r2": true,
+          "predicted_sign": -1
+        },
+        "arg_empty_rate": {
+          "std_shift": 0.44886171356397025,
+          "tied_r2": true,
+          "predicted_sign": 1
+        }
+      }
+    }
+  }
+}

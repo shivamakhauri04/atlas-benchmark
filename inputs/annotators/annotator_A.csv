@@ -1,0 +1,73 @@
+dataset,feature,rule,predicted_sign,justification
+synthetic,trace_length,R2,-1,Injection prefix shrinks long traces below typical length
+synthetic,low_diversity,free,0,Pattern tool composition unknown cannot infer diversity shift
+synthetic,repeat_rate,free,0,Pattern repeat structure not visible in read range
+synthetic,mean_arg_length,free,0,Pattern arg strings not shown in read range
+synthetic,arg_diversity,free,0,Pattern arg uniqueness unknown from available code
+synthetic,arg_empty_rate,free,0,Pattern arg emptiness unknown from available code
+toolbench,trace_length,R2,1,Short base traces padded above typical length by injection
+toolbench,low_diversity,free,0,Pattern tool composition unknown cannot infer diversity shift
+toolbench,repeat_rate,free,0,Pattern repeat structure not visible in read range
+toolbench,mean_arg_length,free,0,Pattern arg strings not shown in read range
+toolbench,arg_diversity,free,0,Pattern arg uniqueness unknown from available code
+toolbench,arg_empty_rate,free,0,Pattern arg emptiness unknown from available code
+toolace,trace_length,free,0,length preserved by injector by design
+toolace,low_diversity,R2,-1,wrong tool swap raises unique tool count
+toolace,repeat_rate,R2,-1,random tool swap breaks adjacent repeats
+toolace,mean_arg_length,R2,-1,corruption truncates or empties args shortens length
+toolace,arg_diversity,R2,-1,scramble and corruption duplicate arg strings
+toolace,arg_empty_rate,R1,1,corruption sets args empty directly
+apibank,trace_length,free,0,length preserved by injector by design
+apibank,low_diversity,R2,-1,wrong tool swap raises unique tool count
+apibank,repeat_rate,R2,-1,random tool swap breaks adjacent repeats
+apibank,mean_arg_length,R2,-1,corruption truncates or empties args shortens length
+apibank,arg_diversity,R2,-1,scramble and corruption duplicate arg strings
+apibank,arg_empty_rate,R1,1,corruption sets args empty directly
+injecagent,trace_length,R3,1,attack adds attacker-tool actions beyond fixed benign length
+injecagent,low_diversity,free,0,both classes mostly yield constant zero diversity
+injecagent,repeat_rate,free,0,adjacent repeats rare and unconstrained by construction
+injecagent,mean_arg_length,R3,-1,added attacker actions dilute mean toward empty args
+injecagent,arg_diversity,R1,-1,repeated hardcoded empty args lower uniqueness ratio
+injecagent,arg_empty_rate,R1,1,non-first actions hardcoded to empty args raises rate
+swe_agent,trace_length,free,0,solved label independent of extracted action count
+swe_agent,low_diversity,free,0,solved label independent of tool diversity extraction
+swe_agent,repeat_rate,free,0,solved label independent of adjacent repeat extraction
+swe_agent,mean_arg_length,free,0,solved label independent of parsed arg length
+swe_agent,arg_diversity,free,0,solved label independent of parsed arg uniqueness
+swe_agent,arg_empty_rate,free,0,solved label independent of parsed arg emptiness
+trail,trace_length,R1,-1,error_frac denominator is trace_length itself
+trail,low_diversity,0,0,no construction link found
+trail,repeat_rate,0,0,no construction link found
+trail,mean_arg_length,0,0,no construction link found
+trail,arg_diversity,0,0,no construction link found
+trail,arg_empty_rate,0,0,no construction link found
+agentdojo,trace_length,R3,1,success entails extra injected action executed
+agentdojo,low_diversity,0,0,no stated action-identity link
+agentdojo,repeat_rate,0,0,no stated action-identity link
+agentdojo,mean_arg_length,0,0,no stated argument link
+agentdojo,arg_diversity,0,0,no stated argument link
+agentdojo,arg_empty_rate,0,0,no stated argument link
+stabletoolbench,trace_length,0,0,win is external judgment not length formula
+stabletoolbench,low_diversity,0,0,no construction link found
+stabletoolbench,repeat_rate,0,0,no construction link found
+stabletoolbench,mean_arg_length,0,0,no construction link found
+stabletoolbench,arg_diversity,0,0,no construction link found
+stabletoolbench,arg_empty_rate,0,0,no construction link found
+atbench,trace_length,0,0,label is external dataset field not formula
+atbench,low_diversity,0,0,no construction link found
+atbench,repeat_rate,0,0,no construction link found
+atbench,mean_arg_length,0,0,no construction link found
+atbench,arg_diversity,0,0,no construction link found
+atbench,arg_empty_rate,0,0,no construction link found
+rjudge,trace_length,0,0,label is external item field not formula
+rjudge,low_diversity,0,0,no construction link found
+rjudge,repeat_rate,0,0,no construction link found
+rjudge,mean_arg_length,0,0,no construction link found
+rjudge,arg_diversity,0,0,no construction link found
+rjudge,arg_empty_rate,0,0,no construction link found
+agentharm,trace_length,0,0,paired design controls tool sequence length
+agentharm,low_diversity,0,0,paired design controls tool sequence
+agentharm,repeat_rate,0,0,paired design controls tool sequence
+agentharm,mean_arg_length,0,0,args constant per trace not label-driven
+agentharm,arg_diversity,0,0,equals 1 over trace_length regardless label
+agentharm,arg_empty_rate,0,0,args constant per trace not label-driven

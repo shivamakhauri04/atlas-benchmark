@@ -1,0 +1,296 @@
+{
+  "n_cells": 72,
+  "missing_cells": {
+    "authors": [],
+    "A": [],
+    "B": []
+  },
+  "fleiss_kappa_sign": 0.33163451037495445,
+  "fleiss_kappa_tied": 0.258181818181818,
+  "headline_uses": "annotator_majority",
+  "n_tied": {
+    "authors": 21,
+    "A": 18,
+    "B": 27
+  },
+  "annotator_consensus_sign": {
+    "agentdojo/arg_diversity": 0,
+    "agentdojo/arg_empty_rate": 0,
+    "agentdojo/low_diversity": 0,
+    "agentdojo/mean_arg_length": 0,
+    "agentdojo/repeat_rate": 0,
+    "agentdojo/trace_length": 1,
+    "agentharm/arg_diversity": 0,
+    "agentharm/arg_empty_rate": 0,
+    "agentharm/low_diversity": 0,
+    "agentharm/mean_arg_length": 0,
+    "agentharm/repeat_rate": 0,
+    "agentharm/trace_length": 0,
+    "apibank/arg_diversity": -1,
+    "apibank/arg_empty_rate": 1,
+    "apibank/low_diversity": 0,
+    "apibank/mean_arg_length": -1,
+    "apibank/repeat_rate": 0,
+    "apibank/trace_length": 0,
+    "atbench/arg_diversity": 0,
+    "atbench/arg_empty_rate": 0,
+    "atbench/low_diversity": 0,
+    "atbench/mean_arg_length": 0,
+    "atbench/repeat_rate": 0,
+    "atbench/trace_length": 0,
+    "injecagent/arg_diversity": -1,
+    "injecagent/arg_empty_rate": 1,
+    "injecagent/low_diversity": 0,
+    "injecagent/mean_arg_length": -1,
+    "injecagent/repeat_rate": 0,
+    "injecagent/trace_length": 1,
+    "rjudge/arg_diversity": 0,
+    "rjudge/arg_empty_rate": 0,
+    "rjudge/low_diversity": 0,
+    "rjudge/mean_arg_length": 0,
+    "rjudge/repeat_rate": 0,
+    "rjudge/trace_length": 0,
+    "stabletoolbench/arg_diversity": 0,
+    "stabletoolbench/arg_empty_rate": 0,
+    "stabletoolbench/low_diversity": 0,
+    "stabletoolbench/mean_arg_length": 0,
+    "stabletoolbench/repeat_rate": 0,
+    "stabletoolbench/trace_length": 0,
+    "swe_agent/arg_diversity": 0,
+    "swe_agent/arg_empty_rate": 0,
+    "swe_agent/low_diversity": 0,
+    "swe_agent/mean_arg_length": 0,
+    "swe_agent/repeat_rate": 0,
+    "swe_agent/trace_length": 0,
+    "synthetic/arg_diversity": 0,
+    "synthetic/arg_empty_rate": 0,
+    "synthetic/low_diversity": 0,
+    "synthetic/mean_arg_length": 0,
+    "synthetic/repeat_rate": 0,
+    "synthetic/trace_length": 0,
+    "toolace/arg_diversity": -1,
+    "toolace/arg_empty_rate": 1,
+    "toolace/low_diversity": 0,
+    "toolace/mean_arg_length": -1,
+    "toolace/repeat_rate": 0,
+    "toolace/trace_length": 0,
+    "toolbench/arg_diversity": 0,
+    "toolbench/arg_empty_rate": 0,
+    "toolbench/low_diversity": 0,
+    "toolbench/mean_arg_length": 0,
+    "toolbench/repeat_rate": 0,
+    "toolbench/trace_length": 0,
+    "trail/arg_diversity": 0,
+    "trail/arg_empty_rate": 0,
+    "trail/low_diversity": 0,
+    "trail/mean_arg_length": 0,
+    "trail/repeat_rate": 0,
+    "trail/trace_length": -1
+  },
+  "disagreements": [
+    {
+      "cell": "agentdojo/arg_empty_rate",
+      "authors": 0,
+      "A": 0,
+      "B": -1
+    },
+    {
+      "cell": "agentdojo/low_diversity",
+      "authors": 0,
+      "A": 0,
+      "B": -1
+    },
+    {
+      "cell": "agentdojo/mean_arg_length",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "apibank/low_diversity",
+      "authors": -1,
+      "A": -1,
+      "B": 0
+    },
+    {
+      "cell": "apibank/repeat_rate",
+      "authors": 0,
+      "A": -1,
+      "B": 0
+    },
+    {
+      "cell": "atbench/mean_arg_length",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "atbench/trace_length",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "injecagent/arg_diversity",
+      "authors": 0,
+      "A": -1,
+      "B": -1
+    },
+    {
+      "cell": "injecagent/arg_empty_rate",
+      "authors": 0,
+      "A": 1,
+      "B": 1
+    },
+    {
+      "cell": "injecagent/mean_arg_length",
+      "authors": 0,
+      "A": -1,
+      "B": -1
+    },
+    {
+      "cell": "injecagent/trace_length",
+      "authors": 0,
+      "A": 1,
+      "B": 1
+    },
+    {
+      "cell": "rjudge/mean_arg_length",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "rjudge/trace_length",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "stabletoolbench/arg_empty_rate",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "stabletoolbench/repeat_rate",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "stabletoolbench/trace_length",
+      "authors": 1,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "swe_agent/repeat_rate",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "swe_agent/trace_length",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "synthetic/arg_diversity",
+      "authors": 1,
+      "A": 0,
+      "B": 0
+    },
+    {
+      "cell": "synthetic/arg_empty_rate",
+      "authors": -1,
+      "A": 0,
+      "B": 0
+    },
+    {
+      "cell": "synthetic/low_diversity",
+      "authors": -1,
+      "A": 0,
+      "B": 0
+    },
+    {
+      "cell": "synthetic/mean_arg_length",
+      "authors": 1,
+      "A": 0,
+      "B": 0
+    },
+    {
+      "cell": "synthetic/trace_length",
+      "authors": -1,
+      "A": -1,
+      "B": 0
+    },
+    {
+      "cell": "toolace/low_diversity",
+      "authors": -1,
+      "A": -1,
+      "B": 0
+    },
+    {
+      "cell": "toolace/mean_arg_length",
+      "authors": 0,
+      "A": -1,
+      "B": -1
+    },
+    {
+      "cell": "toolace/repeat_rate",
+      "authors": -1,
+      "A": -1,
+      "B": 0
+    },
+    {
+      "cell": "toolbench/arg_diversity",
+      "authors": 1,
+      "A": 0,
+      "B": 0
+    },
+    {
+      "cell": "toolbench/arg_empty_rate",
+      "authors": -1,
+      "A": 0,
+      "B": 0
+    },
+    {
+      "cell": "toolbench/low_diversity",
+      "authors": -1,
+      "A": 0,
+      "B": 0
+    },
+    {
+      "cell": "toolbench/repeat_rate",
+      "authors": -1,
+      "A": 0,
+      "B": 0
+    },
+    {
+      "cell": "toolbench/trace_length",
+      "authors": 1,
+      "A": 1,
+      "B": 0
+    },
+    {
+      "cell": "trail/arg_empty_rate",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "trail/low_diversity",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    },
+    {
+      "cell": "trail/repeat_rate",
+      "authors": 0,
+      "A": 0,
+      "B": 1
+    }
+  ]
+}

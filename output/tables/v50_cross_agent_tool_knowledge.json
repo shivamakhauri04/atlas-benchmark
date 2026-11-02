@@ -1,0 +1,61 @@
+{
+  "attack": "tool_knowledge",
+  "n_configurations": 1,
+  "configurations": [
+    "gpt-4o-2024-05-13"
+  ],
+  "tau=0.1": {
+    "cross": NaN,
+    "within": 0.0,
+    "pair_bootstrap_ci95": [
+      NaN,
+      NaN
+    ],
+    "different_model": {
+      "rate": null,
+      "n_pairs": 0,
+      "ci95": null
+    },
+    "same_model_scaffold": {
+      "rate": null,
+      "n_pairs": 0,
+      "ci95": null
+    }
+  },
+  "tau=0.2": {
+    "cross": NaN,
+    "within": 0.0,
+    "pair_bootstrap_ci95": [
+      NaN,
+      NaN
+    ],
+    "different_model": {
+      "rate": null,
+      "n_pairs": 0,
+      "ci95": null
+    },
+    "same_model_scaffold": {
+      "rate": null,
+      "n_pairs": 0,
+      "ci95": null
+    }
+  },
+  "tau=0.3": {
+    "cross": NaN,
+    "within": 0.0,
+    "pair_bootstrap_ci95": [
+      NaN,
+      NaN
+    ],
+    "different_model": {
+      "rate": null,
+      "n_pairs": 0,
+      "ci95": null
+    },
+    "same_model_scaffold": {
+      "rate": null,
+      "n_pairs": 0,
+      "ci95": null
+    }
+  }
+}

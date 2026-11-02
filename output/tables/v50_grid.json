@@ -1,0 +1,7166 @@
+{
+  "grid": [
+    {
+      "source": "agentdojo",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5279481404481403,
+      "auroc_std": 0.0636007529748286
+    },
+    {
+      "source": "agentdojo",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4974084661584661,
+      "auroc_std": 0.05966370128649499
+    },
+    {
+      "source": "agentdojo",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5381049318549318,
+      "auroc_std": 0.06137202323919057
+    },
+    {
+      "source": "agentdojo",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.48203106953106956,
+      "auroc_std": 0.04882631594818002
+    },
+    {
+      "source": "agentdojo",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6255933818433819,
+      "auroc_std": 0.07042134914701675
+    },
+    {
+      "source": "agentdojo",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4528615153615153,
+      "auroc_std": 0.09400148570629722
+    },
+    {
+      "source": "agentdojo",
+      "target": "trail",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.08604519774011299,
+      "auroc_std": 0.02957782252472873
+    },
+    {
+      "source": "agentdojo",
+      "target": "trail",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.15,
+      "auroc_std": 0.09363450198690235
+    },
+    {
+      "source": "agentdojo",
+      "target": "trail",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.37344632768361585,
+      "auroc_std": 0.07510852692481122
+    },
+    {
+      "source": "agentdojo",
+      "target": "trail",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.3110169491525424,
+      "auroc_std": 0.09382963012444986
+    },
+    {
+      "source": "agentdojo",
+      "target": "trail",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5845197740112994,
+      "auroc_std": 0.12500495058663594
+    },
+    {
+      "source": "agentdojo",
+      "target": "trail",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6354237288135594,
+      "auroc_std": 0.11186613306891474
+    },
+    {
+      "source": "agentdojo",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5429742835349243,
+      "auroc_std": 0.022786719831931916
+    },
+    {
+      "source": "agentdojo",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5497497696811198,
+      "auroc_std": 0.015572648933339699
+    },
+    {
+      "source": "agentdojo",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.3628207871457299,
+      "auroc_std": 0.01820485311403491
+    },
+    {
+      "source": "agentdojo",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.3706997236173438,
+      "auroc_std": 0.028925679723246767
+    },
+    {
+      "source": "agentdojo",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.45339881323863007,
+      "auroc_std": 0.04724538063043099
+    },
+    {
+      "source": "agentdojo",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5803973867475012,
+      "auroc_std": 0.07733496910040268
+    },
+    {
+      "source": "agentdojo",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5120706799028477,
+      "auroc_std": 0.030524485177258667
+    },
+    {
+      "source": "agentdojo",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4484269809444634,
+      "auroc_std": 0.016720350488790958
+    },
+    {
+      "source": "agentdojo",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5069294342021615,
+      "auroc_std": 0.03908390847716829
+    },
+    {
+      "source": "agentdojo",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5338386555169772,
+      "auroc_std": 0.03710145994214369
+    },
+    {
+      "source": "agentdojo",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.47698298205291206,
+      "auroc_std": 0.017290665630085317
+    },
+    {
+      "source": "agentdojo",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4857898511744666,
+      "auroc_std": 0.021046930851908348
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8458379657888617,
+      "auroc_std": 0.0380020246760252
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5723544137309615,
+      "auroc_std": 0.021877372558791575
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.45958164384955236,
+      "auroc_std": 0.05725527036574226
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4768575238344379,
+      "auroc_std": 0.04809819981376119
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6280230859783746,
+      "auroc_std": 0.0311097097217036
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4905586014707592,
+      "auroc_std": 0.06812436593376686
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.34642416079971994,
+      "auroc_std": 0.014994703643715199
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.3141988214244039,
+      "auroc_std": 0.01953186336349081
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.3408825703061185,
+      "auroc_std": 0.036429318838694436
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.324732583920028,
+      "auroc_std": 0.02647260047248483
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.358848554980746,
+      "auroc_std": 0.040667151002143735
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.29009661013652804,
+      "auroc_std": 0.02966166144291529
+    },
+    {
+      "source": "agentdojo",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.33608614431164235,
+      "auroc_std": 0.012469267604660234
+    },
+    {
+      "source": "agentdojo",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.31108986277113765,
+      "auroc_std": 0.014589846568679822
+    },
+    {
+      "source": "agentdojo",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.34344895971668876,
+      "auroc_std": 0.01121993662542966
+    },
+    {
+      "source": "agentdojo",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.321305621956618,
+      "auroc_std": 0.012584372663890238
+    },
+    {
+      "source": "agentdojo",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.3733270473660912,
+      "auroc_std": 0.015325431759945222
+    },
+    {
+      "source": "agentdojo",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.30620531208499335,
+      "auroc_std": 0.01653272649073907
+    },
+    {
+      "source": "agentdojo",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.3224857685009488,
+      "auroc_std": 0.11227144672563108
+    },
+    {
+      "source": "agentdojo",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.2596985030571369,
+      "auroc_std": 0.024183188053627586
+    },
+    {
+      "source": "agentdojo",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.670293063461944,
+      "auroc_std": 0.11458664349558097
+    },
+    {
+      "source": "agentdojo",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.6329590976175415,
+      "auroc_std": 0.09092790661604888
+    },
+    {
+      "source": "agentdojo",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7758907864220956,
+      "auroc_std": 0.020296209344588312
+    },
+    {
+      "source": "agentdojo",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.7619070208728653,
+      "auroc_std": 0.01638595803594118
+    },
+    {
+      "source": "agentdojo",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4880294421487602,
+      "auroc_std": 0.042422514686452105
+    },
+    {
+      "source": "agentdojo",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4916709710743802,
+      "auroc_std": 0.028533811268486357
+    },
+    {
+      "source": "agentdojo",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.49688791322314046,
+      "auroc_std": 0.023858622180139104
+    },
+    {
+      "source": "agentdojo",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.49065728305785133,
+      "auroc_std": 0.03019127104185765
+    },
+    {
+      "source": "agentdojo",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4894111570247934,
+      "auroc_std": 0.022580460911843493
+    },
+    {
+      "source": "agentdojo",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.48104338842975203,
+      "auroc_std": 0.03319905539033242
+    },
+    {
+      "source": "agentdojo",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8942783999999999,
+      "auroc_std": 0.02246872565678789
+    },
+    {
+      "source": "agentdojo",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.539072,
+      "auroc_std": 0.02230161708935025
+    },
+    {
+      "source": "agentdojo",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6390336,
+      "auroc_std": 0.04749120161714167
+    },
+    {
+      "source": "agentdojo",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.49074560000000006,
+      "auroc_std": 0.054025337202464545
+    },
+    {
+      "source": "agentdojo",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7066687999999999,
+      "auroc_std": 0.0533682242777479
+    },
+    {
+      "source": "agentdojo",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4531488,
+      "auroc_std": 0.06471256038328262
+    },
+    {
+      "source": "agentdojo",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6807477678571427,
+      "auroc_std": 0.04634144011545314
+    },
+    {
+      "source": "agentdojo",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4098302396616541,
+      "auroc_std": 0.042281378159322765
+    },
+    {
+      "source": "agentdojo",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4564409069548872,
+      "auroc_std": 0.05507613280151366
+    },
+    {
+      "source": "agentdojo",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4768209586466165,
+      "auroc_std": 0.049061622033807865
+    },
+    {
+      "source": "agentdojo",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.47165472274436093,
+      "auroc_std": 0.11850671667500584
+    },
+    {
+      "source": "agentdojo",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.52421875,
+      "auroc_std": 0.03438478134764009
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.48732083333333326,
+      "auroc_std": 0.027559103469230937
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.47426666666666667,
+      "auroc_std": 0.020687902396220738
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5387187499999999,
+      "auroc_std": 0.05208936485909204
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.49369791666666674,
+      "auroc_std": 0.033929008618998224
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.49585833333333335,
+      "auroc_std": 0.02878705914652547
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.48594791666666665,
+      "auroc_std": 0.025226524514139887
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "trail",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.13519774011299432,
+      "auroc_std": 0.03085392411682424
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "trail",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.14129943502824857,
+      "auroc_std": 0.032404417646311516
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "trail",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.3007344632768362,
+      "auroc_std": 0.06799314733032986
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "trail",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.31711864406779666,
+      "auroc_std": 0.07929557158355853
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "trail",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.3576836158192091,
+      "auroc_std": 0.04380076271906982
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "trail",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.364406779661017,
+      "auroc_std": 0.057448487959843565
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5799524998266418,
+      "auroc_std": 0.01142639159659628
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5812197489771862,
+      "auroc_std": 0.011707927391373184
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.666410096387213,
+      "auroc_std": 0.008515489211355646
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.6684441835814834,
+      "auroc_std": 0.00888374893547277
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7276345012729453,
+      "auroc_std": 0.011463012634370235
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.7263148979167287,
+      "auroc_std": 0.009345949866637688
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.3853097951000049,
+      "auroc_std": 0.017413219813963855
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.3802582033351264,
+      "auroc_std": 0.01833161662630785
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.3561653381583451,
+      "auroc_std": 0.013722831643480777
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.3403479387745122,
+      "auroc_std": 0.017533553336847724
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.34616688672632734,
+      "auroc_std": 0.01756895358472158
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.3454749213490472,
+      "auroc_std": 0.023423379503775918
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.45624682086385293,
+      "auroc_std": 0.029330129607437246
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.38422094814556446,
+      "auroc_std": 0.010729427774341733
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5412630072084641,
+      "auroc_std": 0.040984246621677545
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.3544222692128822,
+      "auroc_std": 0.018868498587412134
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4277544035577258,
+      "auroc_std": 0.01878254330358157
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.30331656566096965,
+      "auroc_std": 0.011923229780647108
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.48083817923684313,
+      "auroc_std": 0.017547275397611396
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.48200338402893933,
+      "auroc_std": 0.017227154398208187
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5644608891827765,
+      "auroc_std": 0.036241971754135544
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5154994359951768,
+      "auroc_std": 0.029916378533282398
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.49850660274612013,
+      "auroc_std": 0.03150851017441697
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5027682426387647,
+      "auroc_std": 0.028025550184023088
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5793114652501108,
+      "auroc_std": 0.020741267764584997
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5803410358565737,
+      "auroc_std": 0.02018793690706132
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5503323594510847,
+      "auroc_std": 0.02405925839539401
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5513644090305444,
+      "auroc_std": 0.028486569420887318
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5836954404603807,
+      "auroc_std": 0.02436744015632401
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5745513058875609,
+      "auroc_std": 0.03049084323769406
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6146847986506431,
+      "auroc_std": 0.03497215068262089
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5905966687750369,
+      "auroc_std": 0.03436770233165956
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.7132089394897744,
+      "auroc_std": 0.026197634867634777
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.6577113641155388,
+      "auroc_std": 0.03875509420760013
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6873497786211258,
+      "auroc_std": 0.03893830902807744
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6328853046594982,
+      "auroc_std": 0.023812002937242352
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5101239669421488,
+      "auroc_std": 0.042634975013616114
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5073992768595043,
+      "auroc_std": 0.044801024032523507
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5032993285123967,
+      "auroc_std": 0.025609683225091703
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5046745867768594,
+      "auroc_std": 0.030185127968471268
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5106017561983471,
+      "auroc_std": 0.044498148147832144
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5099302685950413,
+      "auroc_std": 0.040080518715721596
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.49056640000000007,
+      "auroc_std": 0.03275977646810183
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.44924159999999996,
+      "auroc_std": 0.030211419467479517
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5881856000000002,
+      "auroc_std": 0.04010561876645217
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.49694400000000005,
+      "auroc_std": 0.036625663570780544
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6779040000000001,
+      "auroc_std": 0.03963828581561013
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.477072,
+      "auroc_std": 0.041143447322751166
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6502202772556391,
+      "auroc_std": 0.03748590303343476
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6387306156015038,
+      "auroc_std": 0.03699023810979813
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.633173754699248,
+      "auroc_std": 0.04444774053661596
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5972538768796992,
+      "auroc_std": 0.04051806247436666
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7462112312030074,
+      "auroc_std": 0.024686938947363755
+    },
+    {
+      "source": "stabletoolbench",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5985109257518798,
+      "auroc_std": 0.052471264109823
+    },
+    {
+      "source": "trail",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.3203958333333333,
+      "auroc_std": 0.058555805676911515
+    },
+    {
+      "source": "trail",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4128708333333333,
+      "auroc_std": 0.07022410295202544
+    },
+    {
+      "source": "trail",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5241604166666665,
+      "auroc_std": 0.028152713275223482
+    },
+    {
+      "source": "trail",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.53609375,
+      "auroc_std": 0.03323100079838855
+    },
+    {
+      "source": "trail",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5899333333333334,
+      "auroc_std": 0.05457588435177003
+    },
+    {
+      "source": "trail",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5192541666666666,
+      "auroc_std": 0.04326528390830994
+    },
+    {
+      "source": "trail",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.3878089628089628,
+      "auroc_std": 0.1593479602726514
+    },
+    {
+      "source": "trail",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.481859263109263,
+      "auroc_std": 0.17432963445772795
+    },
+    {
+      "source": "trail",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6026868214368214,
+      "auroc_std": 0.06389393981280508
+    },
+    {
+      "source": "trail",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.6827428389928389,
+      "auroc_std": 0.04722627991728089
+    },
+    {
+      "source": "trail",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5820541695541694,
+      "auroc_std": 0.16042183539703747
+    },
+    {
+      "source": "trail",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5935348810348811,
+      "auroc_std": 0.10378661033027635
+    },
+    {
+      "source": "trail",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5511797775070085,
+      "auroc_std": 0.061085750003196326
+    },
+    {
+      "source": "trail",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6000633005438497,
+      "auroc_std": 0.058606016295368664
+    },
+    {
+      "source": "trail",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5168446808721407,
+      "auroc_std": 0.05455509576362306
+    },
+    {
+      "source": "trail",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.548722052165988,
+      "auroc_std": 0.05411177348134691
+    },
+    {
+      "source": "trail",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6093374741200828,
+      "auroc_std": 0.055023585280247506
+    },
+    {
+      "source": "trail",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6215241661465918,
+      "auroc_std": 0.04401791112813126
+    },
+    {
+      "source": "trail",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4975084356203238,
+      "auroc_std": 0.047763178492084536
+    },
+    {
+      "source": "trail",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.49633885927592225,
+      "auroc_std": 0.05275465023429808
+    },
+    {
+      "source": "trail",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4433285246222309,
+      "auroc_std": 0.03183786142000709
+    },
+    {
+      "source": "trail",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.40863774919718976,
+      "auroc_std": 0.02572011704162736
+    },
+    {
+      "source": "trail",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4780963209284888,
+      "auroc_std": 0.03959559070684884
+    },
+    {
+      "source": "trail",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.47338745170913005,
+      "auroc_std": 0.040985045886714255
+    },
+    {
+      "source": "trail",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.11409020390070923,
+      "auroc_std": 0.0279054405868548
+    },
+    {
+      "source": "trail",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4316316780025578,
+      "auroc_std": 0.07456696848639616
+    },
+    {
+      "source": "trail",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.323986945558656,
+      "auroc_std": 0.026505418806573505
+    },
+    {
+      "source": "trail",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.41114241803278684,
+      "auroc_std": 0.029546708915901512
+    },
+    {
+      "source": "trail",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.32136306824787814,
+      "auroc_std": 0.057665192049048034
+    },
+    {
+      "source": "trail",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.36133897947913035,
+      "auroc_std": 0.05221645959702412
+    },
+    {
+      "source": "trail",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5127652281302268,
+      "auroc_std": 0.06932189162473117
+    },
+    {
+      "source": "trail",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5010307674355284,
+      "auroc_std": 0.10102336111712146
+    },
+    {
+      "source": "trail",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.43543287370181644,
+      "auroc_std": 0.06172469569445505
+    },
+    {
+      "source": "trail",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.3869948267143802,
+      "auroc_std": 0.05183083403757362
+    },
+    {
+      "source": "trail",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.41917519156715544,
+      "auroc_std": 0.04466981180018772
+    },
+    {
+      "source": "trail",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.39741967793379745,
+      "auroc_std": 0.04797662173012271
+    },
+    {
+      "source": "trail",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5837169544046038,
+      "auroc_std": 0.048927577045601925
+    },
+    {
+      "source": "trail",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6090583444001771,
+      "auroc_std": 0.0678914969344586
+    },
+    {
+      "source": "trail",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5669307658255865,
+      "auroc_std": 0.029062376647581805
+    },
+    {
+      "source": "trail",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5658032757857459,
+      "auroc_std": 0.03927260570009289
+    },
+    {
+      "source": "trail",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6198181496237274,
+      "auroc_std": 0.055856858281719164
+    },
+    {
+      "source": "trail",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6109951305887561,
+      "auroc_std": 0.05388545007268241
+    },
+    {
+      "source": "trail",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.33284840818047645,
+      "auroc_std": 0.13805414990820905
+    },
+    {
+      "source": "trail",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5808665401644528,
+      "auroc_std": 0.19726541571174566
+    },
+    {
+      "source": "trail",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.7272401433691756,
+      "auroc_std": 0.059451670311590925
+    },
+    {
+      "source": "trail",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.7336074214632089,
+      "auroc_std": 0.040271189099250565
+    },
+    {
+      "source": "trail",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6263598987982288,
+      "auroc_std": 0.10131716061730936
+    },
+    {
+      "source": "trail",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6331541218637993,
+      "auroc_std": 0.12880155174302985
+    },
+    {
+      "source": "trail",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5089746900826447,
+      "auroc_std": 0.0340753265084955
+    },
+    {
+      "source": "trail",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5022856404958678,
+      "auroc_std": 0.031174419606720745
+    },
+    {
+      "source": "trail",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4978886880165289,
+      "auroc_std": 0.022429381118640155
+    },
+    {
+      "source": "trail",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4934594524793388,
+      "auroc_std": 0.02319149895582574
+    },
+    {
+      "source": "trail",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.48644757231404956,
+      "auroc_std": 0.02947942695943632
+    },
+    {
+      "source": "trail",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5047778925619835,
+      "auroc_std": 0.039245301302638966
+    },
+    {
+      "source": "trail",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.19789439999999997,
+      "auroc_std": 0.04836665255152563
+    },
+    {
+      "source": "trail",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.555232,
+      "auroc_std": 0.044342650674040675
+    },
+    {
+      "source": "trail",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.2972416,
+      "auroc_std": 0.07765783814039637
+    },
+    {
+      "source": "trail",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.526416,
+      "auroc_std": 0.055132163302377316
+    },
+    {
+      "source": "trail",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4344799999999999,
+      "auroc_std": 0.1253922033429511
+    },
+    {
+      "source": "trail",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6026624,
+      "auroc_std": 0.06016545132748528
+    },
+    {
+      "source": "trail",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.1997209821428571,
+      "auroc_std": 0.06535003252884901
+    },
+    {
+      "source": "trail",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.3404928336466165,
+      "auroc_std": 0.05148474231929247
+    },
+    {
+      "source": "trail",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.47692669172932334,
+      "auroc_std": 0.11179059371984867
+    },
+    {
+      "source": "trail",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5461260573308272,
+      "auroc_std": 0.07615758883386393
+    },
+    {
+      "source": "trail",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.31084645206766914,
+      "auroc_std": 0.1645663555187167
+    },
+    {
+      "source": "trail",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.390686677631579,
+      "auroc_std": 0.06371956494587841
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6046458333333333,
+      "auroc_std": 0.0254127029013051
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5708708333333333,
+      "auroc_std": 0.02366902827125686
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4411666666666667,
+      "auroc_std": 0.05618808938635383
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.48860833333333337,
+      "auroc_std": 0.025314989246601603
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5250937500000001,
+      "auroc_std": 0.02337579516250018
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5456291666666666,
+      "auroc_std": 0.02273853267155896
+    },
+    {
+      "source": "swe_agent",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8461018711018712,
+      "auroc_std": 0.016650703717777673
+    },
+    {
+      "source": "swe_agent",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.8155679718179718,
+      "auroc_std": 0.026039834398582953
+    },
+    {
+      "source": "swe_agent",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.7114879302379302,
+      "auroc_std": 0.03923423449880939
+    },
+    {
+      "source": "swe_agent",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.7228184915684917,
+      "auroc_std": 0.03689821415182795
+    },
+    {
+      "source": "swe_agent",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.934381496881497,
+      "auroc_std": 0.018940021573852744
+    },
+    {
+      "source": "swe_agent",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.9403658466158467,
+      "auroc_std": 0.01867570510364887
+    },
+    {
+      "source": "swe_agent",
+      "target": "trail",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8011864406779662,
+      "auroc_std": 0.04295602499799748
+    },
+    {
+      "source": "swe_agent",
+      "target": "trail",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.859491525423729,
+      "auroc_std": 0.03385689561147378
+    },
+    {
+      "source": "swe_agent",
+      "target": "trail",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4638983050847457,
+      "auroc_std": 0.10208320410891025
+    },
+    {
+      "source": "swe_agent",
+      "target": "trail",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5477401129943502,
+      "auroc_std": 0.057412500542021884
+    },
+    {
+      "source": "swe_agent",
+      "target": "trail",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5648587570621468,
+      "auroc_std": 0.06571464257514521
+    },
+    {
+      "source": "swe_agent",
+      "target": "trail",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6230508474576271,
+      "auroc_std": 0.06772538631663909
+    },
+    {
+      "source": "swe_agent",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.37517890035372553,
+      "auroc_std": 0.019328462017263393
+    },
+    {
+      "source": "swe_agent",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.3490944952483414,
+      "auroc_std": 0.014786961163479903
+    },
+    {
+      "source": "swe_agent",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.42559375356578155,
+      "auroc_std": 0.031340920810247745
+    },
+    {
+      "source": "swe_agent",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.41838272450160563,
+      "auroc_std": 0.01876401133755518
+    },
+    {
+      "source": "swe_agent",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.30800528143185485,
+      "auroc_std": 0.01580610309173631
+    },
+    {
+      "source": "swe_agent",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.2930175884721339,
+      "auroc_std": 0.012268439346088688
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6656165525810952,
+      "auroc_std": 0.05870022820638157
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.30725715033135687,
+      "auroc_std": 0.01607247883089347
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5462616992210207,
+      "auroc_std": 0.04302968047550085
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4128989361702128,
+      "auroc_std": 0.04229176895817071
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.40199195587722364,
+      "auroc_std": 0.05023923529960194
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.32000376046389956,
+      "auroc_std": 0.025057910283766846
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.46541118868878606,
+      "auroc_std": 0.02509968062790276
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.48389912093041343,
+      "auroc_std": 0.022099162267443025
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5262602590532498,
+      "auroc_std": 0.03563660991425387
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4881366933758605,
+      "auroc_std": 0.019862140875149762
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4344188805476682,
+      "auroc_std": 0.01809015938452257
+    },
+    {
+      "source": "swe_agent",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.43812794157687973,
+      "auroc_std": 0.01787476305416599
+    },
+    {
+      "source": "swe_agent",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5744585214696769,
+      "auroc_std": 0.0308585314726259
+    },
+    {
+      "source": "swe_agent",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5839925630810093,
+      "auroc_std": 0.0192987112590679
+    },
+    {
+      "source": "swe_agent",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.544806463036742,
+      "auroc_std": 0.029607260290690014
+    },
+    {
+      "source": "swe_agent",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5907052678176183,
+      "auroc_std": 0.032978821038735125
+    },
+    {
+      "source": "swe_agent",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5018211598052236,
+      "auroc_std": 0.04006637204773683
+    },
+    {
+      "source": "swe_agent",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5048258521469676,
+      "auroc_std": 0.03359546585881109
+    },
+    {
+      "source": "swe_agent",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7652646004638415,
+      "auroc_std": 0.019039823524264105
+    },
+    {
+      "source": "swe_agent",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.7610162344507696,
+      "auroc_std": 0.019300312899835817
+    },
+    {
+      "source": "swe_agent",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.45004216740459635,
+      "auroc_std": 0.11277794302342266
+    },
+    {
+      "source": "swe_agent",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5406651908075057,
+      "auroc_std": 0.15274202913680068
+    },
+    {
+      "source": "swe_agent",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6368226860636728,
+      "auroc_std": 0.09078026166075463
+    },
+    {
+      "source": "swe_agent",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.48147269660552394,
+      "auroc_std": 0.11532741132234127
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5016270661157025,
+      "auroc_std": 0.02968895473808253
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5009555785123967,
+      "auroc_std": 0.026437657108774822
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5013623450413224,
+      "auroc_std": 0.026054318996450773
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5140302169421489,
+      "auroc_std": 0.019277285139267474
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5184077995867769,
+      "auroc_std": 0.029770335323541938
+    },
+    {
+      "source": "swe_agent",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5187370867768595,
+      "auroc_std": 0.030713753093725763
+    },
+    {
+      "source": "swe_agent",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8837760000000001,
+      "auroc_std": 0.026021911259552038
+    },
+    {
+      "source": "swe_agent",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4983744,
+      "auroc_std": 0.02513315854085993
+    },
+    {
+      "source": "swe_agent",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6898656000000001,
+      "auroc_std": 0.050099889315646205
+    },
+    {
+      "source": "swe_agent",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5809824,
+      "auroc_std": 0.04889953296136888
+    },
+    {
+      "source": "swe_agent",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7014016,
+      "auroc_std": 0.06841686929288711
+    },
+    {
+      "source": "swe_agent",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5598784,
+      "auroc_std": 0.031620148067964496
+    },
+    {
+      "source": "swe_agent",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7138363486842105,
+      "auroc_std": 0.029078632975640527
+    },
+    {
+      "source": "swe_agent",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.47646557800751876,
+      "auroc_std": 0.04719823240474679
+    },
+    {
+      "source": "swe_agent",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.595142152255639,
+      "auroc_std": 0.0860705392397076
+    },
+    {
+      "source": "swe_agent",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4142622180451128,
+      "auroc_std": 0.0482475645062592
+    },
+    {
+      "source": "swe_agent",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7245594454887218,
+      "auroc_std": 0.05145677999311044
+    },
+    {
+      "source": "swe_agent",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.47698543233082713,
+      "auroc_std": 0.03189419448653812
+    },
+    {
+      "source": "synthetic",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.63075,
+      "auroc_std": 0.03457582749873416
+    },
+    {
+      "source": "synthetic",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5691916666666667,
+      "auroc_std": 0.05532601357207814
+    },
+    {
+      "source": "synthetic",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5808770833333333,
+      "auroc_std": 0.046150240995292864
+    },
+    {
+      "source": "synthetic",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5384208333333332,
+      "auroc_std": 0.022522180039907337
+    },
+    {
+      "source": "synthetic",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.62708125,
+      "auroc_std": 0.02862466558817278
+    },
+    {
+      "source": "synthetic",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5260604166666668,
+      "auroc_std": 0.050730631780690996
+    },
+    {
+      "source": "synthetic",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.17152344652344653,
+      "auroc_std": 0.047097175777728074
+    },
+    {
+      "source": "synthetic",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.11302408177408177,
+      "auroc_std": 0.022604044349100613
+    },
+    {
+      "source": "synthetic",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.2400352275352275,
+      "auroc_std": 0.04628803882242213
+    },
+    {
+      "source": "synthetic",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.18372170247170247,
+      "auroc_std": 0.04232786437349533
+    },
+    {
+      "source": "synthetic",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.318494455994456,
+      "auroc_std": 0.05616533363585334
+    },
+    {
+      "source": "synthetic",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.127985677985678,
+      "auroc_std": 0.037620988453133664
+    },
+    {
+      "source": "synthetic",
+      "target": "trail",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.38468926553672317,
+      "auroc_std": 0.0825587674217724
+    },
+    {
+      "source": "synthetic",
+      "target": "trail",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5510169491525423,
+      "auroc_std": 0.10928138341143892
+    },
+    {
+      "source": "synthetic",
+      "target": "trail",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.33802259887005653,
+      "auroc_std": 0.06717133981156562
+    },
+    {
+      "source": "synthetic",
+      "target": "trail",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4596610169491525,
+      "auroc_std": 0.10230613556036755
+    },
+    {
+      "source": "synthetic",
+      "target": "trail",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.23875706214689268,
+      "auroc_std": 0.06666580483978035
+    },
+    {
+      "source": "synthetic",
+      "target": "trail",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.3381920903954802,
+      "auroc_std": 0.073169927543942
+    },
+    {
+      "source": "synthetic",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4437640048738446,
+      "auroc_std": 0.03117380398037184
+    },
+    {
+      "source": "synthetic",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.40480519480519483,
+      "auroc_std": 0.028835865976476003
+    },
+    {
+      "source": "synthetic",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.37333808830376336,
+      "auroc_std": 0.02005293828723117
+    },
+    {
+      "source": "synthetic",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.36902181342684776,
+      "auroc_std": 0.0229817437367943
+    },
+    {
+      "source": "synthetic",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.3586959988905069,
+      "auroc_std": 0.039951663536692675
+    },
+    {
+      "source": "synthetic",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.31374453921364676,
+      "auroc_std": 0.02853846727148781
+    },
+    {
+      "source": "synthetic",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8456326844262294,
+      "auroc_std": 0.02403782468369893
+    },
+    {
+      "source": "synthetic",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4271797974072783,
+      "auroc_std": 0.022381420972664504
+    },
+    {
+      "source": "synthetic",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.7487222597663064,
+      "auroc_std": 0.016572271914884314
+    },
+    {
+      "source": "synthetic",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.6024387607545634,
+      "auroc_std": 0.0512957206764709
+    },
+    {
+      "source": "synthetic",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.8687477291884665,
+      "auroc_std": 0.027952326879408417
+    },
+    {
+      "source": "synthetic",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6194473208057203,
+      "auroc_std": 0.047262198890515125
+    },
+    {
+      "source": "synthetic",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5011024835660663,
+      "auroc_std": 0.05012519805900579
+    },
+    {
+      "source": "synthetic",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5463675172118714,
+      "auroc_std": 0.07142501250219939
+    },
+    {
+      "source": "synthetic",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.465975436617527,
+      "auroc_std": 0.023666596318066165
+    },
+    {
+      "source": "synthetic",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.46194863666420316,
+      "auroc_std": 0.04903899401359691
+    },
+    {
+      "source": "synthetic",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.43676630751876777,
+      "auroc_std": 0.05066214076031755
+    },
+    {
+      "source": "synthetic",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4812927865727955,
+      "auroc_std": 0.042904697792001574
+    },
+    {
+      "source": "synthetic",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4556342629482072,
+      "auroc_std": 0.0417034100773273
+    },
+    {
+      "source": "synthetic",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5067282868525897,
+      "auroc_std": 0.052143593503106794
+    },
+    {
+      "source": "synthetic",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.43056476316954406,
+      "auroc_std": 0.024087820657639442
+    },
+    {
+      "source": "synthetic",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.46235493581230636,
+      "auroc_std": 0.024811008790808387
+    },
+    {
+      "source": "synthetic",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.40391279327135904,
+      "auroc_std": 0.03662542456440458
+    },
+    {
+      "source": "synthetic",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.436734395750332,
+      "auroc_std": 0.03508484271745381
+    },
+    {
+      "source": "synthetic",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.682911659287371,
+      "auroc_std": 0.05794114320303359
+    },
+    {
+      "source": "synthetic",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6440543959519293,
+      "auroc_std": 0.0945878161108463
+    },
+    {
+      "source": "synthetic",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.39280518659076524,
+      "auroc_std": 0.07013715102506511
+    },
+    {
+      "source": "synthetic",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.328336495888678,
+      "auroc_std": 0.049950539077351364
+    },
+    {
+      "source": "synthetic",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.27563778199451827,
+      "auroc_std": 0.05366686103543555
+    },
+    {
+      "source": "synthetic",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.2521505376344086,
+      "auroc_std": 0.023829082117059853
+    },
+    {
+      "source": "synthetic",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4965650826446281,
+      "auroc_std": 0.04677006309875154
+    },
+    {
+      "source": "synthetic",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.49488636363636357,
+      "auroc_std": 0.04560039047857629
+    },
+    {
+      "source": "synthetic",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5066438533057852,
+      "auroc_std": 0.02892909942199411
+    },
+    {
+      "source": "synthetic",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.49856663223140496,
+      "auroc_std": 0.03573472672234008
+    },
+    {
+      "source": "synthetic",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4955772210743802,
+      "auroc_std": 0.028785472341247374
+    },
+    {
+      "source": "synthetic",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.49337551652892564,
+      "auroc_std": 0.03631166660895342
+    },
+    {
+      "source": "synthetic",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7795008,
+      "auroc_std": 0.03644044789186871
+    },
+    {
+      "source": "synthetic",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5000384,
+      "auroc_std": 0.02960306077148104
+    },
+    {
+      "source": "synthetic",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.83696,
+      "auroc_std": 0.02981291467803844
+    },
+    {
+      "source": "synthetic",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4906656,
+      "auroc_std": 0.05082710619187367
+    },
+    {
+      "source": "synthetic",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.8972608,
+      "auroc_std": 0.019040958362435408
+    },
+    {
+      "source": "synthetic",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5673888,
+      "auroc_std": 0.03341193677954031
+    },
+    {
+      "source": "synthetic",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5716077302631579,
+      "auroc_std": 0.0653462150032923
+    },
+    {
+      "source": "synthetic",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.44431097274436093,
+      "auroc_std": 0.05187078571679214
+    },
+    {
+      "source": "synthetic",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6902314379699248,
+      "auroc_std": 0.04777282152033221
+    },
+    {
+      "source": "synthetic",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.48636043233082704,
+      "auroc_std": 0.06254210790574695
+    },
+    {
+      "source": "synthetic",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7179041353383459,
+      "auroc_std": 0.04846265483320288
+    },
+    {
+      "source": "synthetic",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4801662359022556,
+      "auroc_std": 0.06920681591507503
+    },
+    {
+      "source": "toolbench",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6673208333333334,
+      "auroc_std": 0.03442788381570636
+    },
+    {
+      "source": "toolbench",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.45944166666666675,
+      "auroc_std": 0.028058221339247826
+    },
+    {
+      "source": "toolbench",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5335729166666667,
+      "auroc_std": 0.016719796177028866
+    },
+    {
+      "source": "toolbench",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5007395833333333,
+      "auroc_std": 0.030996813582317526
+    },
+    {
+      "source": "toolbench",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5557520833333334,
+      "auroc_std": 0.033874585444880326
+    },
+    {
+      "source": "toolbench",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5217687499999999,
+      "auroc_std": 0.029533667890434767
+    },
+    {
+      "source": "toolbench",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5178101178101178,
+      "auroc_std": 0.06246919577977065
+    },
+    {
+      "source": "toolbench",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.403723434973435,
+      "auroc_std": 0.057562871317507903
+    },
+    {
+      "source": "toolbench",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5111659736659736,
+      "auroc_std": 0.0076956670409571385
+    },
+    {
+      "source": "toolbench",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4801137676137676,
+      "auroc_std": 0.016880138133826397
+    },
+    {
+      "source": "toolbench",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.3200768075768076,
+      "auroc_std": 0.07918188286168397
+    },
+    {
+      "source": "toolbench",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.13392238392238393,
+      "auroc_std": 0.0306441003687607
+    },
+    {
+      "source": "toolbench",
+      "target": "trail",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.10299435028248587,
+      "auroc_std": 0.019058985199905128
+    },
+    {
+      "source": "toolbench",
+      "target": "trail",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.13451977401129941,
+      "auroc_std": 0.02834610287299539
+    },
+    {
+      "source": "toolbench",
+      "target": "trail",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4533898305084746,
+      "auroc_std": 0.02686587709177518
+    },
+    {
+      "source": "toolbench",
+      "target": "trail",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5810734463276837,
+      "auroc_std": 0.027367327277564784
+    },
+    {
+      "source": "toolbench",
+      "target": "trail",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.33531073446327686,
+      "auroc_std": 0.07657951905904746
+    },
+    {
+      "source": "toolbench",
+      "target": "trail",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4057627118644068,
+      "auroc_std": 0.0804047503102301
+    },
+    {
+      "source": "toolbench",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.37792391056693114,
+      "auroc_std": 0.016123310042132
+    },
+    {
+      "source": "toolbench",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.30986963456071004,
+      "auroc_std": 0.014888893922006412
+    },
+    {
+      "source": "toolbench",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.49210595659108247,
+      "auroc_std": 0.00982316978793196
+    },
+    {
+      "source": "toolbench",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.3666282306556906,
+      "auroc_std": 0.013795820835472695
+    },
+    {
+      "source": "toolbench",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.3982517558718932,
+      "auroc_std": 0.03537217725398391
+    },
+    {
+      "source": "toolbench",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.3205656433574054,
+      "auroc_std": 0.014163477556604524
+    },
+    {
+      "source": "toolbench",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6082188208062335,
+      "auroc_std": 0.03154769003133763
+    },
+    {
+      "source": "toolbench",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5742554648149054,
+      "auroc_std": 0.02845910865747265
+    },
+    {
+      "source": "toolbench",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5063479061730809,
+      "auroc_std": 0.012761029035850146
+    },
+    {
+      "source": "toolbench",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5093443852185111,
+      "auroc_std": 0.016202897163567643
+    },
+    {
+      "source": "toolbench",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5460609320749181,
+      "auroc_std": 0.04603080569596567
+    },
+    {
+      "source": "toolbench",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.578836780934683,
+      "auroc_std": 0.04018947874455075
+    },
+    {
+      "source": "toolbench",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.43646023765996345,
+      "auroc_std": 0.014807947883573326
+    },
+    {
+      "source": "toolbench",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4388283286008791,
+      "auroc_std": 0.01941223851928289
+    },
+    {
+      "source": "toolbench",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4665856314909175,
+      "auroc_std": 0.03426014361570276
+    },
+    {
+      "source": "toolbench",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4894365786300517,
+      "auroc_std": 0.016797640339434726
+    },
+    {
+      "source": "toolbench",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5126986172157609,
+      "auroc_std": 0.027935904781854815
+    },
+    {
+      "source": "toolbench",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.548699385429227,
+      "auroc_std": 0.016745892254962612
+    },
+    {
+      "source": "toolbench",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.41831757414785303,
+      "auroc_std": 0.01693792179596021
+    },
+    {
+      "source": "toolbench",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.33178078795927396,
+      "auroc_std": 0.02552883302934883
+    },
+    {
+      "source": "toolbench",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.47529650287737935,
+      "auroc_std": 0.012596606253654925
+    },
+    {
+      "source": "toolbench",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.39792049579459937,
+      "auroc_std": 0.02661263985107665
+    },
+    {
+      "source": "toolbench",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.3899861885790173,
+      "auroc_std": 0.018852917339398152
+    },
+    {
+      "source": "toolbench",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.35339274015050914,
+      "auroc_std": 0.04019626914805189
+    },
+    {
+      "source": "toolbench",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6238772928526248,
+      "auroc_std": 0.11349308134855321
+    },
+    {
+      "source": "toolbench",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.2427155808559983,
+      "auroc_std": 0.01913244047237289
+    },
+    {
+      "source": "toolbench",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5,
+      "auroc_std": 0.0
+    },
+    {
+      "source": "toolbench",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.33089289479232564,
+      "auroc_std": 0.0911213979527215
+    },
+    {
+      "source": "toolbench",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.322527935905545,
+      "auroc_std": 0.078744191675507
+    },
+    {
+      "source": "toolbench",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.2548228969006957,
+      "auroc_std": 0.02399950583498989
+    },
+    {
+      "source": "toolbench",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5060692148760331,
+      "auroc_std": 0.025831175316004328
+    },
+    {
+      "source": "toolbench",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.495467458677686,
+      "auroc_std": 0.03153948417745343
+    },
+    {
+      "source": "toolbench",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5009232954545455,
+      "auroc_std": 0.012976505901041125
+    },
+    {
+      "source": "toolbench",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4927298553719008,
+      "auroc_std": 0.028215410291803678
+    },
+    {
+      "source": "toolbench",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.47791838842975204,
+      "auroc_std": 0.03422870183173329
+    },
+    {
+      "source": "toolbench",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.486770402892562,
+      "auroc_std": 0.03650149802759013
+    },
+    {
+      "source": "toolbench",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8536639999999999,
+      "auroc_std": 0.017582734804347085
+    },
+    {
+      "source": "toolbench",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5083199999999999,
+      "auroc_std": 0.02685880688340421
+    },
+    {
+      "source": "toolbench",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6102527999999999,
+      "auroc_std": 0.029761387322502303
+    },
+    {
+      "source": "toolbench",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4377535999999999,
+      "auroc_std": 0.019838708603132416
+    },
+    {
+      "source": "toolbench",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.854544,
+      "auroc_std": 0.04521956051091165
+    },
+    {
+      "source": "toolbench",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.457344,
+      "auroc_std": 0.03473630584849228
+    },
+    {
+      "source": "toolbench",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8135250234962406,
+      "auroc_std": 0.019548950062779246
+    },
+    {
+      "source": "toolbench",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4966547227443609,
+      "auroc_std": 0.040970431460228864
+    },
+    {
+      "source": "toolbench",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5029076597744362,
+      "auroc_std": 0.025518387118162067
+    },
+    {
+      "source": "toolbench",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.42248883928571435,
+      "auroc_std": 0.02231064958040536
+    },
+    {
+      "source": "toolbench",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5722391917293234,
+      "auroc_std": 0.11267931114052644
+    },
+    {
+      "source": "toolbench",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4702214520676692,
+      "auroc_std": 0.053763081932711045
+    },
+    {
+      "source": "toolace",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.41628333333333334,
+      "auroc_std": 0.021117543062581894
+    },
+    {
+      "source": "toolace",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4506833333333334,
+      "auroc_std": 0.014607203084247327
+    },
+    {
+      "source": "toolace",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.43156458333333336,
+      "auroc_std": 0.037300079881970635
+    },
+    {
+      "source": "toolace",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.43293333333333334,
+      "auroc_std": 0.04035516669729745
+    },
+    {
+      "source": "toolace",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.3451541666666666,
+      "auroc_std": 0.014932952585361892
+    },
+    {
+      "source": "toolace",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.34985625,
+      "auroc_std": 0.015831388175472777
+    },
+    {
+      "source": "toolace",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5551801801801802,
+      "auroc_std": 0.014257885782174552
+    },
+    {
+      "source": "toolace",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5811460498960499,
+      "auroc_std": 0.014720311940881687
+    },
+    {
+      "source": "toolace",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6348001848001849,
+      "auroc_std": 0.027479545016828585
+    },
+    {
+      "source": "toolace",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.6785992723492723,
+      "auroc_std": 0.0395738871850133
+    },
+    {
+      "source": "toolace",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6969464656964657,
+      "auroc_std": 0.06359026205491125
+    },
+    {
+      "source": "toolace",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.7059482559482559,
+      "auroc_std": 0.0569850043860355
+    },
+    {
+      "source": "toolace",
+      "target": "trail",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.28548022598870054,
+      "auroc_std": 0.10388294310753796
+    },
+    {
+      "source": "toolace",
+      "target": "trail",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.3632203389830508,
+      "auroc_std": 0.1222075689305817
+    },
+    {
+      "source": "toolace",
+      "target": "trail",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5390395480225989,
+      "auroc_std": 0.114132250659577
+    },
+    {
+      "source": "toolace",
+      "target": "trail",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5840677966101694,
+      "auroc_std": 0.12398260996532297
+    },
+    {
+      "source": "toolace",
+      "target": "trail",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6135593220338983,
+      "auroc_std": 0.09310864734978068
+    },
+    {
+      "source": "toolace",
+      "target": "trail",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.625367231638418,
+      "auroc_std": 0.06650437490124106
+    },
+    {
+      "source": "toolace",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.49282965318434424,
+      "auroc_std": 0.007609138639973529
+    },
+    {
+      "source": "toolace",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5046830515022735,
+      "auroc_std": 0.008158088113268114
+    },
+    {
+      "source": "toolace",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5686412671996197,
+      "auroc_std": 0.01583393031830616
+    },
+    {
+      "source": "toolace",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5828124659474773,
+      "auroc_std": 0.01600402699182859
+    },
+    {
+      "source": "toolace",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5734917828167256,
+      "auroc_std": 0.04255909013532064
+    },
+    {
+      "source": "toolace",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5824988360228635,
+      "auroc_std": 0.040368847008892324
+    },
+    {
+      "source": "toolace",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4064893148809232,
+      "auroc_std": 0.019021255304702837
+    },
+    {
+      "source": "toolace",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.40258610853016447,
+      "auroc_std": 0.01861714300363117
+    },
+    {
+      "source": "toolace",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.47680408169918664,
+      "auroc_std": 0.019630125426609264
+    },
+    {
+      "source": "toolace",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4239783526496813,
+      "auroc_std": 0.016940729240005694
+    },
+    {
+      "source": "toolace",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.38229783037475346,
+      "auroc_std": 0.06203368517959392
+    },
+    {
+      "source": "toolace",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.3710670448432686,
+      "auroc_std": 0.05311458468638866
+    },
+    {
+      "source": "toolace",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.35228834219858157,
+      "auroc_std": 0.02416557338068881
+    },
+    {
+      "source": "toolace",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4224904807580514,
+      "auroc_std": 0.01010667694396506
+    },
+    {
+      "source": "toolace",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.44620347561330076,
+      "auroc_std": 0.0471563601802786
+    },
+    {
+      "source": "toolace",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4449711516102779,
+      "auroc_std": 0.04884346382655813
+    },
+    {
+      "source": "toolace",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.3581786456516684,
+      "auroc_std": 0.02270114134149348
+    },
+    {
+      "source": "toolace",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.3807912960702244,
+      "auroc_std": 0.034481262437101014
+    },
+    {
+      "source": "toolace",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5603397078353253,
+      "auroc_std": 0.025278319026604802
+    },
+    {
+      "source": "toolace",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5747279327135901,
+      "auroc_std": 0.024026373038405466
+    },
+    {
+      "source": "toolace",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6382225763612218,
+      "auroc_std": 0.025870280757077622
+    },
+    {
+      "source": "toolace",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.6082818946436477,
+      "auroc_std": 0.033987652196844735
+    },
+    {
+      "source": "toolace",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7374555998229305,
+      "auroc_std": 0.017731878103403445
+    },
+    {
+      "source": "toolace",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.7421177512173528,
+      "auroc_std": 0.015281849460129317
+    },
+    {
+      "source": "toolace",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7639363272190598,
+      "auroc_std": 0.019254514367301842
+    },
+    {
+      "source": "toolace",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.7639363272190598,
+      "auroc_std": 0.019254514367301842
+    },
+    {
+      "source": "toolace",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6497575374235716,
+      "auroc_std": 0.1123400685952728
+    },
+    {
+      "source": "toolace",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.6833227914821844,
+      "auroc_std": 0.09841983962653773
+    },
+    {
+      "source": "toolace",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7338393421884883,
+      "auroc_std": 0.022409198589754598
+    },
+    {
+      "source": "toolace",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.7319470799072317,
+      "auroc_std": 0.029485995334064947
+    },
+    {
+      "source": "toolace",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5040805785123967,
+      "auroc_std": 0.026916463687575876
+    },
+    {
+      "source": "toolace",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5029958677685951,
+      "auroc_std": 0.026732745457959443
+    },
+    {
+      "source": "toolace",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.47455449380165293,
+      "auroc_std": 0.015391794158372371
+    },
+    {
+      "source": "toolace",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4910123966942148,
+      "auroc_std": 0.025290190649007466
+    },
+    {
+      "source": "toolace",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5146242252066116,
+      "auroc_std": 0.03262108988676817
+    },
+    {
+      "source": "toolace",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5091296487603306,
+      "auroc_std": 0.033680104617205435
+    },
+    {
+      "source": "toolace",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.2120064,
+      "auroc_std": 0.04181408004775425
+    },
+    {
+      "source": "toolace",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.48920320000000006,
+      "auroc_std": 0.02499321359409389
+    },
+    {
+      "source": "toolace",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.43910079999999996,
+      "auroc_std": 0.0582129896926794
+    },
+    {
+      "source": "toolace",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5035040000000001,
+      "auroc_std": 0.03774908927113342
+    },
+    {
+      "source": "toolace",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.44780800000000004,
+      "auroc_std": 0.025732377737006717
+    },
+    {
+      "source": "toolace",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.513456,
+      "auroc_std": 0.037300919795629724
+    },
+    {
+      "source": "toolace",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.3720776550751879,
+      "auroc_std": 0.04590467938037568
+    },
+    {
+      "source": "toolace",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5011542528195488,
+      "auroc_std": 0.0279344141989052
+    },
+    {
+      "source": "toolace",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5718280075187969,
+      "auroc_std": 0.06484006231140563
+    },
+    {
+      "source": "toolace",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.492531132518797,
+      "auroc_std": 0.04536426794645994
+    },
+    {
+      "source": "toolace",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.554188204887218,
+      "auroc_std": 0.08380294980238641
+    },
+    {
+      "source": "toolace",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5375,
+      "auroc_std": 0.0612960355184531
+    },
+    {
+      "source": "apibank",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4599500000000001,
+      "auroc_std": 0.02181092042991309
+    },
+    {
+      "source": "apibank",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.35396666666666665,
+      "auroc_std": 0.013159086689432503
+    },
+    {
+      "source": "apibank",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.46711666666666674,
+      "auroc_std": 0.04002909987503536
+    },
+    {
+      "source": "apibank",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.44115833333333326,
+      "auroc_std": 0.028593308208487447
+    },
+    {
+      "source": "apibank",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.41246041666666666,
+      "auroc_std": 0.028010531641018528
+    },
+    {
+      "source": "apibank",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.34938541666666667,
+      "auroc_std": 0.01796955674517474
+    },
+    {
+      "source": "apibank",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6474041349041348,
+      "auroc_std": 0.047692962113648395
+    },
+    {
+      "source": "apibank",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6121751559251559,
+      "auroc_std": 0.054497699437283546
+    },
+    {
+      "source": "apibank",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5269187456687457,
+      "auroc_std": 0.03526033409181526
+    },
+    {
+      "source": "apibank",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5220821783321783,
+      "auroc_std": 0.028469715587774936
+    },
+    {
+      "source": "apibank",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5242838992838992,
+      "auroc_std": 0.05059734200370244
+    },
+    {
+      "source": "apibank",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5603026103026103,
+      "auroc_std": 0.04336305853400192
+    },
+    {
+      "source": "apibank",
+      "target": "trail",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.48875706214689263,
+      "auroc_std": 0.12986400171792847
+    },
+    {
+      "source": "apibank",
+      "target": "trail",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6671751412429379,
+      "auroc_std": 0.1345170214958156
+    },
+    {
+      "source": "apibank",
+      "target": "trail",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6429943502824857,
+      "auroc_std": 0.07342783339510413
+    },
+    {
+      "source": "apibank",
+      "target": "trail",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5314124293785312,
+      "auroc_std": 0.07121477330531531
+    },
+    {
+      "source": "apibank",
+      "target": "trail",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.766045197740113,
+      "auroc_std": 0.08314052193924634
+    },
+    {
+      "source": "apibank",
+      "target": "trail",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.7754237288135594,
+      "auroc_std": 0.06682077849324726
+    },
+    {
+      "source": "apibank",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4889809999306567,
+      "auroc_std": 0.028850841067556154
+    },
+    {
+      "source": "apibank",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4767625585703389,
+      "auroc_std": 0.03315760201482875
+    },
+    {
+      "source": "apibank",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.48128220749502215,
+      "auroc_std": 0.01715810266740819
+    },
+    {
+      "source": "apibank",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.46642386598908336,
+      "auroc_std": 0.025060629624080722
+    },
+    {
+      "source": "apibank",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4417496309944823,
+      "auroc_std": 0.034392814536450135
+    },
+    {
+      "source": "apibank",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.46240393473803093,
+      "auroc_std": 0.0399424330940746
+    },
+    {
+      "source": "apibank",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.46574404616362663,
+      "auroc_std": 0.018665049678336536
+    },
+    {
+      "source": "apibank",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.43519650512657504,
+      "auroc_std": 0.025892076108432024
+    },
+    {
+      "source": "apibank",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.47999494677816357,
+      "auroc_std": 0.015557544964390938
+    },
+    {
+      "source": "apibank",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4962610233589254,
+      "auroc_std": 0.027412463852854636
+    },
+    {
+      "source": "apibank",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5505595220630186,
+      "auroc_std": 0.04465420572887221
+    },
+    {
+      "source": "apibank",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5457373628702301,
+      "auroc_std": 0.051126039096173914
+    },
+    {
+      "source": "apibank",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7117857843564702,
+      "auroc_std": 0.0164988819002932
+    },
+    {
+      "source": "apibank",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.39018464422741544,
+      "auroc_std": 0.01333059918338153
+    },
+    {
+      "source": "apibank",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6877969313161261,
+      "auroc_std": 0.034272463139210965
+    },
+    {
+      "source": "apibank",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.39788096950935936,
+      "auroc_std": 0.02389913064966674
+    },
+    {
+      "source": "apibank",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6110015368852458,
+      "auroc_std": 0.03741680894890245
+    },
+    {
+      "source": "apibank",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.436704125973724,
+      "auroc_std": 0.03280214704519886
+    },
+    {
+      "source": "apibank",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7150518787195145,
+      "auroc_std": 0.018372763295546105
+    },
+    {
+      "source": "apibank",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.7816372671049048,
+      "auroc_std": 0.019557582049032615
+    },
+    {
+      "source": "apibank",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6637675522190674,
+      "auroc_std": 0.023147502537554883
+    },
+    {
+      "source": "apibank",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.7196650492045588,
+      "auroc_std": 0.02579411619104838
+    },
+    {
+      "source": "apibank",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7849614920844841,
+      "auroc_std": 0.019487730521976238
+    },
+    {
+      "source": "apibank",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.8155339569800459,
+      "auroc_std": 0.011313743746106107
+    },
+    {
+      "source": "apibank",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7495361585494412,
+      "auroc_std": 0.021753995553011763
+    },
+    {
+      "source": "apibank",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.7495361585494412,
+      "auroc_std": 0.021753995553011763
+    },
+    {
+      "source": "apibank",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.7459466582331857,
+      "auroc_std": 0.014001555775654075
+    },
+    {
+      "source": "apibank",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5931741513809824,
+      "auroc_std": 0.10295616782912446
+    },
+    {
+      "source": "apibank",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7406493780307822,
+      "auroc_std": 0.024457926185636254
+    },
+    {
+      "source": "apibank",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.7274826059456041,
+      "auroc_std": 0.028860729530081966
+    },
+    {
+      "source": "apibank",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5050619834710744,
+      "auroc_std": 0.03247019880236748
+    },
+    {
+      "source": "apibank",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5080320247933884,
+      "auroc_std": 0.033494548585824443
+    },
+    {
+      "source": "apibank",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5041128615702479,
+      "auroc_std": 0.03437948986537082
+    },
+    {
+      "source": "apibank",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.48688016528925615,
+      "auroc_std": 0.014810678843047756
+    },
+    {
+      "source": "apibank",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5097365702479338,
+      "auroc_std": 0.029499774261923108
+    },
+    {
+      "source": "apibank",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5034865702479338,
+      "auroc_std": 0.03341448386074963
+    },
+    {
+      "source": "apibank",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8074752000000001,
+      "auroc_std": 0.02323345538141069
+    },
+    {
+      "source": "apibank",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.408096,
+      "auroc_std": 0.029838852953825143
+    },
+    {
+      "source": "apibank",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.7678656,
+      "auroc_std": 0.03073543545551291
+    },
+    {
+      "source": "apibank",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4713408,
+      "auroc_std": 0.036228271691594684
+    },
+    {
+      "source": "apibank",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7806112000000001,
+      "auroc_std": 0.03264517747171852
+    },
+    {
+      "source": "apibank",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.44239680000000003,
+      "auroc_std": 0.03037014264306312
+    },
+    {
+      "source": "apibank",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8100182095864661,
+      "auroc_std": 0.0536939147834561
+    },
+    {
+      "source": "apibank",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6637247415413533,
+      "auroc_std": 0.06516502840977781
+    },
+    {
+      "source": "apibank",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.7069049577067669,
+      "auroc_std": 0.050560696016169276
+    },
+    {
+      "source": "apibank",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.6116306390977444,
+      "auroc_std": 0.05290264600990424
+    },
+    {
+      "source": "apibank",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.8121739896616541,
+      "auroc_std": 0.027175742541181262
+    },
+    {
+      "source": "apibank",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6474712171052631,
+      "auroc_std": 0.03509076820563774
+    },
+    {
+      "source": "injecagent",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5313916666666667,
+      "auroc_std": 0.015185721775185176
+    },
+    {
+      "source": "injecagent",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.48140416666666674,
+      "auroc_std": 0.028973602389358935
+    },
+    {
+      "source": "injecagent",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5096958333333333,
+      "auroc_std": 0.03686672717935057
+    },
+    {
+      "source": "injecagent",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4752583333333334,
+      "auroc_std": 0.02071675549726195
+    },
+    {
+      "source": "injecagent",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.51848125,
+      "auroc_std": 0.04192080667303596
+    },
+    {
+      "source": "injecagent",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5189791666666667,
+      "auroc_std": 0.037066915841488635
+    },
+    {
+      "source": "injecagent",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8205850080850082,
+      "auroc_std": 0.02908255653189297
+    },
+    {
+      "source": "injecagent",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.7071162508662509,
+      "auroc_std": 0.04411186384059105
+    },
+    {
+      "source": "injecagent",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5313467313467313,
+      "auroc_std": 0.03919399501669647
+    },
+    {
+      "source": "injecagent",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5032325594825595,
+      "auroc_std": 0.03556517066179269
+    },
+    {
+      "source": "injecagent",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7544886232386233,
+      "auroc_std": 0.13509642848466685
+    },
+    {
+      "source": "injecagent",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6650944213444213,
+      "auroc_std": 0.14225528650482083
+    },
+    {
+      "source": "injecagent",
+      "target": "trail",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7735028248587572,
+      "auroc_std": 0.04716106559524263
+    },
+    {
+      "source": "injecagent",
+      "target": "trail",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.8672881355932203,
+      "auroc_std": 0.03154187246805263
+    },
+    {
+      "source": "injecagent",
+      "target": "trail",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5375706214689265,
+      "auroc_std": 0.08884950969463543
+    },
+    {
+      "source": "injecagent",
+      "target": "trail",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5754802259887006,
+      "auroc_std": 0.0858564504132562
+    },
+    {
+      "source": "injecagent",
+      "target": "trail",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4824293785310735,
+      "auroc_std": 0.14434678868481854
+    },
+    {
+      "source": "injecagent",
+      "target": "trail",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5748022598870057,
+      "auroc_std": 0.15542601866765743
+    },
+    {
+      "source": "injecagent",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6467317503244276,
+      "auroc_std": 0.010759659717048304
+    },
+    {
+      "source": "injecagent",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.615491743191972,
+      "auroc_std": 0.010582056711569613
+    },
+    {
+      "source": "injecagent",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5270022387985774,
+      "auroc_std": 0.05314075526803246
+    },
+    {
+      "source": "injecagent",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4988216588903088,
+      "auroc_std": 0.027806404840247385
+    },
+    {
+      "source": "injecagent",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6198160420814883,
+      "auroc_std": 0.05481693019150568
+    },
+    {
+      "source": "injecagent",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5934184770225961,
+      "auroc_std": 0.05476720781211451
+    },
+    {
+      "source": "injecagent",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.37033718030221524,
+      "auroc_std": 0.013805788934130368
+    },
+    {
+      "source": "injecagent",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.37709912465157214,
+      "auroc_std": 0.013554312761391307
+    },
+    {
+      "source": "injecagent",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4871199895675421,
+      "auroc_std": 0.013776303319929602
+    },
+    {
+      "source": "injecagent",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4894803331866269,
+      "auroc_std": 0.012900971715135285
+    },
+    {
+      "source": "injecagent",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4072872349096125,
+      "auroc_std": 0.021156392047346144
+    },
+    {
+      "source": "injecagent",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.41470732065137667,
+      "auroc_std": 0.01742662905257675
+    },
+    {
+      "source": "injecagent",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5736605845250553,
+      "auroc_std": 0.012203962875927978
+    },
+    {
+      "source": "injecagent",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.3279976528891989,
+      "auroc_std": 0.011191543928447425
+    },
+    {
+      "source": "injecagent",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5106624593070572,
+      "auroc_std": 0.02517712290637667
+    },
+    {
+      "source": "injecagent",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.48286917945587715,
+      "auroc_std": 0.039788935721991235
+    },
+    {
+      "source": "injecagent",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4637339589873271,
+      "auroc_std": 0.06364041548591975
+    },
+    {
+      "source": "injecagent",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.3483059745959772,
+      "auroc_std": 0.0363351900063459
+    },
+    {
+      "source": "injecagent",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6888475339375316,
+      "auroc_std": 0.01819687165307402
+    },
+    {
+      "source": "injecagent",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.7053101540316622,
+      "auroc_std": 0.021420929953522842
+    },
+    {
+      "source": "injecagent",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5847320004667627,
+      "auroc_std": 0.03784735993961488
+    },
+    {
+      "source": "injecagent",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5687954607335952,
+      "auroc_std": 0.05688873929233139
+    },
+    {
+      "source": "injecagent",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.625873964370454,
+      "auroc_std": 0.026798665857852972
+    },
+    {
+      "source": "injecagent",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6525876152320199,
+      "auroc_std": 0.028329036144939913
+    },
+    {
+      "source": "injecagent",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6937740593182824,
+      "auroc_std": 0.016463126327703068
+    },
+    {
+      "source": "injecagent",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.7097575033200532,
+      "auroc_std": 0.026355373735347132
+    },
+    {
+      "source": "injecagent",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5409328906595838,
+      "auroc_std": 0.01707739125014457
+    },
+    {
+      "source": "injecagent",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5568155821159806,
+      "auroc_std": 0.046812061284102265
+    },
+    {
+      "source": "injecagent",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6290554227534308,
+      "auroc_std": 0.043610568894371884
+    },
+    {
+      "source": "injecagent",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6453351040283312,
+      "auroc_std": 0.04034552771699314
+    },
+    {
+      "source": "injecagent",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.501381714876033,
+      "auroc_std": 0.020923550123146475
+    },
+    {
+      "source": "injecagent",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5018207644628099,
+      "auroc_std": 0.020808464092650455
+    },
+    {
+      "source": "injecagent",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.49885072314049583,
+      "auroc_std": 0.012383296231431081
+    },
+    {
+      "source": "injecagent",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4994189049586778,
+      "auroc_std": 0.010600057367840319
+    },
+    {
+      "source": "injecagent",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5097882231404959,
+      "auroc_std": 0.030005565532038012
+    },
+    {
+      "source": "injecagent",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5108987603305786,
+      "auroc_std": 0.031670792691752714
+    },
+    {
+      "source": "injecagent",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7664576,
+      "auroc_std": 0.028591181812579913
+    },
+    {
+      "source": "injecagent",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.453792,
+      "auroc_std": 0.045018987069901976
+    },
+    {
+      "source": "injecagent",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5512,
+      "auroc_std": 0.07995598789334041
+    },
+    {
+      "source": "injecagent",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4936,
+      "auroc_std": 0.009499473669630342
+    },
+    {
+      "source": "injecagent",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6036927999999999,
+      "auroc_std": 0.07230294482080243
+    },
+    {
+      "source": "injecagent",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.46320319999999987,
+      "auroc_std": 0.07357888455365438
+    },
+    {
+      "source": "injecagent",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7787858317669173,
+      "auroc_std": 0.06208703249756662
+    },
+    {
+      "source": "injecagent",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6249324483082707,
+      "auroc_std": 0.08584840142401212
+    },
+    {
+      "source": "injecagent",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5025875234962406,
+      "auroc_std": 0.014200092106934022
+    },
+    {
+      "source": "injecagent",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4973507988721805,
+      "auroc_std": 0.005549895838005922
+    },
+    {
+      "source": "injecagent",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6481173637218045,
+      "auroc_std": 0.06083114900624877
+    },
+    {
+      "source": "injecagent",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5760485197368421,
+      "auroc_std": 0.06677413552318495
+    },
+    {
+      "source": "agentharm",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5670062499999999,
+      "auroc_std": 0.1923943530104574
+    },
+    {
+      "source": "agentharm",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5158562499999999,
+      "auroc_std": 0.10499773246972871
+    },
+    {
+      "source": "agentharm",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5174895833333334,
+      "auroc_std": 0.05338508821037171
+    },
+    {
+      "source": "agentharm",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.48821458333333334,
+      "auroc_std": 0.053227978664172594
+    },
+    {
+      "source": "agentharm",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.44813749999999997,
+      "auroc_std": 0.07721906248531582
+    },
+    {
+      "source": "agentharm",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4909437499999999,
+      "auroc_std": 0.04479448542487309
+    },
+    {
+      "source": "agentharm",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5255442942942943,
+      "auroc_std": 0.27270466215916933
+    },
+    {
+      "source": "agentharm",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5203337953337953,
+      "auroc_std": 0.39710545404820713
+    },
+    {
+      "source": "agentharm",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5042720605220605,
+      "auroc_std": 0.1928966771159632
+    },
+    {
+      "source": "agentharm",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.567722048972049,
+      "auroc_std": 0.1079477227103648
+    },
+    {
+      "source": "agentharm",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.482127800877801,
+      "auroc_std": 0.17372658008510697
+    },
+    {
+      "source": "agentharm",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.45967602217602216,
+      "auroc_std": 0.11419606799433912
+    },
+    {
+      "source": "agentharm",
+      "target": "trail",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.36344632768361584,
+      "auroc_std": 0.2969196179707452
+    },
+    {
+      "source": "agentharm",
+      "target": "trail",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.3041242937853107,
+      "auroc_std": 0.25377736805316
+    },
+    {
+      "source": "agentharm",
+      "target": "trail",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4939548022598871,
+      "auroc_std": 0.15833670750422782
+    },
+    {
+      "source": "agentharm",
+      "target": "trail",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5790395480225988,
+      "auroc_std": 0.18929310027808469
+    },
+    {
+      "source": "agentharm",
+      "target": "trail",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6285310734463277,
+      "auroc_std": 0.20452886486022887
+    },
+    {
+      "source": "agentharm",
+      "target": "trail",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6240112994350282,
+      "auroc_std": 0.20540732750744362
+    },
+    {
+      "source": "agentharm",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.49823461816596837,
+      "auroc_std": 0.06860320911822018
+    },
+    {
+      "source": "agentharm",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.49261627388629686,
+      "auroc_std": 0.07466773925898702
+    },
+    {
+      "source": "agentharm",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.49419051581522977,
+      "auroc_std": 0.05794801024484527
+    },
+    {
+      "source": "agentharm",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5066017811326735,
+      "auroc_std": 0.06093989538532995
+    },
+    {
+      "source": "agentharm",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5311812634352681,
+      "auroc_std": 0.0643301637014263
+    },
+    {
+      "source": "agentharm",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5342839807027449,
+      "auroc_std": 0.06666974811329436
+    },
+    {
+      "source": "agentharm",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5291399742448694,
+      "auroc_std": 0.12808025908531553
+    },
+    {
+      "source": "agentharm",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5179279345363261,
+      "auroc_std": 0.1299928276639027
+    },
+    {
+      "source": "agentharm",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5121114316918512,
+      "auroc_std": 0.03969143949535302
+    },
+    {
+      "source": "agentharm",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5173671899196374,
+      "auroc_std": 0.03588987648152097
+    },
+    {
+      "source": "agentharm",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5314135165533767,
+      "auroc_std": 0.06857442752538451
+    },
+    {
+      "source": "agentharm",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5443208306844671,
+      "auroc_std": 0.07433706483581651
+    },
+    {
+      "source": "agentharm",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5841207599407046,
+      "auroc_std": 0.3117590802990592
+    },
+    {
+      "source": "agentharm",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5059353563539124,
+      "auroc_std": 0.11791925517305366
+    },
+    {
+      "source": "agentharm",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5055599457911871,
+      "auroc_std": 0.036139592855835775
+    },
+    {
+      "source": "agentharm",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5327847960992909,
+      "auroc_std": 0.08571180076518883
+    },
+    {
+      "source": "agentharm",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.37927957141611446,
+      "auroc_std": 0.1169932008569125
+    },
+    {
+      "source": "agentharm",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4680987312521799,
+      "auroc_std": 0.06717032074850844
+    },
+    {
+      "source": "agentharm",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.46607778404449796,
+      "auroc_std": 0.1303036495679576
+    },
+    {
+      "source": "agentharm",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4870371270761213,
+      "auroc_std": 0.1316714707870004
+    },
+    {
+      "source": "agentharm",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.48010424365008364,
+      "auroc_std": 0.04368206604062427
+    },
+    {
+      "source": "agentharm",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5325406472441558,
+      "auroc_std": 0.07793598087952557
+    },
+    {
+      "source": "agentharm",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5386088043097746,
+      "auroc_std": 0.0903457177209979
+    },
+    {
+      "source": "agentharm",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5240907853280953,
+      "auroc_std": 0.09993533051745847
+    },
+    {
+      "source": "agentharm",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4721942452412572,
+      "auroc_std": 0.1538621621471112
+    },
+    {
+      "source": "agentharm",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4902324037184595,
+      "auroc_std": 0.14888640488024607
+    },
+    {
+      "source": "agentharm",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5239727312970341,
+      "auroc_std": 0.0582967699829746
+    },
+    {
+      "source": "agentharm",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.561263302346171,
+      "auroc_std": 0.05600393785291553
+    },
+    {
+      "source": "agentharm",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5363510402833113,
+      "auroc_std": 0.04987921962942645
+    },
+    {
+      "source": "agentharm",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5206343514829571,
+      "auroc_std": 0.07107445848611538
+    },
+    {
+      "source": "agentharm",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4719165085388995,
+      "auroc_std": 0.20662184335510497
+    },
+    {
+      "source": "agentharm",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4714210415348935,
+      "auroc_std": 0.2081863977910891
+    },
+    {
+      "source": "agentharm",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4511965001054185,
+      "auroc_std": 0.14532465919186371
+    },
+    {
+      "source": "agentharm",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.47665507063040274,
+      "auroc_std": 0.09739640594501293
+    },
+    {
+      "source": "agentharm",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4663767657600674,
+      "auroc_std": 0.17035263115990956
+    },
+    {
+      "source": "agentharm",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.46650853889943084,
+      "auroc_std": 0.12172755496111672
+    },
+    {
+      "source": "agentharm",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5891776000000001,
+      "auroc_std": 0.35564736218765913
+    },
+    {
+      "source": "agentharm",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4956512,
+      "auroc_std": 0.07069857623007693
+    },
+    {
+      "source": "agentharm",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4842752,
+      "auroc_std": 0.1098245642875946
+    },
+    {
+      "source": "agentharm",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4961792,
+      "auroc_std": 0.07336215091285152
+    },
+    {
+      "source": "agentharm",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5683712,
+      "auroc_std": 0.11987188741051841
+    },
+    {
+      "source": "agentharm",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6215615999999999,
+      "auroc_std": 0.04118726153363443
+    },
+    {
+      "source": "agentharm",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5619243421052632,
+      "auroc_std": 0.14011389421664638
+    },
+    {
+      "source": "agentharm",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4902255639097744,
+      "auroc_std": 0.14472098127381106
+    },
+    {
+      "source": "agentharm",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5238868656015037,
+      "auroc_std": 0.1292976873291429
+    },
+    {
+      "source": "agentharm",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.6017416588345864,
+      "auroc_std": 0.06809585454790314
+    },
+    {
+      "source": "agentharm",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.38474212875939845,
+      "auroc_std": 0.12378533244584981
+    },
+    {
+      "source": "agentharm",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.3945811795112782,
+      "auroc_std": 0.07255390051057993
+    },
+    {
+      "source": "atbench",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5928833333333333,
+      "auroc_std": 0.03444370054080202
+    },
+    {
+      "source": "atbench",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5139125000000002,
+      "auroc_std": 0.06843121660653126
+    },
+    {
+      "source": "atbench",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5480833333333334,
+      "auroc_std": 0.021338593915199246
+    },
+    {
+      "source": "atbench",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5150812499999999,
+      "auroc_std": 0.029607152162972196
+    },
+    {
+      "source": "atbench",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5411208333333333,
+      "auroc_std": 0.025462722616710776
+    },
+    {
+      "source": "atbench",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.52293125,
+      "auroc_std": 0.036400699743827425
+    },
+    {
+      "source": "atbench",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7524688149688148,
+      "auroc_std": 0.023259154797935038
+    },
+    {
+      "source": "atbench",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.28256092631092633,
+      "auroc_std": 0.07569254324755975
+    },
+    {
+      "source": "atbench",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.723094248094248,
+      "auroc_std": 0.03832233153350872
+    },
+    {
+      "source": "atbench",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5145053707553707,
+      "auroc_std": 0.0918058822956866
+    },
+    {
+      "source": "atbench",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.766943866943867,
+      "auroc_std": 0.036665705180905644
+    },
+    {
+      "source": "atbench",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.49581600831600825,
+      "auroc_std": 0.11910732387755255
+    },
+    {
+      "source": "atbench",
+      "target": "trail",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6113559322033899,
+      "auroc_std": 0.03140800887483465
+    },
+    {
+      "source": "atbench",
+      "target": "trail",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6135028248587571,
+      "auroc_std": 0.11165375646591699
+    },
+    {
+      "source": "atbench",
+      "target": "trail",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5760451977401131,
+      "auroc_std": 0.04814023478324337
+    },
+    {
+      "source": "atbench",
+      "target": "trail",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.660960451977401,
+      "auroc_std": 0.08336557836367393
+    },
+    {
+      "source": "atbench",
+      "target": "trail",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5620338983050848,
+      "auroc_std": 0.0736974412116025
+    },
+    {
+      "source": "atbench",
+      "target": "trail",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.7554237288135595,
+      "auroc_std": 0.057573615353256336
+    },
+    {
+      "source": "atbench",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6953724726836855,
+      "auroc_std": 0.014903952145265771
+    },
+    {
+      "source": "atbench",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4833762271290875,
+      "auroc_std": 0.06932488626129908
+    },
+    {
+      "source": "atbench",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6765274351887623,
+      "auroc_std": 0.019028140287536025
+    },
+    {
+      "source": "atbench",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5880639345399071,
+      "auroc_std": 0.02695831302756788
+    },
+    {
+      "source": "atbench",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6814547732968785,
+      "auroc_std": 0.010240130517619558
+    },
+    {
+      "source": "atbench",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.615359148860293,
+      "auroc_std": 0.034862521004884815
+    },
+    {
+      "source": "atbench",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.42306958775490244,
+      "auroc_std": 0.01143111867952285
+    },
+    {
+      "source": "atbench",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5699039887851076,
+      "auroc_std": 0.01948039617914866
+    },
+    {
+      "source": "atbench",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.43708249792165876,
+      "auroc_std": 0.020647995454500988
+    },
+    {
+      "source": "atbench",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5354638368624383,
+      "auroc_std": 0.03834916972505867
+    },
+    {
+      "source": "atbench",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4272429784667547,
+      "auroc_std": 0.018927366330144663
+    },
+    {
+      "source": "atbench",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.542106378470015,
+      "auroc_std": 0.023535044454273818
+    },
+    {
+      "source": "atbench",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8693070754854085,
+      "auroc_std": 0.010221862257546668
+    },
+    {
+      "source": "atbench",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.616368736193466,
+      "auroc_std": 0.01862735849737437
+    },
+    {
+      "source": "atbench",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.8054053489419836,
+      "auroc_std": 0.020621495985121762
+    },
+    {
+      "source": "atbench",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4467411129519824,
+      "auroc_std": 0.048414865310008874
+    },
+    {
+      "source": "atbench",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.8031950318276945,
+      "auroc_std": 0.01192171921758575
+    },
+    {
+      "source": "atbench",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.43497158760609234,
+      "auroc_std": 0.08406046867529104
+    },
+    {
+      "source": "atbench",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4079070072737174,
+      "auroc_std": 0.02578556527164044
+    },
+    {
+      "source": "atbench",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.2709547240266055,
+      "auroc_std": 0.042441894873650174
+    },
+    {
+      "source": "atbench",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4846889707884399,
+      "auroc_std": 0.02338694955189558
+    },
+    {
+      "source": "atbench",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.48350285892100037,
+      "auroc_std": 0.02740347943789793
+    },
+    {
+      "source": "atbench",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4483996363141312,
+      "auroc_std": 0.009412832243593029
+    },
+    {
+      "source": "atbench",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4489643704539267,
+      "auroc_std": 0.03531044392491986
+    },
+    {
+      "source": "atbench",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.44227454625940676,
+      "auroc_std": 0.009825203999815601
+    },
+    {
+      "source": "atbench",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.2912602036299247,
+      "auroc_std": 0.02759365351027839
+    },
+    {
+      "source": "atbench",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.49732483399734395,
+      "auroc_std": 0.013012230281472949
+    },
+    {
+      "source": "atbench",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4888256750774679,
+      "auroc_std": 0.019695177457963727
+    },
+    {
+      "source": "atbench",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.488444798583444,
+      "auroc_std": 0.01817084840307638
+    },
+    {
+      "source": "atbench",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4500234617087207,
+      "auroc_std": 0.03326957080401123
+    },
+    {
+      "source": "atbench",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7594665823318575,
+      "auroc_std": 0.017886576645250854
+    },
+    {
+      "source": "atbench",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.2563251106894371,
+      "auroc_std": 0.020729351459494595
+    },
+    {
+      "source": "atbench",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.7218163609529833,
+      "auroc_std": 0.05857719793167615
+    },
+    {
+      "source": "atbench",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.49201981868016026,
+      "auroc_std": 0.08798611364894819
+    },
+    {
+      "source": "atbench",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7600990934008012,
+      "auroc_std": 0.03221895844935699
+    },
+    {
+      "source": "atbench",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4305081172253848,
+      "auroc_std": 0.12156963391387236
+    },
+    {
+      "source": "atbench",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5012913223140496,
+      "auroc_std": 0.029991791265222084
+    },
+    {
+      "source": "atbench",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.49333677685950417,
+      "auroc_std": 0.03286423914973498
+    },
+    {
+      "source": "atbench",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5116670971074381,
+      "auroc_std": 0.030680403047973075
+    },
+    {
+      "source": "atbench",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5188403925619836,
+      "auroc_std": 0.016349277758348824
+    },
+    {
+      "source": "atbench",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5152892561983471,
+      "auroc_std": 0.034595291191199744
+    },
+    {
+      "source": "atbench",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5295583677685951,
+      "auroc_std": 0.015962692158554975
+    },
+    {
+      "source": "atbench",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6755550986842105,
+      "auroc_std": 0.06378578606792573
+    },
+    {
+      "source": "atbench",
+      "target": "rjudge",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.2966077302631579,
+      "auroc_std": 0.035718054502752755
+    },
+    {
+      "source": "atbench",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.7150258458646616,
+      "auroc_std": 0.049110841759662016
+    },
+    {
+      "source": "atbench",
+      "target": "rjudge",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.41539297462406016,
+      "auroc_std": 0.03761235997002711
+    },
+    {
+      "source": "atbench",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7582648026315789,
+      "auroc_std": 0.04462957901935872
+    },
+    {
+      "source": "atbench",
+      "target": "rjudge",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.329108905075188,
+      "auroc_std": 0.03102305289817587
+    },
+    {
+      "source": "rjudge",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6689791666666667,
+      "auroc_std": 0.03479076720394206
+    },
+    {
+      "source": "rjudge",
+      "target": "agentdojo",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6403,
+      "auroc_std": 0.03874694342783699
+    },
+    {
+      "source": "rjudge",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5200958333333332,
+      "auroc_std": 0.010827290782760228
+    },
+    {
+      "source": "rjudge",
+      "target": "agentdojo",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5753979166666667,
+      "auroc_std": 0.03825529925391966
+    },
+    {
+      "source": "rjudge",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5551729166666666,
+      "auroc_std": 0.03115833786050159
+    },
+    {
+      "source": "rjudge",
+      "target": "agentdojo",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6141395833333332,
+      "auroc_std": 0.0581068699696827
+    },
+    {
+      "source": "rjudge",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.6976755601755602,
+      "auroc_std": 0.10329111015603598
+    },
+    {
+      "source": "rjudge",
+      "target": "stabletoolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6755962693462694,
+      "auroc_std": 0.12492729423292671
+    },
+    {
+      "source": "rjudge",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6561720374220374,
+      "auroc_std": 0.0824553939880445
+    },
+    {
+      "source": "rjudge",
+      "target": "stabletoolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5447100947100947,
+      "auroc_std": 0.08141436024992736
+    },
+    {
+      "source": "rjudge",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7142916955416955,
+      "auroc_std": 0.0957429392950655
+    },
+    {
+      "source": "rjudge",
+      "target": "stabletoolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6489388426888427,
+      "auroc_std": 0.06578713371106902
+    },
+    {
+      "source": "rjudge",
+      "target": "trail",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.213728813559322,
+      "auroc_std": 0.11550599787604703
+    },
+    {
+      "source": "rjudge",
+      "target": "trail",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.24615819209039547,
+      "auroc_std": 0.10947340576428584
+    },
+    {
+      "source": "rjudge",
+      "target": "trail",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.3620338983050847,
+      "auroc_std": 0.07744639692435977
+    },
+    {
+      "source": "rjudge",
+      "target": "trail",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.3464406779661017,
+      "auroc_std": 0.08328450163648667
+    },
+    {
+      "source": "rjudge",
+      "target": "trail",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.39022598870056496,
+      "auroc_std": 0.08527070935957316
+    },
+    {
+      "source": "rjudge",
+      "target": "trail",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.30062146892655367,
+      "auroc_std": 0.06210961902256749
+    },
+    {
+      "source": "rjudge",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.4929091998771632,
+      "auroc_std": 0.05799310233697929
+    },
+    {
+      "source": "rjudge",
+      "target": "swe_agent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.43556242384617666,
+      "auroc_std": 0.06124713574663194
+    },
+    {
+      "source": "rjudge",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5978990955649995,
+      "auroc_std": 0.025232544975533656
+    },
+    {
+      "source": "rjudge",
+      "target": "swe_agent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.42850371977374263,
+      "auroc_std": 0.045946522337691455
+    },
+    {
+      "source": "rjudge",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6398582919749967,
+      "auroc_std": 0.012233293282546085
+    },
+    {
+      "source": "rjudge",
+      "target": "swe_agent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5317461638285436,
+      "auroc_std": 0.05004248386152428
+    },
+    {
+      "source": "rjudge",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5372406148629925,
+      "auroc_std": 0.058750348097984045
+    },
+    {
+      "source": "rjudge",
+      "target": "synthetic",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.5110861166805223,
+      "auroc_std": 0.05815404741495761
+    },
+    {
+      "source": "rjudge",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.4371978254845388,
+      "auroc_std": 0.014178294875355832
+    },
+    {
+      "source": "rjudge",
+      "target": "synthetic",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.46708151987872276,
+      "auroc_std": 0.029002408795297197
+    },
+    {
+      "source": "rjudge",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.4207341027271097,
+      "auroc_std": 0.020095458663274796
+    },
+    {
+      "source": "rjudge",
+      "target": "synthetic",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.43712284219277225,
+      "auroc_std": 0.025127469034831266
+    },
+    {
+      "source": "rjudge",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.9062976870422043,
+      "auroc_std": 0.025654631244366278
+    },
+    {
+      "source": "rjudge",
+      "target": "toolbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4079402104406464,
+      "auroc_std": 0.03491237707754051
+    },
+    {
+      "source": "rjudge",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6169538789094291,
+      "auroc_std": 0.06553808198352454
+    },
+    {
+      "source": "rjudge",
+      "target": "toolbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4557201742529939,
+      "auroc_std": 0.0301777849186241
+    },
+    {
+      "source": "rjudge",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.6529728556272526,
+      "auroc_std": 0.06878016668785222
+    },
+    {
+      "source": "rjudge",
+      "target": "toolbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.3993764351528892,
+      "auroc_std": 0.031248461637282805
+    },
+    {
+      "source": "rjudge",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.44886980240382746,
+      "auroc_std": 0.02378032635816119
+    },
+    {
+      "source": "rjudge",
+      "target": "toolace",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.42733624411684623,
+      "auroc_std": 0.039459342362091004
+    },
+    {
+      "source": "rjudge",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.48242371348554974,
+      "auroc_std": 0.019635648317955987
+    },
+    {
+      "source": "rjudge",
+      "target": "toolace",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5352118907775486,
+      "auroc_std": 0.05222371065383248
+    },
+    {
+      "source": "rjudge",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5231066941537982,
+      "auroc_std": 0.04277496690786833
+    },
+    {
+      "source": "rjudge",
+      "target": "toolace",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.6196543525613599,
+      "auroc_std": 0.07086032547351491
+    },
+    {
+      "source": "rjudge",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.5117941567065072,
+      "auroc_std": 0.0450991341285055
+    },
+    {
+      "source": "rjudge",
+      "target": "apibank",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4742886232846392,
+      "auroc_std": 0.04313579086029047
+    },
+    {
+      "source": "rjudge",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.48793297919433376,
+      "auroc_std": 0.024845355330205786
+    },
+    {
+      "source": "rjudge",
+      "target": "apibank",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5248406374501992,
+      "auroc_std": 0.035185569393146585
+    },
+    {
+      "source": "rjudge",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5041783089862771,
+      "auroc_std": 0.035773023732787804
+    },
+    {
+      "source": "rjudge",
+      "target": "apibank",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.5890431164231962,
+      "auroc_std": 0.06391633875559684
+    },
+    {
+      "source": "rjudge",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.7386885937170568,
+      "auroc_std": 0.0236247470687377
+    },
+    {
+      "source": "rjudge",
+      "target": "injecagent",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.6326481130086442,
+      "auroc_std": 0.0710812258658093
+    },
+    {
+      "source": "rjudge",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.6985979337971747,
+      "auroc_std": 0.06653225592440964
+    },
+    {
+      "source": "rjudge",
+      "target": "injecagent",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.7102361374657391,
+      "auroc_std": 0.037906935649900796
+    },
+    {
+      "source": "rjudge",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.7482078853046595,
+      "auroc_std": 0.0264561611537588
+    },
+    {
+      "source": "rjudge",
+      "target": "injecagent",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.7522032468901539,
+      "auroc_std": 0.02848899726977372
+    },
+    {
+      "source": "rjudge",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.509142561983471,
+      "auroc_std": 0.03591754694155111
+    },
+    {
+      "source": "rjudge",
+      "target": "agentharm",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4998837809917355,
+      "auroc_std": 0.028637016510675635
+    },
+    {
+      "source": "rjudge",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.5188726756198347,
+      "auroc_std": 0.04008093735464341
+    },
+    {
+      "source": "rjudge",
+      "target": "agentharm",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.5032476756198347,
+      "auroc_std": 0.028842053904883872
+    },
+    {
+      "source": "rjudge",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.5151342975206611,
+      "auroc_std": 0.03513844623242375
+    },
+    {
+      "source": "rjudge",
+      "target": "agentharm",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.4833677685950414,
+      "auroc_std": 0.03036824131039032
+    },
+    {
+      "source": "rjudge",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "all",
+      "auroc_mean": 0.8184384,
+      "auroc_std": 0.056617094215793126
+    },
+    {
+      "source": "rjudge",
+      "target": "atbench",
+      "detector": "lr",
+      "features": "length_free",
+      "auroc_mean": 0.4202304,
+      "auroc_std": 0.030549352029789447
+    },
+    {
+      "source": "rjudge",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "all",
+      "auroc_mean": 0.8060672,
+      "auroc_std": 0.05590252398738362
+    },
+    {
+      "source": "rjudge",
+      "target": "atbench",
+      "detector": "knn",
+      "features": "length_free",
+      "auroc_mean": 0.4583136,
+      "auroc_std": 0.030025226897394123
+    },
+    {
+      "source": "rjudge",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "all",
+      "auroc_mean": 0.8614112,
+      "auroc_std": 0.020391832466946137
+    },
+    {
+      "source": "rjudge",
+      "target": "atbench",
+      "detector": "rf",
+      "features": "length_free",
+      "auroc_mean": 0.3762848,
+      "auroc_std": 0.03539131268772041
+    }
+  ],
+  "d_half_a": {
+    "agentdojo": {
+      "trace_length": 0.3767426995940233,
+      "low_diversity": 0.4086659519214546,
+      "repeat_rate": 0.2406063007183096,
+      "mean_arg_length": 0.1749339599580531,
+      "arg_diversity": 0.48028338173481694,
+      "arg_empty_rate": 0.07644237783831113
+    },
+    "stabletoolbench": {
+      "trace_length": 1.6367552929148506,
+      "low_diversity": 1.963483916935998,
+      "repeat_rate": 1.1426742753669248,
+      "mean_arg_length": -1.702290143544839,
+      "arg_diversity": -1.1375890240566,
+      "arg_empty_rate": 0.29033217359572494
+    },
+    "trail": {
+      "trace_length": -0.32389421165912985,
+      "low_diversity": 0.5586451939869959,
+      "repeat_rate": 2.043367478857479,
+      "mean_arg_length": 2.005818584837712,
+      "arg_diversity": -1.5489934454299892,
+      "arg_empty_rate": -0.05989373179231389
+    },
+    "swe_agent": {
+      "trace_length": 0.5204748810126737,
+      "low_diversity": 0.6926080955250765,
+      "repeat_rate": 0.602770888060617,
+      "mean_arg_length": 0.2229844263183584,
+      "arg_diversity": -0.5175052209268871,
+      "arg_empty_rate": 0.07400966311865007
+    },
+    "synthetic": {
+      "trace_length": -0.2889789958628953,
+      "low_diversity": -0.48506091256019424,
+      "repeat_rate": -0.09485727896655864,
+      "mean_arg_length": 0.19745843013371686,
+      "arg_diversity": 0.45522497513678983,
+      "arg_empty_rate": -0.08227433066386616
+    },
+    "toolbench": {
+      "trace_length": 1.6671294507751966,
+      "low_diversity": -0.30844248111107664,
+      "repeat_rate": -0.3760704707424229,
+      "mean_arg_length": 0.06006554841606397,
+      "arg_diversity": 0.5673086310280855,
+      "arg_empty_rate": -0.5321123815696959
+    },
+    "toolace": {
+      "trace_length": -0.003677647136979622,
+      "low_diversity": -0.41416632234815065,
+      "repeat_rate": -0.5070383037412132,
+      "mean_arg_length": -0.05897332047224291,
+      "arg_diversity": -0.791401950728738,
+      "arg_empty_rate": 0.49279685662717193
+    },
+    "apibank": {
+      "trace_length": 0.0594089479566285,
+      "low_diversity": -0.39817455072650276,
+      "repeat_rate": -0.1125813916142225,
+      "mean_arg_length": -0.3282843699475683,
+      "arg_diversity": -1.0506487122504562,
+      "arg_empty_rate": 0.49941508235354287
+    },
+    "injecagent": {
+      "trace_length": 1.049200525054213,
+      "low_diversity": 0.016734306685518095,
+      "repeat_rate": 0.01673430668551809,
+      "mean_arg_length": -0.30925457701035636,
+      "arg_diversity": -1.049200525054213,
+      "arg_empty_rate": 1.0492005250542122
+    },
+    "agentharm": {
+      "trace_length": -0.013659360109144364,
+      "low_diversity": 0.0,
+      "repeat_rate": 0.0,
+      "mean_arg_length": -0.03567819533740648,
+      "arg_diversity": 0.019617702708424275,
+      "arg_empty_rate": 0.0
+    },
+    "atbench": {
+      "trace_length": 2.2589058739727115,
+      "low_diversity": -0.09327765377144383,
+      "repeat_rate": -0.038484408738906926,
+      "mean_arg_length": 0.3898321837638896,
+      "arg_diversity": 0.26831011939145355,
+      "arg_empty_rate": -0.5181703214052902
+    },
+    "rjudge": {
+      "trace_length": 0.6019037034848229,
+      "low_diversity": 0.19157309577045584,
+      "repeat_rate": 0.1738483892072057,
+      "mean_arg_length": -0.4777835565613479,
+      "arg_diversity": -0.09545024859261116,
+      "arg_empty_rate": 0.33680637781255107
+    }
+  },
+  "reversal_ratio": {
+    "tau=0.1/authors_lenient_R1-R3": {
+      "ratio": 2.2666666666666666,
+      "placebo_p95": 1.7167581480752827,
+      "share_construction_tied": 0.8387096774193549,
+      "n_cells": 336,
+      "n_reversed": 124,
+      "refuted": false
+    },
+    "tau=0.1/authors_strict_R1": {
+      "ratio": 1.586206896551724,
+      "placebo_p95": 2.017543859649123,
+      "share_construction_tied": 0.06451612903225806,
+      "n_cells": 336,
+      "n_reversed": 124,
+      "refuted": true
+    },
+    "tau=0.2/authors_lenient_R1-R3": {
+      "ratio": 4.271794871794872,
+      "placebo_p95": 1.8134115939554327,
+      "share_construction_tied": 0.9074074074074074,
+      "n_cells": 336,
+      "n_reversed": 108,
+      "refuted": false
+    },
+    "tau=0.2/authors_strict_R1": {
+      "ratio": 1.84,
+      "placebo_p95": 2.346938775510204,
+      "share_construction_tied": 0.07407407407407407,
+      "n_cells": 336,
+      "n_reversed": 108,
+      "refuted": true
+    }
+  },
+  "divergence": {
+    "pair_divergences": {
+      "agentdojo->stabletoolbench": {
+        "kl": 15.30329051634196,
+        "wasserstein": 0.26394048845254425,
+        "mmd": 0.016582838545536438
+      },
+      "agentdojo->trail": {
+        "kl": 10.344074459703064,
+        "wasserstein": 0.35841536605573215,
+        "mmd": 0.05777989827582186
+      },
+      "agentdojo->swe_agent": {
+        "kl": 6.793204764283479,
+        "wasserstein": 0.3571373822153203,
+        "mmd": 0.035372568908071056
+      },
+      "agentdojo->synthetic": {
+        "kl": 7.374518778859617,
+        "wasserstein": 0.4904150990214626,
+        "mmd": 0.05891504207292775
+      },
+      "agentdojo->toolbench": {
+        "kl": 11.076638454209402,
+        "wasserstein": 0.2699362239409149,
+        "mmd": 0.020886491343716895
+      },
+      "agentdojo->toolace": {
+        "kl": 15.562500314175182,
+        "wasserstein": 0.430593964687123,
+        "mmd": 0.02999785142289435
+      },
+      "agentdojo->apibank": {
+        "kl": 18.879162008483217,
+        "wasserstein": 0.4396584106430375,
+        "mmd": 0.028154145861892133
+      },
+      "agentdojo->injecagent": {
+        "kl": 18.162231620751086,
+        "wasserstein": 0.6689345967228748,
+        "mmd": 0.11705701658667778
+      },
+      "agentdojo->agentharm": {
+        "kl": 15.347341415793766,
+        "wasserstein": 0.666306127871149,
+        "mmd": 0.11445839639729216
+      },
+      "agentdojo->atbench": {
+        "kl": 18.78589316235693,
+        "wasserstein": 0.5105029652406473,
+        "mmd": 0.06132366523754518
+      },
+      "agentdojo->rjudge": {
+        "kl": 19.066520565374756,
+        "wasserstein": 0.46651230323519915,
+        "mmd": 0.09046095400544951
+      },
+      "stabletoolbench->agentdojo": {
+        "kl": 15.30329051634196,
+        "wasserstein": 0.26394048845254425,
+        "mmd": 0.019616403846348218
+      },
+      "stabletoolbench->trail": {
+        "kl": 12.955581067665383,
+        "wasserstein": 0.3086222815729136,
+        "mmd": 0.06799033300160395
+      },
+      "stabletoolbench->swe_agent": {
+        "kl": 9.23939957812373,
+        "wasserstein": 0.434066322696213,
+        "mmd": 0.03978202992245761
+      },
+      "stabletoolbench->synthetic": {
+        "kl": 9.993053405699532,
+        "wasserstein": 0.41527801352613514,
+        "mmd": 0.05367205325967006
+      },
+      "stabletoolbench->toolbench": {
+        "kl": 11.392974246997747,
+        "wasserstein": 0.19289462983606018,
+        "mmd": 0.019938889700677698
+      },
+      "stabletoolbench->toolace": {
+        "kl": 17.462844486956016,
+        "wasserstein": 0.5564340265323557,
+        "mmd": 0.05329964109085039
+      },
+      "stabletoolbench->apibank": {
+        "kl": 19.017367347285543,
+        "wasserstein": 0.48841481501542194,
+        "mmd": 0.030146380701259856
+      },
+      "stabletoolbench->injecagent": {
+        "kl": 16.631153482953668,
+        "wasserstein": 0.5272588743598452,
+        "mmd": 0.08959405678899024
+      },
+      "stabletoolbench->agentharm": {
+        "kl": 23.341757618460743,
+        "wasserstein": 0.711971873988527,
+        "mmd": 0.12350264917261378
+      },
+      "stabletoolbench->atbench": {
+        "kl": 16.33817289621409,
+        "wasserstein": 0.5842526132808433,
+        "mmd": 0.07397096398330683
+      },
+      "stabletoolbench->rjudge": {
+        "kl": 22.413403997762483,
+        "wasserstein": 0.5870538732136308,
+        "mmd": 0.09917785495548281
+      },
+      "trail->agentdojo": {
+        "kl": 10.344074459703064,
+        "wasserstein": 0.35841536605573215,
+        "mmd": 0.05671191542291476
+      },
+      "trail->stabletoolbench": {
+        "kl": 12.955581067665383,
+        "wasserstein": 0.3086222815729136,
+        "mmd": 0.06817425639637231
+      },
+      "trail->swe_agent": {
+        "kl": 4.905576405920292,
+        "wasserstein": 0.311739351900072,
+        "mmd": 0.0693807702442979
+      },
+      "trail->synthetic": {
+        "kl": 4.727748697663603,
+        "wasserstein": 0.3897391549707622,
+        "mmd": 0.10210749494903304
+      },
+      "trail->toolbench": {
+        "kl": 11.448546497489838,
+        "wasserstein": 0.32982809318692236,
+        "mmd": 0.06642493354369239
+      },
+      "trail->toolace": {
+        "kl": 9.876050406874151,
+        "wasserstein": 0.4840909749137663,
+        "mmd": 0.08007246186779349
+      },
+      "trail->apibank": {
+        "kl": 11.973906782580606,
+        "wasserstein": 0.5205156140351153,
+        "mmd": 0.066283553378358
+      },
+      "trail->injecagent": {
+        "kl": 16.18246633295464,
+        "wasserstein": 0.597398807427493,
+        "mmd": 0.17998753155298197
+      },
+      "trail->agentharm": {
+        "kl": 15.037000526802451,
+        "wasserstein": 0.689795424947417,
+        "mmd": 0.20121377177321964
+      },
+      "trail->atbench": {
+        "kl": 14.78793179934793,
+        "wasserstein": 0.6906689368100801,
+        "mmd": 0.13999267687845862
+      },
+      "trail->rjudge": {
+        "kl": 12.827288037153389,
+        "wasserstein": 0.570528675794367,
+        "mmd": 0.19093410765499985
+      },
+      "swe_agent->agentdojo": {
+        "kl": 6.793204764283479,
+        "wasserstein": 0.3571373822153203,
+        "mmd": 0.036278935595800976
+      },
+      "swe_agent->stabletoolbench": {
+        "kl": 9.23939957812373,
+        "wasserstein": 0.434066322696213,
+        "mmd": 0.04625095385568956
+      },
+      "swe_agent->trail": {
+        "kl": 4.905576405920292,
+        "wasserstein": 0.311739351900072,
+        "mmd": 0.06997158027902817
+      },
+      "swe_agent->synthetic": {
+        "kl": 3.6261551139681862,
+        "wasserstein": 0.4911742972181578,
+        "mmd": 0.0697047166062097
+      },
+      "swe_agent->toolbench": {
+        "kl": 8.475198787720013,
+        "wasserstein": 0.41868745452389194,
+        "mmd": 0.050510606628730415
+      },
+      "swe_agent->toolace": {
+        "kl": 8.282608573487119,
+        "wasserstein": 0.37060585123941364,
+        "mmd": 0.0573389362418254
+      },
+      "swe_agent->apibank": {
+        "kl": 9.353353068011286,
+        "wasserstein": 0.474293429571915,
+        "mmd": 0.05097273785680834
+      },
+      "swe_agent->injecagent": {
+        "kl": 8.82591477929782,
+        "wasserstein": 0.709290814098952,
+        "mmd": 0.173546748194636
+      },
+      "swe_agent->agentharm": {
+        "kl": 9.931936466382743,
+        "wasserstein": 0.5649785755771451,
+        "mmd": 0.14290610964946893
+      },
+      "swe_agent->atbench": {
+        "kl": 9.6822590593598,
+        "wasserstein": 0.5991282852672777,
+        "mmd": 0.07941437383452621
+      },
+      "swe_agent->rjudge": {
+        "kl": 9.064288304785745,
+        "wasserstein": 0.5901385292427032,
+        "mmd": 0.10128159522492886
+      },
+      "synthetic->agentdojo": {
+        "kl": 7.374518778859617,
+        "wasserstein": 0.4904150990214626,
+        "mmd": 0.0647364880107335
+      },
+      "synthetic->stabletoolbench": {
+        "kl": 9.993053405699532,
+        "wasserstein": 0.41527801352613514,
+        "mmd": 0.05351024495050749
+      },
+      "synthetic->trail": {
+        "kl": 4.727748697663603,
+        "wasserstein": 0.3897391549707622,
+        "mmd": 0.09321545200559556
+      },
+      "synthetic->swe_agent": {
+        "kl": 3.6261551139681862,
+        "wasserstein": 0.4911742972181578,
+        "mmd": 0.08205409043746725
+      },
+      "synthetic->toolbench": {
+        "kl": 9.126213247810975,
+        "wasserstein": 0.4344442768037338,
+        "mmd": 0.04948103830426309
+      },
+      "synthetic->toolace": {
+        "kl": 10.67743733244226,
+        "wasserstein": 0.5688158121935144,
+        "mmd": 0.07216278047275981
+      },
+      "synthetic->apibank": {
+        "kl": 11.251758688362274,
+        "wasserstein": 0.5279627152808963,
+        "mmd": 0.06382334437500736
+      },
+      "synthetic->injecagent": {
+        "kl": 11.903663554801517,
+        "wasserstein": 0.5927754043180901,
+        "mmd": 0.094789389231277
+      },
+      "synthetic->agentharm": {
+        "kl": 12.096364465211408,
+        "wasserstein": 0.6025415783307285,
+        "mmd": 0.11568923736057812
+      },
+      "synthetic->atbench": {
+        "kl": 11.701346822639167,
+        "wasserstein": 0.6521353551120713,
+        "mmd": 0.12006485510905274
+      },
+      "synthetic->rjudge": {
+        "kl": 10.739458326727485,
+        "wasserstein": 0.6473765994164502,
+        "mmd": 0.16755881983448784
+      },
+      "toolbench->agentdojo": {
+        "kl": 11.076638454209402,
+        "wasserstein": 0.2699362239409149,
+        "mmd": 0.01889154084905409
+      },
+      "toolbench->stabletoolbench": {
+        "kl": 11.392974246997747,
+        "wasserstein": 0.19289462983606018,
+        "mmd": 0.016110940518617056
+      },
+      "toolbench->trail": {
+        "kl": 11.448546497489838,
+        "wasserstein": 0.32982809318692236,
+        "mmd": 0.06517429164850053
+      },
+      "toolbench->swe_agent": {
+        "kl": 8.475198787720013,
+        "wasserstein": 0.41868745452389194,
+        "mmd": 0.05600396523835949
+      },
+      "toolbench->synthetic": {
+        "kl": 9.126213247810975,
+        "wasserstein": 0.4344442768037338,
+        "mmd": 0.04776624448992428
+      },
+      "toolbench->toolace": {
+        "kl": 18.54415566813302,
+        "wasserstein": 0.5906469716803675,
+        "mmd": 0.03756118730017266
+      },
+      "toolbench->apibank": {
+        "kl": 17.140749007171113,
+        "wasserstein": 0.5345023334233932,
+        "mmd": 0.040508735941097496
+      },
+      "toolbench->injecagent": {
+        "kl": 12.68961272123557,
+        "wasserstein": 0.5236110305281537,
+        "mmd": 0.09304451149557469
+      },
+      "toolbench->agentharm": {
+        "kl": 19.76255014995634,
+        "wasserstein": 0.694034430186928,
+        "mmd": 0.11954309863519264
+      },
+      "toolbench->atbench": {
+        "kl": 18.688641968530806,
+        "wasserstein": 0.6341452765196068,
+        "mmd": 0.0687050963320679
+      },
+      "toolbench->rjudge": {
+        "kl": 20.136931630826883,
+        "wasserstein": 0.6099202424317226,
+        "mmd": 0.10144519243198002
+      },
+      "toolace->agentdojo": {
+        "kl": 15.562500314175182,
+        "wasserstein": 0.430593964687123,
+        "mmd": 0.031251416639300866
+      },
+      "toolace->stabletoolbench": {
+        "kl": 17.462844486956016,
+        "wasserstein": 0.5564340265323557,
+        "mmd": 0.049020802816751696
+      },
+      "toolace->trail": {
+        "kl": 9.876050406874151,
+        "wasserstein": 0.4840909749137663,
+        "mmd": 0.08439950801304563
+      },
+      "toolace->swe_agent": {
+        "kl": 8.282608573487119,
+        "wasserstein": 0.37060585123941364,
+        "mmd": 0.06376670677755636
+      },
+      "toolace->synthetic": {
+        "kl": 10.67743733244226,
+        "wasserstein": 0.5688158121935144,
+        "mmd": 0.08079163592980632
+      },
+      "toolace->toolbench": {
+        "kl": 18.54415566813302,
+        "wasserstein": 0.5906469716803675,
+        "mmd": 0.03802598481792496
+      },
+      "toolace->apibank": {
+        "kl": 8.323582945827685,
+        "wasserstein": 0.36843849563464687,
+        "mmd": 0.05002736613857317
+      },
+      "toolace->injecagent": {
+        "kl": 18.06853521183739,
+        "wasserstein": 0.7890817060956845,
+        "mmd": 0.1565639751983513
+      },
+      "toolace->agentharm": {
+        "kl": 20.036729302156587,
+        "wasserstein": 0.730264962235137,
+        "mmd": 0.16159537731583973
+      },
+      "toolace->atbench": {
+        "kl": 11.719341991883871,
+        "wasserstein": 0.5099529556153236,
+        "mmd": 0.09044907832864835
+      },
+      "toolace->rjudge": {
+        "kl": 12.48683027537922,
+        "wasserstein": 0.5351729657653194,
+        "mmd": 0.14502216326930406
+      },
+      "apibank->agentdojo": {
+        "kl": 18.879162008483217,
+        "wasserstein": 0.4396584106430375,
+        "mmd": 0.03351687841906248
+      },
+      "apibank->stabletoolbench": {
+        "kl": 19.017367347285543,
+        "wasserstein": 0.48841481501542194,
+        "mmd": 0.03290143594681183
+      },
+      "apibank->trail": {
+        "kl": 11.973906782580606,
+        "wasserstein": 0.5205156140351153,
+        "mmd": 0.06301642062039103
+      },
+      "apibank->swe_agent": {
+        "kl": 9.353353068011286,
+        "wasserstein": 0.474293429571915,
+        "mmd": 0.047041030261763206
+      },
+      "apibank->synthetic": {
+        "kl": 11.251758688362274,
+        "wasserstein": 0.5279627152808963,
+        "mmd": 0.05843269350119096
+      },
+      "apibank->toolbench": {
+        "kl": 17.140749007171113,
+        "wasserstein": 0.5345023334233932,
+        "mmd": 0.028492531599379256
+      },
+      "apibank->toolace": {
+        "kl": 8.323582945827685,
+        "wasserstein": 0.36843849563464687,
+        "mmd": 0.05316434755059285
+      },
+      "apibank->injecagent": {
+        "kl": 15.563637248683548,
+        "wasserstein": 0.7071531440608269,
+        "mmd": 0.11791392627333808
+      },
+      "apibank->agentharm": {
+        "kl": 22.063922479052934,
+        "wasserstein": 0.6473081698087851,
+        "mmd": 0.11500419068745182
+      },
+      "apibank->atbench": {
+        "kl": 10.525082825314627,
+        "wasserstein": 0.3657347496376789,
+        "mmd": 0.05371200505006768
+      },
+      "apibank->rjudge": {
+        "kl": 14.688837821199131,
+        "wasserstein": 0.37658235432404047,
+        "mmd": 0.08408040479696366
+      },
+      "injecagent->agentdojo": {
+        "kl": 18.162231620751086,
+        "wasserstein": 0.6689345967228748,
+        "mmd": 0.12287551483062309
+      },
+      "injecagent->stabletoolbench": {
+        "kl": 16.631153482953668,
+        "wasserstein": 0.5272588743598452,
+        "mmd": 0.09765597634983314
+      },
+      "injecagent->trail": {
+        "kl": 16.18246633295464,
+        "wasserstein": 0.597398807427493,
+        "mmd": 0.18121116087988842
+      },
+      "injecagent->swe_agent": {
+        "kl": 8.82591477929782,
+        "wasserstein": 0.709290814098952,
+        "mmd": 0.16869654217057972
+      },
+      "injecagent->synthetic": {
+        "kl": 11.903663554801517,
+        "wasserstein": 0.5927754043180901,
+        "mmd": 0.08303566986506072
+      },
+      "injecagent->toolbench": {
+        "kl": 12.68961272123557,
+        "wasserstein": 0.5236110305281537,
+        "mmd": 0.08986248641807115
+      },
+      "injecagent->toolace": {
+        "kl": 18.06853521183739,
+        "wasserstein": 0.7890817060956845,
+        "mmd": 0.14431069009654118
+      },
+      "injecagent->apibank": {
+        "kl": 15.563637248683548,
+        "wasserstein": 0.7071531440608269,
+        "mmd": 0.12002882145423088
+      },
+      "injecagent->agentharm": {
+        "kl": 13.918631419103685,
+        "wasserstein": 0.5229551639042479,
+        "mmd": 0.17735054842419729
+      },
+      "injecagent->atbench": {
+        "kl": 15.481820468893105,
+        "wasserstein": 0.5843680471794622,
+        "mmd": 0.18759302088649932
+      },
+      "injecagent->rjudge": {
+        "kl": 13.48304662482271,
+        "wasserstein": 0.6127849543672226,
+        "mmd": 0.19803800782762093
+      },
+      "agentharm->agentdojo": {
+        "kl": 15.347341415793766,
+        "wasserstein": 0.666306127871149,
+        "mmd": 0.11561049518155186
+      },
+      "agentharm->stabletoolbench": {
+        "kl": 23.341757618460743,
+        "wasserstein": 0.711971873988527,
+        "mmd": 0.12357867267369216
+      },
+      "agentharm->trail": {
+        "kl": 15.037000526802451,
+        "wasserstein": 0.689795424947417,
+        "mmd": 0.20121377177321942
+      },
+      "agentharm->swe_agent": {
+        "kl": 9.931936466382743,
+        "wasserstein": 0.5649785755771451,
+        "mmd": 0.11599121800592327
+      },
+      "agentharm->synthetic": {
+        "kl": 12.096364465211408,
+        "wasserstein": 0.6025415783307285,
+        "mmd": 0.12019681595164511
+      },
+      "agentharm->toolbench": {
+        "kl": 19.76255014995634,
+        "wasserstein": 0.694034430186928,
+        "mmd": 0.13003212846903278
+      },
+      "agentharm->toolace": {
+        "kl": 20.036729302156587,
+        "wasserstein": 0.730264962235137,
+        "mmd": 0.14182719660836296
+      },
+      "agentharm->apibank": {
+        "kl": 22.063922479052934,
+        "wasserstein": 0.6473081698087851,
+        "mmd": 0.11635708685850554
+      },
+      "agentharm->injecagent": {
+        "kl": 13.918631419103685,
+        "wasserstein": 0.5229551639042479,
+        "mmd": 0.18247150471307205
+      },
+      "agentharm->atbench": {
+        "kl": 15.838250431554078,
+        "wasserstein": 0.5339812307206014,
+        "mmd": 0.12451664935009132
+      },
+      "agentharm->rjudge": {
+        "kl": 15.688384060557022,
+        "wasserstein": 0.5617473655111787,
+        "mmd": 0.14051689618111285
+      },
+      "atbench->agentdojo": {
+        "kl": 18.78589316235693,
+        "wasserstein": 0.5105029652406473,
+        "mmd": 0.0619801348729373
+      },
+      "atbench->stabletoolbench": {
+        "kl": 16.33817289621409,
+        "wasserstein": 0.5842526132808433,
+        "mmd": 0.07510699851843516
+      },
+      "atbench->trail": {
+        "kl": 14.78793179934793,
+        "wasserstein": 0.6906689368100801,
+        "mmd": 0.13999267687845862
+      },
+      "atbench->swe_agent": {
+        "kl": 9.6822590593598,
+        "wasserstein": 0.5991282852672777,
+        "mmd": 0.08852184466468693
+      },
+      "atbench->synthetic": {
+        "kl": 11.701346822639167,
+        "wasserstein": 0.6521353551120713,
+        "mmd": 0.121117957862788
+      },
+      "atbench->toolbench": {
+        "kl": 18.688641968530806,
+        "wasserstein": 0.6341452765196068,
+        "mmd": 0.06419876466392527
+      },
+      "atbench->toolace": {
+        "kl": 11.719341991883871,
+        "wasserstein": 0.5099529556153236,
+        "mmd": 0.09113400783711789
+      },
+      "atbench->apibank": {
+        "kl": 10.525082825314627,
+        "wasserstein": 0.3657347496376789,
+        "mmd": 0.052073546173130314
+      },
+      "atbench->injecagent": {
+        "kl": 15.481820468893105,
+        "wasserstein": 0.5843680471794622,
+        "mmd": 0.1732276120524434
+      },
+      "atbench->agentharm": {
+        "kl": 15.838250431554078,
+        "wasserstein": 0.5339812307206014,
+        "mmd": 0.12451664935009121
+      },
+      "atbench->rjudge": {
+        "kl": 6.560196179452608,
+        "wasserstein": 0.2346720606495447,
+        "mmd": 0.05146952792881465
+      },
+      "rjudge->agentdojo": {
+        "kl": 19.066520565374756,
+        "wasserstein": 0.46651230323519915,
+        "mmd": 0.0876659919294771
+      },
+      "rjudge->stabletoolbench": {
+        "kl": 22.413403997762483,
+        "wasserstein": 0.5870538732136308,
+        "mmd": 0.10391023798362786
+      },
+      "rjudge->trail": {
+        "kl": 12.827288037153389,
+        "wasserstein": 0.570528675794367,
+        "mmd": 0.19255955334362806
+      },
+      "rjudge->swe_agent": {
+        "kl": 9.064288304785745,
+        "wasserstein": 0.5901385292427032,
+        "mmd": 0.10699126800691527
+      },
+      "rjudge->synthetic": {
+        "kl": 10.739458326727485,
+        "wasserstein": 0.6473765994164502,
+        "mmd": 0.17450709425970534
+      },
+      "rjudge->toolbench": {
+        "kl": 20.136931630826883,
+        "wasserstein": 0.6099202424317226,
+        "mmd": 0.09948135010811543
+      },
+      "rjudge->toolace": {
+        "kl": 12.48683027537922,
+        "wasserstein": 0.5351729657653194,
+        "mmd": 0.12508932407379225
+      },
+      "rjudge->apibank": {
+        "kl": 14.688837821199131,
+        "wasserstein": 0.37658235432404047,
+        "mmd": 0.08305664169264115
+      },
+      "rjudge->injecagent": {
+        "kl": 13.48304662482271,
+        "wasserstein": 0.6127849543672226,
+        "mmd": 0.18993584994905144
+      },
+      "rjudge->agentharm": {
+        "kl": 15.688384060557022,
+        "wasserstein": 0.5617473655111787,
+        "mmd": 0.13979281049801584
+      },
+      "rjudge->atbench": {
+        "kl": 6.560196179452608,
+        "wasserstein": 0.2346720606495447,
+        "mmd": 0.04974073782700472
+      }
+    },
+    "lr": {
+      "kl": -0.030831676019549947,
+      "wasserstein": -0.030500221869724786,
+      "mmd": -0.046199897238487164,
+      "all_three": -0.05204793462873081
+    },
+    "knn": {
+      "kl": -0.05179044993053883,
+      "wasserstein": -0.050833737257018674,
+      "mmd": -0.06204121867794998,
+      "all_three": -0.10057244354302108
+    },
+    "rf": {
+      "kl": -0.04811879418650111,
+      "wasserstein": -0.03880942955946409,
+      "mmd": -0.05364400910011535,
+      "all_three": -0.08379136249497598
+    }
+  },
+  "notes": {
+    "ratio_datasets": [
+      "agentdojo",
+      "apibank",
+      "stabletoolbench",
+      "swe_agent",
+      "synthetic",
+      "toolace",
+      "toolbench",
+      "trail"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "v49_reported": {
+    "within": 0.067,
+    "between": 0.268,
+    "ratio": 4.0,
+    "p_value": 0.02,
+    "domains": 9
+  },
+  "v50_same_9_domains": {
+    "within": 0.030303030303030304,
+    "between": 0.30666666666666664,
+    "ratio": 10.12,
+    "p_value": 0.033548322583870804
+  },
+  "v50_same_9_drop_tied_consensus": {
+    "within": 0.0,
+    "between": 0.26153846153846155,
+    "ratio": null,
+    "p_value": 0.02734863256837158
+  },
+  "v50_same_9_drop_tied_authors": {
+    "within": 0.0,
+    "between": 0.0,
+    "ratio": null,
+    "p_value": 1.0
+  },
+  "v50_12_domains_groups4": {
+    "within": 0.044444444444444446,
+    "between": 0.30718954248366015,
+    "ratio": 6.911764705882353,
+    "p_value": 0.004949752512374382
+  },
+  "anti_prediction_rate_rf": {
+    "v49_reported": 0.328,
+    "v50": 0.3939393939393939,
+    "v50_n_pairs": 132
+  }
+}

@@ -1,0 +1,1479 @@
+{
+  "wasserstein_median": 0.5309719730007489,
+  "rf/k=10": {
+    "regret": {
+      "always_reuse": 0.1720223462666789,
+      "always_retrain": 0.020425166029334543,
+      "sign_gate": 0.08400428075083988,
+      "direct_gate": 0.08201923736289109,
+      "divergence_gate": 0.10970232754671493
+    },
+    "mean_auroc": {
+      "reuse": 0.548562838802027,
+      "retrain": 0.7001600190393713
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.18582499999999993,
+        "always_retrain": 0.0007965909090909097,
+        "sign_gate": 0.025910984848484843,
+        "direct_gate": 0.08510587121212118,
+        "divergence_gate": 0.14800587121212117,
+        "reuse": 0.5100424242424243,
+        "retrain": 0.6950708333333333
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.3487617862617862,
+        "always_retrain": 0.00014660639660639483,
+        "sign_gate": 0.05967838467838468,
+        "direct_gate": 0.18884137634137635,
+        "divergence_gate": 0.24352648102648103,
+        "reuse": 0.6213432400932402,
+        "retrain": 0.96995841995842
+      },
+      "trail": {
+        "always_reuse": 0.31635336414997434,
+        "always_retrain": 0.0029378531073446287,
+        "sign_gate": 0.012095531587057012,
+        "direct_gate": 0.14552645095017977,
+        "divergence_gate": 0.20579352850539293,
+        "reuse": 0.4914432460195171,
+        "retrain": 0.804858757062147
+      },
+      "swe_agent": {
+        "always_reuse": 0.08310988574562532,
+        "always_retrain": 0.0645122012721347,
+        "sign_gate": 0.052221381697146206,
+        "direct_gate": 0.05987263343410631,
+        "divergence_gate": 0.1018222118357338,
+        "reuse": 0.5491488557902121,
+        "retrain": 0.5677465402637029
+      },
+      "synthetic": {
+        "always_reuse": 0.14252908566322423,
+        "always_retrain": 0.004905366936517603,
+        "sign_gate": 0.14252908566322423,
+        "direct_gate": 0.05818303332607211,
+        "divergence_gate": 0.07608547947073058,
+        "reuse": 0.4447287190453116,
+        "retrain": 0.5823524377720181
+      },
+      "toolbench": {
+        "always_reuse": 0.23423558042933698,
+        "always_retrain": 0.017352815079641905,
+        "sign_gate": 0.23423558042933698,
+        "direct_gate": 0.06942265566371773,
+        "divergence_gate": 0.14504235600247328,
+        "reuse": 0.5355954166930906,
+        "retrain": 0.7524781820427858
+      },
+      "toolace": {
+        "always_reuse": 0.11736540351981443,
+        "always_retrain": 0.024719412020551702,
+        "sign_gate": 0.11736540351981443,
+        "direct_gate": 0.05989744482830561,
+        "divergence_gate": 0.07469514566883194,
+        "reuse": 0.5092998251408244,
+        "retrain": 0.601945816640087
+      },
+      "apibank": {
+        "always_reuse": 0.09219826954807035,
+        "always_retrain": 0.030864590124351086,
+        "sign_gate": 0.09219826954807035,
+        "direct_gate": 0.06380573061290194,
+        "divergence_gate": 0.07472596080325165,
+        "reuse": 0.5238568473580426,
+        "retrain": 0.585190526781762
+      },
+      "injecagent": {
+        "always_reuse": 0.11211881624595098,
+        "always_retrain": 0.05703381059168534,
+        "sign_gate": 0.11211881624595098,
+        "direct_gate": 0.04233655338968432,
+        "divergence_gate": 0.10508213060395223,
+        "reuse": 0.6114657006497614,
+        "retrain": 0.6665507063040269
+      },
+      "agentharm": {
+        "always_reuse": 0.010937500000000001,
+        "always_retrain": 0.028158456987227666,
+        "sign_gate": 0.025808250375657406,
+        "direct_gate": 0.023396412471825702,
+        "divergence_gate": 0.02639697595792639,
+        "reuse": 0.504469149135988,
+        "retrain": 0.4872481921487603
+      },
+      "atbench": {
+        "always_reuse": 0.19000959999999997,
+        "always_retrain": 0.009428945454545461,
+        "sign_gate": 0.04253149090909091,
+        "direct_gate": 0.06991505454545453,
+        "divergence_gate": 0.06848145454545455,
+        "reuse": 0.6835089454545455,
+        "retrain": 0.8640895999999999
+      },
+      "rjudge": {
+        "always_reuse": 0.2308238636363636,
+        "always_retrain": 0.004245343472317152,
+        "sign_gate": 0.09135818950786055,
+        "direct_gate": 0.11792763157894735,
+        "divergence_gate": 0.04677033492822964,
+        "reuse": 0.5978516960013671,
+        "retrain": 0.8244302161654136
+      }
+    }
+  },
+  "rf/k=20": {
+    "regret": {
+      "always_reuse": 0.19161570445610554,
+      "always_retrain": 0.019632039906956007,
+      "sign_gate": 0.038725365670893096,
+      "direct_gate": 0.08561752241252439,
+      "divergence_gate": 0.12308714967607463
+    },
+    "mean_auroc": {
+      "reuse": 0.548562838802027,
+      "retrain": 0.7205465033511765
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.22795738636363633,
+        "always_retrain": 4.3560606060604795e-05,
+        "sign_gate": 0.033449999999999994,
+        "direct_gate": 0.11692159090909088,
+        "divergence_gate": 0.18234090909090908,
+        "reuse": 0.5100424242424243,
+        "retrain": 0.73795625
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.34936304311304317,
+        "always_retrain": 0.0,
+        "sign_gate": 0.06512789012789012,
+        "direct_gate": 0.18369072744072745,
+        "divergence_gate": 0.24385578760578763,
+        "reuse": 0.6213432400932402,
+        "retrain": 0.9707062832062832
+      },
+      "trail": {
+        "always_reuse": 0.32930662557781204,
+        "always_retrain": 0.004817668207498713,
+        "sign_gate": 0.012244478685156646,
+        "direct_gate": 0.11887519260400618,
+        "divergence_gate": 0.21472008217770933,
+        "reuse": 0.4914432460195171,
+        "retrain": 0.8159322033898306
+      },
+      "swe_agent": {
+        "always_reuse": 0.12329308268875568,
+        "always_retrain": 0.03338788040889143,
+        "sign_gate": 0.033007712417947484,
+        "direct_gate": 0.056686560094090795,
+        "divergence_gate": 0.1160754023038192,
+        "reuse": 0.5491488557902121,
+        "retrain": 0.6390540580700764
+      },
+      "synthetic": {
+        "always_reuse": 0.12680874963138153,
+        "always_retrain": 0.0043952286323551415,
+        "sign_gate": 0.01481064496004102,
+        "direct_gate": 0.04808914861362415,
+        "divergence_gate": 0.06727886967874254,
+        "reuse": 0.4447287190453116,
+        "retrain": 0.5671422400443379
+      },
+      "toolbench": {
+        "always_reuse": 0.26796732971060455,
+        "always_retrain": 0.008744102496009978,
+        "sign_gate": 0.0362575770787752,
+        "direct_gate": 0.09295224326452528,
+        "divergence_gate": 0.15952844079969564,
+        "reuse": 0.5355954166930906,
+        "retrain": 0.7948186439076853
+      },
+      "toolace": {
+        "always_reuse": 0.1853144150085396,
+        "always_retrain": 0.010259296355361944,
+        "sign_gate": 0.03301410630872103,
+        "direct_gate": 0.06723131977128631,
+        "divergence_gate": 0.09769372416451261,
+        "reuse": 0.5092998251408244,
+        "retrain": 0.6843549437940021
+      },
+      "apibank": {
+        "always_reuse": 0.12964136182542554,
+        "always_retrain": 0.019950179081653193,
+        "sign_gate": 0.032120656766871904,
+        "direct_gate": 0.0738621835888768,
+        "divergence_gate": 0.09898064308422873,
+        "reuse": 0.5238568473580426,
+        "retrain": 0.6335480301018148
+      },
+      "injecagent": {
+        "always_reuse": 0.06365361393824392,
+        "always_retrain": 0.12001178770628487,
+        "sign_gate": 0.06365361393824392,
+        "direct_gate": 0.028290974258716198,
+        "divergence_gate": 0.13766651333064994,
+        "reuse": 0.6114657006497614,
+        "retrain": 0.5551075268817203
+      },
+      "agentharm": {
+        "always_reuse": 0.007665171863260709,
+        "always_retrain": 0.03224020942900076,
+        "sign_gate": 0.025201328888054108,
+        "direct_gate": 0.02084781179564238,
+        "divergence_gate": 0.02981017561983472,
+        "reuse": 0.504469149135988,
+        "retrain": 0.4798941115702479
+      },
+      "atbench": {
+        "always_reuse": 0.2269184,
+        "always_retrain": 0.0012945454545454543,
+        "sign_gate": 0.03758778181818182,
+        "direct_gate": 0.11461178181818182,
+        "divergence_gate": 0.0767264,
+        "reuse": 0.6835089454545455,
+        "retrain": 0.9091328
+      },
+      "rjudge": {
+        "always_reuse": 0.2614992737525632,
+        "always_retrain": 0.0004400205058099793,
+        "sign_gate": 0.07822859706083389,
+        "direct_gate": 0.10535073479152425,
+        "divergence_gate": 0.05236884825700614,
+        "reuse": 0.5978516960013671,
+        "retrain": 0.8589109492481203
+      }
+    }
+  },
+  "rf/k=50": {
+    "regret": {
+      "always_reuse": 0.22349215320578217,
+      "always_retrain": 0.018827699302055963,
+      "sign_gate": 0.03943031780544128,
+      "direct_gate": 0.09534157607501355,
+      "divergence_gate": 0.143263507813665
+    },
+    "mean_auroc": {
+      "reuse": 0.548562838802027,
+      "retrain": 0.7532272927057533
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.2965679924242424,
+        "always_retrain": 0.0,
+        "sign_gate": 0.041075,
+        "direct_gate": 0.11826931818181817,
+        "divergence_gate": 0.2384689393939394,
+        "reuse": 0.5100424242424243,
+        "retrain": 0.8066104166666666
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.36753409878409876,
+        "always_retrain": 0.0,
+        "sign_gate": 0.06746912996912996,
+        "direct_gate": 0.17891033516033514,
+        "divergence_gate": 0.2554191866691866,
+        "reuse": 0.6213432400932402,
+        "retrain": 0.9888773388773388
+      },
+      "trail": {
+        "always_reuse": 0.3960811504879302,
+        "always_retrain": 0.00017976373908577285,
+        "sign_gate": 0.010020544427324092,
+        "direct_gate": 0.1351566512583462,
+        "divergence_gate": 0.2555264509501798,
+        "reuse": 0.4914432460195171,
+        "retrain": 0.8873446327683614
+      },
+      "swe_agent": {
+        "always_reuse": 0.13676298633756503,
+        "always_retrain": 0.009760544912406783,
+        "sign_gate": 0.01946411123028556,
+        "direct_gate": 0.044821260841647774,
+        "divergence_gate": 0.1160554008088853,
+        "reuse": 0.5491488557902121,
+        "retrain": 0.6761512972153705
+      },
+      "synthetic": {
+        "always_reuse": 0.18601183728329307,
+        "always_retrain": 0.0012696775570265738,
+        "sign_gate": 0.014469589533162323,
+        "direct_gate": 0.03732141454646221,
+        "divergence_gate": 0.09815075790918129,
+        "reuse": 0.4447287190453116,
+        "retrain": 0.6294708787715779
+      },
+      "toolbench": {
+        "always_reuse": 0.2959083361739121,
+        "always_retrain": 0.004558666539831525,
+        "sign_gate": 0.0414438381240025,
+        "direct_gate": 0.11868251148122311,
+        "divergence_gate": 0.17286651889050955,
+        "reuse": 0.5355954166930906,
+        "retrain": 0.8269450863271713
+      },
+      "toolace": {
+        "always_reuse": 0.22585243848104133,
+        "always_retrain": 0.005996860844628166,
+        "sign_gate": 0.022306744366139906,
+        "direct_gate": 0.0891512169420684,
+        "divergence_gate": 0.11379513364615859,
+        "reuse": 0.5092998251408244,
+        "retrain": 0.7291554027772377
+      },
+      "apibank": {
+        "always_reuse": 0.16666197432492252,
+        "always_retrain": 0.01229978671173891,
+        "sign_gate": 0.02659700591573102,
+        "direct_gate": 0.0840542878989094,
+        "divergence_gate": 0.12381825425570446,
+        "reuse": 0.5238568473580426,
+        "retrain": 0.6782190349712262
+      },
+      "injecagent": {
+        "always_reuse": 0.0563447568665785,
+        "always_retrain": 0.13558928947923257,
+        "sign_gate": 0.0563447568665785,
+        "direct_gate": 0.015311080443907771,
+        "divergence_gate": 0.14700228087324863,
+        "reuse": 0.6114657006497614,
+        "retrain": 0.5322211680371074
+      },
+      "agentharm": {
+        "always_reuse": 0.002278596919609317,
+        "always_retrain": 0.05606980184072128,
+        "sign_gate": 0.03481463655146508,
+        "direct_gate": 0.028386199286250954,
+        "divergence_gate": 0.05098375281743051,
+        "reuse": 0.504469149135988,
+        "retrain": 0.450677944214876
+      },
+      "atbench": {
+        "always_reuse": 0.24537425454545458,
+        "always_retrain": 0.00020799999999999907,
+        "sign_gate": 0.048724363636363635,
+        "direct_gate": 0.1489312,
+        "divergence_gate": 0.08274618181818182,
+        "reuse": 0.6835089454545455,
+        "retrain": 0.9286752000000003
+      },
+      "rjudge": {
+        "always_reuse": 0.3065274158407381,
+        "always_retrain": 0.0,
+        "sign_gate": 0.09043409304511278,
+        "direct_gate": 0.14510343685919344,
+        "divergence_gate": 0.06432923573137388,
+        "reuse": 0.5978516960013671,
+        "retrain": 0.9043791118421054
+      }
+    }
+  },
+  "rf/k=100": {
+    "regret": {
+      "always_reuse": 0.2485251470684174,
+      "always_retrain": 0.017670016355033107,
+      "sign_gate": 0.0382286156867719,
+      "direct_gate": 0.1000695146939466,
+      "divergence_gate": 0.1585038753822252
+    },
+    "mean_auroc": {
+      "reuse": 0.548562838802027,
+      "retrain": 0.7794179695154114
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.3181284090909091,
+        "always_retrain": 0.0,
+        "sign_gate": 0.03204507575757576,
+        "direct_gate": 0.14104602272727274,
+        "divergence_gate": 0.2561092803030303,
+        "reuse": 0.5100424242424243,
+        "retrain": 0.8281708333333334
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.3653525903525903,
+        "always_retrain": 0.0,
+        "sign_gate": 0.069256363006363,
+        "direct_gate": 0.18266671391671388,
+        "divergence_gate": 0.254030954030954,
+        "reuse": 0.6213432400932402,
+        "retrain": 0.9866958304458304
+      },
+      "trail": {
+        "always_reuse": 0.39770929635336416,
+        "always_retrain": 1.0092936587501425e-18,
+        "sign_gate": 0.006640986132511559,
+        "direct_gate": 0.12737544940934772,
+        "divergence_gate": 0.25649717514124293,
+        "reuse": 0.4914432460195171,
+        "retrain": 0.8891525423728814
+      },
+      "swe_agent": {
+        "always_reuse": 0.18636792754433698,
+        "always_retrain": 0.0007591382336545639,
+        "sign_gate": 0.015654668471394084,
+        "direct_gate": 0.07421891055342274,
+        "divergence_gate": 0.14434894278455754,
+        "reuse": 0.5491488557902121,
+        "retrain": 0.7347576451008945
+      },
+      "synthetic": {
+        "always_reuse": 0.2296351455283432,
+        "always_retrain": 0.0,
+        "sign_gate": 0.02092960017308396,
+        "direct_gate": 0.058645677272504984,
+        "divergence_gate": 0.12136816351692384,
+        "reuse": 0.4447287190453116,
+        "retrain": 0.6743638645736548
+      },
+      "toolbench": {
+        "always_reuse": 0.3366578344484256,
+        "always_retrain": 0.0009143443283550545,
+        "sign_gate": 0.035609685647017796,
+        "direct_gate": 0.09395844398378622,
+        "divergence_gate": 0.19343700785320941,
+        "reuse": 0.5355954166930906,
+        "retrain": 0.8713389068131612
+      },
+      "toolace": {
+        "always_reuse": 0.2943755768231146,
+        "always_retrain": 0.0006052222603333116,
+        "sign_gate": 0.042064836686126886,
+        "direct_gate": 0.0948407039982461,
+        "divergence_gate": 0.14200112093748565,
+        "reuse": 0.5092998251408244,
+        "retrain": 0.8030701797036056
+      },
+      "apibank": {
+        "always_reuse": 0.24250748923497925,
+        "always_retrain": 0.00013804177230472003,
+        "sign_gate": 0.029515159563765134,
+        "direct_gate": 0.08846660227775763,
+        "divergence_gate": 0.1756617892068091,
+        "reuse": 0.5238568473580426,
+        "retrain": 0.7662262948207169
+      },
+      "injecagent": {
+        "always_reuse": 0.04995687424529931,
+        "always_retrain": 0.1567209092825791,
+        "sign_gate": 0.04995687424529931,
+        "direct_gate": 0.017643704598163803,
+        "divergence_gate": 0.16062858183351542,
+        "reuse": 0.6114657006497614,
+        "retrain": 0.5047016656124815
+      },
+      "agentharm": {
+        "always_reuse": 0.0027076681066866976,
+        "always_retrain": 0.052902540383170556,
+        "sign_gate": 0.03666944496619083,
+        "direct_gate": 0.03342118238166792,
+        "divergence_gate": 0.048143430691209625,
+        "reuse": 0.504469149135988,
+        "retrain": 0.4542742768595041
+      },
+      "atbench": {
+        "always_reuse": 0.25601745454545455,
+        "always_retrain": 0.0,
+        "sign_gate": 0.0361632,
+        "direct_gate": 0.16137309090909088,
+        "divergence_gate": 0.08648407272727271,
+        "reuse": 0.6835089454545455,
+        "retrain": 0.9395264000000001
+      },
+      "rjudge": {
+        "always_reuse": 0.3028854985475051,
+        "always_retrain": 0.0,
+        "sign_gate": 0.08423749359193439,
+        "direct_gate": 0.12717767429938484,
+        "divergence_gate": 0.06333598556049214,
+        "reuse": 0.5978516960013671,
+        "retrain": 0.9007371945488721
+      }
+    }
+  },
+  "knn/k=10": {
+    "regret": {
+      "always_reuse": 0.1328858184169904,
+      "always_retrain": 0.017074266700000194,
+      "sign_gate": 0.06634652090810396,
+      "direct_gate": 0.07197011919512274,
+      "divergence_gate": 0.08679818275296347
+    },
+    "mean_auroc": {
+      "reuse": 0.5352067015857538,
+      "retrain": 0.6510182533027439
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.07448295454545453,
+        "always_retrain": 0.0059214015151515175,
+        "sign_gate": 0.01319829545454546,
+        "direct_gate": 0.03958125,
+        "divergence_gate": 0.06018068181818181,
+        "reuse": 0.5081426136363636,
+        "retrain": 0.5767041666666666
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.3146937146937147,
+        "always_retrain": 0.0,
+        "sign_gate": 0.05338087213087214,
+        "direct_gate": 0.1770268957768958,
+        "divergence_gate": 0.2316537254037254,
+        "reuse": 0.5743799743799745,
+        "retrain": 0.889073689073689
+      },
+      "trail": {
+        "always_reuse": 0.266517719568567,
+        "always_retrain": 0.008757062146892659,
+        "sign_gate": 0.026245505906522863,
+        "direct_gate": 0.10475089881869541,
+        "divergence_gate": 0.18183359013867487,
+        "reuse": 0.46529019003595273,
+        "retrain": 0.7230508474576273
+      },
+      "swe_agent": {
+        "always_reuse": 0.0761465422449404,
+        "always_retrain": 0.043412137062022634,
+        "sign_gate": 0.04851888074480127,
+        "direct_gate": 0.05704589807252591,
+        "divergence_gate": 0.08372383527989935,
+        "reuse": 0.5249218401735565,
+        "retrain": 0.5576562453564743
+      },
+      "synthetic": {
+        "always_reuse": 0.09081921469079764,
+        "always_retrain": 0.0023180728997639357,
+        "sign_gate": 0.09081921469079764,
+        "direct_gate": 0.04622104955862107,
+        "divergence_gate": 0.05394488431678513,
+        "reuse": 0.4595175062276144,
+        "retrain": 0.5480186480186477
+      },
+      "toolbench": {
+        "always_reuse": 0.16533716018750463,
+        "always_retrain": 0.013476052599592019,
+        "sign_gate": 0.16533716018750463,
+        "direct_gate": 0.08613141904746803,
+        "divergence_gate": 0.11873991759679105,
+        "reuse": 0.5714650318144825,
+        "retrain": 0.7233261394023949
+      },
+      "toolace": {
+        "always_reuse": 0.08022232663481838,
+        "always_retrain": 0.018742640532675145,
+        "sign_gate": 0.08022232663481838,
+        "direct_gate": 0.03589954791212134,
+        "divergence_gate": 0.05194236896170071,
+        "reuse": 0.5009196682095765,
+        "retrain": 0.5623993543117196
+      },
+      "apibank": {
+        "always_reuse": 0.07014888325485936,
+        "always_retrain": 0.022832854440822573,
+        "sign_gate": 0.07014888325485936,
+        "direct_gate": 0.05218401545333818,
+        "divergence_gate": 0.05996267053000122,
+        "reuse": 0.5097626785786149,
+        "retrain": 0.5570787073926516
+      },
+      "injecagent": {
+        "always_reuse": 0.11002050869223541,
+        "always_retrain": 0.02865610564851551,
+        "sign_gate": 0.11002050869223541,
+        "direct_gate": 0.06881145420044851,
+        "divergence_gate": 0.06730061526076705,
+        "reuse": 0.6154361451325397,
+        "retrain": 0.6968005481762597
+      },
+      "agentharm": {
+        "always_reuse": 0.008663598797896311,
+        "always_retrain": 0.020560786063110445,
+        "sign_gate": 0.022552357250187827,
+        "direct_gate": 0.016990866829451532,
+        "divergence_gate": 0.02037413129226146,
+        "reuse": 0.5013277141247182,
+        "retrain": 0.48943052685950406
+      },
+      "atbench": {
+        "always_reuse": 0.24612101818181814,
+        "always_retrain": 0.006101818181818186,
+        "sign_gate": 0.05967330909090909,
+        "direct_gate": 0.12032989090909091,
+        "divergence_gate": 0.07401512727272729,
+        "reuse": 0.6065792000000001,
+        "retrain": 0.8465984
+      },
+      "rjudge": {
+        "always_reuse": 0.09145617951127821,
+        "always_retrain": 0.034112269309637726,
+        "sign_gate": 0.056040936859193424,
+        "direct_gate": 0.05866824376281614,
+        "divergence_gate": 0.03790664516404648,
+        "reuse": 0.5847378567156527,
+        "retrain": 0.6420817669172932
+      }
+    }
+  },
+  "knn/k=20": {
+    "regret": {
+      "always_reuse": 0.1829970210387286,
+      "always_retrain": 0.011496337083135135,
+      "sign_gate": 0.03465467627944512,
+      "direct_gate": 0.09236829090661047,
+      "divergence_gate": 0.11182703511649857
+    },
+    "mean_auroc": {
+      "reuse": 0.5352067015857538,
+      "retrain": 0.7067073855413474
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.13832102272727273,
+        "always_retrain": 0.00022196969696969672,
+        "sign_gate": 0.01835511363636363,
+        "direct_gate": 0.0691034090909091,
+        "divergence_gate": 0.11137556818181817,
+        "reuse": 0.5081426136363636,
+        "retrain": 0.6462416666666667
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.3421798546798547,
+        "always_retrain": 0.0,
+        "sign_gate": 0.07053014553014553,
+        "direct_gate": 0.19937131187131188,
+        "divergence_gate": 0.2491449053949054,
+        "reuse": 0.5743799743799745,
+        "retrain": 0.9165598290598287
+      },
+      "trail": {
+        "always_reuse": 0.33290190035952744,
+        "always_retrain": 0.0,
+        "sign_gate": 0.019722650231124808,
+        "direct_gate": 0.09273240883410373,
+        "divergence_gate": 0.22089368258859784,
+        "reuse": 0.46529019003595273,
+        "retrain": 0.7981920903954801
+      },
+      "swe_agent": {
+        "always_reuse": 0.1449811152026671,
+        "always_retrain": 0.01425855782107082,
+        "sign_gate": 0.022254301762310913,
+        "direct_gate": 0.06491482929385986,
+        "divergence_gate": 0.11692635289265203,
+        "reuse": 0.5249218401735565,
+        "retrain": 0.6556443975551528
+      },
+      "synthetic": {
+        "always_reuse": 0.0865924761824317,
+        "always_retrain": 0.002023066994459238,
+        "sign_gate": 0.009509133587328121,
+        "direct_gate": 0.04062104985499773,
+        "divergence_gate": 0.05150529699162885,
+        "reuse": 0.4595175062276144,
+        "retrain": 0.5440869154155868
+      },
+      "toolbench": {
+        "always_reuse": 0.2626198080165097,
+        "always_retrain": 0.0006450508529663577,
+        "sign_gate": 0.020554229952119734,
+        "direct_gate": 0.1557049969744533,
+        "divergence_gate": 0.1659709065277822,
+        "reuse": 0.5714650318144825,
+        "retrain": 0.8334397889780258
+      },
+      "toolace": {
+        "always_reuse": 0.17114830232780173,
+        "always_retrain": 0.0012501149226128811,
+        "sign_gate": 0.030494715327847696,
+        "direct_gate": 0.0655248294725229,
+        "divergence_gate": 0.08373098030756827,
+        "reuse": 0.5009196682095765,
+        "retrain": 0.6708178556147653
+      },
+      "apibank": {
+        "always_reuse": 0.09643876212322428,
+        "always_retrain": 0.009145752344158722,
+        "sign_gate": 0.016596643728117838,
+        "direct_gate": 0.05004177230472051,
+        "divergence_gate": 0.07534973640790374,
+        "reuse": 0.5097626785786149,
+        "retrain": 0.5970556883576803
+      },
+      "injecagent": {
+        "always_reuse": 0.056658616525789185,
+        "always_retrain": 0.0835379410806356,
+        "sign_gate": 0.056658616525789185,
+        "direct_gate": 0.034721024284591645,
+        "divergence_gate": 0.09266143407509632,
+        "reuse": 0.6154361451325397,
+        "retrain": 0.5885568205776933
+      },
+      "agentharm": {
+        "always_reuse": 0.014311373027798642,
+        "always_retrain": 0.02687359128474831,
+        "sign_gate": 0.019703817618332075,
+        "direct_gate": 0.02406555221637866,
+        "divergence_gate": 0.02662647915101428,
+        "reuse": 0.5013277141247182,
+        "retrain": 0.48876549586776874
+      },
+      "atbench": {
+        "always_reuse": 0.3190208,
+        "always_retrain": 0.0,
+        "sign_gate": 0.05973498181818182,
+        "direct_gate": 0.1672779636363636,
+        "divergence_gate": 0.09664116363636363,
+        "reuse": 0.6065792000000001,
+        "retrain": 0.9255999999999998
+      },
+      "rjudge": {
+        "always_reuse": 0.23079022129186597,
+        "always_retrain": 0.0,
+        "sign_gate": 0.0717417656356801,
+        "direct_gate": 0.14434034304511276,
+        "divergence_gate": 0.05109791524265208,
+        "reuse": 0.5847378567156527,
+        "retrain": 0.8155280780075188
+      }
+    }
+  },
+  "knn/k=50": {
+    "regret": {
+      "always_reuse": 0.20782877870621816,
+      "always_retrain": 0.015084947700111774,
+      "sign_gate": 0.03642389706666031,
+      "direct_gate": 0.10207769912751696,
+      "divergence_gate": 0.13127175407291894
+    },
+    "mean_auroc": {
+      "reuse": 0.5352067015857538,
+      "retrain": 0.7279505325918602
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.24561988636363638,
+        "always_retrain": 0.0,
+        "sign_gate": 0.032323484848484844,
+        "direct_gate": 0.1146691287878788,
+        "divergence_gate": 0.1991251893939394,
+        "reuse": 0.5081426136363636,
+        "retrain": 0.7537624999999999
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.3496382746382746,
+        "always_retrain": 0.0,
+        "sign_gate": 0.06658345408345408,
+        "direct_gate": 0.2208133833133833,
+        "divergence_gate": 0.2538911726411726,
+        "reuse": 0.5743799743799745,
+        "retrain": 0.9240182490182494
+      },
+      "trail": {
+        "always_reuse": 0.4068567026194145,
+        "always_retrain": 0.0,
+        "sign_gate": 0.02077555213148433,
+        "direct_gate": 0.11604519774011299,
+        "divergence_gate": 0.2679558294812532,
+        "reuse": 0.46529019003595273,
+        "retrain": 0.8721468926553672
+      },
+      "swe_agent": {
+        "always_reuse": 0.14648791399987574,
+        "always_retrain": 0.005666245203378552,
+        "sign_gate": 0.02338882599960195,
+        "direct_gate": 0.0615362156739315,
+        "divergence_gate": 0.11476074753898761,
+        "reuse": 0.5249218401735565,
+        "retrain": 0.6657435089700535
+      },
+      "synthetic": {
+        "always_reuse": 0.1289022431266551,
+        "always_retrain": 0.0007699865296813799,
+        "sign_gate": 0.01011192664085226,
+        "direct_gate": 0.044229694865422775,
+        "divergence_gate": 0.0740137696590335,
+        "reuse": 0.4595175062276144,
+        "retrain": 0.5876497628245881
+      },
+      "toolbench": {
+        "always_reuse": 0.2663518330981598,
+        "always_retrain": 0.0007236126745304484,
+        "sign_gate": 0.027021715894557718,
+        "direct_gate": 0.14031571546913146,
+        "divergence_gate": 0.16804226649121137,
+        "reuse": 0.5714650318144825,
+        "retrain": 0.8370932522381118
+      },
+      "toolace": {
+        "always_reuse": 0.18650030587095429,
+        "always_retrain": 0.0017551777057203191,
+        "sign_gate": 0.01996552763623633,
+        "direct_gate": 0.07735555995601116,
+        "divergence_gate": 0.09098465252705985,
+        "reuse": 0.5009196682095765,
+        "retrain": 0.6856647963748105
+      },
+      "apibank": {
+        "always_reuse": 0.11756593021851987,
+        "always_retrain": 0.009268139562960282,
+        "sign_gate": 0.023878876413537767,
+        "direct_gate": 0.0495360457161254,
+        "divergence_gate": 0.09074832790051912,
+        "reuse": 0.5097626785786149,
+        "retrain": 0.6180604692341746
+      },
+      "injecagent": {
+        "always_reuse": 0.030500450424549106,
+        "always_retrain": 0.12158491940275623,
+        "sign_gate": 0.030500450424549106,
+        "direct_gate": 0.01664606213942078,
+        "divergence_gate": 0.1131979184635731,
+        "reuse": 0.6154361451325397,
+        "retrain": 0.5243516761543328
+      },
+      "agentharm": {
+        "always_reuse": 0.006885095792637116,
+        "always_retrain": 0.04125129132231406,
+        "sign_gate": 0.02885401014274982,
+        "direct_gate": 0.025003521788129226,
+        "divergence_gate": 0.03902199943651391,
+        "reuse": 0.5013277141247182,
+        "retrain": 0.4669615185950413
+      },
+      "atbench": {
+        "always_reuse": 0.31612479999999993,
+        "always_retrain": 0.0,
+        "sign_gate": 0.0710885818181818,
+        "direct_gate": 0.18070225454545452,
+        "divergence_gate": 0.09558807272727271,
+        "reuse": 0.6065792000000001,
+        "retrain": 0.922704
+      },
+      "rjudge": {
+        "always_reuse": 0.2925119083219412,
+        "always_retrain": 0.0,
+        "sign_gate": 0.08259435876623376,
+        "direct_gate": 0.17807960953520163,
+        "divergence_gate": 0.06793110261449077,
+        "reuse": 0.5847378567156527,
+        "retrain": 0.8772497650375939
+      }
+    }
+  },
+  "knn/k=100": {
+    "regret": {
+      "always_reuse": 0.22688173436283157,
+      "always_retrain": 0.01390591694860694,
+      "sign_gate": 0.03445941334065356,
+      "direct_gate": 0.11765121967732017,
+      "divergence_gate": 0.14263746892078066
+    },
+    "mean_auroc": {
+      "reuse": 0.5352067015857538,
+      "retrain": 0.7481825189999786
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.27828030303030304,
+        "always_retrain": 0.0,
+        "sign_gate": 0.026243939393939396,
+        "direct_gate": 0.15068655303030304,
+        "divergence_gate": 0.22584734848484853,
+        "reuse": 0.5081426136363636,
+        "retrain": 0.7864229166666667
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.36055592305592304,
+        "always_retrain": 0.0,
+        "sign_gate": 0.07521826896826896,
+        "direct_gate": 0.23631651756651753,
+        "divergence_gate": 0.2608387670887671,
+        "reuse": 0.5743799743799745,
+        "retrain": 0.9349358974358973
+      },
+      "trail": {
+        "always_reuse": 0.42798664612223936,
+        "always_retrain": 0.0,
+        "sign_gate": 0.016610169491525422,
+        "direct_gate": 0.15211093990755006,
+        "divergence_gate": 0.281402157164869,
+        "reuse": 0.46529019003595273,
+        "retrain": 0.8932768361581921
+      },
+      "swe_agent": {
+        "always_reuse": 0.178819511048552,
+        "always_retrain": 0.0002449124968367739,
+        "sign_gate": 0.015162258863111787,
+        "direct_gate": 0.07052067826771384,
+        "divergence_gate": 0.13336400649485733,
+        "reuse": 0.5249218401735565,
+        "retrain": 0.7034964387252717
+      },
+      "synthetic": {
+        "always_reuse": 0.13679593875080207,
+        "always_retrain": 0.0002663685117594839,
+        "sign_gate": 0.014342518045633114,
+        "direct_gate": 0.05272570193104204,
+        "divergence_gate": 0.07809050453678552,
+        "reuse": 0.4595175062276144,
+        "retrain": 0.5960470764666567
+      },
+      "toolbench": {
+        "always_reuse": 0.29007713988066924,
+        "always_retrain": 0.0,
+        "sign_gate": 0.021149042196467644,
+        "direct_gate": 0.15380815919924748,
+        "divergence_gate": 0.18065442806597543,
+        "reuse": 0.5714650318144825,
+        "retrain": 0.8615421716951519
+      },
+      "toolace": {
+        "always_reuse": 0.2206382006301295,
+        "always_retrain": 0.0,
+        "sign_gate": 0.03345717718238041,
+        "direct_gate": 0.09416056103451566,
+        "divergence_gate": 0.10554450775992842,
+        "reuse": 0.5009196682095765,
+        "retrain": 0.7215578688397059
+      },
+      "apibank": {
+        "always_reuse": 0.1694017304519296,
+        "always_retrain": 0.0,
+        "sign_gate": 0.020721847961688585,
+        "direct_gate": 0.08143076984989334,
+        "divergence_gate": 0.12591941728037342,
+        "reuse": 0.5097626785786149,
+        "retrain": 0.6791644090305445
+      },
+      "injecagent": {
+        "always_reuse": 0.021751193145880053,
+        "always_retrain": 0.13944856534989364,
+        "sign_gate": 0.021751193145880053,
+        "direct_gate": 0.027246851819906846,
+        "divergence_gate": 0.12380349989458149,
+        "reuse": 0.6154361451325397,
+        "retrain": 0.4977387729285263
+      },
+      "agentharm": {
+        "always_reuse": 0.0061296722389181,
+        "always_retrain": 0.026911157024793384,
+        "sign_gate": 0.022341636927122453,
+        "direct_gate": 0.021354362321562723,
+        "divergence_gate": 0.0259168388429752,
+        "reuse": 0.5013277141247182,
+        "retrain": 0.48054622933884306
+      },
+      "atbench": {
+        "always_reuse": 0.31984,
+        "always_retrain": 0.0,
+        "sign_gate": 0.0535458909090909,
+        "direct_gate": 0.18428916363636355,
+        "divergence_gate": 0.09693905454545453,
+        "reuse": 0.6065792000000001,
+        "retrain": 0.9264191999999999
+      },
+      "rjudge": {
+        "always_reuse": 0.31230455399863294,
+        "always_retrain": 0.0,
+        "sign_gate": 0.0929690170027341,
+        "direct_gate": 0.18716437756322624,
+        "divergence_gate": 0.07332909688995216,
+        "reuse": 0.5847378567156527,
+        "retrain": 0.897042410714286
+      }
+    }
+  },
+  "lr/k=10": {
+    "regret": {
+      "always_reuse": 0.18016515162499971,
+      "always_retrain": 0.018862686515938393,
+      "sign_gate": 0.0794143221221511,
+      "direct_gate": 0.0693003627356533,
+      "divergence_gate": 0.11413779548593522
+    },
+    "mean_auroc": {
+      "reuse": 0.5456112784404992,
+      "retrain": 0.7069137435495604
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.10849962121212124,
+        "always_retrain": 0.02281761363636362,
+        "sign_gate": 0.026637499999999995,
+        "direct_gate": 0.04033617424242426,
+        "divergence_gate": 0.09427329545454549,
+        "reuse": 0.5397221590909091,
+        "retrain": 0.6254041666666668
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.3603124540624541,
+        "always_retrain": 0.0002677502677502663,
+        "sign_gate": 0.04955913080913081,
+        "direct_gate": 0.16600437850437852,
+        "divergence_gate": 0.24637355887355883,
+        "reuse": 0.5850118912618913,
+        "retrain": 0.9450565950565951
+      },
+      "trail": {
+        "always_reuse": 0.487663071391885,
+        "always_retrain": 0.0005033384694401641,
+        "sign_gate": 0.02282485875706215,
+        "direct_gate": 0.10609142270159219,
+        "divergence_gate": 0.3503441191576785,
+        "reuse": 0.3869080636877246,
+        "retrain": 0.8740677966101695
+      },
+      "swe_agent": {
+        "always_reuse": 0.09475307024298081,
+        "always_retrain": 0.03311729287285767,
+        "sign_gate": 0.03582004778385057,
+        "direct_gate": 0.07244966530591661,
+        "divergence_gate": 0.09197480315953377,
+        "reuse": 0.5277944682042871,
+        "retrain": 0.5894302455744105
+      },
+      "synthetic": {
+        "always_reuse": 0.09304748546643013,
+        "always_retrain": 0.025700189829242603,
+        "sign_gate": 0.09304748546643013,
+        "direct_gate": 0.0446888563862499,
+        "divergence_gate": 0.05727386091340318,
+        "reuse": 0.46512617494817116,
+        "retrain": 0.5324734705853587
+      },
+      "toolbench": {
+        "always_reuse": 0.26331288446903633,
+        "always_retrain": 0.008309204928602383,
+        "sign_gate": 0.26331288446903633,
+        "direct_gate": 0.07286537935599452,
+        "divergence_gate": 0.17233910433247718,
+        "reuse": 0.6288367714245701,
+        "retrain": 0.883840450965004
+      },
+      "toolace": {
+        "always_reuse": 0.11911636002956164,
+        "always_retrain": 0.02389174820278713,
+        "sign_gate": 0.11911636002956164,
+        "direct_gate": 0.06450973129325069,
+        "divergence_gate": 0.07107919405655606,
+        "reuse": 0.4982730446359429,
+        "retrain": 0.5934976564627172
+      },
+      "apibank": {
+        "always_reuse": 0.08572672542154613,
+        "always_retrain": 0.03672482594873034,
+        "sign_gate": 0.08572672542154613,
+        "direct_gate": 0.05502017787436115,
+        "divergence_gate": 0.07706563644412251,
+        "reuse": 0.5115378968972594,
+        "retrain": 0.5605397963700752
+      },
+      "injecagent": {
+        "always_reuse": 0.13081958100933433,
+        "always_retrain": 0.013943994019895356,
+        "sign_gate": 0.13081958100933433,
+        "direct_gate": 0.0430308780403657,
+        "divergence_gate": 0.059309412914726,
+        "reuse": 0.6203793149713454,
+        "retrain": 0.7372549019607842
+      },
+      "agentharm": {
+        "always_reuse": 0.012759438392186323,
+        "always_retrain": 0.022458442900075135,
+        "sign_gate": 0.026117580766341096,
+        "direct_gate": 0.028309306912096165,
+        "divergence_gate": 0.021752911344853496,
+        "reuse": 0.5033844383921863,
+        "retrain": 0.49368543388429753
+      },
+      "atbench": {
+        "always_reuse": 0.25974574545454543,
+        "always_retrain": 0.0039918545454545465,
+        "sign_gate": 0.021088000000000006,
+        "direct_gate": 0.07298123636363639,
+        "divergence_gate": 0.09037672727272728,
+        "reuse": 0.6627165090909091,
+        "retrain": 0.9184704
+      },
+      "rjudge": {
+        "always_reuse": 0.14622538234791527,
+        "always_retrain": 0.03462598257006152,
+        "sign_gate": 0.07890171095352015,
+        "direct_gate": 0.06531714584757348,
+        "divergence_gate": 0.03749092190704033,
+        "reuse": 0.617644608680793,
+        "retrain": 0.7292440084586466
+      }
+    }
+  },
+  "lr/k=20": {
+    "regret": {
+      "always_reuse": 0.20050628282966484,
+      "always_retrain": 0.011056801311073824,
+      "sign_gate": 0.03797935387503802,
+      "direct_gate": 0.06943880458688273,
+      "divergence_gate": 0.12221217682302317
+    },
+    "mean_auroc": {
+      "reuse": 0.5456112784404992,
+      "retrain": 0.7350607599590901
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.13213257575757578,
+        "always_retrain": 0.008338068181818177,
+        "sign_gate": 0.020277272727272724,
+        "direct_gate": 0.04441458333333334,
+        "divergence_gate": 0.11097670454545457,
+        "reuse": 0.5397221590909091,
+        "retrain": 0.6635166666666666
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.35886607761607764,
+        "always_retrain": 0.0003142128142128129,
+        "sign_gate": 0.053689047439047434,
+        "direct_gate": 0.1685973560973561,
+        "divergence_gate": 0.24547003297003298,
+        "reuse": 0.5850118912618913,
+        "retrain": 0.9435637560637562
+      },
+      "trail": {
+        "always_reuse": 0.48813559322033906,
+        "always_retrain": 0.0005238828967642515,
+        "sign_gate": 0.017524396507447356,
+        "direct_gate": 0.06882383153569595,
+        "divergence_gate": 0.3506522855675398,
+        "reuse": 0.3869080636877246,
+        "retrain": 0.8745197740112995
+      },
+      "swe_agent": {
+        "always_reuse": 0.16501299511805023,
+        "always_retrain": 0.0026340554944673964,
+        "sign_gate": 0.016515255079848384,
+        "direct_gate": 0.06957489393624196,
+        "divergence_gate": 0.12560085085152695,
+        "reuse": 0.5277944682042871,
+        "retrain": 0.69017340782787
+      },
+      "synthetic": {
+        "always_reuse": 0.11320432057876434,
+        "always_retrain": 0.01805859959070384,
+        "sign_gate": 0.028734123473475034,
+        "direct_gate": 0.04630021917053069,
+        "divergence_gate": 0.06479504813897696,
+        "reuse": 0.46512617494817116,
+        "retrain": 0.5602718959362318
+      },
+      "toolbench": {
+        "always_reuse": 0.295837544656541,
+        "always_retrain": 0.0005456718827620474,
+        "sign_gate": 0.021782483009375228,
+        "direct_gate": 0.111045086921711,
+        "divergence_gate": 0.18655094941391592,
+        "reuse": 0.6288367714245701,
+        "retrain": 0.9241286441983491
+      },
+      "toolace": {
+        "always_reuse": 0.13334932673029257,
+        "always_retrain": 0.02792789666865866,
+        "sign_gate": 0.04349666194010587,
+        "direct_gate": 0.05314638223614652,
+        "divergence_gate": 0.07975025990190912,
+        "reuse": 0.4982730446359429,
+        "retrain": 0.6036944746975765
+      },
+      "apibank": {
+        "always_reuse": 0.11226967684816293,
+        "always_retrain": 0.01940624572417401,
+        "sign_gate": 0.03281913155458972,
+        "direct_gate": 0.04898956094812668,
+        "divergence_gate": 0.09164635196587388,
+        "reuse": 0.5115378968972594,
+        "retrain": 0.6044013280212485
+      },
+      "injecagent": {
+        "always_reuse": 0.12576907595882925,
+        "always_retrain": 0.016842044735782883,
+        "sign_gate": 0.12576907595882925,
+        "direct_gate": 0.04412914726007702,
+        "divergence_gate": 0.06003967569432464,
+        "reuse": 0.6203793149713454,
+        "retrain": 0.7293063461943917
+      },
+      "agentharm": {
+        "always_reuse": 0.015047426746806902,
+        "always_retrain": 0.025547051089406466,
+        "sign_gate": 0.02216378662659654,
+        "direct_gate": 0.02056841660405709,
+        "divergence_gate": 0.024768735912847485,
+        "reuse": 0.5033844383921863,
+        "retrain": 0.4928848140495868
+      },
+      "atbench": {
+        "always_reuse": 0.26570530909090906,
+        "always_retrain": 9.541818181818136e-05,
+        "sign_gate": 0.016899490909090906,
+        "direct_gate": 0.07354094545454547,
+        "divergence_gate": 0.09006429090909092,
+        "reuse": 0.6627165090909091,
+        "retrain": 0.9283263999999999
+      },
+      "rjudge": {
+        "always_reuse": 0.20074547163362952,
+        "always_retrain": 0.01244846847231717,
+        "sign_gate": 0.056081521274777855,
+        "direct_gate": 0.084135231544771,
+        "divergence_gate": 0.03623093600478469,
+        "reuse": 0.617644608680793,
+        "retrain": 0.8059416118421051
+      }
+    }
+  },
+  "lr/k=50": {
+    "regret": {
+      "always_reuse": 0.21733354760079715,
+      "always_retrain": 0.008894592123916594,
+      "sign_gate": 0.03991822969392664,
+      "direct_gate": 0.07603461828228988,
+      "divergence_gate": 0.13210744054773052
+    },
+    "mean_auroc": {
+      "reuse": 0.5456112784404992,
+      "retrain": 0.7540502339173796
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.17085359848484846,
+        "always_retrain": 0.002796590909090908,
+        "sign_gate": 0.018085795454545455,
+        "direct_gate": 0.05997878787878788,
+        "divergence_gate": 0.14164999999999997,
+        "reuse": 0.5397221590909091,
+        "retrain": 0.7077791666666666
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.3859062296562296,
+        "always_retrain": 8.190008190008106e-05,
+        "sign_gate": 0.054941173691173684,
+        "direct_gate": 0.1618449305949306,
+        "divergence_gate": 0.26259292509292503,
+        "reuse": 0.5850118912618913,
+        "retrain": 0.9708362208362208
+      },
+      "trail": {
+        "always_reuse": 0.5087519260400616,
+        "always_retrain": 0.00034925526450950103,
+        "sign_gate": 0.023389830508474575,
+        "direct_gate": 0.07372367745249102,
+        "divergence_gate": 0.363708269131998,
+        "reuse": 0.3869080636877246,
+        "retrain": 0.8953107344632767
+      },
+      "swe_agent": {
+        "always_reuse": 0.16863132048590757,
+        "always_retrain": 0.0011243433773078047,
+        "sign_gate": 0.030944663131057978,
+        "direct_gate": 0.07633881235607885,
+        "divergence_gate": 0.12735443531574175,
+        "reuse": 0.5277944682042871,
+        "retrain": 0.6953014453128868
+      },
+      "synthetic": {
+        "always_reuse": 0.153056087798618,
+        "always_retrain": 0.011262608973988508,
+        "sign_gate": 0.015701775444305646,
+        "direct_gate": 0.03815545547904099,
+        "divergence_gate": 0.08344328906948108,
+        "reuse": 0.46512617494817116,
+        "retrain": 0.6069196537728007
+      },
+      "toolbench": {
+        "always_reuse": 0.30417561779285707,
+        "always_retrain": 0.00016800702349621134,
+        "sign_gate": 0.026534143757068418,
+        "direct_gate": 0.13396797148323134,
+        "divergence_gate": 0.1909273234613311,
+        "reuse": 0.6288367714245701,
+        "retrain": 0.932844382193931
+      },
+      "toolace": {
+        "always_reuse": 0.1847139222557364,
+        "always_retrain": 0.01023010159158979,
+        "sign_gate": 0.025369940310962912,
+        "direct_gate": 0.05851837347373931,
+        "divergence_gate": 0.09344446055325513,
+        "reuse": 0.4982730446359429,
+        "retrain": 0.6727568653000897
+      },
+      "apibank": {
+        "always_reuse": 0.13099399573423479,
+        "always_retrain": 0.02441192804539418,
+        "sign_gate": 0.04176894844862972,
+        "direct_gate": 0.0728768964545857,
+        "divergence_gate": 0.1066292245160771,
+        "reuse": 0.5115378968972594,
+        "retrain": 0.6181199645861001
+      },
+      "injecagent": {
+        "always_reuse": 0.13017844478945048,
+        "always_retrain": 0.013186897437371826,
+        "sign_gate": 0.13017844478945048,
+        "direct_gate": 0.03283499127901404,
+        "divergence_gate": 0.05858394188564968,
+        "reuse": 0.6203793149713454,
+        "retrain": 0.737370862323424
+      },
+      "agentharm": {
+        "always_reuse": 0.0022105090157776086,
+        "always_retrain": 0.03734856311044327,
+        "sign_gate": 0.02679963373403456,
+        "direct_gate": 0.024050291134485344,
+        "divergence_gate": 0.03433039068369646,
+        "reuse": 0.5033844383921863,
+        "retrain": 0.4682463842975207
+      },
+      "atbench": {
+        "always_reuse": 0.2732032,
+        "always_retrain": 5.410909090909052e-05,
+        "sign_gate": 0.03700334545454544,
+        "direct_gate": 0.08885381818181813,
+        "divergence_gate": 0.09276450909090907,
+        "reuse": 0.6627165090909091,
+        "retrain": 0.9358656
+      },
+      "rjudge": {
+        "always_reuse": 0.19532771915584418,
+        "always_retrain": 0.005720800580997951,
+        "sign_gate": 0.048301061602870815,
+        "direct_gate": 0.09127141361927546,
+        "divergence_gate": 0.029860517771701976,
+        "reuse": 0.617644608680793,
+        "retrain": 0.807251527255639
+      }
+    }
+  },
+  "lr/k=100": {
+    "regret": {
+      "always_reuse": 0.23451546152135838,
+      "always_retrain": 0.0071244575555720795,
+      "sign_gate": 0.03682026736517024,
+      "direct_gate": 0.08320131411483177,
+      "divergence_gate": 0.14270069702573218
+    },
+    "mean_auroc": {
+      "reuse": 0.5456112784404992,
+      "retrain": 0.7730022824062853
+    },
+    "by_target": {
+      "agentdojo": {
+        "always_reuse": 0.19938124999999998,
+        "always_retrain": 0.0013700757575757566,
+        "sign_gate": 0.015618560606060606,
+        "direct_gate": 0.07674166666666668,
+        "divergence_gate": 0.1647314393939394,
+        "reuse": 0.5397221590909091,
+        "retrain": 0.7377333333333332
+      },
+      "stabletoolbench": {
+        "always_reuse": 0.39151979776979773,
+        "always_retrain": 0.00012836262836262764,
+        "sign_gate": 0.06161550536550537,
+        "direct_gate": 0.20127995127995124,
+        "divergence_gate": 0.26618209118209113,
+        "reuse": 0.5850118912618913,
+        "retrain": 0.9764033264033265
+      },
+      "trail": {
+        "always_reuse": 0.5245095017976374,
+        "always_retrain": 6.163328197226506e-05,
+        "sign_gate": 0.017031330251669235,
+        "direct_gate": 0.07676425269645606,
+        "divergence_gate": 0.37363122752953265,
+        "reuse": 0.3869080636877246,
+        "retrain": 0.91135593220339
+      },
+      "swe_agent": {
+        "always_reuse": 0.1832435967749053,
+        "always_retrain": 0.0003020847123197864,
+        "sign_gate": 0.019511003523901383,
+        "direct_gate": 0.08007507089678924,
+        "divergence_gate": 0.13635415343965376,
+        "reuse": 0.5277944682042871,
+        "retrain": 0.7107359802668728
+      },
+      "synthetic": {
+        "always_reuse": 0.14296520389972392,
+        "always_retrain": 0.01349588110554417,
+        "sign_gate": 0.018960770105080346,
+        "direct_gate": 0.038808521421363124,
+        "divergence_gate": 0.07895429427533687,
+        "reuse": 0.46512617494817116,
+        "retrain": 0.5945954977423508
+      },
+      "toolbench": {
+        "always_reuse": 0.30018607442580675,
+        "always_retrain": 1.5408488442146916e-05,
+        "sign_gate": 0.017688019891978737,
+        "direct_gate": 0.09673649701144688,
+        "divergence_gate": 0.18868184592700635,
+        "reuse": 0.6288367714245701,
+        "retrain": 0.9290074373619348
+      },
+      "toolace": {
+        "always_reuse": 0.2515665278165764,
+        "always_retrain": 0.00043931378823828854,
+        "sign_gate": 0.03444864992450467,
+        "direct_gate": 0.09062353031658527,
+        "divergence_gate": 0.11849157882453615,
+        "reuse": 0.4982730446359429,
+        "retrain": 0.7494002586642808
+      },
+      "apibank": {
+        "always_reuse": 0.20806162823453658,
+        "always_retrain": 0.0009671214133365539,
+        "sign_gate": 0.02844728560505452,
+        "direct_gate": 0.07308548432532495,
+        "divergence_gate": 0.15628437361664452,
+        "reuse": 0.5115378968972594,
+        "retrain": 0.7186324037184593
+      },
+      "injecagent": {
+        "always_reuse": 0.12683667797519788,
+        "always_retrain": 0.022653479769229292,
+        "sign_gate": 0.12683667797519788,
+        "direct_gate": 0.037152358499607074,
+        "divergence_gate": 0.06455733808674985,
+        "reuse": 0.6203793149713454,
+        "retrain": 0.7245625131773138
+      },
+      "agentharm": {
+        "always_reuse": 0.003094477836213377,
+        "always_retrain": 0.040595651765589796,
+        "sign_gate": 0.029976286626596557,
+        "direct_gate": 0.03177474643125471,
+        "divergence_gate": 0.03736265026296019,
+        "reuse": 0.5033844383921863,
+        "retrain": 0.4658832644628099
+      },
+      "atbench": {
+        "always_reuse": 0.2828386909090909,
+        "always_retrain": 0.0,
+        "sign_gate": 0.019857454545454543,
+        "direct_gate": 0.10358429090909094,
+        "divergence_gate": 0.0962338909090909,
+        "reuse": 0.6627165090909091,
+        "retrain": 0.9455551999999998
+      },
+      "rjudge": {
+        "always_reuse": 0.1999821108168148,
+        "always_retrain": 0.005464477956254266,
+        "sign_gate": 0.051851663961038956,
+        "direct_gate": 0.09178939892344501,
+        "divergence_gate": 0.03094348086124402,
+        "reuse": 0.617644608680793,
+        "retrain": 0.8121622415413534
+      }
+    }
+  }
+}

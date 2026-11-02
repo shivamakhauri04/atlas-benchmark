@@ -1,0 +1,18 @@
+{
+  "raw": {
+    "primary_executed": 0.999772058159964,
+    "primary_external": 0.002176782335999999,
+    "e1_cross_config_flip": 0.0004997501249375312
+  },
+  "holm": {
+    "e1_cross_config_flip": 0.0014992503748125937,
+    "primary_external": 0.004353564671999998,
+    "primary_executed": 0.999772058159964
+  },
+  "alpha": 0.05,
+  "reject": {
+    "e1_cross_config_flip": true,
+    "primary_external": true,
+    "primary_executed": false
+  }
+}

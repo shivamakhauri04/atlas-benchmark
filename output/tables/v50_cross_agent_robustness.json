@@ -1,0 +1,44 @@
+{
+  "observed_cross_flip_rate_seed0": 0.23809523809523808,
+  "per_feature": {
+    "low_diversity": {
+      "cross": 0.15584415584415584,
+      "within": 0.0
+    },
+    "repeat_rate": {
+      "cross": 0.2510822510822511,
+      "within": 0.045454545454545456
+    },
+    "mean_arg_length": {
+      "cross": 0.24675324675324675,
+      "within": 0.045454545454545456
+    },
+    "arg_diversity": {
+      "cross": 0.2683982683982684,
+      "within": 0.045454545454545456
+    },
+    "arg_empty_rate": {
+      "cross": 0.2683982683982684,
+      "within": 0.18181818181818182
+    }
+  },
+  "pair_types": {
+    "different_base_model": {
+      "flip_rate": 0.2381818181818182,
+      "n_cells": 1100
+    },
+    "same_model_scaffold": {
+      "flip_rate": 0.23636363636363636,
+      "n_cells": 55
+    }
+  },
+  "permutation_null": {
+    "mean": 0.08976190476190475,
+    "p95": 0.10220779220779219,
+    "p_value": 0.004975124378109453
+  },
+  "backbone_bootstrap_ci95": [
+    0.1514043250327654,
+    0.3192865595416044
+  ]
+}

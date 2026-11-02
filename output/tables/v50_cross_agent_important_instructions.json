@@ -1,0 +1,100 @@
+{
+  "attack": "important_instructions",
+  "n_configurations": 22,
+  "configurations": [
+    "claude-3-5-sonnet-20240620",
+    "claude-3-7-sonnet-20250219",
+    "claude-3-haiku-20240307",
+    "claude-3-opus-20240229",
+    "claude-3-sonnet-20240229",
+    "gemini-1.5-flash-001",
+    "gemini-1.5-pro-001",
+    "gemini-1.5-pro-002",
+    "gemini-2.0-flash-001",
+    "gemini-2.0-flash-exp",
+    "gpt-3.5-turbo-0125",
+    "gpt-4-0125-preview",
+    "gpt-4-turbo-2024-04-09",
+    "gpt-4o-2024-05-13",
+    "gpt-4o-2024-05-13-repeat_user_prompt",
+    "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+    "gpt-4o-2024-05-13-tool_filter",
+    "gpt-4o-2024-05-13-transformers_pi_detector",
+    "gpt-4o-mini-2024-07-18",
+    "meta-llama_Llama-3-70b-chat-hf",
+    "meta-llama_Llama-3.3-70B-Instruct",
+    "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt"
+  ],
+  "tau=0.1": {
+    "cross": 0.22476190476190477,
+    "within": 0.05818181818181818,
+    "pair_bootstrap_ci95": [
+      0.20363636363636367,
+      0.24762121212121216
+    ],
+    "different_model": {
+      "rate": 0.22509090909090915,
+      "n_pairs": 220,
+      "ci95": [
+        0.2033636363636364,
+        0.24746136363636365
+      ]
+    },
+    "same_model_scaffold": {
+      "rate": 0.21818181818181817,
+      "n_pairs": 11,
+      "ci95": [
+        0.12000000000000002,
+        0.3254545454545455
+      ]
+    }
+  },
+  "tau=0.2": {
+    "cross": 0.13255411255411256,
+    "within": 0.011818181818181818,
+    "pair_bootstrap_ci95": [
+      0.11385064935064934,
+      0.1523831168831169
+    ],
+    "different_model": {
+      "rate": 0.13154545454545455,
+      "n_pairs": 220,
+      "ci95": [
+        0.11090681818181818,
+        0.15245454545454545
+      ]
+    },
+    "same_model_scaffold": {
+      "rate": 0.15272727272727274,
+      "n_pairs": 11,
+      "ci95": [
+        0.056363636363636366,
+        0.25818181818181823
+      ]
+    }
+  },
+  "tau=0.3": {
+    "cross": 0.07471861471861471,
+    "within": 0.0018181818181818182,
+    "pair_bootstrap_ci95": [
+      0.05947619047619048,
+      0.0914307359307359
+    ],
+    "different_model": {
+      "rate": 0.07445454545454547,
+      "n_pairs": 220,
+      "ci95": [
+        0.057725,
+        0.09245454545454547
+      ]
+    },
+    "same_model_scaffold": {
+      "rate": 0.08000000000000002,
+      "n_pairs": 11,
+      "ci95": [
+        0.020000000000000004,
+        0.15272727272727274
+      ]
+    }
+  }
+}

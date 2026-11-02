@@ -1,0 +1,80 @@
+{
+  "gpt-4o": {
+    "gpt-4o-2024-05-13": {
+      "n_runs": 629,
+      "attack_success_rate": 0.4769475357710652,
+      "mean_calls_success": 5.15,
+      "mean_calls_resisted": 3.930091185410334,
+      "d_trace_length": 0.4146250516826552,
+      "share_tool_outputs_omitted": 0.0
+    },
+    "gpt-4o-2024-05-13-repeat_user_prompt": {
+      "n_runs": 629,
+      "attack_success_rate": 0.27821939586645467,
+      "mean_calls_success": 6.062857142857143,
+      "mean_calls_resisted": 4.52863436123348,
+      "d_trace_length": 0.3540849507344499,
+      "share_tool_outputs_omitted": 0.0
+    },
+    "gpt-4o-2024-05-13-spotlighting_with_delimiting": {
+      "n_runs": 629,
+      "attack_success_rate": 0.4165341812400636,
+      "mean_calls_success": 5.011450381679389,
+      "mean_calls_resisted": 3.795640326975477,
+      "d_trace_length": 0.4395729898251632,
+      "share_tool_outputs_omitted": 0.0
+    },
+    "gpt-4o-2024-05-13-tool_filter": {
+      "n_runs": 629,
+      "attack_success_rate": 0.06836248012718601,
+      "mean_calls_success": 4.372093023255814,
+      "mean_calls_resisted": 3.426621160409556,
+      "d_trace_length": 0.3341618416955572,
+      "share_tool_outputs_omitted": 0.0
+    },
+    "gpt-4o-2024-05-13-transformers_pi_detector": {
+      "n_runs": 629,
+      "attack_success_rate": 0.0794912559618442,
+      "mean_calls_success": 4.26,
+      "mean_calls_resisted": 4.974093264248705,
+      "d_trace_length": -0.1847592818215658,
+      "share_tool_outputs_omitted": 0.6035042180402336
+    }
+  },
+  "llama-3.3-70b": {
+    "meta-llama_Llama-3.3-70B-Instruct": {
+      "n_runs": 949,
+      "attack_success_rate": 0.23076923076923078,
+      "mean_calls_success": 5.821917808219178,
+      "mean_calls_resisted": 3.0945205479452054,
+      "d_trace_length": 0.8640983747783084,
+      "share_tool_outputs_omitted": 0.0
+    },
+    "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt": {
+      "n_runs": 797,
+      "attack_success_rate": 0.0903387703889586,
+      "mean_calls_success": 6.791666666666667,
+      "mean_calls_resisted": 5.267586206896552,
+      "d_trace_length": 0.26933741739744765,
+      "share_tool_outputs_omitted": 0.0
+    }
+  },
+  "meta-secalign-70b": {
+    "Meta-SecAlign-70B": {
+      "n_runs": 949,
+      "attack_success_rate": 0.022128556375131718,
+      "mean_calls_success": 4.9523809523809526,
+      "mean_calls_resisted": 3.5560344827586206,
+      "d_trace_length": 0.5724773021668692,
+      "share_tool_outputs_omitted": 0.0
+    },
+    "Meta-SecAlign-70B-repeat_user_prompt": {
+      "n_runs": 949,
+      "attack_success_rate": 0.02107481559536354,
+      "mean_calls_success": 4.95,
+      "mean_calls_resisted": 3.67491926803014,
+      "d_trace_length": 0.5031086384745567,
+      "share_tool_outputs_omitted": 0.0
+    }
+  }
+}

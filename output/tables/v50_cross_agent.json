@@ -1,0 +1,36 @@
+{
+  "n_backbones": 22,
+  "backbones": [
+    "claude-3-5-sonnet-20240620",
+    "claude-3-7-sonnet-20250219",
+    "claude-3-haiku-20240307",
+    "claude-3-opus-20240229",
+    "claude-3-sonnet-20240229",
+    "gemini-1.5-flash-001",
+    "gemini-1.5-pro-001",
+    "gemini-1.5-pro-002",
+    "gemini-2.0-flash-001",
+    "gemini-2.0-flash-exp",
+    "gpt-3.5-turbo-0125",
+    "gpt-4-0125-preview",
+    "gpt-4-turbo-2024-04-09",
+    "gpt-4o-2024-05-13",
+    "gpt-4o-2024-05-13-repeat_user_prompt",
+    "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+    "gpt-4o-2024-05-13-tool_filter",
+    "gpt-4o-2024-05-13-transformers_pi_detector",
+    "gpt-4o-mini-2024-07-18",
+    "meta-llama_Llama-3-70b-chat-hf",
+    "meta-llama_Llama-3.3-70B-Instruct",
+    "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt"
+  ],
+  "cross_backbone_flip_rate": 0.22476190476190477,
+  "within_backbone_split_half_flip_rate": 0.05818181818181818,
+  "agent_driven_reversal_refuted": false,
+  "trace_length_cross_flip_rate": 0.11125541125541126,
+  "rf_length_free_transfer": {
+    "mean_auroc": 0.6388345961995967,
+    "anti_prediction_rate": 0.1038961038961039,
+    "n_pairs": 462
+  }
+}
