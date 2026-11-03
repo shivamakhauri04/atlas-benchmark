@@ -16,6 +16,7 @@ run scripts/run_v50_cross_agent_robustness.py
 run scripts/run_v50_cross_agent_thresholds.py
 run scripts/run_v50_cross_agent_tensplit_perm.py
 run scripts/run_v50_cross_agent_embed.py
+run scripts/run_v50_cross_agent_filters.py
 run scripts/run_v50_scaffold_mechanism.py
 run scripts/run_v50_injector_crossover.py
 run scripts/run_v50_divergence_agentdojo.py

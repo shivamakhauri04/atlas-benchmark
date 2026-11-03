@@ -244,3 +244,30 @@ None of these is confirmatory. All are reported as robustness or exploratory res
   - p ≤ 0.001 at each threshold. Not part of the Holm family.
 - **Excluded configurations.** 6 of the 7 have 6–22 successful attacks (ASR ≤ 5%). The seventh has no
   qualifying runs. The limitations section now states this selection.
+- **Release reproduction, 2026-10-30.** The full `reproduce.sh` ran in a fresh anonymized export
+  (`scripts/export_v50_release.py`). It found two more problems.
+  - `run_v50_grid.py` read a feature cache built on Oct 14, before the hash-seed fix. The cache has no
+    key, so the in-repo rerun reused stale features. The cache is deleted, and `reproduce.sh` now
+    deletes it first.
+  - `run_v50_r2_shift.py` had the same `list(set(...))` tool vocabulary. It is now `sorted`.
+  - **Check:** the grid and the R² shift script are byte-identical under two hash seeds.
+  - **Effect:** grid, reuse-policy and R²-shift values move by ≤ 0.06 on raw KL values and ≤ 0.005
+    on regret. No tied flag, no predicted sign and no paper-cited number changes.
+  - **Timing:** every output reproduces byte-identically in the release, in 31 min (AgentDojo) plus
+    13 min (12 datasets) on an M4 CPU.
+
+### A11 — 2026-11-02, inclusion-filter sensitivity (exploratory, after the results)
+
+Requested by the paper-review construct-validity audit. Script `scripts/run_v50_cross_agent_filters.py`,
+output `v50_cross_agent_filters.json`. Ten-split E1 design, `important_instructions`.
+
+| Filter | Configurations | τ=0.1 | τ=0.2 | τ=0.3 |
+|---|---|---|---|---|
+| ≥30 per class, ≥1 call (main, reproduced) | 22 | 22.5% vs 5.8% | 13.3% vs 1.2% | 7.5% vs 0.2% |
+| ≥20 per class | 26 | 27.6% vs 10.4% | 16.7% vs 4.1% | 9.6% vs 2.1% |
+| ≥40 per class | 22 (same) | identical to main | identical | identical |
+| ≥3 tool calls | 22 | 23.8% vs 8.0% | 12.2% vs 1.8% | 6.3% vs 0.5% |
+
+Also on 2026-11-02: `run_v50_decomposition.py` now lists only directories (it had recorded a
+`stabletoolbench/.DS_Store` load error and continued), and it fails if any corpus fails to load. No
+d value, consensus number or Holm p changed.

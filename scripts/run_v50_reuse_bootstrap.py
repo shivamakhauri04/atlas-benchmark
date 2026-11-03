@@ -27,6 +27,7 @@ def _diffs(cell: dict, configs: list[str], rng: np.random.Generator) -> dict:
     s_idx = np.array([idx[s] for s, _ in pairs])
     t_idx = np.array([idx[t] for _, t in pairs])
     boot = {c: [] for c in (*COMPARATORS, "best_fixed")}
+    reuse_vs_retrain = []
     for _ in range(N_BOOT):
         counts = np.bincount(rng.integers(0, len(configs), len(configs)), minlength=len(configs))
         w = counts[s_idx] * counts[t_idx]
@@ -36,6 +37,7 @@ def _diffs(cell: dict, configs: list[str], rng: np.random.Generator) -> dict:
         for c in COMPARATORS:
             boot[c].append(mean[GATE] - mean[c])
         boot["best_fixed"].append(mean[GATE] - min(mean["always_reuse"], mean["always_retrain"]))
+        reuse_vs_retrain.append(mean["always_reuse"] - mean["always_retrain"])
     point = {p: float(v.mean()) for p, v in reg.items()}
     point_best = min(point["always_reuse"], point["always_retrain"])
     out = {"point_gate_regret": point[GATE]}
@@ -45,6 +47,11 @@ def _diffs(cell: dict, configs: list[str], rng: np.random.Generator) -> dict:
             "point": point[GATE] - ref,
             "ci95": [float(np.percentile(vals, 2.5)), float(np.percentile(vals, 97.5))],
         }
+    out["reuse_minus_retrain"] = {
+        "point": point["always_reuse"] - point["always_retrain"],
+        "ci95": [float(np.percentile(reuse_vs_retrain, 2.5)),
+                 float(np.percentile(reuse_vs_retrain, 97.5))],
+    }
     return out
 
 

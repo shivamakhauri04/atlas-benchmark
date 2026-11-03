@@ -60,11 +60,11 @@ def _trail(split: str) -> Corpus:
 
 def _loaders() -> dict[tuple[str, str], Callable[[], Corpus]]:
     out: dict[tuple[str, str], Callable[[], Corpus]] = {}
-    for run in sorted(p.name for p in AGENTDOJO.iterdir()):
+    for run in sorted(p.name for p in AGENTDOJO.iterdir() if p.is_dir()):
         out[("agentdojo", run)] = lambda r=run: _from_traces(
             load_agentdojo(AGENTDOJO / r, min_tool_calls=1)
         )
-    for model in sorted(p.name for p in STB.iterdir()):
+    for model in sorted(p.name for p in STB.iterdir() if p.is_dir()):
         out[("stabletoolbench", model)] = lambda m=model: _from_traces(
             load_stabletoolbench(STB / m, model=m)
         )
@@ -179,7 +179,7 @@ def main() -> None:
     for key, load in _loaders().items():
         try:
             feats, y = load()
-        except Exception as exc:  # noqa: BLE001 — recorded, never silently dropped
+        except Exception as exc:  # noqa: BLE001 — recorded, and the run fails below
             meta["/".join(key)] = {"error": 1}
             print(f"FAILED {key}: {exc}")
             continue
@@ -193,6 +193,9 @@ def main() -> None:
             continue
         d[key] = half_a_d(feats, y)
         print(key, len(y), n_pos)
+    failed = [k for k, v in meta.items() if v.get("error")]
+    if failed:
+        raise SystemExit(f"{len(failed)} corpora failed to load: {failed}")
     result = {
         "corpora": meta,
         "d_half_a": {"/".join(k): v for k, v in d.items()},

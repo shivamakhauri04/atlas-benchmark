@@ -116,9 +116,6 @@
       "n": 613,
       "positives": 72
     },
-    "stabletoolbench/.DS_Store": {
-      "error": 1
-    },
     "stabletoolbench/chatgpt_cot": {
       "n": 763,
       "positives": 296

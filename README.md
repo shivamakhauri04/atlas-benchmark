@@ -44,6 +44,7 @@ The 12-dataset chain took 13 minutes. Every output matched the committed JSON by
 | Per-feature rates, configuration bootstrap | `run_v50_cross_agent_robustness.py` | `v50_cross_agent_robustness.json` |
 | Second attack | `run_v50_cross_agent_attacks.py ignore_previous` | `v50_cross_agent_ignore_previous.json` |
 | Learned features | `run_v50_cross_agent_embed.py` | `v50_cross_agent_embed.json` |
+| Inclusion-filter robustness | `run_v50_cross_agent_filters.py` | `v50_cross_agent_filters.json` |
 | Defense mechanism (Table 3) | `run_v50_scaffold_mechanism.py` | `v50_scaffold_mechanism.json` |
 | Reuse decision on AgentDojo | `run_v50_reuse_agentdojo.py`, `run_v50_reuse_bootstrap.py` | `v50_reuse_agentdojo.json`, `v50_reuse_bootstrap.json` |
 | Distance vs transfer within AgentDojo | `run_v50_divergence_agentdojo.py` | `v50_divergence_agentdojo.json` |
