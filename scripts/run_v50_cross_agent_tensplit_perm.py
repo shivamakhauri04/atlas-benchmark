@@ -86,6 +86,7 @@ def main() -> None:
             "cross": obs[t],
             "perm_null_mean": float(np.mean(null[t])),
             "perm_null_max": float(np.max(null[t])),
+            "perm_null_p95": float(np.percentile(null[t], 95)),
             "perm_p": float((1 + sum(n >= obs[t] for n in null[t])) / (1 + N_PERM)),
         }
     OUT.write_text(json.dumps(out, indent=2))

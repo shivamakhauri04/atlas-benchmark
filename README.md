@@ -17,7 +17,7 @@ reproduces every number in the paper from the public datasets.
 
 ```bash
 uv sync
-bash fetch_data.sh      # downloads AgentDojo, StableToolBench, AgentDrift, TRAIL at pinned versions
+bash fetch_data.sh      # downloads AgentDojo, StableToolBench, AgentDrift, SWE-bench trajectories at pinned versions
 ```
 
 Some datasets load from Hugging Face at run time. Read `DATA_LICENSES.md` before you use any
@@ -45,6 +45,11 @@ The 12-dataset chain took 13 minutes. Every output matched the committed JSON by
 | Second attack | `run_v50_cross_agent_attacks.py ignore_previous` | `v50_cross_agent_ignore_previous.json` |
 | Learned features | `run_v50_cross_agent_embed.py` | `v50_cross_agent_embed.json` |
 | Inclusion-filter robustness | `run_v50_cross_agent_filters.py` | `v50_cross_agent_filters.json` |
+| Version-update pairs | `run_v50_version_pairs.py` | `v50_version_pairs.json` |
+| Trained sequence monitor | `run_v50_gru_monitor.py` | `v50_gru_monitor.json` |
+| Task-failure relabel of AgentDojo | `run_v50_utility_label.py` | `v50_utility_label.json` |
+| SWE-bench Verified replication | `run_v50_swebench_cross.py` | `v50_swebench_cross_{v2,v1}.json` |
+| Reuse decision on SWE-bench | `run_v50_reuse_agentdojo.py swebench`, `run_v50_reuse_bootstrap.py swebench` | `v50_reuse_swebench.json`, `v50_reuse_bootstrap_swebench.json` |
 | Defense mechanism (Table 3) | `run_v50_scaffold_mechanism.py` | `v50_scaffold_mechanism.json` |
 | Reuse decision on AgentDojo | `run_v50_reuse_agentdojo.py`, `run_v50_reuse_bootstrap.py` | `v50_reuse_agentdojo.json`, `v50_reuse_bootstrap.json` |
 | Distance vs transfer within AgentDojo | `run_v50_divergence_agentdojo.py` | `v50_divergence_agentdojo.json` |

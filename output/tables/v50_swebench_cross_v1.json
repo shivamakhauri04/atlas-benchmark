@@ -1,0 +1,57 @@
+{
+  "cohort": "v1",
+  "n_systems": 7,
+  "systems": [
+    "20250726_mini-v1.0.0_claude-sonnet-4-20250514",
+    "20250726_mini-v1.0.0_gemini-2.5-pro",
+    "20250726_mini-v1.0.0_o3-2025-04-16",
+    "20250726_mini-v1.0.0_o4-mini-2025-04-16",
+    "20250802_mini-v1.0.0_claude-4-opus-20250514",
+    "20250802_mini-v1.0.0_qwen3-coder-480b-a35b-instruct",
+    "20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct"
+  ],
+  "n_unresolved": {
+    "20250726_mini-v1.0.0_claude-sonnet-4-20250514": 176,
+    "20250726_mini-v1.0.0_gemini-2.5-pro": 232,
+    "20250726_mini-v1.0.0_o3-2025-04-16": 208,
+    "20250726_mini-v1.0.0_o4-mini-2025-04-16": 275,
+    "20250802_mini-v1.0.0_claude-4-opus-20250514": 162,
+    "20250802_mini-v1.0.0_qwen3-coder-480b-a35b-instruct": 223,
+    "20250803_mini-v1.0.0_qwen2-5-coder-32b-instruct": 455
+  },
+  "length_cross_tau0.1": 0.0,
+  "tau=0.1": {
+    "cross": 0.05333333333333334,
+    "within": 0.025714285714285714,
+    "perm_null_mean": 0.04730952380952381,
+    "perm_null_p95": 0.058095238095238096,
+    "perm_p": 0.16583416583416583,
+    "system_bootstrap_ci95": [
+      0.01497794117647059,
+      0.0976503267973856
+    ]
+  },
+  "tau=0.2": {
+    "cross": 0.011428571428571429,
+    "within": 0.0,
+    "perm_null_mean": 0.012766666666666667,
+    "perm_null_p95": 0.018095238095238095,
+    "perm_p": 0.6913086913086913,
+    "system_bootstrap_ci95": [
+      0.0,
+      0.035
+    ]
+  },
+  "tau=0.3": {
+    "cross": 0.0,
+    "within": 0.0,
+    "perm_null_mean": 0.0029800000000000004,
+    "perm_null_p95": 0.005714285714285714,
+    "perm_p": 1.0,
+    "system_bootstrap_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "refuted": true
+}

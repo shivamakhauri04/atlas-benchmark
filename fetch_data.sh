@@ -17,5 +17,14 @@ PY
 mkdir -p /tmp/stabletoolbench_baselines
 unzip -q -o /tmp/stb_dl/data_baselines.zip -d /tmp/stabletoolbench_baselines
 
+# SWE-bench Verified mini-swe-agent cohorts (labels from SWE-bench/experiments, actions from S3)
+git clone https://github.com/SWE-bench/experiments /tmp/swe-exp
+git -C /tmp/swe-exp checkout 40f164d5b8f1d249bf95a6df8b74b577fd8e519d
+mkdir -p data/swebench_mini/labels
+for e in $(cat inputs/a13_primary.txt inputs/a13_secondary.txt); do
+  cp /tmp/swe-exp/evaluation/verified/$e/per_instance_details.json data/swebench_mini/labels/$e.json
+done
+uv run python scripts/fetch_swebench_mini.py inputs/a13_primary.txt inputs/a13_secondary.txt
+
 echo "TRAIL, InjecAgent, R-Judge, ToolBench and SWE-agent go under data/; see DATA_LICENSES.md."
 echo "API-Bank, ToolACE, AgentHarm and ATBench load from Hugging Face at run time."

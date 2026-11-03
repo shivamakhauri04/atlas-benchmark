@@ -1,0 +1,17 @@
+{
+  "split": "seed-0 task halves",
+  "seeds": 5,
+  "n_configurations": 22,
+  "gru": {
+    "within_mean_auroc": 0.8947778156434424,
+    "transfer_mean_auroc": 0.7439556869225188,
+    "transfer_below_0.5": 0.025974025974025976,
+    "n_pairs": 462
+  },
+  "random_forest_all_six": {
+    "within_mean_auroc": 0.8291516085506214,
+    "transfer_mean_auroc": 0.7181836601058454,
+    "transfer_below_0.5": 0.017316017316017316,
+    "n_pairs": 462
+  }
+}

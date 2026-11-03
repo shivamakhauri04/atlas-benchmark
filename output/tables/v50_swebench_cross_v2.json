@@ -1,0 +1,65 @@
+{
+  "cohort": "v2",
+  "n_systems": 11,
+  "systems": [
+    "20260217_mini-v2.0.0_claude-4-5-haiku-high",
+    "20260217_mini-v2.0.0_claude-4-5-opus-high",
+    "20260217_mini-v2.0.0_claude-4-5-sonnet-high",
+    "20260217_mini-v2.0.0_claude-4-6-opus",
+    "20260217_mini-v2.0.0_deepseek-3-2-high",
+    "20260217_mini-v2.0.0_gemini-3-flash-high",
+    "20260217_mini-v2.0.0_glm-5-high",
+    "20260217_mini-v2.0.0_gpt-5-2-high",
+    "20260217_mini-v2.0.0_gpt-5-mini",
+    "20260217_mini-v2.0.0_kimi-k2-5-high",
+    "20260217_mini-v2.0.0_minimax-2-5-high"
+  ],
+  "n_unresolved": {
+    "20260217_mini-v2.0.0_claude-4-5-haiku-high": 167,
+    "20260217_mini-v2.0.0_claude-4-5-opus-high": 116,
+    "20260217_mini-v2.0.0_claude-4-5-sonnet-high": 143,
+    "20260217_mini-v2.0.0_claude-4-6-opus": 122,
+    "20260217_mini-v2.0.0_deepseek-3-2-high": 150,
+    "20260217_mini-v2.0.0_gemini-3-flash-high": 119,
+    "20260217_mini-v2.0.0_glm-5-high": 136,
+    "20260217_mini-v2.0.0_gpt-5-2-high": 136,
+    "20260217_mini-v2.0.0_gpt-5-mini": 219,
+    "20260217_mini-v2.0.0_kimi-k2-5-high": 146,
+    "20260217_mini-v2.0.0_minimax-2-5-high": 121
+  },
+  "length_cross_tau0.1": 0.0,
+  "tau=0.1": {
+    "cross": 0.09745454545454546,
+    "within": 0.09090909090909091,
+    "perm_null_mean": 0.10614763636363636,
+    "perm_null_p95": 0.1149090909090909,
+    "perm_p": 0.9410589410589411,
+    "system_bootstrap_ci95": [
+      0.06521461609620721,
+      0.138
+    ]
+  },
+  "tau=0.2": {
+    "cross": 0.029818181818181817,
+    "within": 0.02,
+    "perm_null_mean": 0.018691272727272727,
+    "perm_null_p95": 0.02290909090909091,
+    "perm_p": 0.000999000999000999,
+    "system_bootstrap_ci95": [
+      0.01568542199488491,
+      0.04898336291038153
+    ]
+  },
+  "tau=0.3": {
+    "cross": 0.0014545454545454545,
+    "within": 0.0,
+    "perm_null_mean": 0.0017839999999999998,
+    "perm_null_p95": 0.0032727272727272726,
+    "perm_p": 0.7152847152847153,
+    "system_bootstrap_ci95": [
+      0.0,
+      0.005217391304347826
+    ]
+  },
+  "refuted": true
+}

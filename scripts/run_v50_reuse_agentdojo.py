@@ -14,13 +14,14 @@ Detectors RF, kNN and LR, on all 6 features and on length-free features.
 
 import itertools
 import json
+import sys
 from pathlib import Path
 
 import numpy as np
+import run_v50_cross_agent as e1
 from scipy.stats import wasserstein_distance
 from sklearn.metrics import roc_auc_score
 
-import run_v50_cross_agent as e1
 from traceshift.v50 import _make, _zscore, cohens_d_anomalous
 
 OUT = Path("output/tables/v50_reuse_agentdojo.json")
@@ -39,9 +40,18 @@ def _draw(y: np.ndarray, idx: np.ndarray, k: int, rng: np.random.Generator) -> n
 
 
 def main() -> None:
-    corpora = {r: c for r in sorted(p.name for p in e1.RUNS.iterdir()) if (c := e1._corpus(r))}
-    # Reason: the distance gate (added after the venue review) uses only unlabeled features, so it is
-    # computed once and leaves the random stream of the other four policies unchanged.
+    if len(sys.argv) > 1 and sys.argv[1] == "swebench":
+        import run_v50_swebench_cross as swe
+
+        entries = Path("inputs/a13_primary.txt").read_text().split()
+        corpora = {e: c for e in entries if (c := swe._corpus(e))}
+        out_path = Path("output/tables/v50_reuse_swebench.json")
+    else:
+        runs = sorted(p.name for p in e1.RUNS.iterdir())
+        corpora = {r: c for r in runs if (c := e1._corpus(r))}
+        out_path = OUT
+    # Reason: the distance gate (added after the venue review) uses only unlabeled features,
+    # so it is computed once and leaves the random stream of the other four policies unchanged.
     zs = {r: _zscore(c[0]) for r, c in corpora.items()}
     wd = {(s, t): float(np.mean([wasserstein_distance(zs[s][:, j], zs[t][:, j]) for j in range(6)]))
           for s, t in itertools.permutations(corpora, 2)}
@@ -100,7 +110,7 @@ def main() -> None:
                        "per_pair_regret": {pr: {p: float(np.mean(v)) for p, v in d.items()}
                                            for pr, d in per_pair.items()}}
         print(key, json.dumps(result[key]["regret"]), flush=True)
-    OUT.write_text(json.dumps(result, indent=2))
+    out_path.write_text(json.dumps(result, indent=2))
 
 
 if __name__ == "__main__":

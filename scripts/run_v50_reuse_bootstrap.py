@@ -9,12 +9,18 @@ mean regret of the held-out distance gate minus each comparator, with a 95% perc
 """
 
 import json
+import sys
 from pathlib import Path
 
 import numpy as np
 
-SRC = Path("output/tables/v50_reuse_agentdojo.json")
-OUT = Path("output/tables/v50_reuse_bootstrap.json")
+NAME = sys.argv[1] if len(sys.argv) > 1 else "agentdojo"
+SRC = Path(f"output/tables/v50_reuse_{NAME}.json")
+OUT = Path(
+    "output/tables/v50_reuse_bootstrap.json"
+    if NAME == "agentdojo"
+    else f"output/tables/v50_reuse_bootstrap_{NAME}.json"
+)
 N_BOOT = 2000
 GATE = "divergence_gate_heldout"
 COMPARATORS = ("sign_gate", "always_reuse", "always_retrain", "divergence_gate")

@@ -271,3 +271,177 @@ output `v50_cross_agent_filters.json`. Ten-split E1 design, `important_instructi
 Also on 2026-11-02: `run_v50_decomposition.py` now lists only directories (it had recorded a
 `stabletoolbench/.DS_Store` load error and continued), and it fails if any corpus fails to load. No
 d value, consensus number or Holm p changed.
+
+## Registrations for the 2026-11-02 extension (committed BEFORE any of these numbers exist)
+
+All three are exploratory, and none enters the Holm family. Each is written before its script runs.
+
+### A12 — version-update pairs within AgentDojo
+
+- **Question.** Does a vendor's model update, with the same scaffold and the same tasks, reverse
+  features as often as any model change?
+- **Strict set (3 pairs, same model line, version bump):**
+  - gemini-1.5-pro-001 → gemini-1.5-pro-002
+  - gpt-4-0125-preview → gpt-4-turbo-2024-04-09
+  - gemini-2.0-flash-exp → gemini-2.0-flash-001
+- **Successor set (9 pairs).** The strict set, plus:
+  - gpt-4-turbo-2024-04-09 → gpt-4o-2024-05-13
+  - claude-3-5-sonnet-20240620 → claude-3-7-sonnet-20250219
+  - claude-3-sonnet-20240229 → claude-3-5-sonnet-20240620
+  - meta-llama_Llama-3-70b-chat-hf → meta-llama_Llama-3.3-70B-Instruct
+  - gemini-1.5-flash-001 → gemini-2.0-flash-001
+  - gpt-3.5-turbo-0125 → gpt-4o-mini-2024-07-18
+- **Design.** Identical to E1: ten task splits, class-balanced, five length-free features. τ=0.1 is
+  primary; τ=0.2 and τ=0.3 are reported.
+- **Prediction.** The successor-set reversal rate exceeds the within-configuration rate (5.8% at
+  τ=0.1).
+- **Refuted if** the successor-set rate is ≤ 5.8% at τ=0.1. The strict set is descriptive only,
+  because 3 pairs are too few for any test.
+
+### A13 — a second benchmark: SWE-bench Verified, many systems on the same 500 tasks
+
+- **Label.** 1 = instance not resolved, as graded by the benchmark's own tests. This is a failure
+  label, not an injection label.
+- **Systems.** Every SWE-bench Verified submission whose trajectories use the SWE-agent `.traj`
+  format, with at least 30 resolved and 30 unresolved instances. The list is fixed and committed
+  before any d is computed.
+- **Features.** The six from E1, computed from the `.traj` actions. The tool is the first token of
+  each action; the argument is the rest. The five length-free features are primary, and trace length
+  is reported separately. Length is not tied to this label by construction, but long failing runs
+  that hit step limits are plausible.
+- **Design.** As in E1: task-disjoint halves (crc32 of `seed:instance_id`), class-balanced, ten
+  splits, τ=0.1 primary, a permutation null that shuffles runs between the two systems of a pair
+  (1,000 permutations), and a bootstrap over systems.
+- **Prediction.** The cross-system reversal rate exceeds the within-system rate and the null's 95th
+  percentile.
+- **Refuted if** cross ≤ within at τ=0.1, or cross ≤ the null's 95th percentile. A refutation would be
+  reported in the main text as: the effect is specific to AgentDojo or to injection labels.
+
+### A14 — a trained sequence monitor
+
+- **Model.** A one-layer GRU over tool-name tokens, with an action-length bucket per step,
+  embedding 32, hidden 32. It is trained on each source configuration's task half A, with 5 seeds
+  and early stopping on a 20% split of half A. It is scored by transfer AUROC on the target's task
+  half B, over the 462 AgentDojo pairs, next to the random forest on the same halves.
+- **Descriptive.** No directional prediction is registered.
+- **Reported:** mean transfer AUROC, the share of pairs below 0.5, and the within-configuration AUROC
+  (source half A to source half B).
+- **Question.** Does a learned monitor lose more or less across configurations than the shallow one?
+
+### A13a — 2026-11-02, amendment to A13 BEFORE any download or d (system list fixed)
+
+- **Scaffold.** The SWE-agent `.traj` cohort has 11 entries, spread over different scaffold variants
+  (SWE-agent, live-SWE-agent, codesweep). We use mini-swe-agent instead, which fixes the scaffold
+  version so that only the model changes, matching the AgentDojo design. Its trajectories are
+  `bash-only/<entry>/trajs/<id>/<id>.traj.json` in `s3://swe-bench-submissions`.
+- **Actions.** The bash commands the assistant issues.
+- **Labels.** `resolved` from each entry's `per_instance_details.json` in SWE-bench/experiments.
+  Entries without that file are excluded. This is an availability rule, decided before any result.
+- **Primary cohort, mini-swe-agent v2.0.0** (12 systems): mini-v2.0.0_claude-4-5-haiku-high, mini-v2.0.0_claude-4-5-opus-high, mini-v2.0.0_claude-4-5-sonnet-high, mini-v2.0.0_claude-4-6-opus, mini-v2.0.0_deepseek-3-2-high, mini-v2.0.0_gemini-3-flash-high, mini-v2.0.0_glm-5-high, mini-v2.0.0_gpt-5-2-high, mini-v2.0.0_gpt-5-mini, mini-v2.0.0_kimi-k2-5-high, mini-v2.0.0_minimax-2-5-high, mini-v2.0.0_gemini-3-pro-high.
+- **Secondary cohort, mini-swe-agent v1.0.0** (7 systems): mini-v1.0.0_claude-sonnet-4-20250514, mini-v1.0.0_gemini-2.5-pro, mini-v1.0.0_o3-2025-04-16, mini-v1.0.0_o4-mini-2025-04-16, mini-v1.0.0_claude-4-opus-20250514, mini-v1.0.0_qwen3-coder-480b-a35b-instruct, mini-v1.0.0_qwen2-5-coder-32b-instruct.
+- Every listed system has at least 30 tasks in each class (from the published labels; no trace data
+  was read). The prediction and the refuting outcome are unchanged from A13, and they apply to the
+  primary cohort. The secondary cohort is reported the same way.
+
+### A12 / A14 results (2026-11-02, after running; designs registered in fa6b10c)
+
+- **A12, version-update pairs** (τ=0.1, ten splits; `v50_version_pairs.json`).
+  - Successor set: 12.0% vs the within floor of 5.8%, so **not refuted**.
+  - Strict version bumps: 4.0%, at the floor (3 pairs, descriptive only).
+  - Other different-model pairs: 23.0%.
+  - At τ=0.2 the successor set is 4.4% and the strict set 1.3%.
+- **A14, GRU monitor** (seed-0 split, 5 seeds; `v50_gru_monitor.json`).
+
+  | Monitor | Within AUROC | Transfer AUROC | Transfers below 0.5 |
+  |---|---|---|---|
+  | GRU | 0.895 | 0.744 | 2.6% |
+  | Random forest, all six features | 0.829 | 0.718 | 1.7% |
+
+  The learned monitor is better both within and after transfer, but it loses more when the
+  configuration changes: a drop of 0.151 against 0.111.
+
+### A13 result (2026-11-02, after running; registered in fa6b10c, system list in 778827b)
+
+**REFUTED on the primary cohort**, per the registered rule. Output: `v50_swebench_cross_{v2,v1}.json`.
+
+| Cohort | τ=0.1 cross vs within | Null p95 | p | τ=0.2 cross vs within |
+|---|---|---|---|---|
+| mini-swe-agent v2.0.0, 11 systems | 9.7% vs 9.1% | 11.5% | 0.94 | 3.0% vs 2.0% (null p95 2.3%, p=0.001) |
+| mini-swe-agent v1.0.0, 7 systems | 5.3% vs 2.6% | 5.8% | 0.17 | — |
+
+- **Excluded:** Gemini 3 Pro. Its published `per_instance_details.json` marks all 500 tasks
+  unresolved, so the registered ≥30 rule removes it.
+- **Trace length** never reverses, in either cohort.
+- **The null is not an artifact.** Per-system d is large and has the same sign everywhere: failing
+  runs are longer (d +0.37 to +0.91) and less diverse (+0.27 to +1.09).
+- **Run filter:** E1's ≥1-action filter was applied, as A13 specified ("as in E1"). It removed 11
+  runs in total.
+- **Reading, hypothesis only:** reversals across agents appear when what the label selects depends
+  on the agent (injection success), and not under a task-failure label that looks alike across
+  models. The τ=0.2 v2 excess is small and is not the registered test.
+
+### A15 — 2026-11-02, reuse vs retrain on SWE-bench Verified (registered BEFORE running)
+
+- **Design.** E2b's script and design unchanged: 5 policies, k ∈ {10, 20, 50, 100}, three
+  detectors, all six features and length-free. It runs on the A13a primary cohort (11 systems, 110
+  ordered pairs), and the regret-difference bootstrap is over systems.
+- **Prediction.** Features kept their meaning across models here (A13), so a reused monitor should
+  hold up better than on AgentDojo: reuse has lower regret than retraining at k=20 for the random
+  forest on all six features.
+- **Refuted if** reuse regret ≥ retrain regret at k=20 (RF, all six features). Reported for every
+  cell.
+
+### A15 result (2026-11-02, after running; registered in ab31f82) — **not refuted**
+
+`v50_reuse_swebench.json`, `v50_reuse_bootstrap_swebench.json`; 11 systems, 110 ordered pairs.
+Regret difference, reuse minus retrain, with a 95% bootstrap interval over systems:
+
+| Detector | k=10 | k=20 | k=50 | k=100 |
+|---|---|---|---|---|
+| RF | −0.092 [−0.121, −0.065] | −0.078 [−0.102, −0.056] | −0.052 [−0.065, −0.038] | −0.025 [−0.039, −0.012] |
+| kNN | −0.034 [−0.049, −0.017] | −0.021 [−0.040, −0.005] | −0.006 [−0.018, 0.007] | +0.007 [−0.005, 0.021] |
+| LR | −0.094 [−0.115, −0.072] | −0.076 [−0.095, −0.057] | −0.039 [−0.052, −0.028] | −0.016 [−0.028, −0.003] |
+
+- Reuse wins 87% of pairs at k=10 for RF. On AgentDojo, retraining wins from k=50.
+- **Confound:** SWE-bench monitors are weaker (the reused RF reaches an AUROC of 0.658), so k new
+  labels add less.
+
+### A16 — 2026-11-02, the label hypothesis within AgentDojo (registered BEFORE running)
+
+- **Question.** Does the label, rather than the benchmark, decide whether features reverse across
+  agents? On AgentDojo every run also records `utility`, whether the user's task was completed. So
+  the same traces can be relabeled while the domain, agents, tasks and features stay fixed.
+- **Primary.** The attacked `important_instructions` runs, with ≥1 tool call. Label 1 = user task
+  failed (`utility=False`). Configurations need ≥30 runs per class under this label. Design: E1
+  unchanged (ten task splits, balanced, five length-free features, τ=0.1 primary), plus the ten-split
+  permutation null with 1,000 permutations.
+- **Secondary.** The clean no-attack (`none`) runs under the same label, the closest analogue to
+  SWE-bench's task-failure label.
+- **Hypothesis H-label.** The paper's reading: reversals appear when the label's selection depends on
+  agent behaviour. It predicts a smaller cross-minus-within excess under the utility label than under
+  the security label (16.7 percentage points at τ=0.1).
+- **H-label is refuted if** the utility-label excess on the primary set is ≥ 16.7 points.
+- **Reported either way, in the main text.**
+
+### A16 result (2026-11-02, after running; registered in a969cab)
+
+`v50_utility_label.json`.
+
+| Set | Configurations | τ=0.1 cross vs within | Excess | Null p95 | p |
+|---|---|---|---|---|---|
+| Primary: attacked runs, utility label | 28 | 18.7% vs 2.6% | 16.1 points | 5.7% | ≤0.001 |
+| Secondary: clean runs | 22 | 28.2% vs 19.9% | 8.3 points | 22.7% | ≤0.001 |
+
+For reference, the security label gives an excess of 16.7 points.
+
+- **Registered rule:** H-label is refuted if the excess is ≥ 16.7 points. 16.1 < 16.7, so the rule
+  does **not** fire.
+- **Substantive reading:** the excess under the task-failure label is nearly identical to the
+  injection label's. The data do not support H-label: label type does not explain why AgentDojo
+  reverses and SWE-bench does not. The paper drops the label-selection reading, together with any
+  practical rule derived from it.
+- **The difference lies in the setting:** benchmark, environment, agents or model generation. These
+  data cannot say which.
+- **Also disclosed now (blind review):** SWE-bench v2 at τ=0.2 is 3.0% vs 2.0% within, null p95
+  2.3%, p=0.001. This small excess is not in the v1 cohort (1.1% vs null p95 1.8%). The paper
+  previously reported only τ=0.1.

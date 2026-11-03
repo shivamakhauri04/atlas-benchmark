@@ -17,6 +17,13 @@ run scripts/run_v50_cross_agent_thresholds.py
 run scripts/run_v50_cross_agent_tensplit_perm.py
 run scripts/run_v50_cross_agent_embed.py
 run scripts/run_v50_cross_agent_filters.py
+run scripts/run_v50_version_pairs.py
+run scripts/run_v50_gru_monitor.py
+run scripts/run_v50_utility_label.py
+run scripts/run_v50_swebench_cross.py inputs/a13_primary.txt v2
+run scripts/run_v50_swebench_cross.py inputs/a13_secondary.txt v1
+run scripts/run_v50_reuse_agentdojo.py swebench
+run scripts/run_v50_reuse_bootstrap.py swebench
 run scripts/run_v50_scaffold_mechanism.py
 run scripts/run_v50_injector_crossover.py
 run scripts/run_v50_divergence_agentdojo.py
