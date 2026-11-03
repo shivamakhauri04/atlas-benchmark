@@ -445,3 +445,16 @@ For reference, the security label gives an excess of 16.7 points.
 - **Also disclosed now (blind review):** SWE-bench v2 at τ=0.2 is 3.0% vs 2.0% within, null p95
   2.3%, p=0.001. This small excess is not in the v1 cohort (1.1% vs null p95 1.8%). The paper
   previously reported only τ=0.1.
+
+### A17 — 2026-11-02, intervals requested by reviewers (exploratory, after the results)
+
+- **E1, ten-split average, bootstrap over configurations** (`v50_cross_agent_tensplit_ci.json`):
+  22.5% [14.6, 29.9] at τ=0.1; 13.3% [6.8, 21.0] at τ=0.2.
+- **A16 excess on the 22 configurations both labels admit** (`v50_utility_label_ci.json`):
+  - security 16.7 points [9.0, 24.2]
+  - utility 15.2 points [10.4, 20.7]
+  - difference −1.4 points [−11.1, 8.7]
+- **SWE-bench v2, bootstrap over systems:** cross [6.5, 13.8] against within 9.1. So the excess is
+  at most about 4.7 points, which rules out an AgentDojo-sized excess of 16.7.
+- **Reading:** a task-failure label on AgentDojo leaves an excess far above SWE-bench's, so changing
+  the label alone does not remove the effect. This does not show that label type plays no role.
