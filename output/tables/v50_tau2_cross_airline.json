@@ -1,0 +1,71 @@
+{
+  "benchmark": "tau2",
+  "domain": "airline",
+  "n_systems": 8,
+  "systems": [
+    "claude-opus-4-5_sierra_2026-02-26",
+    "claude-sonnet-4-5_sierra_2026-02-26",
+    "gemini-3-flash_sierra_2026-03-02",
+    "gemini-3-pro_sierra_2026-03-02",
+    "glm-5-think_sierra_2026-03-02",
+    "gpt-5-2-none_sierra_2026-02-26",
+    "gpt-5-2_sierra_2026-02-26",
+    "qwen3.5-397b-a17b-think_sierra_2026-03-02"
+  ],
+  "excluded": [],
+  "n_failed": {
+    "claude-opus-4-5_sierra_2026-02-26": 32,
+    "claude-sonnet-4-5_sierra_2026-02-26": 56,
+    "gemini-3-flash_sierra_2026-03-02": 66,
+    "gemini-3-pro_sierra_2026-03-02": 36,
+    "glm-5-think_sierra_2026-03-02": 35,
+    "gpt-5-2-none_sierra_2026-02-26": 39,
+    "gpt-5-2_sierra_2026-02-26": 34,
+    "qwen3.5-397b-a17b-think_sierra_2026-03-02": 37
+  },
+  "n_runs": {
+    "claude-opus-4-5_sierra_2026-02-26": 199,
+    "claude-sonnet-4-5_sierra_2026-02-26": 200,
+    "gemini-3-flash_sierra_2026-03-02": 200,
+    "gemini-3-pro_sierra_2026-03-02": 197,
+    "glm-5-think_sierra_2026-03-02": 197,
+    "gpt-5-2-none_sierra_2026-02-26": 199,
+    "gpt-5-2_sierra_2026-02-26": 199,
+    "qwen3.5-397b-a17b-think_sierra_2026-03-02": 200
+  },
+  "length_cross_tau0.1": 0.014285714285714285,
+  "tau=0.1": {
+    "cross": 0.12428571428571429,
+    "within": 0.14,
+    "excess": -0.015714285714285722,
+    "perm_null_p95": 0.07142857142857142,
+    "perm_p": 0.000999000999000999,
+    "system_bootstrap_ci95_cross": [
+      0.04614583333333333,
+      0.20587797619047596
+    ]
+  },
+  "tau=0.2": {
+    "cross": 0.07714285714285714,
+    "within": 0.09,
+    "excess": -0.012857142857142859,
+    "perm_null_p95": 0.04071428571428572,
+    "perm_p": 0.000999000999000999,
+    "system_bootstrap_ci95_cross": [
+      0.018333333333333333,
+      0.15047619047619046
+    ]
+  },
+  "tau=0.3": {
+    "cross": 0.05785714285714286,
+    "within": 0.06,
+    "excess": -0.002142857142857141,
+    "perm_null_p95": 0.02,
+    "perm_p": 0.000999000999000999,
+    "system_bootstrap_ci95_cross": [
+      0.007500000000000001,
+      0.12083522727272727
+    ]
+  },
+  "verdict": "swebench_like"
+}

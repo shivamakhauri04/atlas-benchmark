@@ -498,3 +498,60 @@ success.
 - **Data note:** on 2026-11-04 macOS `/tmp` cleanup had deleted most AgentDojo run files. AgentDojo
   is re-cloned at 089ed468 into `experiments/.../data/agentdojo_repo`, which `/tmp/agentdojo_data/runs`
   now symlinks to. E1 reproduces byte-identically.
+
+### A19 — 2026-11-04, a third benchmark: τ²-bench, frontier models in a tool-calling loop (registered BEFORE downloading any trajectory)
+
+- **Why.** A16 and A18 rule out label type and capability spread. The candidates left are
+  environment or scaffold, and model era. τ²-bench runs 2025–26 frontier models in an AgentDojo-like
+  tool-calling loop, with a task-failure label. It separates two cases. A reversal excess like
+  AgentDojo's says model era is not the cause, and SWE-bench's stability then points to its coding
+  environment or scaffold. An excess like SWE-bench's points to era or domain.
+- **Cohort.** Chosen from `submission.json` and `results.json` info only, before any trajectory was
+  read. Every Sierra-run text submission with trajectories, user simulator gpt-5.2 (reasoning_effort
+  low), max_steps 200 and 4 trials:
+  - claude-opus-4-5_sierra_2026-02-26
+  - claude-sonnet-4-5_sierra_2026-02-26
+  - gemini-3-flash_sierra_2026-03-02
+  - gemini-3-pro_sierra_2026-03-02
+  - glm-5-think_sierra_2026-03-02
+  - gpt-5-2-none_sierra_2026-02-26
+  - gpt-5-2_sierra_2026-02-26
+  - qwen3.5-397b-a17b-think_sierra_2026-03-02
+
+  That is 8 configurations and 28 pairs. The τ² git commit differs (7324fb57, ef9454a8, 5a629d14,
+  unknown); this will be disclosed.
+- **Domains.** Retail is primary (114 tasks × 4 trials). Airline is secondary (50 × 4).
+- **Label.** 1 = `reward_info.reward` < 1, i.e. the task failed.
+- **Actions.** The assistant `tool_calls`: tool = function name, args = JSON of its arguments. User
+  turns and text replies are not actions.
+- **Design.** As in E1: task-disjoint halves (crc32 of `seed:task_id`, all trials of a task on the
+  same side), class-balanced, ten splits, five length-free features, τ=0.1 primary, ≥30 per class,
+  ≥1 action. Plus the ten-split permutation null (1,000) and a bootstrap over configurations for the
+  excess.
+- **Decision rule, primary (retail, τ=0.1):**
+  - excess ≥ 12 points → "AgentDojo-like": era is not the cause
+  - excess ≤ 5 points → "SWE-bench-like"
+  - otherwise inconclusive
+
+  Reported in the main text whichever way it falls.
+
+### A19 result (2026-11-04, after running; registered in e5fac64) — **SWE-bench-like**
+
+`v50_tau2_cross_{retail,airline}.json`. All 8 systems qualified.
+
+| Domain | Cross vs within | Excess | Bootstrap interval for cross | Null p95 |
+|---|---|---|---|---|
+| Retail (primary) | 18.1% vs 16.0% | 2.1 points | [11.9, 25.2] | 18.1% (p=0.06) |
+| Airline (secondary) | 12.4% vs 14.0% | −1.6 points | [4.6, 20.6] | 7.1% |
+
+- **Registered verdict:** the retail excess is 2.1 ≤ 5, so the result is "SWE-bench-like".
+- **Note on airline:** cross exceeds the permutation null (p=0.001) but not the within floor. Mixing
+  agents makes the null lower than the within-configuration rate. The registered metric is the excess
+  over within.
+- **Sensitivity:** the retail excess is bounded at about 9 points, below AgentDojo's 16.7. The high
+  within rates (14–16%) come from the small task halves (57 and 25 tasks).
+- **Combined reading, not a test:** reversals appear only on AgentDojo (2024 models). On SWE-bench
+  (2025–26, bash loop) and τ²-bench (2026, tool loop, the same loop type as AgentDojo) features keep
+  their meaning.
+  - The tool-calling loop, label type (A16) and capability spread (A18) are ruled out.
+  - Model era remains, confounded with benchmark.

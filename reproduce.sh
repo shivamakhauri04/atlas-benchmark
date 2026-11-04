@@ -23,6 +23,8 @@ run scripts/run_v50_utility_label.py
 run scripts/run_v50_utility_label_ci.py
 run scripts/run_v50_cross_agent_tensplit_ci.py
 run scripts/run_v50_capability_split.py
+run scripts/run_v50_tau2_cross.py inputs/a19_tau2.txt retail
+run scripts/run_v50_tau2_cross.py inputs/a19_tau2.txt airline
 run scripts/run_v50_swebench_cross.py inputs/a13_primary.txt v2
 run scripts/run_v50_swebench_cross.py inputs/a13_secondary.txt v1
 run scripts/run_v50_reuse_agentdojo.py swebench

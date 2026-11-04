@@ -26,5 +26,8 @@ for e in $(cat inputs/a13_primary.txt inputs/a13_secondary.txt); do
 done
 uv run python scripts/fetch_swebench_mini.py inputs/a13_primary.txt inputs/a13_secondary.txt
 
+# tau2-bench: Sierra-run submissions, public bucket sierra-tau-bench-public
+uv run python scripts/fetch_tau2.py inputs/a19_tau2.txt retail airline
+
 echo "TRAIL, InjecAgent, R-Judge, ToolBench and SWE-agent go under data/; see DATA_LICENSES.md."
 echo "API-Bank, ToolACE, AgentHarm and ATBench load from Hugging Face at run time."
