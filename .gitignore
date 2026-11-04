@@ -3,4 +3,4 @@ __pycache__/
 .venv/
 output/cache/
 output/paper/
-data/
+/data/

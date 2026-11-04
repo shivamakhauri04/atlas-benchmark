@@ -51,6 +51,7 @@ The 12-dataset chain took 13 minutes. Every output matched the committed JSON by
 | Intervals for the relabel and the ten-split headline | `run_v50_utility_label_ci.py`, `run_v50_cross_agent_tensplit_ci.py` | `v50_utility_label_ci.json`, `v50_cross_agent_tensplit_ci.json` |
 | Capability spread on AgentDojo | `run_v50_capability_split.py` | `v50_capability_split.json` |
 | tau2-bench replication | `run_v50_tau2_cross.py` | `v50_tau2_cross_{retail,airline}.json` |
+| Newest AgentDojo configurations; tau2 harness versions (exploratory) | `run_v50_generation_harness_checks.py` | `v50_generation_harness_checks.json` |
 | SWE-bench Verified replication | `run_v50_swebench_cross.py` | `v50_swebench_cross_{v2,v1}.json` |
 | Reuse decision on SWE-bench | `run_v50_reuse_agentdojo.py swebench`, `run_v50_reuse_bootstrap.py swebench` | `v50_reuse_swebench.json`, `v50_reuse_bootstrap_swebench.json` |
 | Defense mechanism (Table 3) | `run_v50_scaffold_mechanism.py` | `v50_scaffold_mechanism.json` |

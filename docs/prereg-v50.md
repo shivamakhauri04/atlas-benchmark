@@ -555,3 +555,26 @@ success.
   their meaning.
   - The tool-calling loop, label type (A16) and capability spread (A18) are ruled out.
   - Model era remains, confounded with benchmark.
+
+### A20 — 2026-11-04, checks requested by a blind review (exploratory, after the results)
+
+`v50_generation_harness_checks.json`.
+
+- **AgentDojo release dates.**
+  - The four newest configurations (Llama 3.3 and Gemini 2.0 Flash exp, Dec 2024; Gemini 2.0 Flash
+    001 and Claude 3.7 Sonnet, Feb 2025): among themselves, cross 18.0% vs within 7.5%, an excess of
+    10.5 points over 6 pairs.
+  - Pairs with Claude 3.7: excess 14.4. All other pairs: 16.8.
+  - The paper's "22 configurations from 2024" was wrong. It is now 2024 to early 2025.
+- **τ²-bench harness commits** (retail, registered configuration order):
+  - same commit: excess 6.5 points (7 pairs)
+  - different commits: excess 4.8 points (8 pairs)
+  - The commit spread does not drive the result.
+- **Order sensitivity:** over 20 random configuration orders, which change the class-balancing draw,
+  the τ² retail excess ranges from −3.4 to 3.2 points (mean 0.6, SD 1.6). The registered order
+  gives 2.1. An earlier note in this entry said "0.3"; I could not trace it, and this replaces it.
+- **Revised reading:**
+  - label and weak models are ruled out
+  - the tool loop is unlikely (underpowered)
+  - AgentDojo's environment (constant attacks, security domain) and model generation remain, and
+    cannot be separated
