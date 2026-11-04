@@ -458,3 +458,43 @@ For reference, the security label gives an excess of 16.7 points.
   at most about 4.7 points, which rules out an AgentDojo-sized excess of 16.7.
 - **Reading:** a task-failure label on AgentDojo leaves an excess far above SWE-bench's, so changing
   the label alone does not remove the effect. This does not show that label type plays no role.
+
+### A18 — 2026-11-04, capability spread as the source of AgentDojo's reversals (registered BEFORE running)
+
+- **Question.** The SWE-bench cohort contains only recent frontier models. AgentDojo mixes old and
+  weak models with strong ones. Does capability spread produce AgentDojo's cross-configuration
+  reversals?
+- **Capability.** Each configuration's user-task success rate (`utility=True`) on its attacked
+  `important_instructions` runs with ≥1 tool call. It is computed from metadata only, with no
+  reversal rate involved. "Strong" is the top 11 of the 22 E1 configurations by this rate; ties are
+  broken by name.
+- **Design.** E1 unchanged: ten splits, five length-free features, τ=0.1 primary, injection label. The
+  pairs are split into strong–strong (55), weak–weak (55) and mixed (121). Reported for each: cross
+  rate, the within rate of the configurations involved, the excess, and a configuration-bootstrap
+  interval for the excess.
+- **Hypothesis H-capability.** It predicts that the strong–strong excess is clearly smaller than the
+  full E1 excess of 16.7 points.
+- **H-capability is refuted if** the strong–strong excess is ≥ 12 points (more than 70% of the full
+  excess), because then the effect survives without weak models. It is supported if the strong–strong
+  excess is ≤ 5 points, which is SWE-bench-like. Values in between are reported as inconclusive.
+
+### A18 result (2026-11-04, after running; registered in 7e4ebf4) — **H-capability refuted**
+
+`v50_capability_split.json`. Strong means the top 11 configurations by attacked-run user-task
+success.
+
+| Pairs | Cross vs within | Excess | Interval |
+|---|---|---|---|
+| strong–strong (55) | 20.4% vs 6.0% | 14.4 points | [3.3, 25.8] |
+| weak–weak (55) | 25.6% vs 5.6% | 20.0 points | [7.5, 32.0] |
+| mixed (121) | 22.0% vs 5.8% | 16.2 points | — |
+
+- **Registered rule:** refuted when the strong–strong excess is ≥ 12. It is 14.4, so H-capability
+  is refuted.
+- **Exploratory, not registered:** strong pairs with different base models (48 pairs) give an excess
+  of 16.1. The GPT-4o defense pairs do not drive the result.
+- **Remaining candidates:** the environment, the scaffold or tool-calling loop, and model era (2024
+  for AgentDojo, 2025–26 for SWE-bench).
+- **Data note:** on 2026-11-04 macOS `/tmp` cleanup had deleted most AgentDojo run files. AgentDojo
+  is re-cloned at 089ed468 into `experiments/.../data/agentdojo_repo`, which `/tmp/agentdojo_data/runs`
+  now symlinks to. E1 reproduces byte-identically.

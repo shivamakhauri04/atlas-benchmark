@@ -1,0 +1,71 @@
+{
+  "tau": 0.1,
+  "capability": {
+    "claude-3-5-sonnet-20240620": 0.5270049099836334,
+    "claude-3-7-sonnet-20250219": 0.8208640674394099,
+    "claude-3-haiku-20240307": 0.37924528301886795,
+    "claude-3-opus-20240229": 0.5567010309278351,
+    "claude-3-sonnet-20240229": 0.3992015968063872,
+    "gemini-1.5-flash-001": 0.3450087565674256,
+    "gemini-1.5-pro-001": 0.30036630036630035,
+    "gemini-1.5-pro-002": 0.4856175972927242,
+    "gemini-2.0-flash-001": 0.5815126050420169,
+    "gemini-2.0-flash-exp": 0.5079365079365079,
+    "gpt-3.5-turbo-0125": 0.3465818759936407,
+    "gpt-4-0125-preview": 0.4069952305246423,
+    "gpt-4-turbo-2024-04-09": 0.5537459283387622,
+    "gpt-4o-2024-05-13": 0.5080645161290323,
+    "gpt-4o-2024-05-13-repeat_user_prompt": 0.6811594202898551,
+    "gpt-4o-2024-05-13-spotlighting_with_delimiting": 0.5617977528089888,
+    "gpt-4o-2024-05-13-tool_filter": 0.5627980922098569,
+    "gpt-4o-2024-05-13-transformers_pi_detector": 0.21451612903225806,
+    "gpt-4o-mini-2024-07-18": 0.5056360708534622,
+    "meta-llama_Llama-3-70b-chat-hf": 0.18530884808013356,
+    "meta-llama_Llama-3.3-70B-Instruct": 0.5171052631578947,
+    "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt": 0.5138662316476346
+  },
+  "strong": [
+    "claude-3-5-sonnet-20240620",
+    "claude-3-7-sonnet-20250219",
+    "claude-3-opus-20240229",
+    "gemini-2.0-flash-001",
+    "gpt-4-turbo-2024-04-09",
+    "gpt-4o-2024-05-13",
+    "gpt-4o-2024-05-13-repeat_user_prompt",
+    "gpt-4o-2024-05-13-spotlighting_with_delimiting",
+    "gpt-4o-2024-05-13-tool_filter",
+    "meta-llama_Llama-3.3-70B-Instruct",
+    "meta-llama_Llama-3.3-70B-Instruct-repeat_user_prompt"
+  ],
+  "strong_strong": {
+    "n_pairs": 55,
+    "cross": 0.20436363636363636,
+    "within": 0.060000000000000005,
+    "excess": 0.14436363636363636,
+    "excess_ci95": [
+      0.03267982026143792,
+      0.2578634530791788
+    ]
+  },
+  "weak_weak": {
+    "n_pairs": 55,
+    "cross": 0.25599999999999995,
+    "within": 0.056363636363636366,
+    "excess": 0.19963636363636358,
+    "excess_ci95": [
+      0.07547536945812809,
+      0.32043241167434716
+    ]
+  },
+  "mixed": {
+    "n_pairs": 121,
+    "cross": 0.21983471074380168,
+    "within": 0.058181818181818196,
+    "excess": 0.16165289256198348,
+    "excess_ci95": [
+      0.0918354707792208,
+      0.234992803030303
+    ]
+  },
+  "verdict": "refuted"
+}

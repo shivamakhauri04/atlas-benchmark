@@ -49,6 +49,7 @@ The 12-dataset chain took 13 minutes. Every output matched the committed JSON by
 | Trained sequence monitor | `run_v50_gru_monitor.py` | `v50_gru_monitor.json` |
 | Task-failure relabel of AgentDojo | `run_v50_utility_label.py` | `v50_utility_label.json` |
 | Intervals for the relabel and the ten-split headline | `run_v50_utility_label_ci.py`, `run_v50_cross_agent_tensplit_ci.py` | `v50_utility_label_ci.json`, `v50_cross_agent_tensplit_ci.json` |
+| Capability spread on AgentDojo | `run_v50_capability_split.py` | `v50_capability_split.json` |
 | SWE-bench Verified replication | `run_v50_swebench_cross.py` | `v50_swebench_cross_{v2,v1}.json` |
 | Reuse decision on SWE-bench | `run_v50_reuse_agentdojo.py swebench`, `run_v50_reuse_bootstrap.py swebench` | `v50_reuse_swebench.json`, `v50_reuse_bootstrap_swebench.json` |
 | Defense mechanism (Table 3) | `run_v50_scaffold_mechanism.py` | `v50_scaffold_mechanism.json` |
